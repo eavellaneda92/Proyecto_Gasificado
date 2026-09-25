@@ -1,0 +1,1155 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"3 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\ADC.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"39
+[v _ADC_Leer ADC_Leer `(us  1 e 2 0 ]
+"51
+[v _Proceso_ADC Proceso_ADC `(v  1 e 1 0 ]
+"114
+[v _Ntc_ConvertirX16 Ntc_ConvertirX16 `(s  1 e 2 0 ]
+"137
+[v _Ntc_LeerTemperatura Ntc_LeerTemperatura `(s  1 e 2 0 ]
+"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"1177 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"4 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Config.c
+[v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
+"4 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Control.c
+[v _Pedir_PPM Pedir_PPM `(v  1 e 1 0 ]
+"16
+[v _Cargar_PPM Cargar_PPM `(f  1 e 4 0 ]
+"40
+[v _Proceso_Control Proceso_Control `(v  1 e 1 0 ]
+"71
+[v _Proceso_Arranque Proceso_Arranque `(v  1 e 1 0 ]
+"81
+[v _Armado_Cerrado Armado_Cerrado `(v  1 e 1 0 ]
+"15 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"35
+[v _main main `(v  1 e 1 0 ]
+"3 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Timers.c
+[v _Tmr_Oscilador_Init Tmr_Oscilador_Init `(v  1 e 1 0 ]
+"9
+[v _Tmr0_Init Tmr0_Init `(v  1 e 1 0 ]
+"17
+[v _Tmr0_Reset Tmr0_Reset `(v  1 e 1 0 ]
+"25
+[v _Tmr1_Init Tmr1_Init `(v  1 e 1 0 ]
+"36
+[v _Power_Rele Power_Rele `(v  1 e 1 0 ]
+"68
+[v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
+"101
+[v _Refresh_In Refresh_In `(v  1 e 1 0 ]
+"6 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Uart.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"26
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"31
+[v _UART_Print UART_Print `(v  1 e 1 0 ]
+"36
+[v _Texto_Length Texto_Length `(i  1 e 2 0 ]
+"46
+[v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
+"63
+[v _Get_Comando Get_Comando `(v  1 e 1 0 ]
+"109
+[v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
+"22 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X/ADC.h
+[v _Paso_ADC Paso_ADC `uc  1 e 1 0 ]
+"23
+[v _Count_ADC Count_ADC `uc  1 e 1 0 ]
+"27
+[v _Current1 Current1 `us  1 e 2 0 ]
+"29
+[v _Temp1 Temp1 `s  1 e 2 0 ]
+"30
+[v _Temp2 Temp2 `s  1 e 2 0 ]
+"81 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X/Config.h
+[v _txt txt `[20]uc  1 e 20 0 ]
+"18 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X/Control.h
+[v _Get_PPM Get_PPM `C[5]uc  1 e 5 0 ]
+"19
+[v _Count_Control Count_Control `uc  1 e 1 0 ]
+"20
+[v _Paso_Control Paso_Control `uc  1 e 1 0 ]
+"21
+[v _Flag_Sensor Flag_Sensor `uc  1 e 1 0 ]
+"22
+[v _Muestras_Sensor Muestras_Sensor `uc  1 e 1 0 ]
+"23
+[v _Wait_Sensor Wait_Sensor `uc  1 e 1 0 ]
+"24
+[v _PPM_Muestra PPM_Muestra `us  1 e 2 0 ]
+"25
+[v _PPM_Old PPM_Old `us  1 e 2 0 ]
+"26
+[v _PPM PPM `s  1 e 2 0 ]
+"32
+[v _Arranque_Count Arranque_Count `uc  1 e 1 0 ]
+"33
+[v _Arranque_Flag Arranque_Flag `uc  1 e 1 0 ]
+"27 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X/Timers.h
+[v _Flag10ms Flag10ms `uc  1 e 1 0 ]
+"50
+[v _Enable_Rele Enable_Rele `[10]uc  1 e 10 0 ]
+"51
+[v _Wait_Rele Wait_Rele `[10]ui  1 e 20 0 ]
+"52
+[v _Tiempo_Rele Tiempo_Rele `[10]ui  1 e 20 0 ]
+"68
+[v _Cambio_Estado Cambio_Estado `uc  1 e 1 0 ]
+"69
+[v _Status_In Status_In `[10]uc  1 e 10 0 ]
+"70
+[v _Old_In Old_In `[10]uc  1 e 10 0 ]
+"23 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X/Uart.h
+[v _Buffer Buffer `VE[150]uc  1 e 150 0 ]
+"24
+[v _BufferIndex BufferIndex `VEuc  1 e 1 0 ]
+"25
+[v _FlagBuffer FlagBuffer `VEa  1 e 1 0 ]
+"26
+[v _FlagOverflow FlagOverflow `VEa  1 e 1 0 ]
+"80 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\ADC.c
+[v _ntcTemp ntcTemp `C[41]s  1 s 82 ntcTemp ]
+"89
+[v _ntcAdc ntcAdc `C[41]us  1 s 82 ntcAdc ]
+"230 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+[s S1537 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"245
+[u S1544 . 1 `S1537 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES1544  1 e 1 @3931 ]
+"275
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"325
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+[s S906 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+"339
+[u S912 . 1 `S906 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES912  1 e 1 @3933 ]
+"359
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"421
+[v _ANSELE ANSELE `VEuc  1 e 1 @3935 ]
+[s S1554 . 1 `uc 1 ANSE0 1 0 :1:0 
+`uc 1 ANSE1 1 0 :1:1 
+`uc 1 ANSE2 1 0 :1:2 
+]
+"433
+[u S1558 . 1 `S1554 1 . 1 0 ]
+[v _ANSELEbits ANSELEbits `VES1558  1 e 1 @3935 ]
+[s S726 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"3203
+[s S735 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S742 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S749 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S753 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S756 . 1 `S726 1 . 1 0 `S735 1 . 1 0 `S742 1 . 1 0 `S749 1 . 1 0 `S753 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES756  1 e 1 @3970 ]
+[s S793 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"3334
+[s S802 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S811 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S814 . 1 `S793 1 . 1 0 `S802 1 . 1 0 `S811 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES814  1 e 1 @3971 ]
+[s S675 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"3458
+[s S680 . 1 `uc 1 CK1SPP 1 0 :1:0 
+`uc 1 CK2SPP 1 0 :1:1 
+`uc 1 OESPP 1 0 :1:2 
+]
+[s S684 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S689 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[s S694 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PB2 1 0 :1:2 
+]
+[u S697 . 1 `S675 1 . 1 0 `S680 1 . 1 0 `S684 1 . 1 0 `S689 1 . 1 0 `S694 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES697  1 e 1 @3972 ]
+"3889
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S595 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3916
+[s S604 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S613 . 1 `S595 1 . 1 0 `S604 1 . 1 0 ]
+[v _LATBbits LATBbits `VES613  1 e 1 @3978 ]
+"4103
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S635 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"4130
+[s S644 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S653 . 1 `S635 1 . 1 0 `S644 1 . 1 0 ]
+[v _LATDbits LATDbits `VES653  1 e 1 @3980 ]
+"4215
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S1473 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4656
+[s S1482 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S1491 . 1 `S1473 1 . 1 0 `S1482 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1491  1 e 1 @3986 ]
+"4846
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"5068
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S921 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"5098
+[s S930 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S937 . 1 `S921 1 . 1 0 `S930 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES937  1 e 1 @3988 ]
+"5246
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5468
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S1513 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 WPUE3 1 0 :1:7 
+]
+"5492
+[s S1519 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S1523 . 1 `S1513 1 . 1 0 `S1519 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES1523  1 e 1 @3990 ]
+[s S147 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 ACTIE 1 0 :1:7 
+]
+"6217
+[s S156 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIE 1 0 :1:7 
+]
+[s S163 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S166 . 1 `S147 1 . 1 0 `S156 1 . 1 0 `S163 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES166  1 e 1 @3997 ]
+[s S24 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 ACTIF 1 0 :1:7 
+]
+"6316
+[s S33 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 STIF 1 0 :1:7 
+]
+[s S40 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S43 . 1 `S24 1 . 1 0 `S33 1 . 1 0 `S40 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES43  1 e 1 @3998 ]
+[s S1128 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"7088
+[s S1137 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S1140 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S1144 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S1147 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[u S1150 . 1 `S1128 1 . 1 0 `S1137 1 . 1 0 `S1140 1 . 1 0 `S1144 1 . 1 0 `S1147 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES1150  1 e 1 @4011 ]
+[s S1042 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"7313
+[s S1051 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S1055 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 BRGH1 1 0 :1:2 
+]
+[s S1058 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S1061 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SENDB1 1 0 :1:3 
+]
+[s S1064 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SYNC1 1 0 :1:4 
+]
+[s S1067 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+]
+[s S1070 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX91 1 0 :1:6 
+]
+[s S1073 . 1 `uc 1 TX9D1 1 0 :1:0 
+]
+[s S1075 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 TXEN1 1 0 :1:5 
+]
+[u S1078 . 1 `S1042 1 . 1 0 `S1051 1 . 1 0 `S1055 1 . 1 0 `S1058 1 . 1 0 `S1061 1 . 1 0 `S1064 1 . 1 0 `S1067 1 . 1 0 `S1070 1 . 1 0 `S1073 1 . 1 0 `S1075 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES1078  1 e 1 @4012 ]
+"7549
+[v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
+"7587
+[v _RCREG1 RCREG1 `VEuc  1 e 1 @4014 ]
+"7625
+[v _SPBRG1 SPBRG1 `VEuc  1 e 1 @4015 ]
+"7763
+[v _SPBRGH1 SPBRGH1 `VEuc  1 e 1 @4016 ]
+[s S957 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"8759
+[s S966 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKTXP 1 0 :1:4 
+`uc 1 DTRXP 1 0 :1:5 
+]
+[s S970 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S975 . 1 `uc 1 ABDEN1 1 0 :1:0 
+`uc 1 WUE1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG161 1 0 :1:3 
+`uc 1 SCKP1 1 0 :1:4 
+`uc 1 DTRXP1 1 0 :1:5 
+`uc 1 RCIDL1 1 0 :1:6 
+`uc 1 ABDOVF1 1 0 :1:7 
+]
+[s S984 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXCKP1 1 0 :1:4 
+`uc 1 RXDTP1 1 0 :1:5 
+`uc 1 RCMT1 1 0 :1:6 
+]
+[s S989 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S992 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S995 . 1 `S957 1 . 1 0 `S966 1 . 1 0 `S970 1 . 1 0 `S975 1 . 1 0 `S984 1 . 1 0 `S989 1 . 1 0 `S992 1 . 1 0 ]
+[v _BAUDCON1bits BAUDCON1bits `VES995  1 e 1 @4024 ]
+"9634
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"9705
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"9773
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S1568 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"9813
+[s S1571 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S1575 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S1578 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S1581 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S1584 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S1587 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[s S1590 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S1593 . 1 `S1568 1 . 1 0 `S1571 1 . 1 0 `S1575 1 . 1 0 `S1578 1 . 1 0 `S1581 1 . 1 0 `S1584 1 . 1 0 `S1587 1 . 1 0 `S1590 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1593  1 e 1 @4034 ]
+"9868
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"9875
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"11824
+[v _T1GCON T1GCON `VEuc  1 e 1 @4044 ]
+"11955
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+[s S534 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+"11994
+[s S537 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[s S544 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 T1SOSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S553 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1OSCEN 1 0 :1:3 
+]
+[s S556 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN1 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RD161 1 0 :1:7 
+]
+[u S561 . 1 `S534 1 . 1 0 `S537 1 . 1 0 `S544 1 . 1 0 `S553 1 . 1 0 `S556 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES561  1 e 1 @4045 ]
+"12091
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"12111
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S212 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"12174
+[s S214 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S217 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S220 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S223 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S226 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S235 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S241 . 1 `S212 1 . 1 0 `S214 1 . 1 0 `S217 1 . 1 0 `S220 1 . 1 0 `S223 1 . 1 0 `S226 1 . 1 0 `S235 1 . 1 0 ]
+[v _RCONbits RCONbits `VES241  1 e 1 @4048 ]
+[s S405 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 HFIOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"12377
+[s S411 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S419 . 1 `S405 1 . 1 0 `S411 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES419  1 e 1 @4051 ]
+"12437
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S121 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"12457
+[s S128 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S132 . 1 `S121 1 . 1 0 `S128 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES132  1 e 1 @4053 ]
+"12514
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"12534
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S72 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13255
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S90 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S94 . 1 `S72 1 . 1 0 `S81 1 . 1 0 `S90 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES94  1 e 1 @4082 ]
+"153 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"35 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"64
+[v main@i i `uc  1 a 1 80 ]
+"80
+} 0
+"43 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 75 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 74 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 66 ]
+"70
+} 0
+"6 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Uart.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"24
+} 0
+"3 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Timers.c
+[v _Tmr_Oscilador_Init Tmr_Oscilador_Init `(v  1 e 1 0 ]
+{
+"7
+} 0
+"25
+[v _Tmr1_Init Tmr1_Init `(v  1 e 1 0 ]
+{
+"34
+} 0
+"9
+[v _Tmr0_Init Tmr0_Init `(v  1 e 1 0 ]
+{
+"15
+} 0
+"101
+[v _Refresh_In Refresh_In `(v  1 e 1 0 ]
+{
+"113
+[v Refresh_In@i i `i  1 a 2 5 ]
+"119
+} 0
+"68
+[v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
+{
+"69
+[v Proceso_Rele@i i `i  1 a 2 7 ]
+"99
+} 0
+"40 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Control.c
+[v _Proceso_Control Proceso_Control `(v  1 e 1 0 ]
+{
+"69
+} 0
+"4
+[v _Pedir_PPM Pedir_PPM `(v  1 e 1 0 ]
+{
+"7
+[v Pedir_PPM@i i `i  1 a 2 5 ]
+"14
+} 0
+"71
+[v _Proceso_Arranque Proceso_Arranque `(v  1 e 1 0 ]
+{
+"79
+} 0
+"81
+[v _Armado_Cerrado Armado_Cerrado `(v  1 e 1 0 ]
+{
+"85
+} 0
+"51 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\ADC.c
+[v _Proceso_ADC Proceso_ADC `(v  1 e 1 0 ]
+{
+"74
+} 0
+"137
+[v _Ntc_LeerTemperatura Ntc_LeerTemperatura `(s  1 e 2 0 ]
+{
+[v Ntc_LeerTemperatura@canal canal `uc  1 p 1 wreg ]
+"143
+[v Ntc_LeerTemperatura@v v `us  1 a 2 49 ]
+"141
+[v Ntc_LeerTemperatura@k k `uc  1 a 1 51 ]
+"139
+[v Ntc_LeerTemperatura@suma suma `us  1 a 2 47 ]
+"137
+[v Ntc_LeerTemperatura@canal canal `uc  1 p 1 wreg ]
+"139
+[v Ntc_LeerTemperatura@canal canal `uc  1 p 1 46 ]
+"149
+} 0
+"114
+[v _Ntc_ConvertirX16 Ntc_ConvertirX16 `(s  1 e 2 0 ]
+{
+"127
+[v Ntc_ConvertirX16@dA dA `l  1 a 4 39 ]
+"128
+[v Ntc_ConvertirX16@num num `l  1 a 4 31 ]
+"126
+[v Ntc_ConvertirX16@dT dT `l  1 a 4 27 ]
+"121
+[v Ntc_ConvertirX16@i i `uc  1 a 1 43 ]
+"114
+[v Ntc_ConvertirX16@adc adc `us  1 p 2 17 ]
+"131
+} 0
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 11 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 3 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 7 ]
+"129
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 13 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 12 ]
+[v ___aldiv@counter counter `uc  1 a 1 11 ]
+"7
+[v ___aldiv@dividend dividend `l  1 p 4 3 ]
+[v ___aldiv@divisor divisor `l  1 p 4 7 ]
+"41
+} 0
+"39 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\ADC.c
+[v _ADC_Leer ADC_Leer `(us  1 e 2 0 ]
+{
+[v ADC_Leer@canal canal `uc  1 p 1 wreg ]
+[v ADC_Leer@canal canal `uc  1 p 1 wreg ]
+"41
+[v ADC_Leer@canal canal `uc  1 p 1 7 ]
+"49
+} 0
+"63 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Uart.c
+[v _Get_Comando Get_Comando `(v  1 e 1 0 ]
+{
+"92
+[v Get_Comando@c_1405 c `uc  1 a 1 21 ]
+"75
+[v Get_Comando@c c `uc  1 a 1 20 ]
+"91
+[v Get_Comando@i_1404 i `i  1 a 2 15 ]
+"74
+[v Get_Comando@i i `i  1 a 2 13 ]
+"88
+[v Get_Comando@Tiempo_1401 Tiempo `i  1 a 2 8 ]
+"87
+[v Get_Comando@Fin_1399 Fin `i  1 a 2 6 ]
+"90
+[v Get_Comando@Coma_1403 Coma `uc  1 a 1 19 ]
+"89
+[v Get_Comando@Rele_1402 Rele `uc  1 a 1 10 ]
+"71
+[v Get_Comando@Tiempo Tiempo `ui  1 a 2 11 ]
+"70
+[v Get_Comando@Fin Fin `i  1 a 2 4 ]
+"73
+[v Get_Comando@Coma Coma `uc  1 a 1 18 ]
+"72
+[v Get_Comando@Rele Rele `uc  1 a 1 17 ]
+"66
+[v Get_Comando@Index Index `i  1 a 2 22 ]
+"63
+[v Get_Comando@Data Data `*.39uc  1 p 2 0 ]
+"107
+} 0
+"46
+[v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
+{
+"53
+[v Texto_IndexOf@j j `i  1 a 2 22 ]
+"52
+[v Texto_IndexOf@error error `i  1 a 2 16 ]
+"50
+[v Texto_IndexOf@i i `i  1 a 2 24 ]
+"48
+[v Texto_IndexOf@length_valor length_valor `i  1 a 2 20 ]
+"47
+[v Texto_IndexOf@length_texto length_texto `i  1 a 2 18 ]
+"46
+[v Texto_IndexOf@texto texto `*.39uc  1 p 2 7 ]
+[v Texto_IndexOf@valor valor `*.32uc  1 p 2 9 ]
+"61
+} 0
+"36
+[v _Texto_Length Texto_Length `(i  1 e 2 0 ]
+{
+"37
+[v Texto_Length@contador contador `i  1 a 2 5 ]
+"36
+[v Texto_Length@texto texto `*.35uc  1 p 2 3 ]
+"44
+} 0
+"36 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Timers.c
+[v _Power_Rele Power_Rele `(v  1 e 1 0 ]
+{
+[v Power_Rele@Rele Rele `uc  1 p 1 wreg ]
+[v Power_Rele@Rele Rele `uc  1 p 1 wreg ]
+[v Power_Rele@Tiempo Tiempo `ui  1 p 2 10 ]
+[v Power_Rele@Rele Rele `uc  1 p 1 12 ]
+"66
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 9 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 3 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 5 ]
+"30
+} 0
+"109 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Uart.c
+[v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
+{
+"123
+[v Imprime_Estado@i i `i  1 a 2 78 ]
+"119
+[v Imprime_Estado@R10 R10 `uc  1 a 1 77 ]
+"118
+[v Imprime_Estado@R9 R9 `uc  1 a 1 76 ]
+"117
+[v Imprime_Estado@R8 R8 `uc  1 a 1 75 ]
+"116
+[v Imprime_Estado@R7 R7 `uc  1 a 1 74 ]
+"115
+[v Imprime_Estado@R6 R6 `uc  1 a 1 73 ]
+"114
+[v Imprime_Estado@R5 R5 `uc  1 a 1 72 ]
+"113
+[v Imprime_Estado@R4 R4 `uc  1 a 1 71 ]
+"112
+[v Imprime_Estado@R3 R3 `uc  1 a 1 70 ]
+"111
+[v Imprime_Estado@R2 R2 `uc  1 a 1 69 ]
+"110
+[v Imprime_Estado@R1 R1 `uc  1 a 1 68 ]
+"136
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S2225 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+"13
+[s S2228 _IO_FILE 11 `S2225 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S2228  1 a 11 56 ]
+"12
+[v sprintf@ap ap `[1]*.30v  1 a 1 55 ]
+"9
+[v sprintf@s s `*.30uc  1 p 1 32 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 33 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 30 ]
+[s S2260 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.30S2260  1 p 1 26 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 27 ]
+[v vfprintf@ap ap `*.30*.30v  1 p 1 29 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S2273 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S2273  1 a 4 21 ]
+"1179
+[v vfpfcnvrt@cp cp `*.32uc  1 a 2 19 ]
+[v vfpfcnvrt@c c `uc  1 a 1 25 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 18 ]
+[s S2260 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.30S2260  1 p 1 13 ]
+[v vfpfcnvrt@fmt fmt `*.30*.32uc  1 p 1 14 ]
+[v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 15 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 3 ]
+[u S2225 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S2228 _IO_FILE 11 `S2225 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S2228  1 p 1 5 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 9 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 8 ]
+[v ___awmod@counter counter `uc  1 a 1 7 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 3 ]
+[v ___awmod@divisor divisor `i  1 p 2 5 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 9 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 8 ]
+[v ___awdiv@counter counter `uc  1 a 1 7 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 3 ]
+[v ___awdiv@divisor divisor `i  1 p 2 5 ]
+"41
+} 0
+"31 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Uart.c
+[v _UART_Print UART_Print `(v  1 e 1 0 ]
+{
+[v UART_Print@cad cad `*.35Cuc  1 p 2 4 ]
+"33
+} 0
+"26
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@dato dato `uc  1 p 1 wreg ]
+[v UART_Write@dato dato `uc  1 p 1 wreg ]
+[v UART_Write@dato dato `uc  1 p 1 3 ]
+"29
+} 0
+"4 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Config.c
+[v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
+{
+"24
+} 0
+"3 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\ADC.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"32
+} 0
+"16 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Control.c
+[v _Cargar_PPM Cargar_PPM `(f  1 e 4 0 ]
+{
+"30
+[v Cargar_PPM@uE uE `ui  1 a 2 61 ]
+"21
+[v Cargar_PPM@i i `i  1 a 2 64 ]
+"20
+[v Cargar_PPM@iBuffer iBuffer `[10]i  1 a 20 35 ]
+"17
+[v Cargar_PPM@rEthy rEthy `f  1 a 4 57 ]
+"18
+[v Cargar_PPM@iCntEthy iCntEthy `i  1 a 2 55 ]
+"19
+[v Cargar_PPM@cFlagEthy cFlagEthy `uc  1 a 1 63 ]
+"38
+} 0
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 13 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 12 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 3 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 11 ]
+"44
+} 0
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 22 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 15 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 20 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 27 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 26 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 19 ]
+"11
+[v ___fldiv@b b `d  1 p 4 3 ]
+[v ___fldiv@a a `d  1 p 4 7 ]
+"185
+} 0
+"15 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Main.c
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"17
+[v ISR@dato dato `uc  1 a 1 2 ]
+"33
+} 0
+"17 C:\Users\LENOVO\Documents\Gasificado\Gasificador_k50.X\Timers.c
+[v _Tmr0_Reset Tmr0_Reset `(v  1 e 1 0 ]
+{
+"23
+} 0
