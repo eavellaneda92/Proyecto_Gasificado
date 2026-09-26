@@ -142,21 +142,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32 ./Uart.h
 [; ;./Uart.h: 32:     void Get_Comando(char *Data);
 [v _Get_Comando `(v ~T0 @X0 0 ef1`*uc ]
-"29 ./Control.h
-[; ;./Control.h: 29:     float Cargar_PPM(void);
-[v _Cargar_PPM `(f ~T0 @X0 0 ef ]
 "25 ./ADC.h
 [; ;./ADC.h: 25:     void Proceso_ADC(void);
 [v _Proceso_ADC `(v ~T0 @X0 0 ef ]
 "55 ./Timers.h
 [; ;./Timers.h: 55:     void Proceso_Rele(void);
 [v _Proceso_Rele `(v ~T0 @X0 0 ef ]
-"27 ./Control.h
-[; ;./Control.h: 27:     void Proceso_Control(void);
-[v _Proceso_Control `(v ~T0 @X0 0 ef ]
-"34
-[; ;./Control.h: 34:     void Proceso_Arranque(void);
+"33 ./Control.h
+[; ;./Control.h: 33:     void Proceso_Arranque(void);
 [v _Proceso_Arranque `(v ~T0 @X0 0 ef ]
+"68
+[; ;./Control.h: 68:     void Proceso_Heater(void);
+[v _Proceso_Heater `(v ~T0 @X0 0 ef ]
 "16 ./Config.h
 [p x PLLSEL  =  PLL3X        ]
 "17
@@ -1080,14 +1077,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _PPM
 -> -> 0 `i `s
 ]
-"32
-[; ;./Control.h: 32:     uint8_t Arranque_Count= 0;
+"31
+[; ;./Control.h: 31:     uint8_t Arranque_Count = 0;
 [v _Arranque_Count `uc ~T0 @X0 1 e ]
 [i _Arranque_Count
 -> -> 0 `i `uc
 ]
-"33
-[; ;./Control.h: 33:     uint8_t Arranque_Flag= 0;
+"32
+[; ;./Control.h: 32:     uint8_t Arranque_Flag = 0;
 [v _Arranque_Flag `uc ~T0 @X0 1 e ]
 [i _Arranque_Flag
 -> -> 0 `i `uc
@@ -1151,6 +1148,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Tiempo_Iny_Gas `us ~T0 @X0 1 e ]
 [i _Tiempo_Iny_Gas
 -> -> 0 `i `us
+]
+"67
+[; ;./Control.h: 67:     uint8_t Tiempo_Heater = 0;
+[v _Tiempo_Heater `uc ~T0 @X0 1 e ]
+[i _Tiempo_Heater
+-> -> 0 `i `uc
 ]
 [v $root$_ISR `(v ~T0 @X0 0 e ]
 "15 Main.c
@@ -1263,108 +1266,67 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> _FlagBuffer `i -> 0 `i 671  ]
 {
 "51
-[; ;Main.c: 51:             if (Flag_Sensor == 0) Get_Comando((char *) Buffer);
-[e $ ! == -> _Flag_Sensor `i -> 0 `i 672  ]
+[; ;Main.c: 51:             Get_Comando((char *) Buffer);
 [e ( _Get_Comando (1 -> &U _Buffer `*uc ]
-[e $U 673  ]
-"52
-[; ;Main.c: 52:             else {
-[e :U 672 ]
-{
 "53
-[; ;Main.c: 53:                 PPM_Muestra = (uint16_t) Cargar_PPM();
-[e = _PPM_Muestra -> ( _Cargar_PPM ..  `us ]
-"54
-[; ;Main.c: 54:                 if (PPM_Muestra < PPM_Old) PPM_Old = PPM_Muestra;
-[e $ ! < -> _PPM_Muestra `ui -> _PPM_Old `ui 674  ]
-[e = _PPM_Old _PPM_Muestra ]
-[e :U 674 ]
-"55
-[; ;Main.c: 55:                 Muestras_Sensor++;
-[e ++ _Muestras_Sensor -> -> 1 `i `uc ]
-"56
-[; ;Main.c: 56:                 if (Muestras_Sensor >= 5) {
-[e $ ! >= -> _Muestras_Sensor `i -> 5 `i 675  ]
-{
-"57
-[; ;Main.c: 57:                     PPM = (int16_t) PPM_Old;
-[e = _PPM -> _PPM_Old `s ]
-"58
-[; ;Main.c: 58:                     PPM_Old = 1000;
-[e = _PPM_Old -> -> 1000 `i `us ]
-"59
-[; ;Main.c: 59:                     Muestras_Sensor = 0;
-[e = _Muestras_Sensor -> -> 0 `i `uc ]
-"60
-[; ;Main.c: 60:                 }
-}
-[e :U 675 ]
-"61
-[; ;Main.c: 61:                 Flag_Sensor = 0;
-[e = _Flag_Sensor -> -> 0 `i `uc ]
-"62
-[; ;Main.c: 62:             }
-}
-[e :U 673 ]
-"64
-[; ;Main.c: 64:             for (uint8_t i = 0; i < 150u; i++) Buffer[i] = '\0';
+[; ;Main.c: 53:             for (uint8_t i = 0; i < 150u; i++) Buffer[i] = '\0';
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `ui -> 150 `ui 676  ]
-[e $U 677  ]
-[e :U 676 ]
+[e $ < -> _i `ui -> 150 `ui 672  ]
+[e $U 673  ]
+[e :U 672 ]
 [e = *U + &U _Buffer * -> _i `ux -> -> # *U &U _Buffer `ui `ux -> -> 0 `ui `uc ]
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `ui -> 150 `ui 676  ]
-[e :U 677 ]
+[e $ < -> _i `ui -> 150 `ui 672  ]
+[e :U 673 ]
 }
-"65
-[; ;Main.c: 65:             BufferIndex = 0;
+"54
+[; ;Main.c: 54:             BufferIndex = 0;
 [e = _BufferIndex -> -> 0 `i `uc ]
-"66
-[; ;Main.c: 66:             FlagBuffer = 0;
+"55
+[; ;Main.c: 55:             FlagBuffer = 0;
 [e = _FlagBuffer -> -> 0 `i `a ]
-"67
-[; ;Main.c: 67:         }
+"56
+[; ;Main.c: 56:         }
 }
 [e :U 671 ]
-"70
-[; ;Main.c: 70:         if (Flag10ms) {
-[e $ ! != -> _Flag10ms `i -> 0 `i 679  ]
+"59
+[; ;Main.c: 59:         if (Flag10ms) {
+[e $ ! != -> _Flag10ms `i -> 0 `i 675  ]
 {
-"71
-[; ;Main.c: 71:             Refresh_In();
+"60
+[; ;Main.c: 60:             Refresh_In();
 [e ( _Refresh_In ..  ]
-"72
-[; ;Main.c: 72:             Proceso_ADC();
+"61
+[; ;Main.c: 61:             Proceso_ADC();
 [e ( _Proceso_ADC ..  ]
-"73
-[; ;Main.c: 73:             Proceso_Rele();
+"62
+[; ;Main.c: 62:             Proceso_Rele();
 [e ( _Proceso_Rele ..  ]
-"74
-[; ;Main.c: 74:             Proceso_Control();
-[e ( _Proceso_Control ..  ]
-"75
-[; ;Main.c: 75:             Proceso_Arranque();
+"63
+[; ;Main.c: 63:             Proceso_Arranque();
 [e ( _Proceso_Arranque ..  ]
-"76
-[; ;Main.c: 76:             Flag10ms = 0;
+"64
+[; ;Main.c: 64:             Proceso_Heater();
+[e ( _Proceso_Heater ..  ]
+"65
+[; ;Main.c: 65:             Flag10ms = 0;
 [e = _Flag10ms -> -> 0 `i `uc ]
-"77
-[; ;Main.c: 77:         }
+"66
+[; ;Main.c: 66:         }
 }
-[e :U 679 ]
-"78
-[; ;Main.c: 78:         __asm(" clrwdt");
+[e :U 675 ]
+"67
+[; ;Main.c: 67:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
-"79
-[; ;Main.c: 79:     }
+"68
+[; ;Main.c: 68:     }
 }
 [e :U 668 ]
 [e $U 669  ]
 [e :U 670 ]
-"80
-[; ;Main.c: 80: }
+"69
+[; ;Main.c: 69: }
 [e :UE 667 ]
 }

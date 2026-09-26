@@ -48,18 +48,7 @@ void main(void) {
     while (1) {
         /*CONSULTA POR BUFFER*/
         if (FlagBuffer) {
-            if (Flag_Sensor == 0) Get_Comando((char *) Buffer);
-            else {
-                PPM_Muestra = (uint16_t) Cargar_PPM();
-                if (PPM_Muestra < PPM_Old) PPM_Old = PPM_Muestra;
-                Muestras_Sensor++;
-                if (Muestras_Sensor >= 5) {
-                    PPM = (int16_t) PPM_Old;
-                    PPM_Old = 1000;
-                    Muestras_Sensor = 0;
-                }
-                Flag_Sensor = 0;
-            }
+            Get_Comando((char *) Buffer);
             //AQUI ANALIZA SI HAY UN COMANDO
             for (uint8_t i = 0; i < BUFFER_SIZE; i++) Buffer[i] = '\0';
             BufferIndex = 0;
@@ -71,8 +60,8 @@ void main(void) {
             Refresh_In();
             Proceso_ADC();
             Proceso_Rele();
-            Proceso_Control();
             Proceso_Arranque();
+            Proceso_Heater();
             Flag10ms = 0;
         }
         CLRWDT();

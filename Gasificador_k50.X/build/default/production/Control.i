@@ -8549,13 +8549,12 @@ char *tempnam(const char *, const char *);
     uint16_t PPM_Muestra = 0;
     uint16_t PPM_Old = 0;
     int16_t PPM = 0;
-    void Proceso_Control(void);
     void Pedir_PPM(void);
     float Cargar_PPM(void);
 
 
-    uint8_t Arranque_Count= 0;
-    uint8_t Arranque_Flag= 0;
+    uint8_t Arranque_Count = 0;
+    uint8_t Arranque_Flag = 0;
     void Proceso_Arranque(void);
 # 47 "./Control.h"
     void Armado_Cerrado(void);
@@ -8576,6 +8575,20 @@ char *tempnam(const char *, const char *);
     uint16_t Tiempo_Damper = 0;
     uint16_t Tiempo_Iny_Liquido = 0;
     uint16_t Tiempo_Iny_Gas = 0;
+
+
+    uint8_t Tiempo_Heater = 0;
+    void Proceso_Heater(void);
+
+    void Inyecta_Liquido(void);
+    void Inyecta_Gas(void);
+    void Damper_Abrir(void);
+    void Damper_Cerrar(void);
+    void Evaporador_On(void);
+    void Evaporador_Off(void);
+    void Ventilador_On(void);
+    void Ventilador_Off(void);
+    void Respuestas_RS485(char *Mensaje);
 # 2 "Control.c" 2
 # 1 "./Uart.h" 1
 # 23 "./Uart.h"
@@ -8594,6 +8607,32 @@ char *tempnam(const char *, const char *);
 
     void Imprime_Estado(void);
 # 3 "Control.c" 2
+# 1 "./ADC.h" 1
+# 19 "./ADC.h"
+    void ADC_Init(void);
+    uint16_t ADC_Leer(uint8_t canal);
+
+    uint8_t Paso_ADC = 0;
+    uint8_t Count_ADC = 0;
+
+    void Proceso_ADC(void);
+
+    uint16_t Current1 = 0;
+    uint16_t Current2 = 0;
+    int16_t Temp1 = 0;
+    int16_t Temp2 = 0;
+
+
+
+
+
+
+
+    int16_t Ntc_ConvertirX16(uint16_t adc_x16);
+
+
+    int16_t Ntc_LeerTemperatura(uint8_t canal);
+# 4 "Control.c" 2
 
 void Pedir_PPM(void) {
     LATBbits.LATB6 = 1;
@@ -8631,37 +8670,6 @@ float Cargar_PPM(void) {
     return rEthy;
 }
 
-void Proceso_Control(void) {
-    Count_Control++;
-    if (Count_Control >= 200) {
-
-        if (Paso_Control == 0) {
-            Wait_Sensor = 0;
-            Pedir_PPM();
-        }
-
-
-        if (Paso_Control == 1) {
-            Imprime_Estado();
-        }
-
-        Paso_Control++;
-        if (Paso_Control >= 2) {
-            Paso_Control = 0;
-        }
-        Count_Control = 0;
-    }
-    if (Flag_Sensor == 1) {
-        Wait_Sensor++;
-        if (Wait_Sensor > 50) {
-            PPM_Old = 1000;
-            PPM = -1;
-            Wait_Sensor = 0;
-            Flag_Sensor = 0;
-        }
-    }
-}
-
 void Proceso_Arranque(void) {
     if (Arranque_Flag == 0) {
         Arranque_Count++;
@@ -8673,11 +8681,85 @@ void Proceso_Arranque(void) {
 }
 
 void Armado_Cerrado(void) {
-    Power_Rele(LATBbits.LATB0,30000);
-    Power_Rele(LATDbits.LATD6,20000);
-    Power_Rele(LATDbits.LATD4,20000);
+    Power_Rele(LATBbits.LATB0, 30000);
+    Power_Rele(LATDbits.LATD7, 20000);
+    Power_Rele(LATDbits.LATD5, 20000);
 }
 
 void Armado_Ventila(void) {
-    Power_Rele(LATBbits.LATB1,30000);
+    Power_Rele(LATBbits.LATB1, 30000);
+}
+
+void Proceso_Heater(void) {
+    if (Arranque_Flag == 1) {
+        Tiempo_Heater++;
+        if (Tiempo_Heater >= 200) {
+            if (Temp1 > SP_Temp + 10) LATBbits.LATB3 = 1;
+            if (Temp1 < SP_Temp - 10) {
+                if (Channel_Heater == 0) LATBbits.LATB3 = 0;
+                else LATBbits.LATB2 = 0;
+            }
+            Tiempo_Heater = 0;
+        }
+    }
+}
+
+void Inyecta_Liquido(void) {
+    Power_Rele(LATDbits.LATD4, Tiempo_Iny_Liquido);
+    for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
+        _delay((unsigned long)((1)*(16000000UL/4000.0)));
+        __asm(" clrwdt");
+    }
+    Power_Rele(LATDbits.LATD5, Tiempo_Iny_Liquido * 1.5);
+    Respuestas_RS485("INYECCION_LIQUIDO_OK");
+}
+
+void Inyecta_Gas(void) {
+    Power_Rele(LATDbits.LATD6, Tiempo_Iny_Gas);
+    for (int i = 0; i < Tiempo_Iny_Gas; i++) {
+        _delay((unsigned long)((1)*(16000000UL/4000.0)));
+        __asm(" clrwdt");
+    }
+    Power_Rele(LATDbits.LATD6, Tiempo_Iny_Gas * 1.5);
+    Respuestas_RS485("INYECCION_GAS_OK");
+}
+
+void Damper_Abrir(void) {
+    Power_Rele(LATBbits.LATB1, Tiempo_Damper);
+    Respuestas_RS485("DAMPER_OPEN_OK");
+}
+
+void Damper_Cerrar(void) {
+    Power_Rele(LATBbits.LATB0, Tiempo_Damper * 1.5);
+    Respuestas_RS485("DAMPER_CLOSE_OK");
+}
+
+void Evaporador_On(void) {
+    LATBbits.LATB5 = 0;
+    Respuestas_RS485("EVAPORADOR_ON_OK");
+}
+
+void Evaporador_Off(void) {
+    LATBbits.LATB5 = 1;
+    Respuestas_RS485("EVAPORADOR_OFF_OK");
+}
+
+void Ventilador_On(void) {
+    LATBbits.LATB4 = 0;
+    Respuestas_RS485("VENTILADOR_ON_OK");
+}
+
+void Ventilador_Off(void) {
+    LATBbits.LATB4 = 1;
+    Respuestas_RS485("VENTILADOR_OFF_OK");
+}
+
+void Respuestas_RS485(char *Mensaje) {
+    LATBbits.LATB6 = 1;
+    _delay((unsigned long)((5)*(16000000UL/4000.0)));
+    UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"Respuesta:");
+    UART_Print(Mensaje);
+    UART_Print("\"}");
+    _delay((unsigned long)((5)*(16000000UL/4000.0)));
+    LATBbits.LATB6 = 0;
 }

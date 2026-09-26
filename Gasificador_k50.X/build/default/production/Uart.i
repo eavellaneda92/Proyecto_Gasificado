@@ -8598,13 +8598,12 @@ char *tempnam(const char *, const char *);
     uint16_t PPM_Muestra = 0;
     uint16_t PPM_Old = 0;
     int16_t PPM = 0;
-    void Proceso_Control(void);
     void Pedir_PPM(void);
     float Cargar_PPM(void);
 
 
-    uint8_t Arranque_Count= 0;
-    uint8_t Arranque_Flag= 0;
+    uint8_t Arranque_Count = 0;
+    uint8_t Arranque_Flag = 0;
     void Proceso_Arranque(void);
 # 47 "./Control.h"
     void Armado_Cerrado(void);
@@ -8625,6 +8624,20 @@ char *tempnam(const char *, const char *);
     uint16_t Tiempo_Damper = 0;
     uint16_t Tiempo_Iny_Liquido = 0;
     uint16_t Tiempo_Iny_Gas = 0;
+
+
+    uint8_t Tiempo_Heater = 0;
+    void Proceso_Heater(void);
+
+    void Inyecta_Liquido(void);
+    void Inyecta_Gas(void);
+    void Damper_Abrir(void);
+    void Damper_Cerrar(void);
+    void Evaporador_On(void);
+    void Evaporador_Off(void);
+    void Ventilador_On(void);
+    void Ventilador_Off(void);
+    void Respuestas_RS485(char *Mensaje);
 # 5 "Uart.c" 2
 
 void UART_Init(void) {
@@ -8720,11 +8733,67 @@ void Get_Comando(char *Data) {
                         if (Coma == 1) Tiempo = Tiempo * 10 + c - 48;
                     }
                 }
+                uint8_t Estado = 0;
+                if(Tiempo == 0) Estado = 1;
+                else Estado = 0;
+                switch (Rele) {
+                    case 0: LATBbits.LATB5 = Estado;
+                        break;
+                    case 1: LATBbits.LATB4 = Estado;
+                        break;
+                    case 2: LATBbits.LATB3 = Estado;
+                        break;
+                    case 3: LATBbits.LATB2 = Estado;
+                        break;
+                    case 4: LATBbits.LATB1 = Estado;
+                        break;
+                    case 5: LATBbits.LATB0 = Estado;
+                        break;
+                    case 6: LATDbits.LATD7 = Estado;
+                        break;
+                    case 7: LATDbits.LATD6 = Estado;
+                        break;
+                    case 8: LATDbits.LATD5 = Estado;
+                        break;
+                    case 9: LATDbits.LATD4 = Estado;
+                        break;
+                }
             }
 
             Index = Texto_IndexOf(Data, "STATUS");
             if (Index >= 0) {
                 Imprime_Estado();
+            }
+
+
+            Index = Texto_IndexOf(Data, "INY_LIQUIDO");
+            if (Index >= 0) {
+                Inyecta_Liquido();
+            }
+
+            Index = Texto_IndexOf(Data, "INY_GAS");
+            if (Index >= 0) {
+                Inyecta_Gas();
+            }
+
+            Index = Texto_IndexOf(Data, "DAMPER_OPEN");
+            if (Index >= 0) {
+                Damper_Abrir();
+            }
+
+            Index = Texto_IndexOf(Data, "DAMPER_CLOSE");
+            if (Index >= 0) {
+                Damper_Cerrar();
+            }
+
+            Index = Texto_IndexOf(Data, "EVAPORADOR_ON");
+            if (Index >= 0) {
+                Evaporador_On();
+            }
+
+            Index = Texto_IndexOf(Data, "EVAPORADOR_OFF");
+            if (Index >= 0) {
+                Evaporador_Off();
             }
         }
     }
@@ -8754,6 +8823,8 @@ void Imprime_Estado(void) {
     UART_Print(",");
     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
     UART_Print(txt);
+    UART_Print(",");
+    sprintf(txt, "%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas);
     UART_Print("\"}");
     _delay((unsigned long)((5)*(16000000UL/4000.0)));
     LATBbits.LATB6 = 0;

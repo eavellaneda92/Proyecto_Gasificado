@@ -8599,13 +8599,12 @@ char *tempnam(const char *, const char *);
     uint16_t PPM_Muestra = 0;
     uint16_t PPM_Old = 0;
     int16_t PPM = 0;
-    void Proceso_Control(void);
     void Pedir_PPM(void);
     float Cargar_PPM(void);
 
 
-    uint8_t Arranque_Count= 0;
-    uint8_t Arranque_Flag= 0;
+    uint8_t Arranque_Count = 0;
+    uint8_t Arranque_Flag = 0;
     void Proceso_Arranque(void);
 # 47 "./Control.h"
     void Armado_Cerrado(void);
@@ -8626,6 +8625,20 @@ char *tempnam(const char *, const char *);
     uint16_t Tiempo_Damper = 0;
     uint16_t Tiempo_Iny_Liquido = 0;
     uint16_t Tiempo_Iny_Gas = 0;
+
+
+    uint8_t Tiempo_Heater = 0;
+    void Proceso_Heater(void);
+
+    void Inyecta_Liquido(void);
+    void Inyecta_Gas(void);
+    void Damper_Abrir(void);
+    void Damper_Cerrar(void);
+    void Evaporador_On(void);
+    void Evaporador_Off(void);
+    void Ventilador_On(void);
+    void Ventilador_Off(void);
+    void Respuestas_RS485(char *Mensaje);
 # 14 "Main.c" 2
 
 void __attribute__((picinterrupt(("")))) ISR(void) {
@@ -8664,18 +8677,7 @@ void main(void) {
     while (1) {
 
         if (FlagBuffer) {
-            if (Flag_Sensor == 0) Get_Comando((char *) Buffer);
-            else {
-                PPM_Muestra = (uint16_t) Cargar_PPM();
-                if (PPM_Muestra < PPM_Old) PPM_Old = PPM_Muestra;
-                Muestras_Sensor++;
-                if (Muestras_Sensor >= 5) {
-                    PPM = (int16_t) PPM_Old;
-                    PPM_Old = 1000;
-                    Muestras_Sensor = 0;
-                }
-                Flag_Sensor = 0;
-            }
+            Get_Comando((char *) Buffer);
 
             for (uint8_t i = 0; i < 150u; i++) Buffer[i] = '\0';
             BufferIndex = 0;
@@ -8687,8 +8689,8 @@ void main(void) {
             Refresh_In();
             Proceso_ADC();
             Proceso_Rele();
-            Proceso_Control();
             Proceso_Arranque();
+            Proceso_Heater();
             Flag10ms = 0;
         }
         __asm(" clrwdt");

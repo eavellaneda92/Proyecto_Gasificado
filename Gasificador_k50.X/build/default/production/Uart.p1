@@ -184,9 +184,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "54 ./Timers.h
 [; ;./Timers.h: 54:     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
 [v _Power_Rele `(v ~T0 @X0 0 ef2`uc`ui ]
-"36 ./Uart.h
-[; ;./Uart.h: 36:     void Imprime_Estado(void);
-[v _Imprime_Estado `(v ~T0 @X0 0 ef ]
 "3895 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 3895:     struct {
 [s S167 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -217,6 +214,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4130
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 4130: extern volatile LATDbits_t LATDbits __attribute__((address(0xF8C)));
 [v _LATDbits `VS172 ~T0 @X0 0 e@3980 ]
+"36 ./Uart.h
+[; ;./Uart.h: 36:     void Imprime_Estado(void);
+[v _Imprime_Estado `(v ~T0 @X0 0 ef ]
+"70 ./Control.h
+[; ;./Control.h: 70:     void Inyecta_Liquido(void);
+[v _Inyecta_Liquido `(v ~T0 @X0 0 ef ]
+"71
+[; ;./Control.h: 71:     void Inyecta_Gas(void);
+[v _Inyecta_Gas `(v ~T0 @X0 0 ef ]
+"72
+[; ;./Control.h: 72:     void Damper_Abrir(void);
+[v _Damper_Abrir `(v ~T0 @X0 0 ef ]
+"73
+[; ;./Control.h: 73:     void Damper_Cerrar(void);
+[v _Damper_Cerrar `(v ~T0 @X0 0 ef ]
+"74
+[; ;./Control.h: 74:     void Evaporador_On(void);
+[v _Evaporador_On `(v ~T0 @X0 0 ef ]
+"75
+[; ;./Control.h: 75:     void Evaporador_Off(void);
+[v _Evaporador_Off `(v ~T0 @X0 0 ef ]
 [v F205 `(v ~T0 @X0 1 tf1`ul ]
 "20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
 [v __delay `JF205 ~T0 @X0 0 e ]
@@ -1147,14 +1165,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _PPM
 -> -> 0 `i `s
 ]
-"32
-[; ;./Control.h: 32:     uint8_t Arranque_Count= 0;
+"31
+[; ;./Control.h: 31:     uint8_t Arranque_Count = 0;
 [v _Arranque_Count `uc ~T0 @X0 1 e ]
 [i _Arranque_Count
 -> -> 0 `i `uc
 ]
-"33
-[; ;./Control.h: 33:     uint8_t Arranque_Flag= 0;
+"32
+[; ;./Control.h: 32:     uint8_t Arranque_Flag = 0;
 [v _Arranque_Flag `uc ~T0 @X0 1 e ]
 [i _Arranque_Flag
 -> -> 0 `i `uc
@@ -1218,6 +1236,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Tiempo_Iny_Gas `us ~T0 @X0 1 e ]
 [i _Tiempo_Iny_Gas
 -> -> 0 `i `us
+]
+"67
+[; ;./Control.h: 67:     uint8_t Tiempo_Heater = 0;
+[v _Tiempo_Heater `uc ~T0 @X0 1 e ]
+[i _Tiempo_Heater
+-> -> 0 `i `uc
 ]
 "6 Uart.c
 [; ;Uart.c: 6: void UART_Init(void) {
@@ -1598,154 +1622,357 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 702 ]
 }
 "99
-[; ;Uart.c: 99:             }
-}
-[e :U 700 ]
+[; ;Uart.c: 99:                 uint8_t Estado = 0;
+[v _Estado `uc ~T0 @X0 1 a ]
+[e = _Estado -> -> 0 `i `uc ]
+"100
+[; ;Uart.c: 100:                 if(Tiempo == 0) Estado = 1;
+[e $ ! == _Tiempo -> 0 `i 709  ]
+[e = _Estado -> -> 1 `i `uc ]
+[e $U 710  ]
 "101
-[; ;Uart.c: 101:             Index = Texto_IndexOf(Data, "STATUS");
-[e = _Index ( _Texto_IndexOf (2 , _Data :s 7C ]
+[; ;Uart.c: 101:                 else Estado = 0;
+[e :U 709 ]
+[e = _Estado -> -> 0 `i `uc ]
+[e :U 710 ]
 "102
-[; ;Uart.c: 102:             if (Index >= 0) {
-[e $ ! >= _Index -> 0 `i 709  ]
+[; ;Uart.c: 102:                 switch (Rele) {
+[e $U 712  ]
 {
 "103
-[; ;Uart.c: 103:                 Imprime_Estado();
-[e ( _Imprime_Estado ..  ]
+[; ;Uart.c: 103:                     case 0: LATBbits.LATB5 = Estado;
+[e :U 713 ]
+[e = . . _LATBbits 0 5 _Estado ]
 "104
-[; ;Uart.c: 104:             }
-}
-[e :U 709 ]
+[; ;Uart.c: 104:                         break;
+[e $U 711  ]
 "105
-[; ;Uart.c: 105:         }
+[; ;Uart.c: 105:                     case 1: LATBbits.LATB4 = Estado;
+[e :U 714 ]
+[e = . . _LATBbits 0 4 _Estado ]
+"106
+[; ;Uart.c: 106:                         break;
+[e $U 711  ]
+"107
+[; ;Uart.c: 107:                     case 2: LATBbits.LATB3 = Estado;
+[e :U 715 ]
+[e = . . _LATBbits 0 3 _Estado ]
+"108
+[; ;Uart.c: 108:                         break;
+[e $U 711  ]
+"109
+[; ;Uart.c: 109:                     case 3: LATBbits.LATB2 = Estado;
+[e :U 716 ]
+[e = . . _LATBbits 0 2 _Estado ]
+"110
+[; ;Uart.c: 110:                         break;
+[e $U 711  ]
+"111
+[; ;Uart.c: 111:                     case 4: LATBbits.LATB1 = Estado;
+[e :U 717 ]
+[e = . . _LATBbits 0 1 _Estado ]
+"112
+[; ;Uart.c: 112:                         break;
+[e $U 711  ]
+"113
+[; ;Uart.c: 113:                     case 5: LATBbits.LATB0 = Estado;
+[e :U 718 ]
+[e = . . _LATBbits 0 0 _Estado ]
+"114
+[; ;Uart.c: 114:                         break;
+[e $U 711  ]
+"115
+[; ;Uart.c: 115:                     case 6: LATDbits.LATD7 = Estado;
+[e :U 719 ]
+[e = . . _LATDbits 0 7 _Estado ]
+"116
+[; ;Uart.c: 116:                         break;
+[e $U 711  ]
+"117
+[; ;Uart.c: 117:                     case 7: LATDbits.LATD6 = Estado;
+[e :U 720 ]
+[e = . . _LATDbits 0 6 _Estado ]
+"118
+[; ;Uart.c: 118:                         break;
+[e $U 711  ]
+"119
+[; ;Uart.c: 119:                     case 8: LATDbits.LATD5 = Estado;
+[e :U 721 ]
+[e = . . _LATDbits 0 5 _Estado ]
+"120
+[; ;Uart.c: 120:                         break;
+[e $U 711  ]
+"121
+[; ;Uart.c: 121:                     case 9: LATDbits.LATD4 = Estado;
+[e :U 722 ]
+[e = . . _LATDbits 0 4 _Estado ]
+"122
+[; ;Uart.c: 122:                         break;
+[e $U 711  ]
+"123
+[; ;Uart.c: 123:                 }
+}
+[e $U 711  ]
+[e :U 712 ]
+[e [\ _Rele , $ -> 0 `i 713
+ , $ -> 1 `i 714
+ , $ -> 2 `i 715
+ , $ -> 3 `i 716
+ , $ -> 4 `i 717
+ , $ -> 5 `i 718
+ , $ -> 6 `i 719
+ , $ -> 7 `i 720
+ , $ -> 8 `i 721
+ , $ -> 9 `i 722
+ 711 ]
+[e :U 711 ]
+"124
+[; ;Uart.c: 124:             }
+}
+[e :U 700 ]
+"126
+[; ;Uart.c: 126:             Index = Texto_IndexOf(Data, "STATUS");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 7C ]
+"127
+[; ;Uart.c: 127:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 723  ]
+{
+"128
+[; ;Uart.c: 128:                 Imprime_Estado();
+[e ( _Imprime_Estado ..  ]
+"129
+[; ;Uart.c: 129:             }
+}
+[e :U 723 ]
+"132
+[; ;Uart.c: 132:             Index = Texto_IndexOf(Data, "INY_LIQUIDO");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 8C ]
+"133
+[; ;Uart.c: 133:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 724  ]
+{
+"134
+[; ;Uart.c: 134:                 Inyecta_Liquido();
+[e ( _Inyecta_Liquido ..  ]
+"135
+[; ;Uart.c: 135:             }
+}
+[e :U 724 ]
+"137
+[; ;Uart.c: 137:             Index = Texto_IndexOf(Data, "INY_GAS");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 9C ]
+"138
+[; ;Uart.c: 138:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 725  ]
+{
+"139
+[; ;Uart.c: 139:                 Inyecta_Gas();
+[e ( _Inyecta_Gas ..  ]
+"140
+[; ;Uart.c: 140:             }
+}
+[e :U 725 ]
+"142
+[; ;Uart.c: 142:             Index = Texto_IndexOf(Data, "DAMPER_OPEN");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 10C ]
+"143
+[; ;Uart.c: 143:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 726  ]
+{
+"144
+[; ;Uart.c: 144:                 Damper_Abrir();
+[e ( _Damper_Abrir ..  ]
+"145
+[; ;Uart.c: 145:             }
+}
+[e :U 726 ]
+"147
+[; ;Uart.c: 147:             Index = Texto_IndexOf(Data, "DAMPER_CLOSE");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 11C ]
+"148
+[; ;Uart.c: 148:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 727  ]
+{
+"149
+[; ;Uart.c: 149:                 Damper_Cerrar();
+[e ( _Damper_Cerrar ..  ]
+"150
+[; ;Uart.c: 150:             }
+}
+[e :U 727 ]
+"152
+[; ;Uart.c: 152:             Index = Texto_IndexOf(Data, "EVAPORADOR_ON");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 12C ]
+"153
+[; ;Uart.c: 153:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 728  ]
+{
+"154
+[; ;Uart.c: 154:                 Evaporador_On();
+[e ( _Evaporador_On ..  ]
+"155
+[; ;Uart.c: 155:             }
+}
+[e :U 728 ]
+"157
+[; ;Uart.c: 157:             Index = Texto_IndexOf(Data, "EVAPORADOR_OFF");
+[e = _Index ( _Texto_IndexOf (2 , _Data :s 13C ]
+"158
+[; ;Uart.c: 158:             if (Index >= 0) {
+[e $ ! >= _Index -> 0 `i 729  ]
+{
+"159
+[; ;Uart.c: 159:                 Evaporador_Off();
+[e ( _Evaporador_Off ..  ]
+"160
+[; ;Uart.c: 160:             }
+}
+[e :U 729 ]
+"161
+[; ;Uart.c: 161:         }
 }
 [e :U 690 ]
-"106
-[; ;Uart.c: 106:     }
+"162
+[; ;Uart.c: 162:     }
 }
 [e :U 689 ]
-"107
-[; ;Uart.c: 107: }
+"163
+[; ;Uart.c: 163: }
 [e :UE 688 ]
 }
-"109
-[; ;Uart.c: 109: void Imprime_Estado(void) {
+"165
+[; ;Uart.c: 165: void Imprime_Estado(void) {
 [v _Imprime_Estado `(v ~T0 @X0 1 ef ]
 {
 [e :U _Imprime_Estado ]
 [f ]
-"110
-[; ;Uart.c: 110:     char R1 = LATBbits.LATB5;
+"166
+[; ;Uart.c: 166:     char R1 = LATBbits.LATB5;
 [v _R1 `uc ~T0 @X0 1 a ]
 [e = _R1 -> . . _LATBbits 0 5 `uc ]
-"111
-[; ;Uart.c: 111:     char R2 = LATBbits.LATB4;
+"167
+[; ;Uart.c: 167:     char R2 = LATBbits.LATB4;
 [v _R2 `uc ~T0 @X0 1 a ]
 [e = _R2 -> . . _LATBbits 0 4 `uc ]
-"112
-[; ;Uart.c: 112:     char R3 = LATBbits.LATB3;
+"168
+[; ;Uart.c: 168:     char R3 = LATBbits.LATB3;
 [v _R3 `uc ~T0 @X0 1 a ]
 [e = _R3 -> . . _LATBbits 0 3 `uc ]
-"113
-[; ;Uart.c: 113:     char R4 = LATBbits.LATB2;
+"169
+[; ;Uart.c: 169:     char R4 = LATBbits.LATB2;
 [v _R4 `uc ~T0 @X0 1 a ]
 [e = _R4 -> . . _LATBbits 0 2 `uc ]
-"114
-[; ;Uart.c: 114:     char R5 = LATBbits.LATB1;
+"170
+[; ;Uart.c: 170:     char R5 = LATBbits.LATB1;
 [v _R5 `uc ~T0 @X0 1 a ]
 [e = _R5 -> . . _LATBbits 0 1 `uc ]
-"115
-[; ;Uart.c: 115:     char R6 = LATBbits.LATB0;
+"171
+[; ;Uart.c: 171:     char R6 = LATBbits.LATB0;
 [v _R6 `uc ~T0 @X0 1 a ]
 [e = _R6 -> . . _LATBbits 0 0 `uc ]
-"116
-[; ;Uart.c: 116:     char R7 = LATDbits.LATD7;
+"172
+[; ;Uart.c: 172:     char R7 = LATDbits.LATD7;
 [v _R7 `uc ~T0 @X0 1 a ]
 [e = _R7 -> . . _LATDbits 0 7 `uc ]
-"117
-[; ;Uart.c: 117:     char R8 = LATDbits.LATD6;
+"173
+[; ;Uart.c: 173:     char R8 = LATDbits.LATD6;
 [v _R8 `uc ~T0 @X0 1 a ]
 [e = _R8 -> . . _LATDbits 0 6 `uc ]
-"118
-[; ;Uart.c: 118:     char R9 = LATDbits.LATD5;
+"174
+[; ;Uart.c: 174:     char R9 = LATDbits.LATD5;
 [v _R9 `uc ~T0 @X0 1 a ]
 [e = _R9 -> . . _LATDbits 0 5 `uc ]
-"119
-[; ;Uart.c: 119:     char R10 = LATDbits.LATD4;
+"175
+[; ;Uart.c: 175:     char R10 = LATDbits.LATD4;
 [v _R10 `uc ~T0 @X0 1 a ]
 [e = _R10 -> . . _LATDbits 0 4 `uc ]
-"120
-[; ;Uart.c: 120:     LATBbits.LATB6 = 1;
+"176
+[; ;Uart.c: 176:     LATBbits.LATB6 = 1;
 [e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
-"121
-[; ;Uart.c: 121:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+"177
+[; ;Uart.c: 177:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
-"122
-[; ;Uart.c: 122:     UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"STATUS:");
-[e ( _UART_Print (1 :s 8C ]
-"123
-[; ;Uart.c: 123:     for (int i = 0; i < 10; i++) {
+"178
+[; ;Uart.c: 178:     UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"STATUS:");
+[e ( _UART_Print (1 :s 14C ]
+"179
+[; ;Uart.c: 179:     for (int i = 0; i < 10; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 10 `i 711  ]
-[e $U 712  ]
-[e :U 711 ]
+[e $ < _i -> 10 `i 731  ]
+[e $U 732  ]
+[e :U 731 ]
 {
-"124
-[; ;Uart.c: 124:         sprintf(txt, "%d", Status_In[i]);
-[e ( _sprintf (1 , (. , &U _txt :s 9C -> *U + &U _Status_In * -> -> _i `ui `ux -> -> # *U &U _Status_In `ui `ux `i ]
-"125
-[; ;Uart.c: 125:         UART_Print(txt);
+"180
+[; ;Uart.c: 180:         sprintf(txt, "%d", Status_In[i]);
+[e ( _sprintf (1 , (. , &U _txt :s 15C -> *U + &U _Status_In * -> -> _i `ui `ux -> -> # *U &U _Status_In `ui `ux `i ]
+"181
+[; ;Uart.c: 181:         UART_Print(txt);
 [e ( _UART_Print (1 -> &U _txt `*Cuc ]
-"126
-[; ;Uart.c: 126:     }
+"182
+[; ;Uart.c: 182:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 10 `i 711  ]
-[e :U 712 ]
+[e $ < _i -> 10 `i 731  ]
+[e :U 732 ]
 }
-"127
-[; ;Uart.c: 127:     UART_Print(",");
-[e ( _UART_Print (1 :s 10C ]
-"128
-[; ;Uart.c: 128:     sprintf(txt, "%d%d%d%d%d%d%d%d%d%d", R1, R2, R3, R4, R5, R6, R7, R8, R9, R10);
-[e ( _sprintf (1 , , , , , , , , , , (. , &U _txt :s 11C -> _R1 `i -> _R2 `i -> _R3 `i -> _R4 `i -> _R5 `i -> _R6 `i -> _R7 `i -> _R8 `i -> _R9 `i -> _R10 `i ]
-"129
-[; ;Uart.c: 129:     UART_Print(txt);
+"183
+[; ;Uart.c: 183:     UART_Print(",");
+[e ( _UART_Print (1 :s 16C ]
+"184
+[; ;Uart.c: 184:     sprintf(txt, "%d%d%d%d%d%d%d%d%d%d", R1, R2, R3, R4, R5, R6, R7, R8, R9, R10);
+[e ( _sprintf (1 , , , , , , , , , , (. , &U _txt :s 17C -> _R1 `i -> _R2 `i -> _R3 `i -> _R4 `i -> _R5 `i -> _R6 `i -> _R7 `i -> _R8 `i -> _R9 `i -> _R10 `i ]
+"185
+[; ;Uart.c: 185:     UART_Print(txt);
 [e ( _UART_Print (1 -> &U _txt `*Cuc ]
-"130
-[; ;Uart.c: 130:     UART_Print(",");
-[e ( _UART_Print (1 :s 12C ]
-"131
-[; ;Uart.c: 131:     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
-[e ( _sprintf (1 , , , , , (. , &U _txt :s 13C -> _Current1 `ui -> _Current2 `ui -> _Temp1 `i -> _Temp2 `i -> _PPM `i ]
-"132
-[; ;Uart.c: 132:     UART_Print(txt);
+"186
+[; ;Uart.c: 186:     UART_Print(",");
+[e ( _UART_Print (1 :s 18C ]
+"187
+[; ;Uart.c: 187:     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
+[e ( _sprintf (1 , , , , , (. , &U _txt :s 19C -> _Current1 `ui -> _Current2 `ui -> _Temp1 `i -> _Temp2 `i -> _PPM `i ]
+"188
+[; ;Uart.c: 188:     UART_Print(txt);
 [e ( _UART_Print (1 -> &U _txt `*Cuc ]
-"133
-[; ;Uart.c: 133:     UART_Print("\"}");
-[e ( _UART_Print (1 :s 14C ]
-"134
-[; ;Uart.c: 134:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+"189
+[; ;Uart.c: 189:     UART_Print(",");
+[e ( _UART_Print (1 :s 20C ]
+"190
+[; ;Uart.c: 190:     sprintf(txt, "%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas);
+[e ( _sprintf (1 , , , , (. , &U _txt :s 21C -> _Channel_Heater `i -> _Tiempo_Damper `ui -> _Tiempo_Iny_Liquido `ui -> _Tiempo_Iny_Gas `ui ]
+"191
+[; ;Uart.c: 191:     UART_Print("\"}");
+[e ( _UART_Print (1 :s 22C ]
+"192
+[; ;Uart.c: 192:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
-"135
-[; ;Uart.c: 135:     LATBbits.LATB6 = 0;
+"193
+[; ;Uart.c: 193:     LATBbits.LATB6 = 0;
 [e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
-"136
-[; ;Uart.c: 136: }
-[e :UE 710 ]
+"194
+[; ;Uart.c: 194: }
+[e :UE 730 ]
 }
 [p f _sprintf 8388736 ]
-[a 14C 34 125 0 ]
-[a 11C 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 0 ]
-[a 13C 37 100 44 37 100 44 37 100 44 37 100 44 37 100 0 ]
-[a 9C 37 100 0 ]
+[a 22C 34 125 0 ]
+[a 17C 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 37 100 0 ]
+[a 19C 37 100 44 37 100 44 37 100 44 37 100 44 37 100 0 ]
+[a 21C 37 100 44 37 100 44 37 100 44 37 100 0 ]
+[a 15C 37 100 0 ]
 [a 7C 83 84 65 84 85 83 0 ]
-[a 8C 123 34 105 34 58 34 65 71 82 79 76 65 84 73 78 65 95 71 48 49 34 44 34 114 115 34 58 34 83 84 65 84 85 83 58 0 ]
+[a 9C 73 78 89 95 71 65 83 0 ]
+[a 8C 73 78 89 95 76 73 81 85 73 68 79 0 ]
+[a 12C 69 86 65 80 79 82 65 68 79 82 95 79 78 0 ]
+[a 10C 68 65 77 80 69 82 95 79 80 69 78 0 ]
+[a 13C 69 86 65 80 79 82 65 68 79 82 95 79 70 70 0 ]
+[a 11C 68 65 77 80 69 82 95 67 76 79 83 69 0 ]
+[a 14C 123 34 105 34 58 34 65 71 82 79 76 65 84 73 78 65 95 71 48 49 34 44 34 114 115 34 58 34 83 84 65 84 85 83 58 0 ]
 [a 1C 65 71 82 79 76 65 84 73 78 65 95 71 48 49 0 ]
 [a 2C 67 66 48 49 0 ]
-[a 10C 44 0 ]
-[a 12C 44 0 ]
+[a 16C 44 0 ]
+[a 18C 44 0 ]
+[a 20C 44 0 ]
 [a 4C 41 0 ]
 [a 6C 41 0 ]
 [a 3C 82 84 40 0 ]

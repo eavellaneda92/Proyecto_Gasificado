@@ -21,9 +21,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29 ./Uart.h
 [; ;./Uart.h: 29:     void UART_Write(uint8_t dato);
 [v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
-"36
-[; ;./Uart.h: 36:     void Imprime_Estado(void);
-[v _Imprime_Estado `(v ~T0 @X0 0 ef ]
 "47 ./Control.h
 [; ;./Control.h: 47:     void Armado_Cerrado(void);
 [v _Armado_Cerrado `(v ~T0 @X0 0 ef ]
@@ -45,6 +42,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4130
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 4130: extern volatile LATDbits_t LATDbits __attribute__((address(0xF8C)));
 [v _LATDbits `VS172 ~T0 @X0 0 e@3980 ]
+"78 ./Control.h
+[; ;./Control.h: 78:     void Respuestas_RS485(char *Mensaje);
+[v _Respuestas_RS485 `(v ~T0 @X0 0 ef1`*uc ]
+"30 ./Uart.h
+[; ;./Uart.h: 30:     void UART_Print(const char *cad);
+[v _UART_Print `(v ~T0 @X0 0 ef1`*Cuc ]
 "16 ./Config.h
 [p x PLLSEL  =  PLL3X        ]
 "17
@@ -911,14 +914,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _PPM
 -> -> 0 `i `s
 ]
-"32
-[; ;./Control.h: 32:     uint8_t Arranque_Count= 0;
+"31
+[; ;./Control.h: 31:     uint8_t Arranque_Count = 0;
 [v _Arranque_Count `uc ~T0 @X0 1 e ]
 [i _Arranque_Count
 -> -> 0 `i `uc
 ]
-"33
-[; ;./Control.h: 33:     uint8_t Arranque_Flag= 0;
+"32
+[; ;./Control.h: 32:     uint8_t Arranque_Flag = 0;
 [v _Arranque_Flag `uc ~T0 @X0 1 e ]
 [i _Arranque_Flag
 -> -> 0 `i `uc
@@ -983,6 +986,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Tiempo_Iny_Gas
 -> -> 0 `i `us
 ]
+"67
+[; ;./Control.h: 67:     uint8_t Tiempo_Heater = 0;
+[v _Tiempo_Heater `uc ~T0 @X0 1 e ]
+[i _Tiempo_Heater
+-> -> 0 `i `uc
+]
 "23 ./Uart.h
 [; ;./Uart.h: 23:     volatile uint8_t Buffer[150u];
 [v _Buffer `Vuc ~T0 @X0 -> 150 `i e ]
@@ -1004,20 +1013,56 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _FlagOverflow
 -> -> 0 `i `a
 ]
-"4 Control.c
-[; ;Control.c: 4: void Pedir_PPM(void) {
+"22 ./ADC.h
+[; ;./ADC.h: 22:     uint8_t Paso_ADC = 0;
+[v _Paso_ADC `uc ~T0 @X0 1 e ]
+[i _Paso_ADC
+-> -> 0 `i `uc
+]
+"23
+[; ;./ADC.h: 23:     uint8_t Count_ADC = 0;
+[v _Count_ADC `uc ~T0 @X0 1 e ]
+[i _Count_ADC
+-> -> 0 `i `uc
+]
+"27
+[; ;./ADC.h: 27:     uint16_t Current1 = 0;
+[v _Current1 `us ~T0 @X0 1 e ]
+[i _Current1
+-> -> 0 `i `us
+]
+"28
+[; ;./ADC.h: 28:     uint16_t Current2 = 0;
+[v _Current2 `us ~T0 @X0 1 e ]
+[i _Current2
+-> -> 0 `i `us
+]
+"29
+[; ;./ADC.h: 29:     int16_t Temp1 = 0;
+[v _Temp1 `s ~T0 @X0 1 e ]
+[i _Temp1
+-> -> 0 `i `s
+]
+"30
+[; ;./ADC.h: 30:     int16_t Temp2 = 0;
+[v _Temp2 `s ~T0 @X0 1 e ]
+[i _Temp2
+-> -> 0 `i `s
+]
+"5 Control.c
+[; ;Control.c: 5: void Pedir_PPM(void) {
 [v _Pedir_PPM `(v ~T0 @X0 1 ef ]
 {
 [e :U _Pedir_PPM ]
 [f ]
-"5
-[; ;Control.c: 5:     LATBbits.LATB6 = 1;
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "6
-[; ;Control.c: 6:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+[; ;Control.c: 6:     LATBbits.LATB6 = 1;
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "7
-[; ;Control.c: 7:     for (int i = 0; i < 5; i++) {
+[; ;Control.c: 7:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"8
+[; ;Control.c: 8:     for (int i = 0; i < 5; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -1025,286 +1070,467 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 664  ]
 [e :U 663 ]
 {
-"8
-[; ;Control.c: 8:         UART_Write(Get_PPM[i]);
-[e ( _UART_Write (1 *U + &U _Get_PPM * -> -> _i `ui `ux -> -> # *U &U _Get_PPM `ui `ux ]
 "9
-[; ;Control.c: 9:         if (i == 4) LATBbits.LATB6 = 0;
+[; ;Control.c: 9:         UART_Write(Get_PPM[i]);
+[e ( _UART_Write (1 *U + &U _Get_PPM * -> -> _i `ui `ux -> -> # *U &U _Get_PPM `ui `ux ]
+"10
+[; ;Control.c: 10:         if (i == 4) LATBbits.LATB6 = 0;
 [e $ ! == _i -> 4 `i 666  ]
 [e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 [e :U 666 ]
-"10
-[; ;Control.c: 10:         _delay((unsigned long)((30)*(16000000UL/4000000.0)));
-[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 16000000 `ul `d .4000000.0 `ul ]
 "11
-[; ;Control.c: 11:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
+[; ;Control.c: 11:         _delay((unsigned long)((30)*(16000000UL/4000000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 16000000 `ul `d .4000000.0 `ul ]
 "12
-[; ;Control.c: 12:     }
+[; ;Control.c: 12:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"13
+[; ;Control.c: 13:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 5 `i 663  ]
 [e :U 664 ]
 }
-"13
-[; ;Control.c: 13:     LATBbits.LATB6 = 0;
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "14
-[; ;Control.c: 14: }
+[; ;Control.c: 14:     LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"15
+[; ;Control.c: 15: }
 [e :UE 662 ]
 }
-"16
-[; ;Control.c: 16: float Cargar_PPM(void) {
+"17
+[; ;Control.c: 17: float Cargar_PPM(void) {
 [v _Cargar_PPM `(f ~T0 @X0 1 ef ]
 {
 [e :U _Cargar_PPM ]
 [f ]
-"17
-[; ;Control.c: 17:     float rEthy = 0;
+"18
+[; ;Control.c: 18:     float rEthy = 0;
 [v _rEthy `f ~T0 @X0 1 a ]
 [e = _rEthy -> -> 0 `i `f ]
-"18
-[; ;Control.c: 18:     int iCntEthy = 0;
+"19
+[; ;Control.c: 19:     int iCntEthy = 0;
 [v _iCntEthy `i ~T0 @X0 1 a ]
 [e = _iCntEthy -> 0 `i ]
-"19
-[; ;Control.c: 19:     char cFlagEthy = 0;
+"20
+[; ;Control.c: 20:     char cFlagEthy = 0;
 [v _cFlagEthy `uc ~T0 @X0 1 a ]
 [e = _cFlagEthy -> -> 0 `i `uc ]
-"20
-[; ;Control.c: 20:     int iBuffer[10];
-[v _iBuffer `i ~T0 @X0 -> 10 `i a ]
 "21
-[; ;Control.c: 21:     for (int i = 0; i < BufferIndex; i++) {
+[; ;Control.c: 21:     int iBuffer[10];
+[v _iBuffer `i ~T0 @X0 -> 10 `i a ]
+"22
+[; ;Control.c: 22:     for (int i = 0; i < BufferIndex; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 671  ]
 [e :U 668 ]
 {
-"22
-[; ;Control.c: 22:         if (Buffer[i] == 0x20) cFlagEthy = 1;
+"23
+[; ;Control.c: 23:         if (Buffer[i] == 0x20) cFlagEthy = 1;
 [e $ ! == -> *U + &U _Buffer * -> -> _i `ui `ux -> -> # *U &U _Buffer `ui `ux `i -> 32 `i 672  ]
 [e = _cFlagEthy -> -> 1 `i `uc ]
 [e :U 672 ]
-"23
-[; ;Control.c: 23:         if (cFlagEthy == 1) {
+"24
+[; ;Control.c: 24:         if (cFlagEthy == 1) {
 [e $ ! == -> _cFlagEthy `i -> 1 `i 673  ]
 {
-"24
-[; ;Control.c: 24:             iBuffer[iCntEthy] = Buffer[i];
-[e = *U + &U _iBuffer * -> -> _iCntEthy `ui `ux -> -> # *U &U _iBuffer `ui `ux -> *U + &U _Buffer * -> -> _i `ui `ux -> -> # *U &U _Buffer `ui `ux `i ]
 "25
-[; ;Control.c: 25:             iCntEthy++;
-[e ++ _iCntEthy -> 1 `i ]
+[; ;Control.c: 25:             iBuffer[iCntEthy] = Buffer[i];
+[e = *U + &U _iBuffer * -> -> _iCntEthy `ui `ux -> -> # *U &U _iBuffer `ui `ux -> *U + &U _Buffer * -> -> _i `ui `ux -> -> # *U &U _Buffer `ui `ux `i ]
 "26
-[; ;Control.c: 26:         }
+[; ;Control.c: 26:             iCntEthy++;
+[e ++ _iCntEthy -> 1 `i ]
+"27
+[; ;Control.c: 27:         }
 }
 [e :U 673 ]
-"27
-[; ;Control.c: 27:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
 "28
-[; ;Control.c: 28:     }
+[; ;Control.c: 28:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"29
+[; ;Control.c: 29:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 671 ]
 [e $ < _i -> _BufferIndex `i 668  ]
 [e :U 669 ]
 }
-"29
-[; ;Control.c: 29:     if (cFlagEthy == 1) {
+"30
+[; ;Control.c: 30:     if (cFlagEthy == 1) {
 [e $ ! == -> _cFlagEthy `i -> 1 `i 674  ]
 {
-"30
-[; ;Control.c: 30:         unsigned int uE = (unsigned int) iBuffer[3];
+"31
+[; ;Control.c: 31:         unsigned int uE = (unsigned int) iBuffer[3];
 [v _uE `ui ~T0 @X0 1 a ]
 [e = _uE -> *U + &U _iBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _iBuffer `ui `ux `ui ]
-"31
-[; ;Control.c: 31:         uE = uE << 8;
-[e = _uE << _uE -> 8 `i ]
 "32
-[; ;Control.c: 32:         uE |= (unsigned int) iBuffer[2];
-[e =| _uE -> *U + &U _iBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _iBuffer `ui `ux `ui ]
+[; ;Control.c: 32:         uE = uE << 8;
+[e = _uE << _uE -> 8 `i ]
 "33
-[; ;Control.c: 33:         rEthy = uE;
-[e = _rEthy -> _uE `f ]
+[; ;Control.c: 33:         uE |= (unsigned int) iBuffer[2];
+[e =| _uE -> *U + &U _iBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _iBuffer `ui `ux `ui ]
 "34
-[; ;Control.c: 34:         rEthy /= 10;
-[e =/ _rEthy -> -> 10 `i `f ]
+[; ;Control.c: 34:         rEthy = uE;
+[e = _rEthy -> _uE `f ]
 "35
-[; ;Control.c: 35:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
+[; ;Control.c: 35:         rEthy /= 10;
+[e =/ _rEthy -> -> 10 `i `f ]
 "36
-[; ;Control.c: 36:     }
+[; ;Control.c: 36:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"37
+[; ;Control.c: 37:     }
 }
 [e :U 674 ]
-"37
-[; ;Control.c: 37:     return rEthy;
+"38
+[; ;Control.c: 38:     return rEthy;
 [e ) _rEthy ]
 [e $UE 667  ]
-"38
-[; ;Control.c: 38: }
+"39
+[; ;Control.c: 39: }
 [e :UE 667 ]
 }
-"40
-[; ;Control.c: 40: void Proceso_Control(void) {
-[v _Proceso_Control `(v ~T0 @X0 1 ef ]
-{
-[e :U _Proceso_Control ]
-[f ]
 "41
-[; ;Control.c: 41:     Count_Control++;
-[e ++ _Count_Control -> -> 1 `i `uc ]
-"42
-[; ;Control.c: 42:     if (Count_Control >= 200) {
-[e $ ! >= -> _Count_Control `i -> 200 `i 676  ]
-{
-"44
-[; ;Control.c: 44:         if (Paso_Control == 0) {
-[e $ ! == -> _Paso_Control `i -> 0 `i 677  ]
-{
-"45
-[; ;Control.c: 45:             Wait_Sensor = 0;
-[e = _Wait_Sensor -> -> 0 `i `uc ]
-"46
-[; ;Control.c: 46:             Pedir_PPM();
-[e ( _Pedir_PPM ..  ]
-"47
-[; ;Control.c: 47:         }
-}
-[e :U 677 ]
-"50
-[; ;Control.c: 50:         if (Paso_Control == 1) {
-[e $ ! == -> _Paso_Control `i -> 1 `i 678  ]
-{
-"51
-[; ;Control.c: 51:             Imprime_Estado();
-[e ( _Imprime_Estado ..  ]
-"52
-[; ;Control.c: 52:         }
-}
-[e :U 678 ]
-"54
-[; ;Control.c: 54:         Paso_Control++;
-[e ++ _Paso_Control -> -> 1 `i `uc ]
-"55
-[; ;Control.c: 55:         if (Paso_Control >= 2) {
-[e $ ! >= -> _Paso_Control `i -> 2 `i 679  ]
-{
-"56
-[; ;Control.c: 56:             Paso_Control = 0;
-[e = _Paso_Control -> -> 0 `i `uc ]
-"57
-[; ;Control.c: 57:         }
-}
-[e :U 679 ]
-"58
-[; ;Control.c: 58:         Count_Control = 0;
-[e = _Count_Control -> -> 0 `i `uc ]
-"59
-[; ;Control.c: 59:     }
-}
-[e :U 676 ]
-"60
-[; ;Control.c: 60:     if (Flag_Sensor == 1) {
-[e $ ! == -> _Flag_Sensor `i -> 1 `i 680  ]
-{
-"61
-[; ;Control.c: 61:         Wait_Sensor++;
-[e ++ _Wait_Sensor -> -> 1 `i `uc ]
-"62
-[; ;Control.c: 62:         if (Wait_Sensor > 50) {
-[e $ ! > -> _Wait_Sensor `i -> 50 `i 681  ]
-{
-"63
-[; ;Control.c: 63:             PPM_Old = 1000;
-[e = _PPM_Old -> -> 1000 `i `us ]
-"64
-[; ;Control.c: 64:             PPM = -1;
-[e = _PPM -> -U -> 1 `i `s ]
-"65
-[; ;Control.c: 65:             Wait_Sensor = 0;
-[e = _Wait_Sensor -> -> 0 `i `uc ]
-"66
-[; ;Control.c: 66:             Flag_Sensor = 0;
-[e = _Flag_Sensor -> -> 0 `i `uc ]
-"67
-[; ;Control.c: 67:         }
-}
-[e :U 681 ]
-"68
-[; ;Control.c: 68:     }
-}
-[e :U 680 ]
-"69
-[; ;Control.c: 69: }
-[e :UE 675 ]
-}
-"71
-[; ;Control.c: 71: void Proceso_Arranque(void) {
+[; ;Control.c: 41: void Proceso_Arranque(void) {
 [v _Proceso_Arranque `(v ~T0 @X0 1 ef ]
 {
 [e :U _Proceso_Arranque ]
 [f ]
-"72
-[; ;Control.c: 72:     if (Arranque_Flag == 0) {
-[e $ ! == -> _Arranque_Flag `i -> 0 `i 683  ]
+"42
+[; ;Control.c: 42:     if (Arranque_Flag == 0) {
+[e $ ! == -> _Arranque_Flag `i -> 0 `i 676  ]
 {
-"73
-[; ;Control.c: 73:         Arranque_Count++;
+"43
+[; ;Control.c: 43:         Arranque_Count++;
 [e ++ _Arranque_Count -> -> 1 `i `uc ]
-"74
-[; ;Control.c: 74:         if (Arranque_Count >= 200) {
-[e $ ! >= -> _Arranque_Count `i -> 200 `i 684  ]
+"44
+[; ;Control.c: 44:         if (Arranque_Count >= 200) {
+[e $ ! >= -> _Arranque_Count `i -> 200 `i 677  ]
 {
-"75
-[; ;Control.c: 75:             Armado_Cerrado();
+"45
+[; ;Control.c: 45:             Armado_Cerrado();
 [e ( _Armado_Cerrado ..  ]
-"76
-[; ;Control.c: 76:             Arranque_Flag = 1;
+"46
+[; ;Control.c: 46:             Arranque_Flag = 1;
 [e = _Arranque_Flag -> -> 1 `i `uc ]
-"77
-[; ;Control.c: 77:         }
+"47
+[; ;Control.c: 47:         }
 }
-[e :U 684 ]
-"78
-[; ;Control.c: 78:     }
+[e :U 677 ]
+"48
+[; ;Control.c: 48:     }
 }
-[e :U 683 ]
-"79
-[; ;Control.c: 79: }
-[e :UE 682 ]
+[e :U 676 ]
+"49
+[; ;Control.c: 49: }
+[e :UE 675 ]
 }
-"81
-[; ;Control.c: 81: void Armado_Cerrado(void) {
+"51
+[; ;Control.c: 51: void Armado_Cerrado(void) {
 [v _Armado_Cerrado `(v ~T0 @X0 1 ef ]
 {
 [e :U _Armado_Cerrado ]
 [f ]
-"82
-[; ;Control.c: 82:     Power_Rele(LATBbits.LATB0,30000);
+"52
+[; ;Control.c: 52:     Power_Rele(LATBbits.LATB0, 30000);
 [e ( _Power_Rele (2 , . . _LATBbits 0 0 -> -> 30000 `i `ui ]
-"83
-[; ;Control.c: 83:     Power_Rele(LATDbits.LATD6,20000);
-[e ( _Power_Rele (2 , . . _LATDbits 0 6 -> -> 20000 `i `ui ]
-"84
-[; ;Control.c: 84:     Power_Rele(LATDbits.LATD4,20000);
-[e ( _Power_Rele (2 , . . _LATDbits 0 4 -> -> 20000 `i `ui ]
-"85
-[; ;Control.c: 85: }
-[e :UE 685 ]
+"53
+[; ;Control.c: 53:     Power_Rele(LATDbits.LATD7, 20000);
+[e ( _Power_Rele (2 , . . _LATDbits 0 7 -> -> 20000 `i `ui ]
+"54
+[; ;Control.c: 54:     Power_Rele(LATDbits.LATD5, 20000);
+[e ( _Power_Rele (2 , . . _LATDbits 0 5 -> -> 20000 `i `ui ]
+"55
+[; ;Control.c: 55: }
+[e :UE 678 ]
 }
-"87
-[; ;Control.c: 87: void Armado_Ventila(void) {
+"57
+[; ;Control.c: 57: void Armado_Ventila(void) {
 [v _Armado_Ventila `(v ~T0 @X0 1 ef ]
 {
 [e :U _Armado_Ventila ]
 [f ]
-"88
-[; ;Control.c: 88:     Power_Rele(LATBbits.LATB1,30000);
+"58
+[; ;Control.c: 58:     Power_Rele(LATBbits.LATB1, 30000);
 [e ( _Power_Rele (2 , . . _LATBbits 0 1 -> -> 30000 `i `ui ]
-"89
-[; ;Control.c: 89: }
-[e :UE 686 ]
+"59
+[; ;Control.c: 59: }
+[e :UE 679 ]
 }
+"61
+[; ;Control.c: 61: void Proceso_Heater(void) {
+[v _Proceso_Heater `(v ~T0 @X0 1 ef ]
+{
+[e :U _Proceso_Heater ]
+[f ]
+"62
+[; ;Control.c: 62:     if (Arranque_Flag == 1) {
+[e $ ! == -> _Arranque_Flag `i -> 1 `i 681  ]
+{
+"63
+[; ;Control.c: 63:         Tiempo_Heater++;
+[e ++ _Tiempo_Heater -> -> 1 `i `uc ]
+"64
+[; ;Control.c: 64:         if (Tiempo_Heater >= 200) {
+[e $ ! >= -> _Tiempo_Heater `i -> 200 `i 682  ]
+{
+"65
+[; ;Control.c: 65:             if (Temp1 > SP_Temp + 10) LATBbits.LATB3 = 1;
+[e $ ! > -> _Temp1 `i + -> _SP_Temp `i -> 10 `i 683  ]
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+[e :U 683 ]
+"66
+[; ;Control.c: 66:             if (Temp1 < SP_Temp - 10) {
+[e $ ! < -> _Temp1 `i - -> _SP_Temp `i -> 10 `i 684  ]
+{
+"67
+[; ;Control.c: 67:                 if (Channel_Heater == 0) LATBbits.LATB3 = 0;
+[e $ ! == -> _Channel_Heater `i -> 0 `i 685  ]
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+[e $U 686  ]
+"68
+[; ;Control.c: 68:                 else LATBbits.LATB2 = 0;
+[e :U 685 ]
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[e :U 686 ]
+"69
+[; ;Control.c: 69:             }
+}
+[e :U 684 ]
+"70
+[; ;Control.c: 70:             Tiempo_Heater = 0;
+[e = _Tiempo_Heater -> -> 0 `i `uc ]
+"71
+[; ;Control.c: 71:         }
+}
+[e :U 682 ]
+"72
+[; ;Control.c: 72:     }
+}
+[e :U 681 ]
+"73
+[; ;Control.c: 73: }
+[e :UE 680 ]
+}
+"75
+[; ;Control.c: 75: void Inyecta_Liquido(void) {
+[v _Inyecta_Liquido `(v ~T0 @X0 1 ef ]
+{
+[e :U _Inyecta_Liquido ]
+[f ]
+"76
+[; ;Control.c: 76:     Power_Rele(LATDbits.LATD4, Tiempo_Iny_Liquido);
+[e ( _Power_Rele (2 , . . _LATDbits 0 4 -> _Tiempo_Iny_Liquido `ui ]
+"77
+[; ;Control.c: 77:     for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 691  ]
+[e :U 688 ]
+{
+"78
+[; ;Control.c: 78:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"79
+[; ;Control.c: 79:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"80
+[; ;Control.c: 80:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 691 ]
+[e $ < -> _i `ui -> _Tiempo_Iny_Liquido `ui 688  ]
+[e :U 689 ]
+}
+"81
+[; ;Control.c: 81:     Power_Rele(LATDbits.LATD5, Tiempo_Iny_Liquido * 1.5);
+[e ( _Power_Rele (2 , . . _LATDbits 0 5 -> * -> -> _Tiempo_Iny_Liquido `ui `d .1.5 `ui ]
+"82
+[; ;Control.c: 82:     Respuestas_RS485("INYECCION_LIQUIDO_OK");
+[e ( _Respuestas_RS485 (1 :s 1C ]
+"83
+[; ;Control.c: 83: }
+[e :UE 687 ]
+}
+"85
+[; ;Control.c: 85: void Inyecta_Gas(void) {
+[v _Inyecta_Gas `(v ~T0 @X0 1 ef ]
+{
+[e :U _Inyecta_Gas ]
+[f ]
+"86
+[; ;Control.c: 86:     Power_Rele(LATDbits.LATD6, Tiempo_Iny_Gas);
+[e ( _Power_Rele (2 , . . _LATDbits 0 6 -> _Tiempo_Iny_Gas `ui ]
+"87
+[; ;Control.c: 87:     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 696  ]
+[e :U 693 ]
+{
+"88
+[; ;Control.c: 88:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"89
+[; ;Control.c: 89:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"90
+[; ;Control.c: 90:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 696 ]
+[e $ < -> _i `ui -> _Tiempo_Iny_Gas `ui 693  ]
+[e :U 694 ]
+}
+"91
+[; ;Control.c: 91:     Power_Rele(LATDbits.LATD6, Tiempo_Iny_Gas * 1.5);
+[e ( _Power_Rele (2 , . . _LATDbits 0 6 -> * -> -> _Tiempo_Iny_Gas `ui `d .1.5 `ui ]
+"92
+[; ;Control.c: 92:     Respuestas_RS485("INYECCION_GAS_OK");
+[e ( _Respuestas_RS485 (1 :s 2C ]
+"93
+[; ;Control.c: 93: }
+[e :UE 692 ]
+}
+"95
+[; ;Control.c: 95: void Damper_Abrir(void) {
+[v _Damper_Abrir `(v ~T0 @X0 1 ef ]
+{
+[e :U _Damper_Abrir ]
+[f ]
+"96
+[; ;Control.c: 96:     Power_Rele(LATBbits.LATB1, Tiempo_Damper);
+[e ( _Power_Rele (2 , . . _LATBbits 0 1 -> _Tiempo_Damper `ui ]
+"97
+[; ;Control.c: 97:     Respuestas_RS485("DAMPER_OPEN_OK");
+[e ( _Respuestas_RS485 (1 :s 3C ]
+"98
+[; ;Control.c: 98: }
+[e :UE 697 ]
+}
+"100
+[; ;Control.c: 100: void Damper_Cerrar(void) {
+[v _Damper_Cerrar `(v ~T0 @X0 1 ef ]
+{
+[e :U _Damper_Cerrar ]
+[f ]
+"101
+[; ;Control.c: 101:     Power_Rele(LATBbits.LATB0, Tiempo_Damper * 1.5);
+[e ( _Power_Rele (2 , . . _LATBbits 0 0 -> * -> -> _Tiempo_Damper `ui `d .1.5 `ui ]
+"102
+[; ;Control.c: 102:     Respuestas_RS485("DAMPER_CLOSE_OK");
+[e ( _Respuestas_RS485 (1 :s 4C ]
+"103
+[; ;Control.c: 103: }
+[e :UE 698 ]
+}
+"105
+[; ;Control.c: 105: void Evaporador_On(void) {
+[v _Evaporador_On `(v ~T0 @X0 1 ef ]
+{
+[e :U _Evaporador_On ]
+[f ]
+"106
+[; ;Control.c: 106:     LATBbits.LATB5 = 0;
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+"107
+[; ;Control.c: 107:     Respuestas_RS485("EVAPORADOR_ON_OK");
+[e ( _Respuestas_RS485 (1 :s 5C ]
+"108
+[; ;Control.c: 108: }
+[e :UE 699 ]
+}
+"110
+[; ;Control.c: 110: void Evaporador_Off(void) {
+[v _Evaporador_Off `(v ~T0 @X0 1 ef ]
+{
+[e :U _Evaporador_Off ]
+[f ]
+"111
+[; ;Control.c: 111:     LATBbits.LATB5 = 1;
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+"112
+[; ;Control.c: 112:     Respuestas_RS485("EVAPORADOR_OFF_OK");
+[e ( _Respuestas_RS485 (1 :s 6C ]
+"113
+[; ;Control.c: 113: }
+[e :UE 700 ]
+}
+"115
+[; ;Control.c: 115: void Ventilador_On(void) {
+[v _Ventilador_On `(v ~T0 @X0 1 ef ]
+{
+[e :U _Ventilador_On ]
+[f ]
+"116
+[; ;Control.c: 116:     LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"117
+[; ;Control.c: 117:     Respuestas_RS485("VENTILADOR_ON_OK");
+[e ( _Respuestas_RS485 (1 :s 7C ]
+"118
+[; ;Control.c: 118: }
+[e :UE 701 ]
+}
+"120
+[; ;Control.c: 120: void Ventilador_Off(void) {
+[v _Ventilador_Off `(v ~T0 @X0 1 ef ]
+{
+[e :U _Ventilador_Off ]
+[f ]
+"121
+[; ;Control.c: 121:     LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"122
+[; ;Control.c: 122:     Respuestas_RS485("VENTILADOR_OFF_OK");
+[e ( _Respuestas_RS485 (1 :s 8C ]
+"123
+[; ;Control.c: 123: }
+[e :UE 702 ]
+}
+"125
+[; ;Control.c: 125: void Respuestas_RS485(char *Mensaje) {
+[v _Respuestas_RS485 `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _Respuestas_RS485 ]
+[v _Mensaje `*uc ~T0 @X0 1 r1 ]
+[f ]
+"126
+[; ;Control.c: 126:     LATBbits.LATB6 = 1;
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
+"127
+[; ;Control.c: 127:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"128
+[; ;Control.c: 128:     UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"Respuesta:");
+[e ( _UART_Print (1 :s 9C ]
+"129
+[; ;Control.c: 129:     UART_Print(Mensaje);
+[e ( _UART_Print (1 -> _Mensaje `*Cuc ]
+"130
+[; ;Control.c: 130:     UART_Print("\"}");
+[e ( _UART_Print (1 :s 10C ]
+"131
+[; ;Control.c: 131:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"132
+[; ;Control.c: 132:     LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"133
+[; ;Control.c: 133: }
+[e :UE 703 ]
+}
+[a 10C 34 125 0 ]
+[a 2C 73 78 89 69 67 67 73 79 78 95 71 65 83 95 79 75 0 ]
+[a 1C 73 78 89 69 67 67 73 79 78 95 76 73 81 85 73 68 79 95 79 75 0 ]
+[a 5C 69 86 65 80 79 82 65 68 79 82 95 79 78 95 79 75 0 ]
+[a 7C 86 69 78 84 73 76 65 68 79 82 95 79 78 95 79 75 0 ]
+[a 3C 68 65 77 80 69 82 95 79 80 69 78 95 79 75 0 ]
+[a 6C 69 86 65 80 79 82 65 68 79 82 95 79 70 70 95 79 75 0 ]
+[a 8C 86 69 78 84 73 76 65 68 79 82 95 79 70 70 95 79 75 0 ]
+[a 4C 68 65 77 80 69 82 95 67 76 79 83 69 95 79 75 0 ]
+[a 9C 123 34 105 34 58 34 65 71 82 79 76 65 84 73 78 65 95 71 48 49 34 44 34 114 115 34 58 34 82 101 115 112 117 101 115 116 97 58 0 ]

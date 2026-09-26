@@ -3,4 +3,5 @@ Control.c  \
 Control.h  \
 Config.h  \
 Timers.h  \
-Uart.h 
+Uart.h  \
+ADC.h 

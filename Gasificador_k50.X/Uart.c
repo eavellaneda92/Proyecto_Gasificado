@@ -96,11 +96,67 @@ void Get_Comando(char *Data) {
                         if (Coma == 1) Tiempo = Tiempo * 10 + c - 48;
                     }
                 }
+                uint8_t Estado = 0;
+                if(Tiempo == 0) Estado = RELE_OFF;
+                else Estado = RELE_ON;
+                switch (Rele) {
+                    case 0: RELAY1 = Estado;
+                        break;
+                    case 1: RELAY2 = Estado;
+                        break;
+                    case 2: RELAY3 = Estado;
+                        break;
+                    case 3: RELAY4 = Estado;
+                        break;
+                    case 4: RELAY5 = Estado;
+                        break;
+                    case 5: RELAY6 = Estado;
+                        break;
+                    case 6: RELAY7 = Estado;
+                        break;
+                    case 7: RELAY8 = Estado;
+                        break;
+                    case 8: RELAY9 = Estado;
+                        break;
+                    case 9: RELAY10 = Estado;
+                        break;
+                }
             }
             /*VALOR DE ANALOG Y ENTRADAS*/
             Index = Texto_IndexOf(Data, "STATUS");
             if (Index >= 0) {
                 Imprime_Estado();
+            }
+            
+            /*COMANDO PARA INYECTAR LIQUIDO*/
+            Index = Texto_IndexOf(Data, "INY_LIQUIDO");
+            if (Index >= 0) {
+                Inyecta_Liquido();
+            }
+            /*COMANDO PARA INYECTAR GAS*/
+            Index = Texto_IndexOf(Data, "INY_GAS");
+            if (Index >= 0) {
+                Inyecta_Gas();
+            }
+            /*COMANDO PARA ABRIR LO DAMPER*/
+            Index = Texto_IndexOf(Data, "DAMPER_OPEN");
+            if (Index >= 0) {
+                Damper_Abrir();
+            }
+            /*COMANDO PARA CERRAR LO DAMPER*/
+            Index = Texto_IndexOf(Data, "DAMPER_CLOSE");
+            if (Index >= 0) {
+                Damper_Cerrar();
+            }
+            /*COMANDO PARA ACTIVAR EVAPORADOR*/
+            Index = Texto_IndexOf(Data, "EVAPORADOR_ON");
+            if (Index >= 0) {
+                Evaporador_On();
+            }
+            /*COMANDO PARA DESACTIVAR EVAPORADOR*/
+            Index = Texto_IndexOf(Data, "EVAPORADOR_OFF");
+            if (Index >= 0) {
+                Evaporador_Off();
             }
         }
     }
@@ -130,6 +186,8 @@ void Imprime_Estado(void) {
     UART_Print(",");
     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
     UART_Print(txt);
+    UART_Print(",");
+    sprintf(txt, "%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas);
     UART_Print("\"}");
     __delay_ms(5);
     MOD485 = 0;
