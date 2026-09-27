@@ -97,7 +97,7 @@ void Get_Comando(char *Data) {
                     }
                 }
                 uint8_t Estado = 0;
-                if(Tiempo == 0) Estado = RELE_OFF;
+                if (Tiempo == 0) Estado = RELE_OFF;
                 else Estado = RELE_ON;
                 switch (Rele) {
                     case 0: RELAY1 = Estado;
@@ -127,7 +127,7 @@ void Get_Comando(char *Data) {
             if (Index >= 0) {
                 Imprime_Estado();
             }
-            
+
             /*COMANDO PARA INYECTAR LIQUIDO*/
             Index = Texto_IndexOf(Data, "INY_LIQUIDO");
             if (Index >= 0) {
@@ -158,6 +158,26 @@ void Get_Comando(char *Data) {
             if (Index >= 0) {
                 Evaporador_Off();
             }
+            /*COMANDO PARA ACTIVAR VENTILADORES*/
+            Index = Texto_IndexOf(Data, "VENTILADOR_ON");
+            if (Index >= 0) {
+                Ventilador_On();
+            }
+            /*COMANDO PARA DESACTIVAR EVAPORADOR*/
+            Index = Texto_IndexOf(Data, "VENTILADOR_OFF");
+            if (Index >= 0) {
+                Ventilador_Off();
+            }
+            /*COMANDO PARA PARAR MAQUINA*/
+            Index = Texto_IndexOf(Data, "STOP_PLANT");
+            if (Index >= 0) {
+                Armado_Stop();
+            }
+            /*COMANDO PARA ARRANCAR GAS*/
+            Index = Texto_IndexOf(Data, "RUN_PLANT");
+            if (Index >= 0) {
+                En_Sistem = 1;
+            }
         }
     }
 }
@@ -187,7 +207,7 @@ void Imprime_Estado(void) {
     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
     UART_Print(txt);
     UART_Print(",");
-    sprintf(txt, "%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas);
+    sprintf(txt, "%d,%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas, En_Sistem);
     UART_Print("\"}");
     __delay_ms(5);
     MOD485 = 0;

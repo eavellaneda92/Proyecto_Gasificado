@@ -66,7 +66,7 @@ intcode CODE 0 8 8 1E 1 2
 smallconst SMALLCONST 0 1000 1000 86 1 2
 bssCOMRAM COMRAM 1 55 55 5 1 1
 config CONFIG 4 300000 300000 E 1 1
-$C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+$C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 init CODE 0 26 26 4 1 2
 reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 E 1 1
@@ -126,182 +126,182 @@ MEDIUMCONST 2E58-FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Gasificado.X.production.o
-8 intcode CODE >13130:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-8 intcode CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-12 intcode CODE >15:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-16 intcode CODE >16:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-1A intcode CODE >17:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2A4C text43 CODE >5:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A4C text43 CODE >6:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A5A text43 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A60 text43 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A62 text43 CODE >9:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A64 text43 CODE >11:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A72 text43 CODE >12:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A78 text43 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A7A text43 CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A7C text43 CODE >16:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A8A text43 CODE >17:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A8E text43 CODE >18:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2A9E text43 CODE >19:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AA0 text43 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AA2 text43 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AA2 text43 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AA4 text43 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AB4 text43 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AB6 text43 CODE >25:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2AB8 text43 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2ABA text43 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-28D6 text42 CODE >6:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-28D6 text42 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-28E4 text42 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-28E8 text42 CODE >9:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-28FA text42 CODE >10:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-290A text42 CODE >11:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-290C text42 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-290E text42 CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2912 text42 CODE >15:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2916 text42 CODE >16:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2918 text42 CODE >18:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2926 text42 CODE >19:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-292A text42 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-293C text42 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-294C text42 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-294E text42 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2950 text42 CODE >25:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2954 text42 CODE >26:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2958 text42 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-295A text42 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2BDA text40 CODE >4:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2BDA text40 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2BDE text40 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2BE2 text40 CODE >9:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2BE4 text40 CODE >12:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2BEC text40 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2C1A text40 CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ABC text39 CODE >16:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ABC text39 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ABE text39 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AC0 text39 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AC2 text39 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AC4 text39 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AC6 text39 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AC8 text39 CODE >30:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ACA text39 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ACC text39 CODE >32:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ACE text39 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AD0 text39 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AD4 text39 CODE >39:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AD6 text39 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AD8 text39 CODE >41:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ADA text39 CODE >42:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ADC text39 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2ADE text39 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AE0 text39 CODE >51:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AE2 text39 CODE >53:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AE4 text39 CODE >55:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AE6 text39 CODE >58:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AE8 text39 CODE >59:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AEA text39 CODE >60:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AEC text39 CODE >61:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AEE text39 CODE >62:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AF0 text39 CODE >63:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AF2 text39 CODE >64:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AF4 text39 CODE >65:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AF6 text39 CODE >66:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AF8 text39 CODE >67:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AFA text39 CODE >68:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AFC text39 CODE >69:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2AFE text39 CODE >70:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B00 text39 CODE >71:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B02 text39 CODE >72:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B04 text39 CODE >73:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B06 text39 CODE >76:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B08 text39 CODE >77:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B0A text39 CODE >78:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B0C text39 CODE >79:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B0E text39 CODE >80:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B10 text39 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B12 text39 CODE >82:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B14 text39 CODE >83:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B16 text39 CODE >84:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B18 text39 CODE >85:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B1A text39 CODE >88:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B1C text39 CODE >91:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B1E text39 CODE >92:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2B20 text39 CODE >93:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Config.c
-2E48 text38 CODE >3:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E48 text38 CODE >4:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E4C text38 CODE >5:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E4E text38 CODE >6:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E52 text38 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E54 text38 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1AA2 text37 CODE >17:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1AA2 text37 CODE >18:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1AB4 text37 CODE >19:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1AC8 text37 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1ACA text37 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1ACE text37 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1ADE text37 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1AF0 text37 CODE >25:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B00 text37 CODE >26:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B14 text37 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B30 text37 CODE >28:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B4E text37 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B6E text37 CODE >30:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B70 text37 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B74 text37 CODE >32:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B78 text37 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1B92 text37 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BB8 text37 CODE >35:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BDC text37 CODE >36:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BF4 text37 CODE >37:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BF6 text37 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BF8 text37 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1BFA text37 CODE >43:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C0A text37 CODE >44:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C1C text37 CODE >45:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C2C text37 CODE >46:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C2E text37 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C30 text37 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C32 text37 CODE >49:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C34 text37 CODE >50:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C36 text37 CODE >51:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C3A text37 CODE >52:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C3E text37 CODE >53:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C40 text37 CODE >54:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C42 text37 CODE >55:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C44 text37 CODE >56:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C46 text37 CODE >57:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C48 text37 CODE >58:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C4A text37 CODE >59:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C4A text37 CODE >60:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-1C4C text37 CODE >63:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E12 text36 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E12 text36 CODE >32:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E16 text36 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E1A text36 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E1E text36 CODE >35:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E20 text36 CODE >36:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E22 text36 CODE >37:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E24 text36 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2DFC text35 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2DFC text35 CODE >41:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E00 text35 CODE >42:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E02 text35 CODE >43:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E06 text35 CODE >44:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E0A text35 CODE >45:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E0C text35 CODE >46:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E0E text35 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E10 text35 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E26 text34 CODE >50:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E26 text34 CODE >51:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E28 text34 CODE >52:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E2C text34 CODE >53:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E2E text34 CODE >54:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E30 text34 CODE >55:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E32 text34 CODE >56:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
-2E36 text34 CODE >57:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Timers.c
+8 intcode CODE >13130:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+8 intcode CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+12 intcode CODE >15:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+16 intcode CODE >16:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+1A intcode CODE >17:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2A4C text43 CODE >5:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A4C text43 CODE >6:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A5A text43 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A60 text43 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A62 text43 CODE >9:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A64 text43 CODE >11:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A72 text43 CODE >12:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A78 text43 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A7A text43 CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A7C text43 CODE >16:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A8A text43 CODE >17:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A8E text43 CODE >18:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2A9E text43 CODE >19:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AA0 text43 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AA2 text43 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AA2 text43 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AA4 text43 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AB4 text43 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AB6 text43 CODE >25:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2AB8 text43 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2ABA text43 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+28D6 text42 CODE >6:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+28D6 text42 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+28E4 text42 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+28E8 text42 CODE >9:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+28FA text42 CODE >10:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+290A text42 CODE >11:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+290C text42 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+290E text42 CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2912 text42 CODE >15:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2916 text42 CODE >16:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2918 text42 CODE >18:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2926 text42 CODE >19:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+292A text42 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+293C text42 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+294C text42 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+294E text42 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2950 text42 CODE >25:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2954 text42 CODE >26:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2958 text42 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+295A text42 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2BDA text40 CODE >4:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2BDA text40 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2BDE text40 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2BE2 text40 CODE >9:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2BE4 text40 CODE >12:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2BEC text40 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2C1A text40 CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ABC text39 CODE >16:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ABC text39 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ABE text39 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AC0 text39 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AC2 text39 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AC4 text39 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AC6 text39 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AC8 text39 CODE >30:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ACA text39 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ACC text39 CODE >32:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ACE text39 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AD0 text39 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AD4 text39 CODE >39:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AD6 text39 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AD8 text39 CODE >41:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ADA text39 CODE >42:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ADC text39 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2ADE text39 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AE0 text39 CODE >51:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AE2 text39 CODE >53:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AE4 text39 CODE >55:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AE6 text39 CODE >58:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AE8 text39 CODE >59:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AEA text39 CODE >60:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AEC text39 CODE >61:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AEE text39 CODE >62:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AF0 text39 CODE >63:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AF2 text39 CODE >64:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AF4 text39 CODE >65:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AF6 text39 CODE >66:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AF8 text39 CODE >67:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AFA text39 CODE >68:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AFC text39 CODE >69:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2AFE text39 CODE >70:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B00 text39 CODE >71:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B02 text39 CODE >72:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B04 text39 CODE >73:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B06 text39 CODE >76:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B08 text39 CODE >77:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B0A text39 CODE >78:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B0C text39 CODE >79:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B0E text39 CODE >80:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B10 text39 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B12 text39 CODE >82:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B14 text39 CODE >83:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B16 text39 CODE >84:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B18 text39 CODE >85:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B1A text39 CODE >88:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B1C text39 CODE >91:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B1E text39 CODE >92:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2B20 text39 CODE >93:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Config.c
+2E48 text38 CODE >3:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E48 text38 CODE >4:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E4C text38 CODE >5:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E4E text38 CODE >6:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E52 text38 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E54 text38 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1AA2 text37 CODE >17:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1AA2 text37 CODE >18:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1AB4 text37 CODE >19:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1AC8 text37 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1ACA text37 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1ACE text37 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1ADE text37 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1AF0 text37 CODE >25:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B00 text37 CODE >26:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B14 text37 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B30 text37 CODE >28:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B4E text37 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B6E text37 CODE >30:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B70 text37 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B74 text37 CODE >32:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B78 text37 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1B92 text37 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BB8 text37 CODE >35:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BDC text37 CODE >36:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BF4 text37 CODE >37:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BF6 text37 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BF8 text37 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1BFA text37 CODE >43:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C0A text37 CODE >44:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C1C text37 CODE >45:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C2C text37 CODE >46:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C2E text37 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C30 text37 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C32 text37 CODE >49:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C34 text37 CODE >50:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C36 text37 CODE >51:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C3A text37 CODE >52:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C3E text37 CODE >53:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C40 text37 CODE >54:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C42 text37 CODE >55:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C44 text37 CODE >56:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C46 text37 CODE >57:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C48 text37 CODE >58:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C4A text37 CODE >59:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C4A text37 CODE >60:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+1C4C text37 CODE >63:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E12 text36 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E12 text36 CODE >32:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E16 text36 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E1A text36 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E1E text36 CODE >35:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E20 text36 CODE >36:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E22 text36 CODE >37:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E24 text36 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2DFC text35 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2DFC text35 CODE >41:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E00 text35 CODE >42:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E02 text35 CODE >43:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E06 text35 CODE >44:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E0A text35 CODE >45:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E0C text35 CODE >46:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E0E text35 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E10 text35 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E26 text34 CODE >50:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E26 text34 CODE >51:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E28 text34 CODE >52:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E2C text34 CODE >53:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E2E text34 CODE >54:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E30 text34 CODE >55:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E32 text34 CODE >56:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
+2E36 text34 CODE >57:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Timers.c
 24A0 text33 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
 24A0 text33 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
 24B0 text33 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
@@ -319,96 +319,96 @@ $dist/default/production\Gasificado.X.production.o
 2532 text33 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
 2532 text33 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
 2542 text33 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
-271A text32 CODE >56:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-271A text32 CODE >58:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2734 text32 CODE >60:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2786 text32 CODE >62:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-278A text32 CODE >63:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-278C text32 CODE >64:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-278E text32 CODE >65:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2790 text32 CODE >67:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2792 text32 CODE >68:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2794 text32 CODE >69:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2796 text32 CODE >71:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2798 text32 CODE >72:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-279A text32 CODE >73:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-279E text32 CODE >74:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27A2 text32 CODE >76:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27A4 text32 CODE >77:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27A6 text32 CODE >78:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27A8 text32 CODE >79:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27AA text32 CODE >80:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27AC text32 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27AE text32 CODE >83:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27B0 text32 CODE >84:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-27B2 text32 CODE >85:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2680 text31 CODE >87:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2680 text31 CODE >89:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-269A text31 CODE >91:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26EC text31 CODE >93:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26F0 text31 CODE >94:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26F2 text31 CODE >95:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26F4 text31 CODE >96:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26F6 text31 CODE >98:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26F8 text31 CODE >99:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26FA text31 CODE >100:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26FC text31 CODE >102:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-26FE text31 CODE >103:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2700 text31 CODE >104:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2704 text31 CODE >105:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2708 text31 CODE >107:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-270A text31 CODE >108:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-270C text31 CODE >109:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-270E text31 CODE >110:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2710 text31 CODE >111:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2712 text31 CODE >112:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2714 text31 CODE >114:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2716 text31 CODE >115:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2718 text31 CODE >116:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2D0A text30 CODE >174:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2D0A text30 CODE >175:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2D0C text30 CODE >176:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2D3E text30 CODE >177:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2D40 text30 CODE >178:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1DB2 text29 CODE >159:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1DB2 text29 CODE >160:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1DB4 text29 CODE >161:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1DC2 text29 CODE >162:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1DEA text29 CODE >163:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E12 text29 CODE >165:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E18 text29 CODE >166:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E1E text29 CODE >167:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E60 text29 CODE >168:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E74 text29 CODE >169:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1E8C text29 CODE >170:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-1EAA text29 CODE >172:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2E38 text28 CODE >10:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E38 text28 CODE >11:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E3C text28 CODE >12:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E3E text28 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E42 text28 CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-2E46 text28 CODE >15:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Leds.c
-25E2 text27 CODE >118:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25E4 text27 CODE >119:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25EC text27 CODE >120:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25F0 text27 CODE >121:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25F2 text27 CODE >120:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25F2 text27 CODE >122:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2616 text27 CODE >123:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-261A text27 CODE >124:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2622 text27 CODE >125:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2626 text27 CODE >126:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2628 text27 CODE >125:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2628 text27 CODE >127:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-264C text27 CODE >128:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2654 text27 CODE >129:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2658 text27 CODE >130:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-265A text27 CODE >129:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-265A text27 CODE >131:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-267E text27 CODE >132:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2B22 text26 CODE >150:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2B22 text26 CODE >151:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2B82 text26 CODE >152:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
+271A text32 CODE >56:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+271A text32 CODE >58:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2734 text32 CODE >60:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2786 text32 CODE >62:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+278A text32 CODE >63:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+278C text32 CODE >64:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+278E text32 CODE >65:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2790 text32 CODE >67:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2792 text32 CODE >68:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2794 text32 CODE >69:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2796 text32 CODE >71:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2798 text32 CODE >72:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+279A text32 CODE >73:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+279E text32 CODE >74:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27A2 text32 CODE >76:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27A4 text32 CODE >77:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27A6 text32 CODE >78:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27A8 text32 CODE >79:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27AA text32 CODE >80:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27AC text32 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27AE text32 CODE >83:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27B0 text32 CODE >84:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+27B2 text32 CODE >85:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2680 text31 CODE >87:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2680 text31 CODE >89:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+269A text31 CODE >91:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26EC text31 CODE >93:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26F0 text31 CODE >94:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26F2 text31 CODE >95:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26F4 text31 CODE >96:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26F6 text31 CODE >98:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26F8 text31 CODE >99:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26FA text31 CODE >100:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26FC text31 CODE >102:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+26FE text31 CODE >103:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2700 text31 CODE >104:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2704 text31 CODE >105:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2708 text31 CODE >107:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+270A text31 CODE >108:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+270C text31 CODE >109:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+270E text31 CODE >110:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2710 text31 CODE >111:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2712 text31 CODE >112:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2714 text31 CODE >114:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2716 text31 CODE >115:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2718 text31 CODE >116:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2D0A text30 CODE >174:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2D0A text30 CODE >175:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2D0C text30 CODE >176:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2D3E text30 CODE >177:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2D40 text30 CODE >178:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1DB2 text29 CODE >159:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1DB2 text29 CODE >160:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1DB4 text29 CODE >161:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1DC2 text29 CODE >162:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1DEA text29 CODE >163:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E12 text29 CODE >165:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E18 text29 CODE >166:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E1E text29 CODE >167:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E60 text29 CODE >168:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E74 text29 CODE >169:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1E8C text29 CODE >170:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+1EAA text29 CODE >172:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2E38 text28 CODE >10:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E38 text28 CODE >11:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E3C text28 CODE >12:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E3E text28 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E42 text28 CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+2E46 text28 CODE >15:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Leds.c
+25E2 text27 CODE >118:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25E4 text27 CODE >119:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25EC text27 CODE >120:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25F0 text27 CODE >121:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25F2 text27 CODE >120:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25F2 text27 CODE >122:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2616 text27 CODE >123:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+261A text27 CODE >124:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2622 text27 CODE >125:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2626 text27 CODE >126:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2628 text27 CODE >125:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2628 text27 CODE >127:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+264C text27 CODE >128:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2654 text27 CODE >129:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2658 text27 CODE >130:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+265A text27 CODE >129:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+265A text27 CODE >131:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+267E text27 CODE >132:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2B22 text26 CODE >150:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2B22 text26 CODE >151:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2B82 text26 CODE >152:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
 206E text25 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
 206E text25 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
 2070 text25 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
@@ -591,265 +591,265 @@ $dist/default/production\Gasificado.X.production.o
 2D5A text13 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 2D6A text13 CODE >20:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 2D74 text13 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-15D4 text12 CODE >5:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-15D4 text12 CODE >6:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-15E2 text12 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-15FA text12 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1608 text12 CODE >9:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1610 text12 CODE >10:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-161C text12 CODE >11:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-162C text12 CODE >12:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-164C text12 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1672 text12 CODE >15:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-169A text12 CODE >16:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16B0 text12 CODE >17:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16B2 text12 CODE >18:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16C0 text12 CODE >19:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16D0 text12 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16E4 text12 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-16EE text12 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1700 text12 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-171A text12 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1740 text12 CODE >25:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-176E text12 CODE >26:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-179A text12 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-17C4 text12 CODE >28:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-17EC text12 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1812 text12 CODE >30:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1822 text12 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1824 text12 CODE >32:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1828 text12 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-183C text12 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1840 text12 CODE >35:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-1844 text12 CODE >37:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-185C text12 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-186A text12 CODE >39:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-186C text12 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-187C text12 CODE >41:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-188C text12 CODE >42:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-189E text12 CODE >43:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18A8 text12 CODE >44:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18B8 text12 CODE >45:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18BA text12 CODE >46:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18CE text12 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18D2 text12 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-18D6 text12 CODE >50:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Comandos.c
-295C text11 CODE >176:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-295E text11 CODE >177:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2986 text11 CODE >178:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29AE text11 CODE >179:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29D6 text11 CODE >180:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29D8 text11 CODE >181:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2DD4 text10 CODE >162:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2DD4 text10 CODE >163:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2DEA text10 CODE >164:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2DF8 text10 CODE >166:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2DFA text10 CODE >167:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2544 text9 CODE >134:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2546 text9 CODE >135:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-254E text9 CODE >136:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2552 text9 CODE >137:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2554 text9 CODE >136:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2554 text9 CODE >138:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2578 text9 CODE >139:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-257C text9 CODE >140:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2584 text9 CODE >141:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2588 text9 CODE >142:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-258A text9 CODE >141:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-258A text9 CODE >143:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25AE text9 CODE >144:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25B6 text9 CODE >145:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25BA text9 CODE >146:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25BC text9 CODE >145:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25BC text9 CODE >147:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-25E0 text9 CODE >148:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2DAA text8 CODE >154:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2DAA text8 CODE >155:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2DD2 text8 CODE >156:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21EC text7 CODE >86:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-21EC text7 CODE >87:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-21EE text7 CODE >89:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-21FA text7 CODE >90:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-220C text7 CODE >91:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2228 text7 CODE >92:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2242 text7 CODE >94:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2264 text7 CODE >95:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2266 text7 CODE >96:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-226A text7 CODE >97:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-226C text7 CODE >98:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2270 text7 CODE >99:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2274 text7 CODE >100:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2276 text7 CODE >102:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-229A text7 CODE >103:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-22A2 text7 CODE >104:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2CD2 text6 CODE >169:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2CD2 text6 CODE >170:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2CE8 text6 CODE >171:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2D00 text6 CODE >173:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2D08 text6 CODE >174:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FA2 text5 CODE >106:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FA2 text5 CODE >107:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FA8 text5 CODE >108:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FAA text5 CODE >110:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FAE text5 CODE >111:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FB2 text5 CODE >112:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FB6 text5 CODE >114:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FC6 text5 CODE >115:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FDE text5 CODE >116:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FE6 text5 CODE >119:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1FF2 text5 CODE >120:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-200A text5 CODE >121:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-200E text5 CODE >122:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2012 text5 CODE >123:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2016 text5 CODE >124:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-201A text5 CODE >125:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-202E text5 CODE >126:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2036 text5 CODE >127:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2050 text5 CODE >129:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2052 text5 CODE >130:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2064 text5 CODE >131:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-206C text5 CODE >132:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27B4 text4 CODE >134:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27B4 text4 CODE >136:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27CA text4 CODE >137:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27DC text4 CODE >138:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27E8 text4 CODE >140:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-27FA text4 CODE >141:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2804 text4 CODE >146:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-283E text4 CODE >147:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2844 text4 CODE >148:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-284A text4 CODE >149:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29DA text3 CODE >151:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29DA text3 CODE >152:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-29F0 text3 CODE >153:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2A04 text3 CODE >157:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2A3E text3 CODE >158:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2A44 text3 CODE >159:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2A4A text3 CODE >160:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1086 text2 CODE >6:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1086 text2 CODE >7:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10A0 text2 CODE >8:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10B8 text2 CODE >11:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10BA text2 CODE >12:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10BC text2 CODE >13:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10C4 text2 CODE >14:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10CC text2 CODE >15:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10CE text2 CODE >17:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10D6 text2 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-10FE text2 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1126 text2 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-112E text2 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1158 text2 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1160 text2 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1188 text2 CODE >28:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-11B0 text2 CODE >29:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-11B8 text2 CODE >30:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-11E2 text2 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-11EA text2 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1212 text2 CODE >35:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-123A text2 CODE >36:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1264 text2 CODE >37:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-126C text2 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-129C text2 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-12C4 text2 CODE >41:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-12EC text2 CODE >42:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1316 text2 CODE >43:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-131E text2 CODE >44:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1348 text2 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1370 text2 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1398 text2 CODE >49:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-13C2 text2 CODE >50:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-13CA text2 CODE >51:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-13FA text2 CODE >53:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1422 text2 CODE >54:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-144A text2 CODE >55:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1474 text2 CODE >56:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-147C text2 CODE >57:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-14A6 text2 CODE >60:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-14CE text2 CODE >61:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-14F6 text2 CODE >62:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-14FE text2 CODE >65:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-150A text2 CODE >67:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-151A text2 CODE >68:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-153C text2 CODE >71:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1554 text2 CODE >72:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1558 text2 CODE >74:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1570 text2 CODE >75:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1574 text2 CODE >77:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-158C text2 CODE >78:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-1590 text2 CODE >79:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15A8 text2 CODE >80:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15AC text2 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15B0 text2 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15B8 text2 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15C0 text2 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15C8 text2 CODE >81:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-15D2 text2 CODE >84:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Kinco.c
-2130 text1 CODE >31:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2130 text1 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2142 text1 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-214E text1 CODE >36:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2158 text1 CODE >37:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2166 text1 CODE >38:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2168 text1 CODE >39:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-218A text1 CODE >40:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-218C text1 CODE >41:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-218E text1 CODE >44:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-219E text1 CODE >46:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21AA text1 CODE >47:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21B4 text1 CODE >48:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21C2 text1 CODE >49:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21C4 text1 CODE >50:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21E6 text1 CODE >51:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21E8 text1 CODE >52:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-21EA text1 CODE >54:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\Uarts.c
-2B84 text0 CODE >19:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B84 text0 CODE >20:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B88 text0 CODE >21:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B8C text0 CODE >22:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B90 text0 CODE >23:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B94 text0 CODE >24:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2B98 text0 CODE >25:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BAC text0 CODE >26:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BC0 text0 CODE >27:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BC2 text0 CODE >28:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BC4 text0 CODE >30:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BC8 text0 CODE >32:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BCC text0 CODE >33:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2BD0 text0 CODE >34:C:\Users\LENOVO\Documents\Proyecto_Ztrack\Proyecto_Ztrack\Gasificado.X\main.c
-2C5A cinit CODE >4081:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C5A cinit CODE >4083:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C5A cinit CODE >4086:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C5A cinit CODE >4175:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C5E cinit CODE >4176:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C60 cinit CODE >4177:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C60 cinit CODE >4178:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C62 cinit CODE >4179:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C64 cinit CODE >4180:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C66 cinit CODE >4183:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C6A cinit CODE >4184:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C6C cinit CODE >4185:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C6C cinit CODE >4186:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C6E cinit CODE >4187:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C70 cinit CODE >4188:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C72 cinit CODE >4191:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C76 cinit CODE >4192:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C78 cinit CODE >4193:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C78 cinit CODE >4194:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C7A cinit CODE >4195:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C7C cinit CODE >4196:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C7E cinit CODE >4199:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C80 cinit CODE >4200:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C82 cinit CODE >4201:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C84 cinit CODE >4202:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C86 cinit CODE >4203:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C88 cinit CODE >4209:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C88 cinit CODE >4211:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C8A cinit CODE >4212:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C8C cinit CODE >4214:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C8E cinit CODE >4215:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C90 cinit CODE >4216:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
-2C92 cinit CODE >4217:C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_1.s
+15D4 text12 CODE >5:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+15D4 text12 CODE >6:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+15E2 text12 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+15FA text12 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1608 text12 CODE >9:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1610 text12 CODE >10:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+161C text12 CODE >11:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+162C text12 CODE >12:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+164C text12 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1672 text12 CODE >15:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+169A text12 CODE >16:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16B0 text12 CODE >17:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16B2 text12 CODE >18:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16C0 text12 CODE >19:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16D0 text12 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16E4 text12 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+16EE text12 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1700 text12 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+171A text12 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1740 text12 CODE >25:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+176E text12 CODE >26:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+179A text12 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+17C4 text12 CODE >28:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+17EC text12 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1812 text12 CODE >30:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1822 text12 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1824 text12 CODE >32:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1828 text12 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+183C text12 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1840 text12 CODE >35:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+1844 text12 CODE >37:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+185C text12 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+186A text12 CODE >39:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+186C text12 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+187C text12 CODE >41:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+188C text12 CODE >42:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+189E text12 CODE >43:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18A8 text12 CODE >44:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18B8 text12 CODE >45:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18BA text12 CODE >46:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18CE text12 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18D2 text12 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+18D6 text12 CODE >50:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Comandos.c
+295C text11 CODE >176:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+295E text11 CODE >177:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2986 text11 CODE >178:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29AE text11 CODE >179:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29D6 text11 CODE >180:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29D8 text11 CODE >181:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2DD4 text10 CODE >162:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2DD4 text10 CODE >163:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2DEA text10 CODE >164:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2DF8 text10 CODE >166:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2DFA text10 CODE >167:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2544 text9 CODE >134:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2546 text9 CODE >135:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+254E text9 CODE >136:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2552 text9 CODE >137:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2554 text9 CODE >136:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2554 text9 CODE >138:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2578 text9 CODE >139:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+257C text9 CODE >140:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2584 text9 CODE >141:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2588 text9 CODE >142:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+258A text9 CODE >141:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+258A text9 CODE >143:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25AE text9 CODE >144:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25B6 text9 CODE >145:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25BA text9 CODE >146:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25BC text9 CODE >145:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25BC text9 CODE >147:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+25E0 text9 CODE >148:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2DAA text8 CODE >154:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2DAA text8 CODE >155:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2DD2 text8 CODE >156:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21EC text7 CODE >86:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+21EC text7 CODE >87:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+21EE text7 CODE >89:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+21FA text7 CODE >90:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+220C text7 CODE >91:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2228 text7 CODE >92:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2242 text7 CODE >94:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2264 text7 CODE >95:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2266 text7 CODE >96:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+226A text7 CODE >97:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+226C text7 CODE >98:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2270 text7 CODE >99:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2274 text7 CODE >100:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2276 text7 CODE >102:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+229A text7 CODE >103:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+22A2 text7 CODE >104:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2CD2 text6 CODE >169:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2CD2 text6 CODE >170:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2CE8 text6 CODE >171:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2D00 text6 CODE >173:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2D08 text6 CODE >174:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FA2 text5 CODE >106:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FA2 text5 CODE >107:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FA8 text5 CODE >108:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FAA text5 CODE >110:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FAE text5 CODE >111:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FB2 text5 CODE >112:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FB6 text5 CODE >114:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FC6 text5 CODE >115:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FDE text5 CODE >116:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FE6 text5 CODE >119:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1FF2 text5 CODE >120:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+200A text5 CODE >121:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+200E text5 CODE >122:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2012 text5 CODE >123:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2016 text5 CODE >124:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+201A text5 CODE >125:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+202E text5 CODE >126:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2036 text5 CODE >127:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2050 text5 CODE >129:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2052 text5 CODE >130:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2064 text5 CODE >131:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+206C text5 CODE >132:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27B4 text4 CODE >134:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27B4 text4 CODE >136:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27CA text4 CODE >137:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27DC text4 CODE >138:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27E8 text4 CODE >140:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+27FA text4 CODE >141:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2804 text4 CODE >146:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+283E text4 CODE >147:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2844 text4 CODE >148:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+284A text4 CODE >149:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29DA text3 CODE >151:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29DA text3 CODE >152:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+29F0 text3 CODE >153:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2A04 text3 CODE >157:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2A3E text3 CODE >158:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2A44 text3 CODE >159:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2A4A text3 CODE >160:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1086 text2 CODE >6:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1086 text2 CODE >7:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10A0 text2 CODE >8:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10B8 text2 CODE >11:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10BA text2 CODE >12:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10BC text2 CODE >13:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10C4 text2 CODE >14:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10CC text2 CODE >15:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10CE text2 CODE >17:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10D6 text2 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+10FE text2 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1126 text2 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+112E text2 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1158 text2 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1160 text2 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1188 text2 CODE >28:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+11B0 text2 CODE >29:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+11B8 text2 CODE >30:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+11E2 text2 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+11EA text2 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1212 text2 CODE >35:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+123A text2 CODE >36:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1264 text2 CODE >37:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+126C text2 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+129C text2 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+12C4 text2 CODE >41:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+12EC text2 CODE >42:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1316 text2 CODE >43:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+131E text2 CODE >44:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1348 text2 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1370 text2 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1398 text2 CODE >49:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+13C2 text2 CODE >50:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+13CA text2 CODE >51:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+13FA text2 CODE >53:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1422 text2 CODE >54:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+144A text2 CODE >55:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1474 text2 CODE >56:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+147C text2 CODE >57:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+14A6 text2 CODE >60:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+14CE text2 CODE >61:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+14F6 text2 CODE >62:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+14FE text2 CODE >65:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+150A text2 CODE >67:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+151A text2 CODE >68:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+153C text2 CODE >71:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1554 text2 CODE >72:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1558 text2 CODE >74:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1570 text2 CODE >75:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1574 text2 CODE >77:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+158C text2 CODE >78:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+1590 text2 CODE >79:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15A8 text2 CODE >80:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15AC text2 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15B0 text2 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15B8 text2 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15C0 text2 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15C8 text2 CODE >81:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+15D2 text2 CODE >84:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
+2130 text1 CODE >31:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2130 text1 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2142 text1 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+214E text1 CODE >36:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2158 text1 CODE >37:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2166 text1 CODE >38:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2168 text1 CODE >39:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+218A text1 CODE >40:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+218C text1 CODE >41:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+218E text1 CODE >44:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+219E text1 CODE >46:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21AA text1 CODE >47:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21B4 text1 CODE >48:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21C2 text1 CODE >49:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21C4 text1 CODE >50:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21E6 text1 CODE >51:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21E8 text1 CODE >52:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+21EA text1 CODE >54:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Uarts.c
+2B84 text0 CODE >19:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B84 text0 CODE >20:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B88 text0 CODE >21:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B8C text0 CODE >22:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B90 text0 CODE >23:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B94 text0 CODE >24:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2B98 text0 CODE >25:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BAC text0 CODE >26:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BC0 text0 CODE >27:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BC2 text0 CODE >28:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BC4 text0 CODE >30:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BC8 text0 CODE >32:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BCC text0 CODE >33:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2BD0 text0 CODE >34:C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
+2C5A cinit CODE >4081:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C5A cinit CODE >4083:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C5A cinit CODE >4086:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C5A cinit CODE >4175:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C5E cinit CODE >4176:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C60 cinit CODE >4177:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C60 cinit CODE >4178:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C62 cinit CODE >4179:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C64 cinit CODE >4180:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C66 cinit CODE >4183:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C6A cinit CODE >4184:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C6C cinit CODE >4185:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C6C cinit CODE >4186:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C6E cinit CODE >4187:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C70 cinit CODE >4188:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C72 cinit CODE >4191:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C76 cinit CODE >4192:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C78 cinit CODE >4193:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C78 cinit CODE >4194:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C7A cinit CODE >4195:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C7C cinit CODE >4196:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C7E cinit CODE >4199:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C80 cinit CODE >4200:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C82 cinit CODE >4201:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C84 cinit CODE >4202:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C86 cinit CODE >4203:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C88 cinit CODE >4209:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C88 cinit CODE >4211:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C8A cinit CODE >4212:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C8C cinit CODE >4214:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C8E cinit CODE >4215:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C90 cinit CODE >4216:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+2C92 cinit CODE >4217:C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -894,7 +894,7 @@ _M_ID 56 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificado.X.production.o
 _M_LR 89 0 BANK0 1 bssBANK0 dist/default/production\Gasificado.X.production.o
 _TMR2 FBC 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _WPUB F61 0 ABS 0 - dist/default/production\Gasificado.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___sp 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 _dbuf 94 0 BANK0 1 bssBANK0 dist/default/production\Gasificado.X.production.o
 _dtoa 1C4E 0 CODE 0 text18 dist/default/production\Gasificado.X.production.o
 _main 2B84 0 CODE 0 text0 dist/default/production\Gasificado.X.production.o
@@ -902,13 +902,13 @@ _prec 83 0 BANK0 1 bssBANK0 dist/default/production\Gasificado.X.production.o
 _xtoa 1EAC 0 CODE 0 text16 dist/default/production\Gasificado.X.production.o
 abs@a B 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 btemp 5A 0 COMRAM 1 temp dist/default/production\Gasificado.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-___stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 read_prec_or_width@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 read_prec_or_width@n A 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 pad@i 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 pad@p 14 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
-start 26 0 CODE 0 init C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+start 26 0 CODE 0 init C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __end_of_Leer_1Byte 2D0A 0 CODE 0 text6 dist/default/production\Gasificado.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Gasificado.X.production.o
 pad@fp 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
@@ -928,11 +928,11 @@ ttemp6 5E 0 COMRAM 1 temp dist/default/production\Gasificado.X.production.o
 ttemp7 62 0 COMRAM 1 temp dist/default/production\Gasificado.X.production.o
 __end_of_Texto_Length 2D42 0 CODE 0 text30 dist/default/production\Gasificado.X.production.o
 _Read_Cmd 1086 0 CODE 0 text2 dist/default/production\Gasificado.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-intlevel0 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-intlevel1 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-intlevel2 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-intlevel3 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+__accesstop 60 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+intlevel0 0 0 CODE 0 text C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+intlevel1 0 0 CODE 0 text C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+intlevel2 0 0 CODE 0 text C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+intlevel3 0 0 CODE 0 text C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __end_of_HexToNum 29DA 0 CODE 0 text11 dist/default/production\Gasificado.X.production.o
 __end_of_Get_Comando 18D8 0 CODE 0 text12 dist/default/production\Gasificado.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Gasificado.X.production.o
@@ -962,8 +962,8 @@ _ANSELD F3B 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _ANSELE F3C 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _M_Direccion 87 0 BANK0 1 bssBANK0 dist/default/production\Gasificado.X.production.o
 ___awdiv@dividend 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __end_of_Pic_Clock_Init 2C1C 0 CODE 0 text40 dist/default/production\Gasificado.X.production.o
 _CCPR5H F56 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _CCPR5L F55 0 ABS 0 - dist/default/production\Gasificado.X.production.o
@@ -1019,7 +1019,7 @@ _TXREG1 FAD 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _TXREG2 F73 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _TXSTA1 FAC 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _TXSTA2 F72 0 ABS 0 - dist/default/production\Gasificado.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+isa$xinst 0 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 fputc@fp 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 fputs@fp E 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 __end_of_Read_X0 22A4 0 CODE 0 text7 dist/default/production\Gasificado.X.production.o
@@ -1269,15 +1269,15 @@ __end_of_read_prec_or_width 24A0 0 CODE 0 text17 dist/default/production\Gasific
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _RCSTA2bits F71 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Gasificado.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 UART1_WriteString@cad 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Gasificado.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+isa$std 1 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __end_of_UART1_Write 2680 0 CODE 0 text27 dist/default/production\Gasificado.X.production.o
 __end_of_Interrupcion 26 0 CODE 0 intcode dist/default/production\Gasificado.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-stacklo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+stackhi 0 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+stacklo 0 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\Gasificado.X.production.o
 _OSCCON2 FD2 0 ABS 0 - dist/default/production\Gasificado.X.production.o
 _OSCTUNE F9B 0 ABS 0 - dist/default/production\Gasificado.X.production.o
@@ -1381,7 +1381,7 @@ __Ltext39 0 0 ABS 0 text39 dist/default/production\Gasificado.X.production.o
 __Ltext40 0 0 ABS 0 text40 dist/default/production\Gasificado.X.production.o
 __Ltext42 0 0 ABS 0 text42 dist/default/production\Gasificado.X.production.o
 __Ltext43 0 0 ABS 0 text43 dist/default/production\Gasificado.X.production.o
-__ramtop 1000 0 RAM 0 ramtop C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 _sprintf 2D42 0 CODE 0 text13 dist/default/production\Gasificado.X.production.o
 _UART1_WriteString 2B22 0 CODE 0 text26 dist/default/production\Gasificado.X.production.o
 _vfprintf 2C1C 0 CODE 0 text14 dist/default/production\Gasificado.X.production.o
@@ -1397,11 +1397,11 @@ _UART_Read 2130 0 CODE 0 text1 dist/default/production\Gasificado.X.production.o
 __end_of_vfprintf 2C5A 0 CODE 0 text14 dist/default/production\Gasificado.X.production.o
 IndexOf_Str@buf 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
 IndexOf_Str@len F 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-___heap_lo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___heap_hi 0 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+___heap_lo 0 0 ABS 0 - C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Gasificado.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcBsjh4.1\driver_tmp_14.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Gasificado.X.production.o
 __end_of__initialization 2C88 0 CODE 0 cinit dist/default/production\Gasificado.X.production.o
 ___awmod@divisor 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificado.X.production.o

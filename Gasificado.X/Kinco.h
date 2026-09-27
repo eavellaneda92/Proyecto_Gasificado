@@ -47,7 +47,7 @@ extern "C" {
 
 #define SP_PPM 1
 #define V_PPM 2
-#define SP_TEMP 3
+#define SP_TEMP2 3
 #define V_TEMP 4
 #define SP_MIN 5
 #define V_MIN 6

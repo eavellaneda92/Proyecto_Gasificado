@@ -43,11 +43,17 @@ void Proceso_Arranque(void) {
         Arranque_Count++;
         if (Arranque_Count >= 200) {
             /*INICIO DE LA EEPROM*/
-            if(Eeprom_Leer(1) == 0x10){
-               
-            }else{
-                
-                Eeprom_Escribir(1,0x10);
+            if (Eeprom_Leer(1) == 0x10) {
+                Set_Channel_Heater(0);
+                Set_Tiempo_Damper(30000);
+                Set_Tiempo_Iny_Gas(2000);
+                Set_Tiempo_Iny_Liquido(1200);
+            } else {
+                Channel_Heater = Get_Channel_Heater();
+                Tiempo_Damper = Get_Tiempo_Damper();
+                Tiempo_Iny_Liquido = Get_Tiempo_Iny_Liquido();
+                Tiempo_Iny_Gas = Get_Tiempo_Iny_Gas();
+                Eeprom_Escribir(1, 0x10);
             }
             Armado_Cerrado();
             Arranque_Flag = 1;
@@ -56,13 +62,16 @@ void Proceso_Arranque(void) {
 }
 
 void Armado_Cerrado(void) {
-    Power_Rele(Damper_Close, 30000);
-    Power_Rele(Valve_Gas_Close, 20000);
-    Power_Rele(Valve_Liq_Close, 20000);
+    Power_Rele(Damper_Close, (uint16_t)(Tiempo_Damper * 1.5));
+    Power_Rele(Valve_Gas_Close, (uint16_t)(Tiempo_Iny_Gas * 1.5));
+    Power_Rele(Valve_Liq_Close, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
 }
 
-void Armado_Ventila(void) {
-    Power_Rele(Damper_Open, 30000);
+void Armado_Stop(void){
+    Armado_Cerrado();
+    Evaporador = RELE_OFF;
+    Ventilador = RELE_OFF;
+    En_Sistem = 0;
 }
 
 void Proceso_Heater(void) {
@@ -85,7 +94,7 @@ void Inyecta_Liquido(void) {
         __delay_ms(1);
         CLRWDT();
     }
-    Power_Rele(Valve_Liq_Close, Tiempo_Iny_Liquido * 1.5);
+    Power_Rele(Valve_Liq_Close, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 
@@ -95,7 +104,7 @@ void Inyecta_Gas(void) {
         __delay_ms(1);
         CLRWDT();
     }
-    Power_Rele(Valve_Gas_Open, Tiempo_Iny_Gas * 1.5);
+    Power_Rele(Valve_Gas_Open, (uint16_t)(Tiempo_Iny_Gas * 1.5));
     Respuestas_RS485("INYECCION_GAS_OK");
 }
 
@@ -105,7 +114,7 @@ void Damper_Abrir(void) {
 }
 
 void Damper_Cerrar(void) {
-    Power_Rele(Damper_Close, Tiempo_Damper * 1.5);
+    Power_Rele(Damper_Close, (uint16_t)(Tiempo_Damper * 1.5));
     Respuestas_RS485("DAMPER_CLOSE_OK");
 }
 
@@ -140,8 +149,7 @@ uint8_t Eeprom_Leer(uint8_t dir) {
 }
 
 void Eeprom_Escribir(uint8_t dir, uint8_t dato) {
-    if (Eeprom_Leer(dir) == dato)
-        return true;
+    if (Eeprom_Leer(dir) == dato) return;
     EEADR = dir;
     EEDATA = dato;
     EECON1bits.EEPGD = 0;
@@ -171,3 +179,48 @@ void Respuestas_RS485(char *Mensaje) {
     MOD485 = 0;
 }
 
+uint8_t Get_Channel_Heater(void) {//0x10
+    uint8_t Dato = Eeprom_Leer(0x10);
+    return Dato;
+}
+
+uint16_t Get_Tiempo_Damper(void) {//0x11
+    uint16_t Dato = Eeprom_Leer(0x11);
+    Dato = (Dato << 8) | Eeprom_Leer(0x12);
+    return Dato;
+}
+
+uint16_t Get_Tiempo_Iny_Liquido(void) {//0x13
+    uint16_t Dato = Eeprom_Leer(0x13);
+    Dato = (Dato << 8) | Eeprom_Leer(0x14);
+    return Dato;
+}
+
+uint16_t Get_Tiempo_Iny_Gas(void) {
+    uint16_t Dato = Eeprom_Leer(0x15);
+    Dato = (Dato << 8) | Eeprom_Leer(0x16);
+    return Dato;
+}
+
+void Set_Channel_Heater(uint8_t Dato) {
+    Eeprom_Escribir(0x10,Dato);
+    Channel_Heater = Dato;
+}
+
+void Set_Tiempo_Damper(uint16_t Dato) {
+    Eeprom_Escribir(0x11,(uint8_t)(Dato >> 8));
+    Eeprom_Escribir(0x12,(uint8_t)(Dato & 0xFF));
+    Tiempo_Damper = Dato;
+}
+
+void Set_Tiempo_Iny_Liquido(uint16_t Dato) {
+    Eeprom_Escribir(0x13,(uint8_t)(Dato >> 8));
+    Eeprom_Escribir(0x14,(uint8_t)(Dato & 0xFF));
+    Tiempo_Iny_Liquido = Dato;
+}
+
+void Set_Tiempo_Iny_Gas(uint16_t Dato) {
+    Eeprom_Escribir(0x15,(uint8_t)(Dato >> 8));
+    Eeprom_Escribir(0x16,(uint8_t)(Dato & 0xFF));
+    Tiempo_Iny_Gas = Dato;
+}

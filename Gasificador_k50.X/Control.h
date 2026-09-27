@@ -45,7 +45,7 @@ extern "C" {
 
 
     void Armado_Cerrado(void);
-    void Armado_Ventila(void);
+    void Armado_Stop(void);
 
     /*CONTROL PROCESO*/
     int16_t SP_Temp = 0; //Para control de 
@@ -80,8 +80,16 @@ extern "C" {
     uint8_t Eeprom_Leer(uint8_t dir);
     void Eeprom_Escribir(uint8_t dir, uint8_t dato); // true = escrito 
     
-    void Get_Channel_Heater(void);
+    uint8_t Get_Channel_Heater(void);
     uint16_t Get_Tiempo_Damper(void);
+    uint16_t Get_Tiempo_Iny_Liquido(void);
+    uint16_t Get_Tiempo_Iny_Gas(void);
+    
+    void Set_Channel_Heater(uint8_t Dato);
+    void Set_Tiempo_Damper(uint16_t Dato);
+    void Set_Tiempo_Iny_Liquido(uint16_t Dato);
+    void Set_Tiempo_Iny_Gas(uint16_t Dato);
+    
     
 
 #ifdef	__cplusplus
