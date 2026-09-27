@@ -961,8 +961,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./Config.h: 81:     char txt[20];
 [v _txt `uc ~T0 @X0 -> 20 `i e ]
 "23 ./Uart.h
-[; ;./Uart.h: 23:     volatile uint8_t Buffer[150u];
-[v _Buffer `Vuc ~T0 @X0 -> 150 `i e ]
+[; ;./Uart.h: 23:     volatile uint8_t Buffer[200u];
+[v _Buffer `Vuc ~T0 @X0 -> 200 `i e ]
 "24
 [; ;./Uart.h: 24:     volatile uint8_t BufferIndex = 0;
 [v _BufferIndex `Vuc ~T0 @X0 1 e ]
@@ -1312,9 +1312,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _dato `uc ~T0 @X0 1 r1 ]
 [f ]
 "27
-[; ;Uart.c: 27:     while (!TXSTA1bits.TRMT);
+[; ;Uart.c: 27:     while (!TXSTA1bits.TRMT) __asm(" clrwdt");
 [e $U 640  ]
 [e :U 641 ]
+[; <"  clrwdt ;# ">
 [e :U 640 ]
 [e $ ! != -> . . _TXSTA1bits 0 1 `i -> 0 `i 641  ]
 [e :U 642 ]
@@ -1979,47 +1980,53 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Uart.c: 202:         UART_Print(txt);
 [e ( _UART_Print (1 -> &U _txt `*Cuc ]
 "203
-[; ;Uart.c: 203:     }
+[; ;Uart.c: 203:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"204
+[; ;Uart.c: 204:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 10 `i 711  ]
 [e :U 712 ]
 }
-"204
-[; ;Uart.c: 204:     UART_Print(",");
-[e ( _UART_Print (1 :s 20C ]
 "205
-[; ;Uart.c: 205:     sprintf(txt, "%d%d%d%d%d%d%d%d%d%d", R1, R2, R3, R4, R5, R6, R7, R8, R9, R10);
-[e ( _sprintf (1 , , , , , , , , , , (. , &U _txt :s 21C -> _R1 `i -> _R2 `i -> _R3 `i -> _R4 `i -> _R5 `i -> _R6 `i -> _R7 `i -> _R8 `i -> _R9 `i -> _R10 `i ]
+[; ;Uart.c: 205:     UART_Print(",");
+[e ( _UART_Print (1 :s 20C ]
 "206
-[; ;Uart.c: 206:     UART_Print(txt);
-[e ( _UART_Print (1 -> &U _txt `*Cuc ]
+[; ;Uart.c: 206:     sprintf(txt, "%d%d%d%d%d%d%d%d%d%d", R1, R2, R3, R4, R5, R6, R7, R8, R9, R10);
+[e ( _sprintf (1 , , , , , , , , , , (. , &U _txt :s 21C -> _R1 `i -> _R2 `i -> _R3 `i -> _R4 `i -> _R5 `i -> _R6 `i -> _R7 `i -> _R8 `i -> _R9 `i -> _R10 `i ]
 "207
-[; ;Uart.c: 207:     UART_Print(",");
-[e ( _UART_Print (1 :s 22C ]
-"208
-[; ;Uart.c: 208:     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
-[e ( _sprintf (1 , , , , , (. , &U _txt :s 23C -> _Current1 `ui -> _Current2 `ui -> _Temp1 `i -> _Temp2 `i -> _PPM `i ]
-"209
-[; ;Uart.c: 209:     UART_Print(txt);
+[; ;Uart.c: 207:     UART_Print(txt);
 [e ( _UART_Print (1 -> &U _txt `*Cuc ]
+"208
+[; ;Uart.c: 208:     UART_Print(",");
+[e ( _UART_Print (1 :s 22C ]
+"209
+[; ;Uart.c: 209:     sprintf(txt, "%d,%d,%d,%d,%d", Current1, Current2, Temp1, Temp2, PPM);
+[e ( _sprintf (1 , , , , , (. , &U _txt :s 23C -> _Current1 `ui -> _Current2 `ui -> _Temp1 `i -> _Temp2 `i -> _PPM `i ]
 "210
-[; ;Uart.c: 210:     UART_Print(",");
-[e ( _UART_Print (1 :s 24C ]
+[; ;Uart.c: 210:     UART_Print(txt);
+[e ( _UART_Print (1 -> &U _txt `*Cuc ]
 "211
-[; ;Uart.c: 211:     sprintf(txt, "%d,%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas, En_Sistem);
-[e ( _sprintf (1 , , , , , (. , &U _txt :s 25C -> _Channel_Heater `i -> _Tiempo_Damper `ui -> _Tiempo_Iny_Liquido `ui -> _Tiempo_Iny_Gas `ui -> _En_Sistem `i ]
+[; ;Uart.c: 211:     UART_Print(",");
+[e ( _UART_Print (1 :s 24C ]
 "212
-[; ;Uart.c: 212:     UART_Print("\"}");
-[e ( _UART_Print (1 :s 26C ]
+[; ;Uart.c: 212:     sprintf(txt, "%d,%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas, En_Sistem);
+[e ( _sprintf (1 , , , , , (. , &U _txt :s 25C -> _Channel_Heater `i -> _Tiempo_Damper `ui -> _Tiempo_Iny_Liquido `ui -> _Tiempo_Iny_Gas `ui -> _En_Sistem `i ]
 "213
-[; ;Uart.c: 213:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+[; ;Uart.c: 213:     UART_Print("\"}");
+[e ( _UART_Print (1 :s 26C ]
 "214
-[; ;Uart.c: 214:     LATBbits.LATB6 = 0;
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+[; ;Uart.c: 214:     __asm(" clrwdt");
+[; <"  clrwdt ;# ">
 "215
-[; ;Uart.c: 215: }
+[; ;Uart.c: 215:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"216
+[; ;Uart.c: 216:     LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"217
+[; ;Uart.c: 217: }
 [e :UE 710 ]
 }
 [p f _sprintf 8388736 ]

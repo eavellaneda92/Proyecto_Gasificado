@@ -8431,7 +8431,7 @@ char *tempnam(const char *, const char *);
 # 2 "Control.c" 2
 # 1 "./Uart.h" 1
 # 23 "./Uart.h"
-    volatile uint8_t Buffer[150u];
+    volatile uint8_t Buffer[200u];
     volatile uint8_t BufferIndex = 0;
     volatile _Bool FlagBuffer = 0;
     volatile _Bool FlagOverflow = 0;

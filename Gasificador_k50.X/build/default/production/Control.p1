@@ -1073,8 +1073,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "23 ./Uart.h
-[; ;./Uart.h: 23:     volatile uint8_t Buffer[150u];
-[v _Buffer `Vuc ~T0 @X0 -> 150 `i e ]
+[; ;./Uart.h: 23:     volatile uint8_t Buffer[200u];
+[v _Buffer `Vuc ~T0 @X0 -> 200 `i e ]
 "24
 [; ;./Uart.h: 24:     volatile uint8_t BufferIndex = 0;
 [v _BufferIndex `Vuc ~T0 @X0 1 e ]

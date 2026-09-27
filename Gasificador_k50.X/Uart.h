@@ -16,7 +16,7 @@ extern "C" {
 
 #define UART_BRG_H   0x01
 #define UART_BRG_L   0xA0
-#define BUFFER_SIZE  150u
+#define BUFFER_SIZE  200u
     
 #define MOD485 LATBbits.LATB6
 

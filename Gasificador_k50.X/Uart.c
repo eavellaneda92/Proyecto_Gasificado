@@ -24,7 +24,7 @@ void UART_Init(void) {
 }
 
 void UART_Write(uint8_t dato) {
-    while (!TXSTA1bits.TRMT);
+    while (!TXSTA1bits.TRMT) CLRWDT();
     TXREG1 = dato;
 }
 
@@ -200,6 +200,7 @@ void Imprime_Estado(void) {
     for (int i = 0; i < 10; i++) {
         sprintf(txt, "%d", Status_In[i]);
         UART_Print(txt);
+        CLRWDT();
     }
     UART_Print(",");
     sprintf(txt, "%d%d%d%d%d%d%d%d%d%d", R1, R2, R3, R4, R5, R6, R7, R8, R9, R10);
@@ -210,6 +211,7 @@ void Imprime_Estado(void) {
     UART_Print(",");
     sprintf(txt, "%d,%d,%d,%d,%d", Channel_Heater, Tiempo_Damper, Tiempo_Iny_Liquido, Tiempo_Iny_Gas, En_Sistem);
     UART_Print("\"}");
+    CLRWDT();
     __delay_ms(5);
     MOD485 = 0;
 }

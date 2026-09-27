@@ -8373,7 +8373,7 @@ char *tempnam(const char *, const char *);
 # 11 "Main.c" 2
 # 1 "./Uart.h" 1
 # 23 "./Uart.h"
-    volatile uint8_t Buffer[150u];
+    volatile uint8_t Buffer[200u];
     volatile uint8_t BufferIndex = 0;
     volatile _Bool FlagBuffer = 0;
     volatile _Bool FlagOverflow = 0;
@@ -8483,7 +8483,7 @@ char *tempnam(const char *, const char *);
 void __attribute__((picinterrupt(("")))) ISR(void) {
     if (PIR1bits.RCIF) {
         uint8_t dato = RCREG1;
-        if (BufferIndex < 150u) Buffer[BufferIndex++] = dato;
+        if (BufferIndex < 200u) Buffer[BufferIndex++] = dato;
         Tmr0_Reset();
     }
     if (INTCONbits.TMR0IF) {
@@ -8518,7 +8518,7 @@ void main(void) {
         if (FlagBuffer) {
             Get_Comando((char *) Buffer);
 
-            for (uint8_t i = 0; i < 150u; i++) Buffer[i] = '\0';
+            for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
             BufferIndex = 0;
             FlagBuffer = 0;
         }

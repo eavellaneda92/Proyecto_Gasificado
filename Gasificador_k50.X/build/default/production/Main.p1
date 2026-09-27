@@ -961,8 +961,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 "23 ./Uart.h
-[; ;./Uart.h: 23:     volatile uint8_t Buffer[150u];
-[v _Buffer `Vuc ~T0 @X0 -> 150 `i e ]
+[; ;./Uart.h: 23:     volatile uint8_t Buffer[200u];
+[v _Buffer `Vuc ~T0 @X0 -> 200 `i e ]
 "24
 [; ;./Uart.h: 24:     volatile uint8_t BufferIndex = 0;
 [v _BufferIndex `Vuc ~T0 @X0 1 e ]
@@ -1171,8 +1171,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _dato `uc ~T0 @X0 1 a ]
 [e = _dato _RCREG1 ]
 "18
-[; ;Main.c: 18:         if (BufferIndex < 150u) Buffer[BufferIndex++] = dato;
-[e $ ! < -> _BufferIndex `ui -> 150 `ui 640  ]
+[; ;Main.c: 18:         if (BufferIndex < 200u) Buffer[BufferIndex++] = dato;
+[e $ ! < -> _BufferIndex `ui -> 200 `ui 640  ]
 [e = *U + &U _Buffer * -> ++ _BufferIndex -> -> 1 `i `Vuc `ux -> -> # *U &U _Buffer `ui `ux _dato ]
 [e :U 640 ]
 "19
@@ -1269,16 +1269,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 51:             Get_Comando((char *) Buffer);
 [e ( _Get_Comando (1 -> &U _Buffer `*uc ]
 "53
-[; ;Main.c: 53:             for (uint8_t i = 0; i < 150u; i++) Buffer[i] = '\0';
+[; ;Main.c: 53:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `ui -> 150 `ui 648  ]
+[e $ < -> _i `ui -> 200 `ui 648  ]
 [e $U 649  ]
 [e :U 648 ]
 [e = *U + &U _Buffer * -> _i `ux -> -> # *U &U _Buffer `ui `ux -> -> 0 `ui `uc ]
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `ui -> 150 `ui 648  ]
+[e $ < -> _i `ui -> 200 `ui 648  ]
 [e :U 649 ]
 }
 "54
