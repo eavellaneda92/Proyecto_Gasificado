@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.00\pic\dat\20241204225717_en.msgs \
   -cn -h+dist/default/production\Gasificado.X.production.sym \
   --cmf=dist/default/production\Gasificado.X.production.cmf -z -Q18F46K22 \
-  -oC:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_3.o \
+  -oC:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/Gasificado.X.production.map \
-  --md=C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
   -ASMALLCONST=01000h-010FFhx240 -AMEDIUMCONST=01000h-0FFFFh \
   -ACOMRAM=01h-05Fh -AABS1=00h-0F37h -ABIGRAM=01h-0F37h \
@@ -29,7 +29,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o \
+  C:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_14.o \
   dist/default/production\Gasificado.X.production.o 
 
 Object code version is 3.11
@@ -39,7 +39,7 @@ Machine type is 18F46K22
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_14.o
+C:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_14.o
                 config                           300000   300000        E        0       4
                 init                                 26       26        4        4       0
                 reset_vec                             0        0        4        0       0
@@ -92,10 +92,10 @@ dist/default/production\Gasificado.X.production.o
                 text1                              2130     2130       BC      843       0
                 text0                              2B84     2B84       56      843       0
                 cstackCOMRAM                          1        1       54        1       1
-                cstackBANK0                          C8       C8       11       60       1
+                cstackBANK0                          C5       C5       11       60       1
                 bssBANK2                            200      200       C9      200       1
                 bssBANK1                            100      100       65      100       1
-                bssBANK0                             60       60       68       60       1
+                bssBANK0                             60       60       65       60       1
                 bssCOMRAM                            55       55        5        1       1
                 cinit                              2C5A     2C5A       3C      843       0
 
@@ -168,8 +168,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
-                cstackBANK0                          C8       C8       11         1
-                bssBANK0                             60       60       68         1
+                cstackBANK0                          C5       C5       11         1
+                bssBANK0                             60       60       65         1
 
         CLASS   BANK1          
                 bssBANK1                            100      100       65         1
@@ -227,7 +227,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 cstackCOMRAM                   000001  00005A  00005B         1       1  COMRAM  
                 intcode                        000008  000022  00002A         4       0  CODE    
-                bssBANK0                       000060  000079  0000D9        60       1  BANK0   
+                bssBANK0                       000060  000076  0000D6        60       1  BANK0   
                 bssBANK1                       000100  000065  000165       100       1  BANK1   
                 bssBANK2                       000200  0000C9  0002C9       200       1  BANK2   
                 smallconst                     001000  000086  001086       800       0  SMALLCON
@@ -237,7 +237,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0000D9-0000FF               27
+        BANK0            0000D6-0000FF               2A
         BANK1            000165-0001FF               9B
         BANK10           000A00-000AFF              100
         BANK11           000B00-000BFF              100
@@ -254,7 +254,7 @@ UNUSED ADDRESS RANGES
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
         BIGRAM           00005B-00005F                5
-                         0000D9-0000FF               27
+                         0000D6-0000FF               2A
                          000165-0001FF               9B
                          0002C9-000F37              C6F
         BIGSFR           000F38-000FFF               C8
@@ -268,7 +268,7 @@ UNUSED ADDRESS RANGES
         EEDATA           F00000-F003FF              400
         IDLOC            200000-200007                8
         MEDIUMCONST      002E58-00FFFF             D1A8
-        RAM              0000D9-0000FF               27
+        RAM              0000D6-0000FF               2A
                          000165-0001FF               9B
                          0002C9-000F37              100
         SFR              000F38-000FFF               28
@@ -300,11 +300,11 @@ IndexOf_Str@patron          cstackCOMRAM 00000A
 Leer_1Bit@Direccion         cstackCOMRAM 000005
 Leer_1Byte@Direccion        cstackCOMRAM 000005
 Pic_Clock_Init@guarda       cstackCOMRAM 000005
-Read_Cmd@Data               cstackBANK0  0000C8
-Read_Cmd@Index              cstackBANK0  0000D3
-Read_Cmd@alto               cstackBANK0  0000CF
-Read_Cmd@bajo               cstackBANK0  0000D1
-Read_Cmd@lrc                cstackBANK0  0000CD
+Read_Cmd@Data               cstackBANK0  0000C5
+Read_Cmd@Index              cstackBANK0  0000D0
+Read_Cmd@alto               cstackBANK0  0000CC
+Read_Cmd@bajo               cstackBANK0  0000CE
+Read_Cmd@lrc                cstackBANK0  0000CA
 Read_X0@Cantidad            cstackCOMRAM 00004A
 Read_X0@Direccion           cstackCOMRAM 000048
 Read_X0@bit                 cstackCOMRAM 00004E
@@ -334,8 +334,8 @@ UART2_Write@g               cstackCOMRAM 000006
 UART2_WriteString@cad       cstackCOMRAM 000008
 UART_Interrupt@c            cstackCOMRAM 000001
 UART_Interrupt@c_1499       cstackCOMRAM 000002
-UART_Read@i                 cstackBANK0  0000D5
-UART_Read@i_1502            cstackBANK0  0000D7
+UART_Read@i                 cstackBANK0  0000D2
+UART_Read@i_1502            cstackBANK0  0000D4
 Write_X0@Direccion          cstackCOMRAM 000008
 Write_X0@Valor              cstackCOMRAM 00000A
 Write_X0@i                  cstackCOMRAM 00000C
@@ -359,10 +359,10 @@ _Buffer_U2                  bssBANK2     000200
 _CCP5CON                    (abs)        000F54
 _CCPR5H                     (abs)        000F56
 _CCPR5L                     (abs)        000F55
-_Flag_1000ms                bssBANK0     00008F
-_Flag_100ms                 bssBANK0     00008E
-_Flag_U1                    bssBANK0     000092
-_Flag_U2                    bssBANK0     000090
+_Flag_1000ms                bssBANK0     00008C
+_Flag_100ms                 bssBANK0     00008B
+_Flag_U1                    bssBANK0     00008F
+_Flag_U2                    bssBANK0     00008D
 _Gasificado                 bssBANK0     000060
 _Get_Comando                text12       0015D4
 _HexToNum                   text11       00295C
@@ -380,13 +380,13 @@ _LATDbits                   (abs)        000F8C
 _LATE                       (abs)        000F8D
 _Leer_1Bit                  text10       002DD4
 _Leer_1Byte                 text6        002CD2
-_Length_U1                  bssBANK0     000093
-_Length_U2                  bssBANK0     000091
-_M_Cantidad                 bssBANK0     000085
-_M_Direccion                bssBANK0     000087
-_M_Funcion                  bssBANK0     00008A
+_Length_U1                  bssBANK0     000090
+_Length_U2                  bssBANK0     00008E
+_M_Cantidad                 bssBANK0     000082
+_M_Direccion                bssBANK0     000084
+_M_Funcion                  bssBANK0     000087
 _M_ID                       bssCOMRAM    000056
-_M_LR                       bssBANK0     000089
+_M_LR                       bssBANK0     000086
 _M_Led                      bssCOMRAM    000058
 _OSCCON                     (abs)        000FD3
 _OSCCON2                    (abs)        000FD2
@@ -413,7 +413,7 @@ _SPBRG1                     (abs)        000FAF
 _SPBRG2                     (abs)        000F75
 _SPBRGH1                    (abs)        000FB0
 _SPBRGH2                    (abs)        000F76
-_S_Led                      bssBANK0     00008B
+_S_Led                      bssBANK0     000088
 _Set_Led_Conectado          text28       002E38
 _Set_Led_Wait               text38       002E48
 _T0CON                      (abs)        000FD5
@@ -457,10 +457,10 @@ _UART_Interrupt             text42       0028D6
 _UART_Read                  text1        002130
 _Valor_Salida               bssCOMRAM    000057
 _WPUB                       (abs)        000F61
-_W_Led                      bssBANK0     00008C
+_W_Led                      bssBANK0     000089
 _Write_X0                   text4        0027B4
 _Write_X4                   text3        0029DA
-_Z_Led                      bssBANK0     00008D
+_Z_Led                      bssBANK0     00008A
 __HRAM                      (abs)        000000
 __H__absolute__             __absolute__ 000000
 __Habs1                     abs1         000000
@@ -788,7 +788,7 @@ __pbssBANK1                 bssBANK1     000100
 __pbssBANK2                 bssBANK2     000200
 __pbssCOMRAM                bssCOMRAM    000055
 __pcinit                    cinit        002C5A
-__pcstackBANK0              cstackBANK0  0000C8
+__pcstackBANK0              cstackBANK0  0000C5
 __pcstackCOMRAM             cstackCOMRAM 000001
 __pintcode                  intcode      000008
 __psmallconst               smallconst   001000
@@ -838,7 +838,7 @@ __ptext9                    text9        002544
 __ramtop                    ramtop       001000
 __smallconst                smallconst   001000
 _abs                        text23       002D76
-_dbuf                       bssBANK0     000094
+_dbuf                       bssBANK0     000091
 _dtoa                       text18       001C4E
 _dtoa$2336                  cstackCOMRAM 00001C
 _flags                      bssCOMRAM    000055
@@ -846,14 +846,14 @@ _fputc                      text21       002352
 _fputs                      text20       002C96
 _main                       text0        002B84
 _pad                        text19       00284C
-_prec                       bssBANK0     000083
+_prec                       bssBANK0     000080
 _putch                      text22       002E56
 _read_prec_or_width         text17       0023FC
 _sprintf                    text13       002D42
-_txt                        bssBANK0     0000B4
+_txt                        bssBANK0     0000B1
 _vfpfcnvrt                  text15       0018D8
 _vfprintf                   text14       002C1C
-_width                      bssBANK0     000081
+_width                      bssBANK0     00007E
 _xtoa                       text16       001EAC
 abs@a                       cstackCOMRAM 00000B
 btemp                       temp         00005A

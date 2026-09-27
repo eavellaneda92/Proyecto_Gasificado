@@ -1003,14 +1003,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `ui
 ..
 ]
-"68
-[; ;./Timers.h: 68:     uint8_t Cambio_Estado = 0;
+"69
+[; ;./Timers.h: 69:     uint8_t Cambio_Estado = 0;
 [v _Cambio_Estado `uc ~T0 @X0 1 e ]
 [i _Cambio_Estado
 -> -> 0 `i `uc
 ]
-"69
-[; ;./Timers.h: 69:     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
+"70
+[; ;./Timers.h: 70:     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
 [v _Status_In `uc ~T0 @X0 -> 10 `i e ]
 [i _Status_In
 :U ..
@@ -1026,8 +1026,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-"70
-[; ;./Timers.h: 70:     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};
+"71
+[; ;./Timers.h: 71:     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};
 [v _Old_In `uc ~T0 @X0 -> 10 `i e ]
 [i _Old_In
 :U ..
@@ -1148,337 +1148,440 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 644 ]
 }
 "36
-[; ;Timers.c: 36: void Power_Rele(unsigned char Rele, unsigned int Tiempo) {
+[; ;Timers.c: 36: void Set_Rele(unsigned char Rele, unsigned char Valor){
+[v _Set_Rele `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _Set_Rele ]
+[v _Rele `uc ~T0 @X0 1 r1 ]
+[v _Valor `uc ~T0 @X0 1 r2 ]
+[f ]
+"37
+[; ;Timers.c: 37:     switch (Rele) {
+[e $U 647  ]
+{
+"38
+[; ;Timers.c: 38:             case 0: LATBbits.LATB5 = Valor;
+[e :U 648 ]
+[e = . . _LATBbits 0 5 _Valor ]
+"39
+[; ;Timers.c: 39:                 break;
+[e $U 646  ]
+"40
+[; ;Timers.c: 40:             case 1: LATBbits.LATB4 = Valor;
+[e :U 649 ]
+[e = . . _LATBbits 0 4 _Valor ]
+"41
+[; ;Timers.c: 41:                 break;
+[e $U 646  ]
+"42
+[; ;Timers.c: 42:             case 2: LATBbits.LATB3 = Valor;
+[e :U 650 ]
+[e = . . _LATBbits 0 3 _Valor ]
+"43
+[; ;Timers.c: 43:                 break;
+[e $U 646  ]
+"44
+[; ;Timers.c: 44:             case 3: LATBbits.LATB2 = Valor;
+[e :U 651 ]
+[e = . . _LATBbits 0 2 _Valor ]
+"45
+[; ;Timers.c: 45:                 break;
+[e $U 646  ]
+"46
+[; ;Timers.c: 46:             case 4: LATBbits.LATB1 = Valor;
+[e :U 652 ]
+[e = . . _LATBbits 0 1 _Valor ]
+"47
+[; ;Timers.c: 47:                 break;
+[e $U 646  ]
+"48
+[; ;Timers.c: 48:             case 5: LATBbits.LATB0 = Valor;
+[e :U 653 ]
+[e = . . _LATBbits 0 0 _Valor ]
+"49
+[; ;Timers.c: 49:                 break;
+[e $U 646  ]
+"50
+[; ;Timers.c: 50:             case 6: LATDbits.LATD7 = Valor;
+[e :U 654 ]
+[e = . . _LATDbits 0 7 _Valor ]
+"51
+[; ;Timers.c: 51:                 break;
+[e $U 646  ]
+"52
+[; ;Timers.c: 52:             case 7: LATDbits.LATD6 = Valor;
+[e :U 655 ]
+[e = . . _LATDbits 0 6 _Valor ]
+"53
+[; ;Timers.c: 53:                 break;
+[e $U 646  ]
+"54
+[; ;Timers.c: 54:             case 8: LATDbits.LATD5 = Valor;
+[e :U 656 ]
+[e = . . _LATDbits 0 5 _Valor ]
+"55
+[; ;Timers.c: 55:                 break;
+[e $U 646  ]
+"56
+[; ;Timers.c: 56:             case 9: LATDbits.LATD4 = Valor;
+[e :U 657 ]
+[e = . . _LATDbits 0 4 _Valor ]
+"57
+[; ;Timers.c: 57:                 break;
+[e $U 646  ]
+"58
+[; ;Timers.c: 58:         }
+}
+[e $U 646  ]
+[e :U 647 ]
+[e [\ _Rele , $ -> 0 `i 648
+ , $ -> 1 `i 649
+ , $ -> 2 `i 650
+ , $ -> 3 `i 651
+ , $ -> 4 `i 652
+ , $ -> 5 `i 653
+ , $ -> 6 `i 654
+ , $ -> 7 `i 655
+ , $ -> 8 `i 656
+ , $ -> 9 `i 657
+ 646 ]
+[e :U 646 ]
+"59
+[; ;Timers.c: 59: }
+[e :UE 645 ]
+}
+"61
+[; ;Timers.c: 61: void Power_Rele(unsigned char Rele, unsigned int Tiempo) {
 [v _Power_Rele `(v ~T0 @X0 1 ef2`uc`ui ]
 {
 [e :U _Power_Rele ]
 [v _Rele `uc ~T0 @X0 1 r1 ]
 [v _Tiempo `ui ~T0 @X0 1 r2 ]
 [f ]
-"37
-[; ;Timers.c: 37:     Tiempo = Tiempo / 10;
-[e = _Tiempo / _Tiempo -> -> 10 `i `ui ]
-"38
-[; ;Timers.c: 38:     if (Rele >= 1 && Rele <= 10) {
-[e $ ! && >= -> _Rele `i -> 1 `i <= -> _Rele `i -> 10 `i 646  ]
-{
-"39
-[; ;Timers.c: 39:         Rele--;
-[e -- _Rele -> -> 1 `i `uc ]
-"40
-[; ;Timers.c: 40:         Tiempo_Rele[Rele] = 0;
-[e = *U + &U _Tiempo_Rele * -> _Rele `ux -> -> # *U &U _Tiempo_Rele `ui `ux -> -> 0 `i `ui ]
-"41
-[; ;Timers.c: 41:         Wait_Rele[Rele] = Tiempo;
-[e = *U + &U _Wait_Rele * -> _Rele `ux -> -> # *U &U _Wait_Rele `ui `ux _Tiempo ]
-"42
-[; ;Timers.c: 42:         Enable_Rele[Rele] = 1;
-[e = *U + &U _Enable_Rele * -> _Rele `ux -> -> # *U &U _Enable_Rele `ui `ux -> -> 1 `i `uc ]
-"43
-[; ;Timers.c: 43:         switch (Rele) {
-[e $U 648  ]
-{
-"44
-[; ;Timers.c: 44:             case 0: LATBbits.LATB5 = 0;
-[e :U 649 ]
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
-"45
-[; ;Timers.c: 45:                 break;
-[e $U 647  ]
-"46
-[; ;Timers.c: 46:             case 1: LATBbits.LATB4 = 0;
-[e :U 650 ]
-[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
-"47
-[; ;Timers.c: 47:                 break;
-[e $U 647  ]
-"48
-[; ;Timers.c: 48:             case 2: LATBbits.LATB3 = 0;
-[e :U 651 ]
-[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
-"49
-[; ;Timers.c: 49:                 break;
-[e $U 647  ]
-"50
-[; ;Timers.c: 50:             case 3: LATBbits.LATB2 = 0;
-[e :U 652 ]
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-"51
-[; ;Timers.c: 51:                 break;
-[e $U 647  ]
-"52
-[; ;Timers.c: 52:             case 4: LATBbits.LATB1 = 0;
-[e :U 653 ]
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"53
-[; ;Timers.c: 53:                 break;
-[e $U 647  ]
-"54
-[; ;Timers.c: 54:             case 5: LATBbits.LATB0 = 0;
-[e :U 654 ]
-[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
-"55
-[; ;Timers.c: 55:                 break;
-[e $U 647  ]
-"56
-[; ;Timers.c: 56:             case 6: LATDbits.LATD7 = 0;
-[e :U 655 ]
-[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
-"57
-[; ;Timers.c: 57:                 break;
-[e $U 647  ]
-"58
-[; ;Timers.c: 58:             case 7: LATDbits.LATD6 = 0;
-[e :U 656 ]
-[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
-"59
-[; ;Timers.c: 59:                 break;
-[e $U 647  ]
-"60
-[; ;Timers.c: 60:             case 8: LATDbits.LATD5 = 0;
-[e :U 657 ]
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-"61
-[; ;Timers.c: 61:                 break;
-[e $U 647  ]
 "62
-[; ;Timers.c: 62:             case 9: LATDbits.LATD4 = 0;
-[e :U 658 ]
-[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
+[; ;Timers.c: 62:     Tiempo = Tiempo / 10;
+[e = _Tiempo / _Tiempo -> -> 10 `i `ui ]
 "63
-[; ;Timers.c: 63:                 break;
-[e $U 647  ]
+[; ;Timers.c: 63:     if (Rele >= 1 && Rele <= 10) {
+[e $ ! && >= -> _Rele `i -> 1 `i <= -> _Rele `i -> 10 `i 659  ]
+{
 "64
-[; ;Timers.c: 64:         }
-}
-[e $U 647  ]
-[e :U 648 ]
-[e [\ _Rele , $ -> 0 `i 649
- , $ -> 1 `i 650
- , $ -> 2 `i 651
- , $ -> 3 `i 652
- , $ -> 4 `i 653
- , $ -> 5 `i 654
- , $ -> 6 `i 655
- , $ -> 7 `i 656
- , $ -> 8 `i 657
- , $ -> 9 `i 658
- 647 ]
-[e :U 647 ]
+[; ;Timers.c: 64:         Rele--;
+[e -- _Rele -> -> 1 `i `uc ]
 "65
-[; ;Timers.c: 65:     }
-}
-[e :U 646 ]
+[; ;Timers.c: 65:         Tiempo_Rele[Rele] = 0;
+[e = *U + &U _Tiempo_Rele * -> _Rele `ux -> -> # *U &U _Tiempo_Rele `ui `ux -> -> 0 `i `ui ]
 "66
-[; ;Timers.c: 66: }
-[e :UE 645 ]
-}
+[; ;Timers.c: 66:         Wait_Rele[Rele] = Tiempo;
+[e = *U + &U _Wait_Rele * -> _Rele `ux -> -> # *U &U _Wait_Rele `ui `ux _Tiempo ]
+"67
+[; ;Timers.c: 67:         Enable_Rele[Rele] = 1;
+[e = *U + &U _Enable_Rele * -> _Rele `ux -> -> # *U &U _Enable_Rele `ui `ux -> -> 1 `i `uc ]
 "68
-[; ;Timers.c: 68: void Proceso_Rele(void) {
+[; ;Timers.c: 68:         switch (Rele) {
+[e $U 661  ]
+{
+"69
+[; ;Timers.c: 69:             case 0: LATBbits.LATB5 = 0;
+[e :U 662 ]
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+"70
+[; ;Timers.c: 70:                 break;
+[e $U 660  ]
+"71
+[; ;Timers.c: 71:             case 1: LATBbits.LATB4 = 0;
+[e :U 663 ]
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"72
+[; ;Timers.c: 72:                 break;
+[e $U 660  ]
+"73
+[; ;Timers.c: 73:             case 2: LATBbits.LATB3 = 0;
+[e :U 664 ]
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"74
+[; ;Timers.c: 74:                 break;
+[e $U 660  ]
+"75
+[; ;Timers.c: 75:             case 3: LATBbits.LATB2 = 0;
+[e :U 665 ]
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"76
+[; ;Timers.c: 76:                 break;
+[e $U 660  ]
+"77
+[; ;Timers.c: 77:             case 4: LATBbits.LATB1 = 0;
+[e :U 666 ]
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"78
+[; ;Timers.c: 78:                 break;
+[e $U 660  ]
+"79
+[; ;Timers.c: 79:             case 5: LATBbits.LATB0 = 0;
+[e :U 667 ]
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+"80
+[; ;Timers.c: 80:                 break;
+[e $U 660  ]
+"81
+[; ;Timers.c: 81:             case 6: LATDbits.LATD7 = 0;
+[e :U 668 ]
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"82
+[; ;Timers.c: 82:                 break;
+[e $U 660  ]
+"83
+[; ;Timers.c: 83:             case 7: LATDbits.LATD6 = 0;
+[e :U 669 ]
+[e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
+"84
+[; ;Timers.c: 84:                 break;
+[e $U 660  ]
+"85
+[; ;Timers.c: 85:             case 8: LATDbits.LATD5 = 0;
+[e :U 670 ]
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+"86
+[; ;Timers.c: 86:                 break;
+[e $U 660  ]
+"87
+[; ;Timers.c: 87:             case 9: LATDbits.LATD4 = 0;
+[e :U 671 ]
+[e = . . _LATDbits 0 4 -> -> 0 `i `uc ]
+"88
+[; ;Timers.c: 88:                 break;
+[e $U 660  ]
+"89
+[; ;Timers.c: 89:         }
+}
+[e $U 660  ]
+[e :U 661 ]
+[e [\ _Rele , $ -> 0 `i 662
+ , $ -> 1 `i 663
+ , $ -> 2 `i 664
+ , $ -> 3 `i 665
+ , $ -> 4 `i 666
+ , $ -> 5 `i 667
+ , $ -> 6 `i 668
+ , $ -> 7 `i 669
+ , $ -> 8 `i 670
+ , $ -> 9 `i 671
+ 660 ]
+[e :U 660 ]
+"90
+[; ;Timers.c: 90:     }
+}
+[e :U 659 ]
+"91
+[; ;Timers.c: 91: }
+[e :UE 658 ]
+}
+"93
+[; ;Timers.c: 93: void Proceso_Rele(void) {
 [v _Proceso_Rele `(v ~T0 @X0 1 ef ]
 {
 [e :U _Proceso_Rele ]
 [f ]
-"69
-[; ;Timers.c: 69:     for (int i = 0; i < 10; i++) {
+"94
+[; ;Timers.c: 94:     for (int i = 0; i < 10; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 10 `i 660  ]
-[e $U 661  ]
-[e :U 660 ]
-{
-"70
-[; ;Timers.c: 70:         if (Enable_Rele[i] == 1) {
-[e $ ! == -> *U + &U _Enable_Rele * -> -> _i `ui `ux -> -> # *U &U _Enable_Rele `ui `ux `i -> 1 `i 663  ]
-{
-"71
-[; ;Timers.c: 71:             Tiempo_Rele[i]++;
-[e ++ *U + &U _Tiempo_Rele * -> -> _i `ui `ux -> -> # *U &U _Tiempo_Rele `ui `ux -> -> 1 `i `ui ]
-"72
-[; ;Timers.c: 72:             if (Tiempo_Rele[i] >= Wait_Rele[i]) {
-[e $ ! >= *U + &U _Tiempo_Rele * -> -> _i `ui `ux -> -> # *U &U _Tiempo_Rele `ui `ux *U + &U _Wait_Rele * -> -> _i `ui `ux -> -> # *U &U _Wait_Rele `ui `ux 664  ]
-{
-"73
-[; ;Timers.c: 73:                 switch (i) {
-[e $U 666  ]
-{
-"74
-[; ;Timers.c: 74:                     case 0: LATBbits.LATB5 = 1;
-[e :U 667 ]
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
-"75
-[; ;Timers.c: 75:                         break;
-[e $U 665  ]
-"76
-[; ;Timers.c: 76:                     case 1: LATBbits.LATB4 = 1;
-[e :U 668 ]
-[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
-"77
-[; ;Timers.c: 77:                         break;
-[e $U 665  ]
-"78
-[; ;Timers.c: 78:                     case 2: LATBbits.LATB3 = 1;
-[e :U 669 ]
-[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
-"79
-[; ;Timers.c: 79:                         break;
-[e $U 665  ]
-"80
-[; ;Timers.c: 80:                     case 3: LATBbits.LATB2 = 1;
-[e :U 670 ]
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-"81
-[; ;Timers.c: 81:                         break;
-[e $U 665  ]
-"82
-[; ;Timers.c: 82:                     case 4: LATBbits.LATB1 = 1;
-[e :U 671 ]
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"83
-[; ;Timers.c: 83:                         break;
-[e $U 665  ]
-"84
-[; ;Timers.c: 84:                     case 5: LATBbits.LATB0 = 1;
-[e :U 672 ]
-[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
-"85
-[; ;Timers.c: 85:                         break;
-[e $U 665  ]
-"86
-[; ;Timers.c: 86:                     case 6: LATDbits.LATD7 = 1;
+[e $ < _i -> 10 `i 673  ]
+[e $U 674  ]
 [e :U 673 ]
-[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
-"87
-[; ;Timers.c: 87:                         break;
-[e $U 665  ]
-"88
-[; ;Timers.c: 88:                     case 7: LATDbits.LATD6 = 1;
-[e :U 674 ]
-[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
-"89
-[; ;Timers.c: 89:                         break;
-[e $U 665  ]
-"90
-[; ;Timers.c: 90:                     case 8: LATDbits.LATD5 = 1;
-[e :U 675 ]
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
-"91
-[; ;Timers.c: 91:                         break;
-[e $U 665  ]
-"92
-[; ;Timers.c: 92:                     case 9: LATDbits.LATD4 = 1;
-[e :U 676 ]
-[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
-"93
-[; ;Timers.c: 93:                         break;
-[e $U 665  ]
-"94
-[; ;Timers.c: 94:                 }
-}
-[e $U 665  ]
-[e :U 666 ]
-[e [\ _i , $ -> 0 `i 667
- , $ -> 1 `i 668
- , $ -> 2 `i 669
- , $ -> 3 `i 670
- , $ -> 4 `i 671
- , $ -> 5 `i 672
- , $ -> 6 `i 673
- , $ -> 7 `i 674
- , $ -> 8 `i 675
- , $ -> 9 `i 676
- 665 ]
-[e :U 665 ]
+{
 "95
-[; ;Timers.c: 95:                 Enable_Rele[i] = 0;
-[e = *U + &U _Enable_Rele * -> -> _i `ui `ux -> -> # *U &U _Enable_Rele `ui `ux -> -> 0 `i `uc ]
+[; ;Timers.c: 95:         if (Enable_Rele[i] == 1) {
+[e $ ! == -> *U + &U _Enable_Rele * -> -> _i `ui `ux -> -> # *U &U _Enable_Rele `ui `ux `i -> 1 `i 676  ]
+{
 "96
-[; ;Timers.c: 96:             }
-}
-[e :U 664 ]
+[; ;Timers.c: 96:             Tiempo_Rele[i]++;
+[e ++ *U + &U _Tiempo_Rele * -> -> _i `ui `ux -> -> # *U &U _Tiempo_Rele `ui `ux -> -> 1 `i `ui ]
 "97
-[; ;Timers.c: 97:         }
-}
-[e :U 663 ]
+[; ;Timers.c: 97:             if (Tiempo_Rele[i] >= Wait_Rele[i]) {
+[e $ ! >= *U + &U _Tiempo_Rele * -> -> _i `ui `ux -> -> # *U &U _Tiempo_Rele `ui `ux *U + &U _Wait_Rele * -> -> _i `ui `ux -> -> # *U &U _Wait_Rele `ui `ux 677  ]
+{
 "98
-[; ;Timers.c: 98:     }
+[; ;Timers.c: 98:                 switch (i) {
+[e $U 679  ]
+{
+"99
+[; ;Timers.c: 99:                     case 0: LATBbits.LATB5 = 1;
+[e :U 680 ]
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
+"100
+[; ;Timers.c: 100:                         break;
+[e $U 678  ]
+"101
+[; ;Timers.c: 101:                     case 1: LATBbits.LATB4 = 1;
+[e :U 681 ]
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"102
+[; ;Timers.c: 102:                         break;
+[e $U 678  ]
+"103
+[; ;Timers.c: 103:                     case 2: LATBbits.LATB3 = 1;
+[e :U 682 ]
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"104
+[; ;Timers.c: 104:                         break;
+[e $U 678  ]
+"105
+[; ;Timers.c: 105:                     case 3: LATBbits.LATB2 = 1;
+[e :U 683 ]
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"106
+[; ;Timers.c: 106:                         break;
+[e $U 678  ]
+"107
+[; ;Timers.c: 107:                     case 4: LATBbits.LATB1 = 1;
+[e :U 684 ]
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"108
+[; ;Timers.c: 108:                         break;
+[e $U 678  ]
+"109
+[; ;Timers.c: 109:                     case 5: LATBbits.LATB0 = 1;
+[e :U 685 ]
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+"110
+[; ;Timers.c: 110:                         break;
+[e $U 678  ]
+"111
+[; ;Timers.c: 111:                     case 6: LATDbits.LATD7 = 1;
+[e :U 686 ]
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+"112
+[; ;Timers.c: 112:                         break;
+[e $U 678  ]
+"113
+[; ;Timers.c: 113:                     case 7: LATDbits.LATD6 = 1;
+[e :U 687 ]
+[e = . . _LATDbits 0 6 -> -> 1 `i `uc ]
+"114
+[; ;Timers.c: 114:                         break;
+[e $U 678  ]
+"115
+[; ;Timers.c: 115:                     case 8: LATDbits.LATD5 = 1;
+[e :U 688 ]
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
+"116
+[; ;Timers.c: 116:                         break;
+[e $U 678  ]
+"117
+[; ;Timers.c: 117:                     case 9: LATDbits.LATD4 = 1;
+[e :U 689 ]
+[e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
+"118
+[; ;Timers.c: 118:                         break;
+[e $U 678  ]
+"119
+[; ;Timers.c: 119:                 }
+}
+[e $U 678  ]
+[e :U 679 ]
+[e [\ _i , $ -> 0 `i 680
+ , $ -> 1 `i 681
+ , $ -> 2 `i 682
+ , $ -> 3 `i 683
+ , $ -> 4 `i 684
+ , $ -> 5 `i 685
+ , $ -> 6 `i 686
+ , $ -> 7 `i 687
+ , $ -> 8 `i 688
+ , $ -> 9 `i 689
+ 678 ]
+[e :U 678 ]
+"120
+[; ;Timers.c: 120:                 Enable_Rele[i] = 0;
+[e = *U + &U _Enable_Rele * -> -> _i `ui `ux -> -> # *U &U _Enable_Rele `ui `ux -> -> 0 `i `uc ]
+"121
+[; ;Timers.c: 121:             }
+}
+[e :U 677 ]
+"122
+[; ;Timers.c: 122:         }
+}
+[e :U 676 ]
+"123
+[; ;Timers.c: 123:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 10 `i 660  ]
-[e :U 661 ]
+[e $ < _i -> 10 `i 673  ]
+[e :U 674 ]
 }
-"99
-[; ;Timers.c: 99: }
-[e :UE 659 ]
+"124
+[; ;Timers.c: 124: }
+[e :UE 672 ]
 }
-"101
-[; ;Timers.c: 101: void Refresh_In(void) {
+"126
+[; ;Timers.c: 126: void Refresh_In(void) {
 [v _Refresh_In `(v ~T0 @X0 1 ef ]
 {
 [e :U _Refresh_In ]
 [f ]
-"102
-[; ;Timers.c: 102:     Status_In[0] = PORTEbits.RE0;
+"127
+[; ;Timers.c: 127:     Status_In[0] = PORTEbits.RE0;
 [e = *U + &U _Status_In * -> -> -> 0 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTEbits 0 0 ]
-"103
-[; ;Timers.c: 103:     Status_In[1] = PORTEbits.RE1;
+"128
+[; ;Timers.c: 128:     Status_In[1] = PORTEbits.RE1;
 [e = *U + &U _Status_In * -> -> -> 1 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTEbits 0 1 ]
-"104
-[; ;Timers.c: 104:     Status_In[2] = PORTEbits.RE2;
+"129
+[; ;Timers.c: 129:     Status_In[2] = PORTEbits.RE2;
 [e = *U + &U _Status_In * -> -> -> 2 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTEbits 0 2 ]
-"105
-[; ;Timers.c: 105:     Status_In[3] = PORTCbits.RC0;
+"130
+[; ;Timers.c: 130:     Status_In[3] = PORTCbits.RC0;
 [e = *U + &U _Status_In * -> -> -> 3 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTCbits 0 0 ]
-"106
-[; ;Timers.c: 106:     Status_In[4] = PORTCbits.RC1;
+"131
+[; ;Timers.c: 131:     Status_In[4] = PORTCbits.RC1;
 [e = *U + &U _Status_In * -> -> -> 4 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTCbits 0 1 ]
-"107
-[; ;Timers.c: 107:     Status_In[5] = PORTCbits.RC2;
+"132
+[; ;Timers.c: 132:     Status_In[5] = PORTCbits.RC2;
 [e = *U + &U _Status_In * -> -> -> 5 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTCbits 0 2 ]
-"108
-[; ;Timers.c: 108:     Status_In[6] = PORTDbits.RD0;
+"133
+[; ;Timers.c: 133:     Status_In[6] = PORTDbits.RD0;
 [e = *U + &U _Status_In * -> -> -> 6 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTDbits 0 0 ]
-"109
-[; ;Timers.c: 109:     Status_In[7] = PORTDbits.RD1;
+"134
+[; ;Timers.c: 134:     Status_In[7] = PORTDbits.RD1;
 [e = *U + &U _Status_In * -> -> -> 7 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTDbits 0 1 ]
-"110
-[; ;Timers.c: 110:     Status_In[8] = PORTDbits.RD2;
+"135
+[; ;Timers.c: 135:     Status_In[8] = PORTDbits.RD2;
 [e = *U + &U _Status_In * -> -> -> 8 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTDbits 0 2 ]
-"111
-[; ;Timers.c: 111:     Status_In[9] = PORTDbits.RD3;
+"136
+[; ;Timers.c: 136:     Status_In[9] = PORTDbits.RD3;
 [e = *U + &U _Status_In * -> -> -> 9 `i `ui `ux -> -> # *U &U _Status_In `ui `ux . . _PORTDbits 0 3 ]
-"113
-[; ;Timers.c: 113:     for (int i = 0; i < 10; i++) {
+"138
+[; ;Timers.c: 138:     for (int i = 0; i < 10; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 10 `i 678  ]
-[e $U 679  ]
-[e :U 678 ]
+[e $ < _i -> 10 `i 691  ]
+[e $U 692  ]
+[e :U 691 ]
 {
-"114
-[; ;Timers.c: 114:         if (Status_In[i] != Old_In[i]) {
-[e $ ! != -> *U + &U _Status_In * -> -> _i `ui `ux -> -> # *U &U _Status_In `ui `ux `i -> *U + &U _Old_In * -> -> _i `ui `ux -> -> # *U &U _Old_In `ui `ux `i 681  ]
+"139
+[; ;Timers.c: 139:         if (Status_In[i] != Old_In[i]) {
+[e $ ! != -> *U + &U _Status_In * -> -> _i `ui `ux -> -> # *U &U _Status_In `ui `ux `i -> *U + &U _Old_In * -> -> _i `ui `ux -> -> # *U &U _Old_In `ui `ux `i 694  ]
 {
-"115
-[; ;Timers.c: 115:             Old_In[i] = Status_In[i];
+"140
+[; ;Timers.c: 140:             Old_In[i] = Status_In[i];
 [e = *U + &U _Old_In * -> -> _i `ui `ux -> -> # *U &U _Old_In `ui `ux *U + &U _Status_In * -> -> _i `ui `ux -> -> # *U &U _Status_In `ui `ux ]
-"116
-[; ;Timers.c: 116:             Cambio_Estado = 1;
+"141
+[; ;Timers.c: 141:             Cambio_Estado = 1;
 [e = _Cambio_Estado -> -> 1 `i `uc ]
-"117
-[; ;Timers.c: 117:         }
+"142
+[; ;Timers.c: 142:         }
 }
-[e :U 681 ]
-"118
-[; ;Timers.c: 118:     }
+[e :U 694 ]
+"143
+[; ;Timers.c: 143:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 10 `i 678  ]
-[e :U 679 ]
+[e $ < _i -> 10 `i 691  ]
+[e :U 692 ]
 }
-"119
-[; ;Timers.c: 119: }
-[e :UE 677 ]
+"144
+[; ;Timers.c: 144: }
+[e :UE 690 ]
 }

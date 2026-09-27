@@ -133,7 +133,7 @@ void Read_X4(unsigned int Direccion, unsigned int Cantidad) {
 
 void Write_X0(unsigned int Direccion, unsigned int Valor) {
 
-    if (Direccion < 15) {
+    if (Direccion < Len_Control + 1) {
         if (Valor == 0xFF00) {
             Gasificado.Control[Direccion] = 1;
         }
@@ -149,7 +149,7 @@ void Write_X0(unsigned int Direccion, unsigned int Valor) {
 }
 
 void Write_X4(unsigned int Direccion, unsigned int Valor) {
-    if (Direccion < 9) {
+    if (Direccion < Len_Variable + 1) {
         Gasificado.Variables[Direccion] = Valor;
     }
 
@@ -160,14 +160,14 @@ void Write_X4(unsigned int Direccion, unsigned int Valor) {
 }
 
 unsigned char Leer_1Bit(unsigned int Direccion) {
-    if (Direccion < 15) {
+    if (Direccion < Len_Control + 1) {
         return Gasificado.Control[Direccion];
     }
     return 0;
 }
 
 unsigned int Leer_1Byte(unsigned int Direccion) {
-    if (Direccion < 9) {
+    if (Direccion < Len_Variable + 1) {
         return Gasificado.Variables[Direccion];
     }
     return 0;

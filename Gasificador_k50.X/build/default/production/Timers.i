@@ -8356,8 +8356,9 @@ char *tempnam(const char *, const char *);
     unsigned int Tiempo_Rele[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
+    void Set_Rele(unsigned char Rele, unsigned char Valor);
     void Proceso_Rele(void);
-# 68 "./Timers.h"
+# 69 "./Timers.h"
     uint8_t Cambio_Estado = 0;
     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};
@@ -8395,6 +8396,31 @@ void Tmr1_Init(void) {
     PIR1bits.TMR1IF = 0;
     PIE1bits.TMR1IE = 1;
     T1CONbits.TMR1ON = 1;
+}
+
+void Set_Rele(unsigned char Rele, unsigned char Valor){
+    switch (Rele) {
+            case 0: LATBbits.LATB5 = Valor;
+                break;
+            case 1: LATBbits.LATB4 = Valor;
+                break;
+            case 2: LATBbits.LATB3 = Valor;
+                break;
+            case 3: LATBbits.LATB2 = Valor;
+                break;
+            case 4: LATBbits.LATB1 = Valor;
+                break;
+            case 5: LATBbits.LATB0 = Valor;
+                break;
+            case 6: LATDbits.LATD7 = Valor;
+                break;
+            case 7: LATDbits.LATD6 = Valor;
+                break;
+            case 8: LATDbits.LATD5 = Valor;
+                break;
+            case 9: LATDbits.LATD4 = Valor;
+                break;
+        }
 }
 
 void Power_Rele(unsigned char Rele, unsigned int Tiempo) {

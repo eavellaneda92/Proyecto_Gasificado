@@ -73,43 +73,43 @@
 [v _Armado_Stop Armado_Stop `(v  1 e 1 0 ]
 "77
 [v _Proceso_Heater Proceso_Heater `(v  1 e 1 0 ]
-"91
+"94
 [v _Inyecta_Liquido Inyecta_Liquido `(v  1 e 1 0 ]
-"101
+"104
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
-"111
+"114
 [v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
-"116
+"119
 [v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
-"121
+"124
 [v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
-"126
+"129
 [v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
-"131
+"134
 [v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
-"136
+"139
 [v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
-"141
+"144
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
-"151
+"154
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
-"172
+"175
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
-"182
+"185
 [v _Get_Channel_Heater Get_Channel_Heater `(uc  1 e 1 0 ]
-"187
+"190
 [v _Get_Tiempo_Damper Get_Tiempo_Damper `(us  1 e 2 0 ]
-"193
+"196
 [v _Get_Tiempo_Iny_Liquido Get_Tiempo_Iny_Liquido `(us  1 e 2 0 ]
-"199
+"202
 [v _Get_Tiempo_Iny_Gas Get_Tiempo_Iny_Gas `(us  1 e 2 0 ]
-"205
+"208
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
-"210
+"213
 [v _Set_Tiempo_Damper Set_Tiempo_Damper `(v  1 e 1 0 ]
-"216
+"219
 [v _Set_Tiempo_Iny_Liquido Set_Tiempo_Iny_Liquido `(v  1 e 1 0 ]
-"222
+"225
 [v _Set_Tiempo_Iny_Gas Set_Tiempo_Iny_Gas `(v  1 e 1 0 ]
 "15 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
@@ -124,10 +124,12 @@
 "25
 [v _Tmr1_Init Tmr1_Init `(v  1 e 1 0 ]
 "36
+[v _Set_Rele Set_Rele `(v  1 e 1 0 ]
+"61
 [v _Power_Rele Power_Rele `(v  1 e 1 0 ]
-"68
+"93
 [v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
-"101
+"126
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
 "6 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
@@ -141,7 +143,7 @@
 [v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
 "63
 [v _Get_Comando Get_Comando `(v  1 e 1 0 ]
-"185
+"186
 [v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
 "22 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X/ADC.h
 [v _Paso_ADC Paso_ADC `uc  1 e 1 0 ]
@@ -181,11 +183,11 @@
 [v _Wait_Rele Wait_Rele `[10]ui  1 e 20 0 ]
 "52
 [v _Tiempo_Rele Tiempo_Rele `[10]ui  1 e 20 0 ]
-"68
-[v _Cambio_Estado Cambio_Estado `uc  1 e 1 0 ]
 "69
-[v _Status_In Status_In `[10]uc  1 e 10 0 ]
+[v _Cambio_Estado Cambio_Estado `uc  1 e 1 0 ]
 "70
+[v _Status_In Status_In `[10]uc  1 e 10 0 ]
+"71
 [v _Old_In Old_In `[10]uc  1 e 10 0 ]
 "23 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X/Uart.h
 [v _Buffer Buffer `VE[150]uc  1 e 150 0 ]
@@ -201,7 +203,7 @@
 [v _ntcAdc ntcAdc `C[41]us  1 s 82 ntcAdc ]
 "232 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
-[s S1584 . 1 `uc 1 ANSA0 1 0 :1:0 
+[s S1635 . 1 `uc 1 ANSA0 1 0 :1:0 
 `uc 1 ANSA1 1 0 :1:1 
 `uc 1 ANSA2 1 0 :1:2 
 `uc 1 ANSA3 1 0 :1:3 
@@ -209,32 +211,32 @@
 `uc 1 ANSA5 1 0 :1:5 
 ]
 "247
-[u S1591 . 1 `S1584 1 . 1 0 ]
-[v _ANSELAbits ANSELAbits `VES1591  1 e 1 @3931 ]
+[u S1642 . 1 `S1635 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES1642  1 e 1 @3931 ]
 "277
 [v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
 "327
 [v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
-[s S903 . 1 `uc 1 . 1 0 :2:0 
+[s S906 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ANSC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 ANSC6 1 0 :1:6 
 `uc 1 ANSC7 1 0 :1:7 
 ]
 "341
-[u S909 . 1 `S903 1 . 1 0 ]
-[v _ANSELCbits ANSELCbits `VES909  1 e 1 @3933 ]
+[u S912 . 1 `S906 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES912  1 e 1 @3933 ]
 "361
 [v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
 "423
 [v _ANSELE ANSELE `VEuc  1 e 1 @3935 ]
-[s S1601 . 1 `uc 1 ANSE0 1 0 :1:0 
+[s S1652 . 1 `uc 1 ANSE0 1 0 :1:0 
 `uc 1 ANSE1 1 0 :1:1 
 `uc 1 ANSE2 1 0 :1:2 
 ]
 "435
-[u S1605 . 1 `S1601 1 . 1 0 ]
-[v _ANSELEbits ANSELEbits `VES1605  1 e 1 @3935 ]
+[u S1656 . 1 `S1652 1 . 1 0 ]
+[v _ANSELEbits ANSELEbits `VES1656  1 e 1 @3935 ]
 [s S723 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
@@ -365,7 +367,7 @@
 [v _LATDbits LATDbits `VES650  1 e 1 @3980 ]
 "4217
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-[s S1520 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S1571 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -375,7 +377,7 @@
 `uc 1 TRISA7 1 0 :1:7 
 ]
 "4658
-[s S1529 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1580 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -384,13 +386,34 @@
 `uc 1 RA6 1 0 :1:6 
 `uc 1 RA7 1 0 :1:7 
 ]
-[u S1538 . 1 `S1520 1 . 1 0 `S1529 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES1538  1 e 1 @3986 ]
+[u S1589 . 1 `S1571 1 . 1 0 `S1580 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1589  1 e 1 @3986 ]
 "4848
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S1489 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4880
+[s S1498 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S1507 . 1 `S1489 1 . 1 0 `S1498 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1507  1 e 1 @3987 ]
 "5070
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-[s S918 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S921 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -400,32 +423,32 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "5100
-[s S927 . 1 `uc 1 RC0 1 0 :1:0 
+[s S930 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S934 . 1 `S918 1 . 1 0 `S927 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES934  1 e 1 @3988 ]
+[u S937 . 1 `S921 1 . 1 0 `S930 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES937  1 e 1 @3988 ]
 "5248
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "5470
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-[s S1560 . 1 `uc 1 TRISE0 1 0 :1:0 
+[s S1611 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 WPUE3 1 0 :1:7 
 ]
 "5494
-[s S1566 . 1 `uc 1 RE0 1 0 :1:0 
+[s S1617 . 1 `uc 1 RE0 1 0 :1:0 
 `uc 1 RE1 1 0 :1:1 
 `uc 1 RE2 1 0 :1:2 
 ]
-[u S1570 . 1 `S1560 1 . 1 0 `S1566 1 . 1 0 ]
-[v _TRISEbits TRISEbits `VES1570  1 e 1 @3990 ]
+[u S1621 . 1 `S1611 1 . 1 0 `S1617 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES1621  1 e 1 @3990 ]
 [s S147 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
@@ -470,7 +493,7 @@
 ]
 [u S43 . 1 `S24 1 . 1 0 `S33 1 . 1 0 `S40 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES43  1 e 1 @3998 ]
-[s S1897 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[s S1927 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 TMR3IF 1 0 :1:1 
 `uc 1 HLVDIF 1 0 :1:2 
 `uc 1 BCLIF 1 0 :1:3 
@@ -480,19 +503,19 @@
 `uc 1 OSCFIF 1 0 :1:7 
 ]
 "6615
-[s S1906 . 1 `uc 1 . 1 0 :2:0 
+[s S1936 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LVDIF 1 0 :1:2 
 `uc 1 BCL1IF 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 CM2IF 1 0 :1:5 
 `uc 1 CM1IF 1 0 :1:6 
 ]
-[s S1913 . 1 `uc 1 . 1 0 :6:0 
+[s S1943 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIF 1 0 :1:6 
 ]
-[u S1916 . 1 `S1897 1 . 1 0 `S1906 1 . 1 0 `S1913 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES1916  1 e 1 @4001 ]
-[s S1839 . 1 `uc 1 RD 1 0 :1:0 
+[u S1946 . 1 `S1927 1 . 1 0 `S1936 1 . 1 0 `S1943 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1946  1 e 1 @4001 ]
+[s S1869 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -502,18 +525,18 @@
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "6972
-[s S1848 . 1 `uc 1 . 1 0 :6:0 
+[s S1878 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S1851 . 1 `S1839 1 . 1 0 `S1848 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES1851  1 e 1 @4006 ]
+[u S1881 . 1 `S1869 1 . 1 0 `S1878 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1881  1 e 1 @4006 ]
 "7017
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "7037
 [v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
 "7044
 [v _EEADR EEADR `VEuc  1 e 1 @4009 ]
-[s S1125 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S1128 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -523,22 +546,22 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "7090
-[s S1134 . 1 `uc 1 . 1 0 :3:0 
+[s S1137 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADEN 1 0 :1:3 
 ]
-[s S1137 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S1140 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S1141 . 1 `uc 1 . 1 0 :6:0 
+[s S1144 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S1144 . 1 `uc 1 . 1 0 :5:0 
+[s S1147 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[u S1147 . 1 `S1125 1 . 1 0 `S1134 1 . 1 0 `S1137 1 . 1 0 `S1141 1 . 1 0 `S1144 1 . 1 0 ]
-[v _RCSTA1bits RCSTA1bits `VES1147  1 e 1 @4011 ]
-[s S1039 . 1 `uc 1 TX9D 1 0 :1:0 
+[u S1150 . 1 `S1128 1 . 1 0 `S1137 1 . 1 0 `S1140 1 . 1 0 `S1144 1 . 1 0 `S1147 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES1150  1 e 1 @4011 ]
+[s S1042 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -548,35 +571,35 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "7315
-[s S1048 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S1051 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S1052 . 1 `uc 1 . 1 0 :2:0 
+[s S1055 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 BRGH1 1 0 :1:2 
 ]
-[s S1055 . 1 `uc 1 . 1 0 :7:0 
+[s S1058 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[s S1058 . 1 `uc 1 . 1 0 :3:0 
+[s S1061 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SENDB1 1 0 :1:3 
 ]
-[s S1061 . 1 `uc 1 . 1 0 :4:0 
+[s S1064 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 SYNC1 1 0 :1:4 
 ]
-[s S1064 . 1 `uc 1 . 1 0 :1:0 
+[s S1067 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 ]
-[s S1067 . 1 `uc 1 . 1 0 :6:0 
+[s S1070 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX91 1 0 :1:6 
 ]
-[s S1070 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S1073 . 1 `uc 1 TX9D1 1 0 :1:0 
 ]
-[s S1072 . 1 `uc 1 . 1 0 :5:0 
+[s S1075 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 TXEN1 1 0 :1:5 
 ]
-[u S1075 . 1 `S1039 1 . 1 0 `S1048 1 . 1 0 `S1052 1 . 1 0 `S1055 1 . 1 0 `S1058 1 . 1 0 `S1061 1 . 1 0 `S1064 1 . 1 0 `S1067 1 . 1 0 `S1070 1 . 1 0 `S1072 1 . 1 0 ]
-[v _TXSTA1bits TXSTA1bits `VES1075  1 e 1 @4012 ]
+[u S1078 . 1 `S1042 1 . 1 0 `S1051 1 . 1 0 `S1055 1 . 1 0 `S1058 1 . 1 0 `S1061 1 . 1 0 `S1064 1 . 1 0 `S1067 1 . 1 0 `S1070 1 . 1 0 `S1073 1 . 1 0 `S1075 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES1078  1 e 1 @4012 ]
 "7551
 [v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
 "7589
@@ -585,7 +608,7 @@
 [v _SPBRG1 SPBRG1 `VEuc  1 e 1 @4015 ]
 "7765
 [v _SPBRGH1 SPBRGH1 `VEuc  1 e 1 @4016 ]
-[s S954 . 1 `uc 1 ABDEN 1 0 :1:0 
+[s S957 . 1 `uc 1 ABDEN 1 0 :1:0 
 `uc 1 WUE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG16 1 0 :1:3 
@@ -595,16 +618,16 @@
 `uc 1 ABDOVF 1 0 :1:7 
 ]
 "8761
-[s S963 . 1 `uc 1 . 1 0 :4:0 
+[s S966 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 CKTXP 1 0 :1:4 
 `uc 1 DTRXP 1 0 :1:5 
 ]
-[s S967 . 1 `uc 1 . 1 0 :4:0 
+[s S970 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 SCKP 1 0 :1:4 
 `uc 1 . 1 0 :1:5 
 `uc 1 RCMT 1 0 :1:6 
 ]
-[s S972 . 1 `uc 1 ABDEN1 1 0 :1:0 
+[s S975 . 1 `uc 1 ABDEN1 1 0 :1:0 
 `uc 1 WUE1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 BRG161 1 0 :1:3 
@@ -613,53 +636,53 @@
 `uc 1 RCIDL1 1 0 :1:6 
 `uc 1 ABDOVF1 1 0 :1:7 
 ]
-[s S981 . 1 `uc 1 . 1 0 :4:0 
+[s S984 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXCKP1 1 0 :1:4 
 `uc 1 RXDTP1 1 0 :1:5 
 `uc 1 RCMT1 1 0 :1:6 
 ]
-[s S986 . 1 `uc 1 . 1 0 :5:0 
+[s S989 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 RXCKP 1 0 :1:5 
 ]
-[s S989 . 1 `uc 1 . 1 0 :1:0 
+[s S992 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 W4E 1 0 :1:1 
 ]
-[u S992 . 1 `S954 1 . 1 0 `S963 1 . 1 0 `S967 1 . 1 0 `S972 1 . 1 0 `S981 1 . 1 0 `S986 1 . 1 0 `S989 1 . 1 0 ]
-[v _BAUDCON1bits BAUDCON1bits `VES992  1 e 1 @4024 ]
+[u S995 . 1 `S957 1 . 1 0 `S966 1 . 1 0 `S970 1 . 1 0 `S975 1 . 1 0 `S984 1 . 1 0 `S989 1 . 1 0 `S992 1 . 1 0 ]
+[v _BAUDCON1bits BAUDCON1bits `VES995  1 e 1 @4024 ]
 "9636
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
 "9707
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "9775
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S1615 . 1 `uc 1 . 1 0 :1:0 
+[s S1666 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "9815
-[s S1618 . 1 `uc 1 ADON 1 0 :1:0 
+[s S1669 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :5:2 
 ]
-[s S1622 . 1 `uc 1 . 1 0 :1:0 
+[s S1673 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S1625 . 1 `uc 1 . 1 0 :1:0 
+[s S1676 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S1628 . 1 `uc 1 . 1 0 :1:0 
+[s S1679 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S1631 . 1 `uc 1 . 1 0 :1:0 
+[s S1682 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S1634 . 1 `uc 1 . 1 0 :1:0 
+[s S1685 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[s S1637 . 1 `uc 1 . 1 0 :1:0 
+[s S1688 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[u S1640 . 1 `S1615 1 . 1 0 `S1618 1 . 1 0 `S1622 1 . 1 0 `S1625 1 . 1 0 `S1628 1 . 1 0 `S1631 1 . 1 0 `S1634 1 . 1 0 `S1637 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES1640  1 e 1 @4034 ]
+[u S1691 . 1 `S1666 1 . 1 0 `S1669 1 . 1 0 `S1673 1 . 1 0 `S1676 1 . 1 0 `S1679 1 . 1 0 `S1682 1 . 1 0 `S1685 1 . 1 0 `S1688 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1691  1 e 1 @4034 ]
 "9870
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
 "9877
@@ -830,103 +853,103 @@
 {
 "15
 } 0
-"101
+"126
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
 {
-"113
+"138
 [v Refresh_In@i i `i  1 a 2 5 ]
-"119
+"144
 } 0
-"68
+"93
 [v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
 {
-"69
+"94
 [v Proceso_Rele@i i `i  1 a 2 7 ]
-"99
+"124
 } 0
 "77 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Proceso_Heater Proceso_Heater `(v  1 e 1 0 ]
 {
-"89
+"92
 } 0
 "41
 [v _Proceso_Arranque Proceso_Arranque `(v  1 e 1 0 ]
 {
 "62
 } 0
-"216
+"219
 [v _Set_Tiempo_Iny_Liquido Set_Tiempo_Iny_Liquido `(v  1 e 1 0 ]
 {
 [v Set_Tiempo_Iny_Liquido@Dato Dato `us  1 p 2 7 ]
-"220
+"223
 } 0
-"222
+"225
 [v _Set_Tiempo_Iny_Gas Set_Tiempo_Iny_Gas `(v  1 e 1 0 ]
 {
 [v Set_Tiempo_Iny_Gas@Dato Dato `us  1 p 2 7 ]
-"226
+"229
 } 0
-"210
+"213
 [v _Set_Tiempo_Damper Set_Tiempo_Damper `(v  1 e 1 0 ]
 {
 [v Set_Tiempo_Damper@Dato Dato `us  1 p 2 7 ]
-"214
+"217
 } 0
-"205
+"208
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
 {
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 7 ]
-"208
+"211
 } 0
-"151
+"154
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
 {
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
-"159
+"162
 [v Eeprom_Escribir@gie gie `uc  1 a 1 5 ]
-"151
+"154
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Escribir@dato dato `uc  1 p 1 4 ]
 [v Eeprom_Escribir@dir dir `uc  1 p 1 6 ]
-"170
+"173
 } 0
-"193
+"196
 [v _Get_Tiempo_Iny_Liquido Get_Tiempo_Iny_Liquido `(us  1 e 2 0 ]
 {
-"194
-[v Get_Tiempo_Iny_Liquido@Dato Dato `us  1 a 2 9 ]
 "197
+[v Get_Tiempo_Iny_Liquido@Dato Dato `us  1 a 2 9 ]
+"200
 } 0
-"199
+"202
 [v _Get_Tiempo_Iny_Gas Get_Tiempo_Iny_Gas `(us  1 e 2 0 ]
 {
-"200
-[v Get_Tiempo_Iny_Gas@Dato Dato `us  1 a 2 9 ]
 "203
+[v Get_Tiempo_Iny_Gas@Dato Dato `us  1 a 2 9 ]
+"206
 } 0
-"187
+"190
 [v _Get_Tiempo_Damper Get_Tiempo_Damper `(us  1 e 2 0 ]
 {
-"188
-[v Get_Tiempo_Damper@Dato Dato `us  1 a 2 9 ]
 "191
+[v Get_Tiempo_Damper@Dato Dato `us  1 a 2 9 ]
+"194
 } 0
-"182
+"185
 [v _Get_Channel_Heater Get_Channel_Heater `(uc  1 e 1 0 ]
 {
-"183
+"186
 [v Get_Channel_Heater@Dato Dato `uc  1 a 1 4 ]
-"185
+"188
 } 0
-"141
+"144
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
 {
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 3 ]
-"149
+"152
 } 0
 "51 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 [v _Proceso_ADC Proceso_ADC `(v  1 e 1 0 ]
@@ -1000,23 +1023,23 @@
 [v _Get_Comando Get_Comando `(v  1 e 1 0 ]
 {
 "92
-[v Get_Comando@c_1439 c `uc  1 a 1 21 ]
+[v Get_Comando@c_1442 c `uc  1 a 1 21 ]
 "75
 [v Get_Comando@c c `uc  1 a 1 20 ]
 "91
-[v Get_Comando@i_1438 i `i  1 a 2 14 ]
+[v Get_Comando@i_1441 i `i  1 a 2 14 ]
 "74
 [v Get_Comando@i i `i  1 a 2 10 ]
 "88
-[v Get_Comando@Tiempo_1435 Tiempo `i  1 a 2 12 ]
+[v Get_Comando@Tiempo_1438 Tiempo `i  1 a 2 12 ]
 "87
-[v Get_Comando@Fin_1433 Fin `i  1 a 2 6 ]
+[v Get_Comando@Fin_1436 Fin `i  1 a 2 6 ]
 "99
 [v Get_Comando@Estado Estado `uc  1 a 1 22 ]
-"90
-[v Get_Comando@Coma_1437 Coma `uc  1 a 1 19 ]
 "89
-[v Get_Comando@Rele_1436 Rele `uc  1 a 1 18 ]
+[v Get_Comando@Rele_1439 Rele `uc  1 a 1 19 ]
+"90
+[v Get_Comando@Coma_1440 Coma `uc  1 a 1 18 ]
 "71
 [v Get_Comando@Tiempo Tiempo `ui  1 a 2 8 ]
 "70
@@ -1029,17 +1052,17 @@
 [v Get_Comando@Index Index `i  1 a 2 23 ]
 "63
 [v Get_Comando@Data Data `*.39uc  1 p 2 0 ]
-"183
+"184
 } 0
-"131 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"134 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
 {
-"134
+"137
 } 0
-"136
+"139
 [v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
 {
-"139
+"142
 } 0
 "46 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
@@ -1068,54 +1091,54 @@
 [v Texto_Length@texto texto `*.35uc  1 p 2 3 ]
 "44
 } 0
-"91 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"94 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Inyecta_Liquido Inyecta_Liquido `(v  1 e 1 0 ]
 {
-"93
+"96
 [v Inyecta_Liquido@i i `i  1 a 2 56 ]
-"99
+"102
 } 0
-"101
+"104
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
 {
-"103
+"106
 [v Inyecta_Gas@i i `i  1 a 2 56 ]
-"109
+"112
 } 0
-"185 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+"186 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
 {
-"199
+"200
 [v Imprime_Estado@i i `i  1 a 2 78 ]
-"195
+"196
 [v Imprime_Estado@R10 R10 `uc  1 a 1 77 ]
-"194
+"195
 [v Imprime_Estado@R9 R9 `uc  1 a 1 76 ]
-"193
+"194
 [v Imprime_Estado@R8 R8 `uc  1 a 1 75 ]
-"192
+"193
 [v Imprime_Estado@R7 R7 `uc  1 a 1 74 ]
-"191
+"192
 [v Imprime_Estado@R6 R6 `uc  1 a 1 73 ]
-"190
+"191
 [v Imprime_Estado@R5 R5 `uc  1 a 1 72 ]
-"189
+"190
 [v Imprime_Estado@R4 R4 `uc  1 a 1 71 ]
-"188
+"189
 [v Imprime_Estado@R3 R3 `uc  1 a 1 70 ]
-"187
+"188
 [v Imprime_Estado@R2 R2 `uc  1 a 1 69 ]
-"186
+"187
 [v Imprime_Estado@R1 R1 `uc  1 a 1 68 ]
-"214
+"215
 } 0
 "9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S2491 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[u S2522 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
 "13
-[s S2494 _IO_FILE 11 `S2491 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S2494  1 a 11 56 ]
+[s S2525 _IO_FILE 11 `S2522 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S2525  1 a 11 56 ]
 "12
 [v sprintf@ap ap `[1]*.30v  1 a 1 55 ]
 "9
@@ -1128,9 +1151,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 30 ]
-[s S2526 _IO_FILE 0 ]
+[s S2557 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S2526  1 p 1 26 ]
+[v vfprintf@fp fp `*.30S2557  1 p 1 26 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 27 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 29 ]
 "1840
@@ -1138,17 +1161,17 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S2539 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[u S2570 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S2539  1 a 4 21 ]
+[v vfpfcnvrt@convarg convarg `S2570  1 a 4 21 ]
 "1179
 [v vfpfcnvrt@cp cp `*.32uc  1 a 2 19 ]
 [v vfpfcnvrt@c c `uc  1 a 1 25 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 18 ]
-[s S2526 _IO_FILE 0 ]
+[s S2557 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.30S2526  1 p 1 13 ]
+[v vfpfcnvrt@fp fp `*.30S2557  1 p 1 13 ]
 [v vfpfcnvrt@fmt fmt `*.30*.32uc  1 p 1 14 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 15 ]
 "1814
@@ -1157,9 +1180,9 @@
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[u S2491 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
-[s S2494 _IO_FILE 11 `S2491 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.30S2494  1 p 1 5 ]
+[u S2522 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S2525 _IO_FILE 11 `S2522 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S2525  1 p 1 5 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
@@ -1197,31 +1220,31 @@
 [v ___awdiv@divisor divisor `i  1 p 2 5 ]
 "41
 } 0
-"121 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"124 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
 {
-"124
+"127
 } 0
-"126
+"129
 [v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
 {
-"129
+"132
 } 0
-"116
+"119
 [v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
 {
-"119
+"122
 } 0
-"111
+"114
 [v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
 {
-"114
+"117
 } 0
-"172
+"175
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
 {
 [v Respuestas_RS485@Mensaje Mensaje `*.32uc  1 p 2 6 ]
-"180
+"183
 } 0
 "31 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _UART_Print UART_Print `(v  1 e 1 0 ]
@@ -1242,7 +1265,16 @@
 {
 "75
 } 0
-"64
+"36 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+[v _Set_Rele Set_Rele `(v  1 e 1 0 ]
+{
+[v Set_Rele@Rele Rele `uc  1 p 1 wreg ]
+[v Set_Rele@Rele Rele `uc  1 p 1 wreg ]
+[v Set_Rele@Valor Valor `uc  1 p 1 3 ]
+[v Set_Rele@Rele Rele `uc  1 p 1 4 ]
+"59
+} 0
+"64 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Armado_Cerrado Armado_Cerrado `(v  1 e 1 0 ]
 {
 "68
@@ -1275,17 +1307,17 @@
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2356 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2387 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2361 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2364 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2356 1 fAsBytes 4 0 `S2361 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2364  1 a 4 36 ]
+[s S2392 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2395 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2387 1 fAsBytes 4 0 `S2392 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2395  1 a 4 36 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 30 ]
-[s S2432 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2463 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2435 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2432 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2435  1 a 2 40 ]
+[u S2466 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2463 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2466  1 a 2 40 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 35 ]
 "11
@@ -1297,14 +1329,14 @@
 [v ___flmul@a a `d  1 p 4 21 ]
 "205
 } 0
-"36 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+"61 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 [v _Power_Rele Power_Rele `(v  1 e 1 0 ]
 {
 [v Power_Rele@Rele Rele `uc  1 p 1 wreg ]
 [v Power_Rele@Rele Rele `uc  1 p 1 wreg ]
 [v Power_Rele@Tiempo Tiempo `ui  1 p 2 52 ]
 [v Power_Rele@Rele Rele `uc  1 p 1 54 ]
-"66
+"91
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
@@ -1321,7 +1353,7 @@
 "4 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\Config.c
 [v _GPIO_Init GPIO_Init `(v  1 e 1 0 ]
 {
-"24
+"25
 } 0
 "3 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]

@@ -10,6 +10,7 @@
       <itemPath>Leds.h</itemPath>
       <itemPath>Comandos.h</itemPath>
       <itemPath>Kinco.h</itemPath>
+      <itemPath>Control.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

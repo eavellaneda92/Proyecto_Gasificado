@@ -8357,8 +8357,9 @@ char *tempnam(const char *, const char *);
     unsigned int Tiempo_Rele[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
+    void Set_Rele(unsigned char Rele, unsigned char Valor);
     void Proceso_Rele(void);
-# 68 "./Timers.h"
+# 69 "./Timers.h"
     uint8_t Cambio_Estado = 0;
     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};
@@ -8532,15 +8533,15 @@ void Proceso_Arranque(void) {
 }
 
 void Armado_Cerrado(void) {
-    Power_Rele(LATBbits.LATB0, (uint16_t)(Tiempo_Damper * 1.5));
-    Power_Rele(LATDbits.LATD7, (uint16_t)(Tiempo_Iny_Gas * 1.5));
-    Power_Rele(LATDbits.LATD5, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
+    Power_Rele(5, (uint16_t)(Tiempo_Damper * 1.5));
+    Power_Rele(6, (uint16_t)(Tiempo_Iny_Gas * 1.5));
+    Power_Rele(8, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
 }
 
 void Armado_Stop(void){
     Armado_Cerrado();
-    LATBbits.LATB5 = 1;
-    LATBbits.LATB4 = 1;
+    Set_Rele(0,1);
+    Set_Rele(1,1);
     En_Sistem = 0;
 }
 
@@ -8548,10 +8549,13 @@ void Proceso_Heater(void) {
     if (Arranque_Flag == 1) {
         Tiempo_Heater++;
         if (Tiempo_Heater >= 200) {
-            if (Temp1 > SP_Temp + 10) LATBbits.LATB3 = 1;
+            if (Temp1 > SP_Temp + 10){
+                Set_Rele(2,1);
+                Set_Rele(3,1);
+            }
             if (Temp1 < SP_Temp - 10) {
-                if (Channel_Heater == 0) LATBbits.LATB3 = 0;
-                else LATBbits.LATB2 = 0;
+                if (Channel_Heater == 0) Set_Rele(2,0);
+                else Set_Rele(3,0);
             }
             Tiempo_Heater = 0;
         }
@@ -8559,52 +8563,52 @@ void Proceso_Heater(void) {
 }
 
 void Inyecta_Liquido(void) {
-    Power_Rele(LATDbits.LATD4, Tiempo_Iny_Liquido);
+    Power_Rele(10, Tiempo_Iny_Liquido);
     for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
-    Power_Rele(LATDbits.LATD5, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
+    Power_Rele(8, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 
 void Inyecta_Gas(void) {
-    Power_Rele(LATDbits.LATD6, Tiempo_Iny_Gas);
+    Power_Rele(7, Tiempo_Iny_Gas);
     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
-    Power_Rele(LATDbits.LATD6, (uint16_t)(Tiempo_Iny_Gas * 1.5));
+    Power_Rele(7, (uint16_t)(Tiempo_Iny_Gas * 1.5));
     Respuestas_RS485("INYECCION_GAS_OK");
 }
 
 void Damper_Abrir(void) {
-    Power_Rele(LATBbits.LATB1, Tiempo_Damper);
+    Power_Rele(4, Tiempo_Damper);
     Respuestas_RS485("DAMPER_OPEN_OK");
 }
 
 void Damper_Cerrar(void) {
-    Power_Rele(LATBbits.LATB0, (uint16_t)(Tiempo_Damper * 1.5));
+    Power_Rele(5, (uint16_t)(Tiempo_Damper * 1.5));
     Respuestas_RS485("DAMPER_CLOSE_OK");
 }
 
 void Evaporador_On(void) {
-    LATBbits.LATB5 = 0;
+    Set_Rele(0,0);
     Respuestas_RS485("EVAPORADOR_ON_OK");
 }
 
 void Evaporador_Off(void) {
-    LATBbits.LATB5 = 1;
+    Set_Rele(0,1);
     Respuestas_RS485("EVAPORADOR_OFF_OK");
 }
 
 void Ventilador_On(void) {
-    LATBbits.LATB4 = 0;
+    Set_Rele(1,0);
     Respuestas_RS485("VENTILADOR_ON_OK");
 }
 
 void Ventilador_Off(void) {
-    LATBbits.LATB4 = 1;
+    Set_Rele(1,1);
     Respuestas_RS485("VENTILADOR_OFF_OK");
 }
 

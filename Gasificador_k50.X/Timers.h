@@ -52,6 +52,7 @@ extern "C" {
     unsigned int Tiempo_Rele[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
+    void Set_Rele(unsigned char Rele, unsigned char Valor);
     void Proceso_Rele(void);
 
 #define IN1 PORTEbits.RE0

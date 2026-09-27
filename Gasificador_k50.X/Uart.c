@@ -99,6 +99,7 @@ void Get_Comando(char *Data) {
                 uint8_t Estado = 0;
                 if (Tiempo == 0) Estado = RELE_OFF;
                 else Estado = RELE_ON;
+                Rele--;
                 switch (Rele) {
                     case 0: RELAY1 = Estado;
                         break;

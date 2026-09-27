@@ -69,8 +69,8 @@ void Armado_Cerrado(void) {
 
 void Armado_Stop(void){
     Armado_Cerrado();
-    Evaporador = RELE_OFF;
-    Ventilador = RELE_OFF;
+    Set_Rele(Evaporador,RELE_OFF);
+    Set_Rele(Ventilador,RELE_OFF);
     En_Sistem = 0;
 }
 
@@ -78,10 +78,13 @@ void Proceso_Heater(void) {
     if (Arranque_Flag == 1) {
         Tiempo_Heater++;
         if (Tiempo_Heater >= 200) {
-            if (Temp1 > SP_Temp + 10) Heater1 = RELE_OFF;
+            if (Temp1 > SP_Temp + 10){
+                Set_Rele(Heater1,RELE_OFF);
+                Set_Rele(Heater2,RELE_OFF);
+            }
             if (Temp1 < SP_Temp - 10) {
-                if (Channel_Heater == 0) Heater1 = RELE_ON;
-                else Heater2 = RELE_ON;
+                if (Channel_Heater == 0) Set_Rele(Heater1,RELE_ON);
+                else Set_Rele(Heater2,RELE_ON);
             }
             Tiempo_Heater = 0;
         }
@@ -119,22 +122,22 @@ void Damper_Cerrar(void) {
 }
 
 void Evaporador_On(void) {
-    Evaporador = RELE_ON;
+    Set_Rele(Evaporador,RELE_ON);
     Respuestas_RS485("EVAPORADOR_ON_OK");
 }
 
 void Evaporador_Off(void) {
-    Evaporador = RELE_OFF;
+    Set_Rele(Evaporador,RELE_OFF);
     Respuestas_RS485("EVAPORADOR_OFF_OK");
 }
 
 void Ventilador_On(void) {
-    Ventilador = RELE_ON;
+    Set_Rele(Ventilador,RELE_ON);
     Respuestas_RS485("VENTILADOR_ON_OK");
 }
 
 void Ventilador_Off(void) {
-    Ventilador = RELE_OFF;
+    Set_Rele(Ventilador,RELE_OFF);
     Respuestas_RS485("VENTILADOR_OFF_OK");
 }
 

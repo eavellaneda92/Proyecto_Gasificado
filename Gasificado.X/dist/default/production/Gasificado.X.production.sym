@@ -3,7 +3,7 @@ ___lldiv@counter 11 0 COMRAM 1
 ___awdiv@counter 9 0 COMRAM 1
 sprintf@f 3D 0 COMRAM 1
 Read_X4@nb 51 0 COMRAM 1
-Read_Cmd@Data C8 0 BANK0 1
+Read_Cmd@Data C5 0 BANK0 1
 _PR2 FBB 0 ABS 0
 __S0 2E58 0 ABS 0
 __S1 2C9 0 ABS 0
@@ -17,7 +17,7 @@ __Lintentry 0 0 ABS 0
 _pad 284C 0 CODE 0
 __end_of___awdiv 2130 0 CODE 0
 _abs 2D76 0 CODE 0
-_txt B4 0 BANK0 1
+_txt B1 0 BANK0 1
 _TMR2 FBC 0 ABS 0
 Leer_1Byte@Direccion 5 0 COMRAM 1
 _LATA F89 0 ABS 0
@@ -30,14 +30,14 @@ _M_ID 56 0 COMRAM 1
 _WPUB F61 0 ABS 0
 Read_X4@hi 4D 0 COMRAM 1
 IndexOf_Str@buf 8 0 COMRAM 1
-_M_LR 89 0 BANK0 1
+_M_LR 86 0 BANK0 1
 abs@a B 0 COMRAM 1
 pad@i 17 0 COMRAM 1
 pad@p 14 0 COMRAM 1
-_prec 83 0 BANK0 1
+_prec 80 0 BANK0 1
 _dtoa 1C4E 0 CODE 0
 _xtoa 1EAC 0 CODE 0
-_dbuf 94 0 BANK0 1
+_dbuf 91 0 BANK0 1
 ?_abs B 0 COMRAM 1
 IndexOf_Str@patron A 0 COMRAM 1
 _main 2B84 0 CODE 0
@@ -70,7 +70,7 @@ ttemp6 5E 0 COMRAM 1
 ttemp7 62 0 COMRAM 1
 wtemp8 5B 0 COMRAM 1
 __end_of_Timer0_Init 2E26 0 CODE 0
-Read_Cmd@bajo D1 0 BANK0 1
+Read_Cmd@bajo CE 0 BANK0 1
 __Hconfig 30000E 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
 Leer_1Bit@Direccion 5 0 COMRAM 1
@@ -85,10 +85,10 @@ dtoa@i 22 0 COMRAM 1
 xtoa@i 23 0 COMRAM 1
 __end_of_read_prec_or_width 24A0 0 CODE 0
 _M_Led 58 0 COMRAM 1
-_S_Led 8B 0 BANK0 1
+_S_Led 88 0 BANK0 1
 _T_Led 59 0 COMRAM 1
-_W_Led 8C 0 BANK0 1
-_Z_Led 8D 0 BANK0 1
+_W_Led 89 0 BANK0 1
+_Z_Led 8A 0 BANK0 1
 ___inthi_stack_hi 0 0 STACK 2
 dtoa@p 1E 0 COMRAM 1
 xtoa@p 1F 0 COMRAM 1
@@ -107,7 +107,7 @@ __Hcomram 0 0 ABS 0
 _putch 2E56 0 CODE 0
 __Lcomram 0 0 ABS 0
 _fputc 2352 0 CODE 0
-_width 81 0 BANK0 1
+_width 7E 0 BANK0 1
 _HexToNum 295C 0 CODE 0
 __Hsfr 0 0 ABS 0
 __Lsfr 0 0 ABS 0
@@ -192,7 +192,7 @@ __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __end_of_IndexOf_Str 1EAC 0 CODE 0
 ___heap_hi 0 0 ABS 0
-_Flag_100ms 8E 0 BANK0 1
+_Flag_100ms 8B 0 BANK0 1
 _Set_Led_Conectado 2E38 0 CODE 0
 __Hsivt_hi 0 0 CODE 0
 __Lsivt_hi 0 0 CODE 0
@@ -218,7 +218,7 @@ __HcstackBANK0 0 0 ABS 0
 __LcstackBANK0 0 0 ABS 0
 _Timer1_Init 2DFC 0 CODE 0
 _Timer2_Init 2E26 0 CODE 0
-__pcstackBANK0 C8 0 BANK0 1
+__pcstackBANK0 C5 0 BANK0 1
 ___awmod@sign A 0 COMRAM 1
 __Htemp 5B 0 COMRAM 1
 __Ltemp 5A 0 COMRAM 1
@@ -235,13 +235,13 @@ __Hrbss 0 0 COMRAM 1
 __end_of_main 2BDA 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 Read_X4@lrc 54 0 COMRAM 1
-_M_Cantidad 85 0 BANK0 1
+_M_Cantidad 82 0 BANK0 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ?_vfprintf 2E 0 COMRAM 1
 ___heap_lo 0 0 ABS 0
-_M_Direccion 87 0 BANK0 1
-UART_Read@i_1502 D7 0 BANK0 1
+_M_Direccion 84 0 BANK0 1
+UART_Read@i_1502 D4 0 BANK0 1
 end_of_initialization 2C88 0 CODE 0
 ___awdiv@sign A 0 COMRAM 1
 _IndexOf_Str 1DB2 0 CODE 0
@@ -249,7 +249,7 @@ _SPBRGH1 FB0 0 ABS 0
 _SPBRGH2 F76 0 ABS 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
-_M_Funcion 8A 0 BANK0 1
+_M_Funcion 87 0 BANK0 1
 _OSCCON2 FD2 0 ABS 0
 _read_prec_or_width 23FC 0 CODE 0
 vfprintf@fmt 2F 0 COMRAM 1
@@ -266,11 +266,11 @@ _TRISDbits F95 0 ABS 0
 vfpfcnvrt@convarg 29 0 COMRAM 1
 _T0CONbits FD5 0 ABS 0
 _T1CONbits FCD 0 ABS 0
-_Flag_U1 92 0 BANK0 1
+_Flag_U1 8F 0 BANK0 1
 _Read_X0 21EC 0 CODE 0
-_Flag_U2 90 0 BANK0 1
+_Flag_U2 8D 0 BANK0 1
 _Read_X4 1FA2 0 CODE 0
-_Flag_1000ms 8F 0 BANK0 1
+_Flag_1000ms 8C 0 BANK0 1
 _Proceso_Led 1AA2 0 CODE 0
 UART1_Init@Baud 12 0 COMRAM 1
 UART2_Init@Baud 12 0 COMRAM 1
@@ -357,7 +357,7 @@ Read_X0@Cantidad 4A 0 COMRAM 1
 Get_Comando@Data 48 0 COMRAM 1
 Read_X4@Cantidad 4A 0 COMRAM 1
 __end_of_Read_X0 22A4 0 CODE 0
-_Length_U1 93 0 BANK0 1
+_Length_U1 90 0 BANK0 1
 UART1_WriteString@cad 8 0 COMRAM 1
 UART2_WriteString@cad 8 0 COMRAM 1
 UART_Interrupt@c 1 0 COMRAM 1
@@ -368,7 +368,7 @@ Write_X0@Valor A 0 COMRAM 1
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
 __end_of_UART2_WriteString 2DD4 0 CODE 0
-_Length_U2 91 0 BANK0 1
+_Length_U2 8E 0 BANK0 1
 __end_of_Write_X0 284C 0 CODE 0
 __end_of_Write_X4 2A4C 0 CODE 0
 _Buffer_U2 200 0 BANK2 1
@@ -428,7 +428,7 @@ __end_of_sprintf 2D76 0 CODE 0
 Write_X4@Direccion 8 0 COMRAM 1
 _Timer_Interrupt 2A4C 0 CODE 0
 Texto_Length@contador 7 0 COMRAM 1
-Read_Cmd@Index D3 0 BANK0 1
+Read_Cmd@Index D0 0 BANK0 1
 __end_of_UART2_Init 271A 0 CODE 0
 __end_of_pad 28D6 0 CODE 0
 __HbssBANK0 0 0 ABS 0
@@ -549,7 +549,7 @@ __Htext18 0 0 ABS 0
 __Ltext37 0 0 ABS 0
 __Ltext18 0 0 ABS 0
 __ptext27 25E2 0 CODE 0
-Read_Cmd@lrc CD 0 BANK0 1
+Read_Cmd@lrc CA 0 BANK0 1
 _ANSELCbits F3A 0 ABS 0
 __Htext28 0 0 ABS 0
 __Ltext28 0 0 ABS 0
@@ -574,7 +574,7 @@ __ptext39 2ABC 0 CODE 0
 _OSCCONbits FD3 0 ABS 0
 _INTCONbits FF2 0 ABS 0
 _Write_X0 27B4 0 CODE 0
-Read_Cmd@alto CF 0 BANK0 1
+Read_Cmd@alto CC 0 BANK0 1
 ___lldiv@divisor 9 0 COMRAM 1
 _Interrupcion 8 0 CODE 0
 ___awdiv@divisor 7 0 COMRAM 1
@@ -632,7 +632,7 @@ HexToNum@c 5 0 COMRAM 1
 read_prec_or_width@c 9 0 COMRAM 1
 __end_of_Proceso_Led 1C4E 0 CODE 0
 read_prec_or_width@n A 0 COMRAM 1
-UART_Read@i D5 0 BANK0 1
+UART_Read@i D2 0 BANK0 1
 ___lldiv@dividend 5 0 COMRAM 1
 ___awdiv@dividend 5 0 COMRAM 1
 %segments
@@ -640,13 +640,13 @@ reset_vec 0 3 CODE 0 0
 intcode 8 29 CODE 8 0
 smallconst 1000 1085 SMALLCONST 1000 0
 cstackCOMRAM 1 5A COMRAM 1 1
-bssBANK0 60 D8 BANK0 60 1
+bssBANK0 60 D5 BANK0 60 1
 bssBANK2 200 2C8 BANK2 200 1
 bssBANK1 100 164 BANK1 100 1
 text2 1086 2E57 CODE 1086 0
 %locals
 dist/default/production\Gasificado.X.production.o
-C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+C:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_1.s
 4081 2C5A 0 CODE 0
 4083 2C5A 0 CODE 0
 4086 2C5A 0 CODE 0
@@ -1366,7 +1366,7 @@ Config.c
 12 2BE4 0 CODE 0
 13 2BEC 0 CODE 0
 14 2C1A 0 CODE 0
-C:\Users\Eus\AppData\Local\Temp\xcAs9r4.\driver_tmp_1.s
+C:\Users\Eus\AppData\Local\Temp\xcAshf0.\driver_tmp_1.s
 13130 8 0 CODE 0
 main.c
 14 8 0 CODE 0

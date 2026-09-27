@@ -8379,8 +8379,9 @@ char *tempnam(const char *, const char *);
     unsigned int Tiempo_Rele[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
+    void Set_Rele(unsigned char Rele, unsigned char Valor);
     void Proceso_Rele(void);
-# 68 "./Timers.h"
+# 69 "./Timers.h"
     uint8_t Cambio_Estado = 0;
     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};
@@ -8574,6 +8575,7 @@ void Get_Comando(char *Data) {
                 uint8_t Estado = 0;
                 if (Tiempo == 0) Estado = 1;
                 else Estado = 0;
+                Rele--;
                 switch (Rele) {
                     case 0: LATBbits.LATB5 = Estado;
                         break;

@@ -35,6 +35,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4105
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 4105: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
 [v _LATD `Vuc ~T0 @X0 0 e@3980 ]
+"4859
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 4859:     struct {
+[s S201 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S201 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"4869
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 4869:     struct {
+[s S202 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S202 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"4858
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 4858: typedef union {
+[u S200 `S201 1 `S202 1 ]
+[n S200 . . . ]
+"4880
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 4880: extern volatile TRISBbits_t TRISBbits __attribute__((address(0xF93)));
+[v _TRISBbits `VS200 ~T0 @X0 0 e@3987 ]
 "3897
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc/pic18f45k50.h: 3897:     struct {
 [s S167 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -841,12 +856,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Config.c: 19:     LATD = 0xFF;
 [e = _LATD -> -> 255 `i `uc ]
 "21
-[; ;Config.c: 21:     LATBbits.LATB6 = 0;
+[; ;Config.c: 21:     TRISBbits.TRISB6 = 0;
+[e = . . _TRISBbits 0 6 -> -> 0 `i `uc ]
+"22
+[; ;Config.c: 22:     LATBbits.LATB6 = 0;
 [e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
-"23
-[; ;Config.c: 23:     ADC_Init();
-[e ( _ADC_Init ..  ]
 "24
-[; ;Config.c: 24: }
+[; ;Config.c: 24:     ADC_Init();
+[e ( _ADC_Init ..  ]
+"25
+[; ;Config.c: 25: }
 [e :UE 638 ]
 }

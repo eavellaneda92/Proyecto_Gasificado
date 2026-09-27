@@ -1,28 +1,28 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"64 ./Kinco.h
-[; ;./Kinco.h: 64:     typedef struct {
-[s S1 `uc -> 15 `i `ui -> 9 `i ]
+"49 ./Kinco.h
+[; ;./Kinco.h: 49:     typedef struct {
+[s S1 `uc -> 12 `i `ui -> 9 `i ]
 [n S1 . Control Variables ]
 "39 ./Uarts.h
 [; ;./Uarts.h: 39:     int8_t IndexOf_Str(const uint8_t *buf, char *patron);
 [v _IndexOf_Str `(c ~T0 @X0 0 ef2`*Cuc`*uc ]
-"78 ./Kinco.h
-[; ;./Kinco.h: 78:     unsigned char HexToNum(char c);
+"63 ./Kinco.h
+[; ;./Kinco.h: 63:     unsigned char HexToNum(char c);
 [v _HexToNum `(uc ~T0 @X0 0 ef1`uc ]
-"79
-[; ;./Kinco.h: 79:     void Read_X0(unsigned int Direccion, unsigned int Cantidad);
+"64
+[; ;./Kinco.h: 64:     void Read_X0(unsigned int Direccion, unsigned int Cantidad);
 [v _Read_X0 `(v ~T0 @X0 0 ef2`ui`ui ]
-"80
-[; ;./Kinco.h: 80:     void Read_X4(unsigned int Direccion, unsigned int Cantidad);
+"65
+[; ;./Kinco.h: 65:     void Read_X4(unsigned int Direccion, unsigned int Cantidad);
 [v _Read_X4 `(v ~T0 @X0 0 ef2`ui`ui ]
-"81
-[; ;./Kinco.h: 81:     void Write_X0(unsigned int Direccion, unsigned int Valor);
+"66
+[; ;./Kinco.h: 66:     void Write_X0(unsigned int Direccion, unsigned int Valor);
 [v _Write_X0 `(v ~T0 @X0 0 ef2`ui`ui ]
-"82
-[; ;./Kinco.h: 82:     void Write_X4(unsigned int Direccion, unsigned int Valor);
+"67
+[; ;./Kinco.h: 67:     void Write_X4(unsigned int Direccion, unsigned int Valor);
 [v _Write_X4 `(v ~T0 @X0 0 ef2`ui`ui ]
-"83
-[; ;./Kinco.h: 83:     unsigned char Leer_1Bit(unsigned int Direccion);
+"68
+[; ;./Kinco.h: 68:     unsigned char Leer_1Bit(unsigned int Direccion);
 [v _Leer_1Bit `(uc ~T0 @X0 0 ef1`ui ]
 "121 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
@@ -34,38 +34,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
 [v __delay `JF235 ~T0 @X0 0 e ]
 [p i __delay ]
-"84 ./Kinco.h
-[; ;./Kinco.h: 84:     unsigned int Leer_1Byte(unsigned int Direccion);
+"69 ./Kinco.h
+[; ;./Kinco.h: 69:     unsigned int Leer_1Byte(unsigned int Direccion);
 [v _Leer_1Byte `(ui ~T0 @X0 0 ef1`ui ]
 "34 ./Uarts.h
 [; ;./Uarts.h: 34:     void UART2_Write(uint8_t dato);
 [v _UART2_Write `(v ~T0 @X0 0 ef1`uc ]
-"71 ./Kinco.h
-[; ;./Kinco.h: 71:     char M_ID = 0;
+"56 ./Kinco.h
+[; ;./Kinco.h: 56:     char M_ID = 0;
 [v _M_ID `uc ~T0 @X0 1 e ]
 [i _M_ID
 -> -> 0 `i `uc
 ]
-"72
-[; ;./Kinco.h: 72:     char M_Funcion = 0;
+"57
+[; ;./Kinco.h: 57:     char M_Funcion = 0;
 [v _M_Funcion `uc ~T0 @X0 1 e ]
 [i _M_Funcion
 -> -> 0 `i `uc
 ]
-"73
-[; ;./Kinco.h: 73:     unsigned int M_Direccion = 0;
+"58
+[; ;./Kinco.h: 58:     unsigned int M_Direccion = 0;
 [v _M_Direccion `ui ~T0 @X0 1 e ]
 [i _M_Direccion
 -> -> 0 `i `ui
 ]
-"74
-[; ;./Kinco.h: 74:     unsigned int M_Cantidad = 0;
+"59
+[; ;./Kinco.h: 59:     unsigned int M_Cantidad = 0;
 [v _M_Cantidad `ui ~T0 @X0 1 e ]
 [i _M_Cantidad
 -> -> 0 `i `ui
 ]
-"75
-[; ;./Kinco.h: 75:     unsigned char M_LR = 0;
+"60
+[; ;./Kinco.h: 60:     unsigned char M_LR = 0;
 [v _M_LR `uc ~T0 @X0 1 e ]
 [i _M_LR
 -> -> 0 `i `uc
@@ -1315,8 +1315,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Valor `ui ~T0 @X0 1 r2 ]
 [f ]
 "136
-[; ;Kinco.c: 136:     if (Direccion < 15) {
-[e $ ! < _Direccion -> -> 15 `i `ui 900  ]
+[; ;Kinco.c: 136:     if (Direccion < 11 + 1) {
+[e $ ! < _Direccion -> + -> 11 `i -> 1 `i `ui 900  ]
 {
 "137
 [; ;Kinco.c: 137:         if (Valor == 0xFF00) {
@@ -1376,8 +1376,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Valor `ui ~T0 @X0 1 r2 ]
 [f ]
 "152
-[; ;Kinco.c: 152:     if (Direccion < 9) {
-[e $ ! < _Direccion -> -> 9 `i `ui 907  ]
+[; ;Kinco.c: 152:     if (Direccion < 8 + 1) {
+[e $ ! < _Direccion -> + -> 8 `i -> 1 `i `ui 907  ]
 {
 "153
 [; ;Kinco.c: 153:         Gasificado.Variables[Direccion] = Valor;
@@ -1417,8 +1417,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Direccion `ui ~T0 @X0 1 r1 ]
 [f ]
 "163
-[; ;Kinco.c: 163:     if (Direccion < 15) {
-[e $ ! < _Direccion -> -> 15 `i `ui 912  ]
+[; ;Kinco.c: 163:     if (Direccion < 11 + 1) {
+[e $ ! < _Direccion -> + -> 11 `i -> 1 `i `ui 912  ]
 {
 "164
 [; ;Kinco.c: 164:         return Gasificado.Control[Direccion];
@@ -1444,8 +1444,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _Direccion `ui ~T0 @X0 1 r1 ]
 [f ]
 "170
-[; ;Kinco.c: 170:     if (Direccion < 9) {
-[e $ ! < _Direccion -> -> 9 `i `ui 914  ]
+[; ;Kinco.c: 170:     if (Direccion < 8 + 1) {
+[e $ ! < _Direccion -> + -> 8 `i -> 1 `i `ui 914  ]
 {
 "171
 [; ;Kinco.c: 171:         return Gasificado.Variables[Direccion];

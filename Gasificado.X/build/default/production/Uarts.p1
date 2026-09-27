@@ -88,8 +88,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17 ./Comandos.h
 [; ;./Comandos.h: 17:     void Get_Comando(unsigned char *Data);
 [v _Get_Comando `(v ~T0 @X0 0 ef1`*uc ]
-"77 ./Kinco.h
-[; ;./Kinco.h: 77:     void Read_Cmd(unsigned char *Data);
+"62 ./Kinco.h
+[; ;./Kinco.h: 62:     void Read_Cmd(unsigned char *Data);
 [v _Read_Cmd `(v ~T0 @X0 0 ef1`*uc ]
 "151 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f46k22.h
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f46k22.h: 151:     struct {
@@ -1252,32 +1252,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Flag_100ms
 -> -> 0 `i `uc
 ]
-"71 ./Kinco.h
-[; ;./Kinco.h: 71:     char M_ID = 0;
+"56 ./Kinco.h
+[; ;./Kinco.h: 56:     char M_ID = 0;
 [v _M_ID `uc ~T0 @X0 1 e ]
 [i _M_ID
 -> -> 0 `i `uc
 ]
-"72
-[; ;./Kinco.h: 72:     char M_Funcion = 0;
+"57
+[; ;./Kinco.h: 57:     char M_Funcion = 0;
 [v _M_Funcion `uc ~T0 @X0 1 e ]
 [i _M_Funcion
 -> -> 0 `i `uc
 ]
-"73
-[; ;./Kinco.h: 73:     unsigned int M_Direccion = 0;
+"58
+[; ;./Kinco.h: 58:     unsigned int M_Direccion = 0;
 [v _M_Direccion `ui ~T0 @X0 1 e ]
 [i _M_Direccion
 -> -> 0 `i `ui
 ]
-"74
-[; ;./Kinco.h: 74:     unsigned int M_Cantidad = 0;
+"59
+[; ;./Kinco.h: 59:     unsigned int M_Cantidad = 0;
 [v _M_Cantidad `ui ~T0 @X0 1 e ]
 [i _M_Cantidad
 -> -> 0 `i `ui
 ]
-"75
-[; ;./Kinco.h: 75:     unsigned char M_LR = 0;
+"60
+[; ;./Kinco.h: 60:     unsigned char M_LR = 0;
 [v _M_LR `uc ~T0 @X0 1 e ]
 [i _M_LR
 -> -> 0 `i `uc

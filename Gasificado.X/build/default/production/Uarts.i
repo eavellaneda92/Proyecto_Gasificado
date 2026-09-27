@@ -10088,10 +10088,10 @@ char *tempnam(const char *, const char *);
     void Get_Comando(unsigned char *Data);
 # 4 "Uarts.c" 2
 # 1 "./Kinco.h" 1
-# 64 "./Kinco.h"
+# 49 "./Kinco.h"
     typedef struct {
-        unsigned char Control[15];
-        unsigned int Variables[9];
+        unsigned char Control[11 + 1];
+        unsigned int Variables[8 + 1];
     } Container;
 
     extern Container Gasificado;

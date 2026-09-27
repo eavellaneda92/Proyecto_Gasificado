@@ -8384,6 +8384,7 @@ void GPIO_Init(void){
     LATE = 0xFF;
     LATD = 0xFF;
 
+    TRISBbits.TRISB6 = 0;
     LATBbits.LATB6 = 0;
 
     ADC_Init();

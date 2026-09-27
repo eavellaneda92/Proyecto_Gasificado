@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Sun Sep 27 08:01:36 2026
+                                                                                               Sun Sep 27 13:52:58 2026
 
 Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
      1                           	processor	18F46K22
@@ -2168,9 +2168,9 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2154   002C6E  06E8               	decf	wreg,f,c
   2155   002C70  E1FD               	bnz	clear_1
   2156                           
-  2157                           ; Clear objects allocated to BANK0 (104 bytes)
+  2157                           ; Clear objects allocated to BANK0 (101 bytes)
   2158   002C72  EE00  F060         	lfsr	0,__pbssBANK0
-  2159   002C76  0E68               	movlw	104
+  2159   002C76  0E65               	movlw	101
   2160   002C78                     clear_2:
   2161   002C78  6AEE               	clrf	postinc0,c
   2162   002C7A  06E8               	decf	wreg,f,c
@@ -2217,58 +2217,58 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2203                           	callstack 0
   2204   000060                     _Gasificado:
   2205                           	callstack 0
-  2206   000060                     	ds	33
-  2207   000081                     _width:
+  2206   000060                     	ds	30
+  2207   00007E                     _width:
   2208                           	callstack 0
-  2209   000081                     	ds	2
-  2210   000083                     _prec:
+  2209   00007E                     	ds	2
+  2210   000080                     _prec:
   2211                           	callstack 0
-  2212   000083                     	ds	2
-  2213   000085                     _M_Cantidad:
+  2212   000080                     	ds	2
+  2213   000082                     _M_Cantidad:
   2214                           	callstack 0
-  2215   000085                     	ds	2
-  2216   000087                     _M_Direccion:
+  2215   000082                     	ds	2
+  2216   000084                     _M_Direccion:
   2217                           	callstack 0
-  2218   000087                     	ds	2
-  2219   000089                     _M_LR:
+  2218   000084                     	ds	2
+  2219   000086                     _M_LR:
   2220                           	callstack 0
-  2221   000089                     	ds	1
-  2222   00008A                     _M_Funcion:
+  2221   000086                     	ds	1
+  2222   000087                     _M_Funcion:
   2223                           	callstack 0
-  2224   00008A                     	ds	1
-  2225   00008B                     _S_Led:
+  2224   000087                     	ds	1
+  2225   000088                     _S_Led:
   2226                           	callstack 0
-  2227   00008B                     	ds	1
-  2228   00008C                     _W_Led:
+  2227   000088                     	ds	1
+  2228   000089                     _W_Led:
   2229                           	callstack 0
-  2230   00008C                     	ds	1
-  2231   00008D                     _Z_Led:
+  2230   000089                     	ds	1
+  2231   00008A                     _Z_Led:
   2232                           	callstack 0
-  2233   00008D                     	ds	1
-  2234   00008E                     _Flag_100ms:
+  2233   00008A                     	ds	1
+  2234   00008B                     _Flag_100ms:
   2235                           	callstack 0
-  2236   00008E                     	ds	1
-  2237   00008F                     _Flag_1000ms:
+  2236   00008B                     	ds	1
+  2237   00008C                     _Flag_1000ms:
   2238                           	callstack 0
-  2239   00008F                     	ds	1
-  2240   000090                     _Flag_U2:
+  2239   00008C                     	ds	1
+  2240   00008D                     _Flag_U2:
   2241                           	callstack 0
-  2242   000090                     	ds	1
-  2243   000091                     _Length_U2:
+  2242   00008D                     	ds	1
+  2243   00008E                     _Length_U2:
   2244                           	callstack 0
-  2245   000091                     	ds	1
-  2246   000092                     _Flag_U1:
+  2245   00008E                     	ds	1
+  2246   00008F                     _Flag_U1:
   2247                           	callstack 0
-  2248   000092                     	ds	1
-  2249   000093                     _Length_U1:
+  2248   00008F                     	ds	1
+  2249   000090                     _Length_U1:
   2250                           	callstack 0
-  2251   000093                     	ds	1
-  2252   000094                     _dbuf:
+  2251   000090                     	ds	1
+  2252   000091                     _dbuf:
   2253                           	callstack 0
-  2254   000094                     	ds	32
-  2255   0000B4                     _txt:
+  2254   000091                     	ds	32
+  2255   0000B1                     _txt:
   2256                           	callstack 0
-  2257   0000B4                     	ds	20
+  2257   0000B1                     	ds	20
   2258                           
   2259                           	psect	bssBANK1
   2260   000100                     __pbssBANK1:
@@ -2285,47 +2285,47 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2271   000200                     	ds	201
   2272                           
   2273                           	psect	cstackBANK0
-  2274   0000C8                     __pcstackBANK0:
+  2274   0000C5                     __pcstackBANK0:
   2275                           	callstack 0
-  2276   0000C8                     Read_Cmd@Data:
+  2276   0000C5                     Read_Cmd@Data:
   2277                           	callstack 0
   2278                           
   2279                           ; 2 bytes @ 0x0
-  2280   0000C8                     	ds	2
-  2281   0000CA                     ??_Read_Cmd:
+  2280   0000C5                     	ds	2
+  2281   0000C7                     ??_Read_Cmd:
   2282                           
   2283                           ; 1 bytes @ 0x2
-  2284   0000CA                     	ds	3
-  2285   0000CD                     Read_Cmd@lrc:
+  2284   0000C7                     	ds	3
+  2285   0000CA                     Read_Cmd@lrc:
   2286                           	callstack 0
   2287                           
   2288                           ; 2 bytes @ 0x5
-  2289   0000CD                     	ds	2
-  2290   0000CF                     Read_Cmd@alto:
+  2289   0000CA                     	ds	2
+  2290   0000CC                     Read_Cmd@alto:
   2291                           	callstack 0
   2292                           
   2293                           ; 2 bytes @ 0x7
-  2294   0000CF                     	ds	2
-  2295   0000D1                     Read_Cmd@bajo:
+  2294   0000CC                     	ds	2
+  2295   0000CE                     Read_Cmd@bajo:
   2296                           	callstack 0
   2297                           
   2298                           ; 2 bytes @ 0x9
-  2299   0000D1                     	ds	2
-  2300   0000D3                     Read_Cmd@Index:
+  2299   0000CE                     	ds	2
+  2300   0000D0                     Read_Cmd@Index:
   2301                           	callstack 0
   2302                           
   2303                           ; 2 bytes @ 0xB
-  2304   0000D3                     	ds	2
-  2305   0000D5                     UART_Read@i:
+  2304   0000D0                     	ds	2
+  2305   0000D2                     UART_Read@i:
   2306                           	callstack 0
   2307                           
   2308                           ; 2 bytes @ 0xD
-  2309   0000D5                     	ds	2
-  2310   0000D7                     UART_Read@i_1502:
+  2309   0000D2                     	ds	2
+  2310   0000D4                     UART_Read@i_1502:
   2311                           	callstack 0
   2312                           
   2313                           ; 2 bytes @ 0xF
-  2314   0000D7                     	ds	2
+  2314   0000D4                     	ds	2
   2315                           
   2316                           	psect	cstackCOMRAM
   2317   000001                     __pcstackCOMRAM:
@@ -2893,7 +2893,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2869   002130                     
   2870                           ;Uarts.c: 33:     if (Flag_U1 == 1) {
   2871   002130  0100               	movlb	0	; () banked
-  2872   002132  0592               	decf	_Flag_U1& (0+255),w,b
+  2872   002132  058F               	decf	_Flag_U1& (0+255),w,b
   2873   002134  A4D8               	btfss	status,2,c
   2874   002136  EF9F  F010         	goto	u2741
   2875   00213A  EFA1  F010         	goto	u2740
@@ -2912,34 +2912,34 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2888                           ;Uarts.c: 36:         for (int i = 0; i < 100; i++) {
   2889   00214E  0E00               	movlw	0
   2890   002150  0100               	movlb	0	; () banked
-  2891   002152  6FD6               	movwf	(UART_Read@i+1)& (0+255),b
+  2891   002152  6FD3               	movwf	(UART_Read@i+1)& (0+255),b
   2892   002154  0E00               	movlw	0
-  2893   002156  6FD5               	movwf	UART_Read@i& (0+255),b
+  2893   002156  6FD2               	movwf	UART_Read@i& (0+255),b
   2894   002158                     l3622:
   2895                           
   2896                           ; BSR set to: 0
   2897                           ;Uarts.c: 37:             Buffer_U1[i] = '\0';
   2898   002158  0E00               	movlw	low _Buffer_U1
-  2899   00215A  25D5               	addwf	UART_Read@i& (0+255),w,b
+  2899   00215A  25D2               	addwf	UART_Read@i& (0+255),w,b
   2900   00215C  6ED9               	movwf	fsr2l,c
   2901   00215E  0E01               	movlw	high _Buffer_U1
-  2902   002160  21D6               	addwfc	(UART_Read@i+1)& (0+255),w,b
+  2902   002160  21D3               	addwfc	(UART_Read@i+1)& (0+255),w,b
   2903   002162  6EDA               	movwf	fsr2h,c
   2904   002164  6ADF               	clrf	indf2,c
   2905   002166  0004               	clrwdt		;# 
   2906   002168                     
   2907                           ;Uarts.c: 39:         }
   2908   002168  0100               	movlb	0	; () banked
-  2909   00216A  4BD5               	infsnz	UART_Read@i& (0+255),f,b
-  2910   00216C  2BD6               	incf	(UART_Read@i+1)& (0+255),f,b
+  2909   00216A  4BD2               	infsnz	UART_Read@i& (0+255),f,b
+  2910   00216C  2BD3               	incf	(UART_Read@i+1)& (0+255),f,b
   2911   00216E                     
   2912                           ; BSR set to: 0
-  2913   00216E  BFD6               	btfsc	(UART_Read@i+1)& (0+255),7,b
+  2913   00216E  BFD3               	btfsc	(UART_Read@i+1)& (0+255),7,b
   2914   002170  EFC3  F010         	goto	u2751
-  2915   002174  51D6               	movf	(UART_Read@i+1)& (0+255),w,b
+  2915   002174  51D3               	movf	(UART_Read@i+1)& (0+255),w,b
   2916   002176  E109               	bnz	u2750
   2917   002178  0E64               	movlw	100
-  2918   00217A  5DD5               	subwf	UART_Read@i& (0+255),w,b
+  2918   00217A  5DD2               	subwf	UART_Read@i& (0+255),w,b
   2919   00217C  A0D8               	btfss	status,0,c
   2920   00217E  EFC3  F010         	goto	u2751
   2921   002182  EFC5  F010         	goto	u2750
@@ -2949,15 +2949,15 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2925   00218A                     
   2926                           ; BSR set to: 0
   2927                           ;Uarts.c: 40:         Length_U1 = 0;
-  2928   00218A  6B93               	clrf	_Length_U1& (0+255),b
+  2928   00218A  6B90               	clrf	_Length_U1& (0+255),b
   2929                           
   2930                           ;Uarts.c: 41:         Flag_U1 = 0;
-  2931   00218C  6B92               	clrf	_Flag_U1& (0+255),b
+  2931   00218C  6B8F               	clrf	_Flag_U1& (0+255),b
   2932   00218E                     l3628:
   2933                           
   2934                           ; BSR set to: 0
   2935                           ;Uarts.c: 44:     if (Flag_U2 == 1) {
-  2936   00218E  0590               	decf	_Flag_U2& (0+255),w,b
+  2936   00218E  058D               	decf	_Flag_U2& (0+255),w,b
   2937   002190  A4D8               	btfss	status,2,c
   2938   002192  EFCD  F010         	goto	u2761
   2939   002196  EFCF  F010         	goto	u2760
@@ -2968,42 +2968,42 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2944                           ; BSR set to: 0
   2945                           ;Uarts.c: 46:         Read_Cmd(Buffer_U2);
   2946   00219E  0E00               	movlw	low _Buffer_U2
-  2947   0021A0  6FC8               	movwf	Read_Cmd@Data& (0+255),b
+  2947   0021A0  6FC5               	movwf	Read_Cmd@Data& (0+255),b
   2948   0021A2  0E02               	movlw	high _Buffer_U2
-  2949   0021A4  6FC9               	movwf	(Read_Cmd@Data+1)& (0+255),b
+  2949   0021A4  6FC6               	movwf	(Read_Cmd@Data+1)& (0+255),b
   2950   0021A6  EC43  F008         	call	_Read_Cmd	;wreg free
   2951   0021AA                     
   2952                           ;Uarts.c: 47:         for (int i = 0; i < 200; i++) {
   2953   0021AA  0E00               	movlw	0
   2954   0021AC  0100               	movlb	0	; () banked
-  2955   0021AE  6FD8               	movwf	(UART_Read@i_1502+1)& (0+255),b
+  2955   0021AE  6FD5               	movwf	(UART_Read@i_1502+1)& (0+255),b
   2956   0021B0  0E00               	movlw	0
-  2957   0021B2  6FD7               	movwf	UART_Read@i_1502& (0+255),b
+  2957   0021B2  6FD4               	movwf	UART_Read@i_1502& (0+255),b
   2958   0021B4                     l3638:
   2959                           
   2960                           ; BSR set to: 0
   2961                           ;Uarts.c: 48:             Buffer_U2[i] = '\0';
   2962   0021B4  0E00               	movlw	low _Buffer_U2
-  2963   0021B6  25D7               	addwf	UART_Read@i_1502& (0+255),w,b
+  2963   0021B6  25D4               	addwf	UART_Read@i_1502& (0+255),w,b
   2964   0021B8  6ED9               	movwf	fsr2l,c
   2965   0021BA  0E02               	movlw	high _Buffer_U2
-  2966   0021BC  21D8               	addwfc	(UART_Read@i_1502+1)& (0+255),w,b
+  2966   0021BC  21D5               	addwfc	(UART_Read@i_1502+1)& (0+255),w,b
   2967   0021BE  6EDA               	movwf	fsr2h,c
   2968   0021C0  6ADF               	clrf	indf2,c
   2969   0021C2  0004               	clrwdt		;# 
   2970   0021C4                     
   2971                           ;Uarts.c: 50:         }
   2972   0021C4  0100               	movlb	0	; () banked
-  2973   0021C6  4BD7               	infsnz	UART_Read@i_1502& (0+255),f,b
-  2974   0021C8  2BD8               	incf	(UART_Read@i_1502+1)& (0+255),f,b
+  2973   0021C6  4BD4               	infsnz	UART_Read@i_1502& (0+255),f,b
+  2974   0021C8  2BD5               	incf	(UART_Read@i_1502+1)& (0+255),f,b
   2975   0021CA                     
   2976                           ; BSR set to: 0
-  2977   0021CA  BFD8               	btfsc	(UART_Read@i_1502+1)& (0+255),7,b
+  2977   0021CA  BFD5               	btfsc	(UART_Read@i_1502+1)& (0+255),7,b
   2978   0021CC  EFF1  F010         	goto	u2771
-  2979   0021D0  51D8               	movf	(UART_Read@i_1502+1)& (0+255),w,b
+  2979   0021D0  51D5               	movf	(UART_Read@i_1502+1)& (0+255),w,b
   2980   0021D2  E109               	bnz	u2770
   2981   0021D4  0EC8               	movlw	200
-  2982   0021D6  5DD7               	subwf	UART_Read@i_1502& (0+255),w,b
+  2982   0021D6  5DD4               	subwf	UART_Read@i_1502& (0+255),w,b
   2983   0021D8  A0D8               	btfss	status,0,c
   2984   0021DA  EFF1  F010         	goto	u2771
   2985   0021DE  EFF3  F010         	goto	u2770
@@ -3013,10 +3013,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   2989   0021E6                     
   2990                           ; BSR set to: 0
   2991                           ;Uarts.c: 51:         Length_U2 = 0;
-  2992   0021E6  6B91               	clrf	_Length_U2& (0+255),b
+  2992   0021E6  6B8E               	clrf	_Length_U2& (0+255),b
   2993                           
   2994                           ;Uarts.c: 52:         Flag_U2 = 0;
-  2995   0021E8  6B90               	clrf	_Flag_U2& (0+255),b
+  2995   0021E8  6B8D               	clrf	_Flag_U2& (0+255),b
   2996   0021EA                     l374:
   2997                           
   2998                           ; BSR set to: 0
@@ -3075,22 +3075,22 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3046                           	callstack 18
   3047   001086                     
   3048                           ;Kinco.c: 7:     int Index = IndexOf_Str((unsigned char*) Data, ":");
-  3049   001086  C0C8  F008         	movff	Read_Cmd@Data,IndexOf_Str@buf
-  3050   00108A  C0C9  F009         	movff	Read_Cmd@Data+1,IndexOf_Str@buf+1
+  3049   001086  C0C5  F008         	movff	Read_Cmd@Data,IndexOf_Str@buf
+  3050   00108A  C0C6  F009         	movff	Read_Cmd@Data+1,IndexOf_Str@buf+1
   3051   00108E  0E77               	movlw	low (STR_1+8)
   3052   001090  6E0A               	movwf	IndexOf_Str@patron^0,c
   3053   001092  ECD9  F00E         	call	_IndexOf_Str	;wreg free
   3054   001096  0100               	movlb	0	; () banked
-  3055   001098  6FD3               	movwf	Read_Cmd@Index& (0+255),b
-  3056   00109A  6BD4               	clrf	(Read_Cmd@Index+1)& (0+255),b
-  3057   00109C  BFD3               	btfsc	Read_Cmd@Index& (0+255),7,b
-  3058   00109E  07D4               	decf	(Read_Cmd@Index+1)& (0+255),f,b
+  3055   001098  6FD0               	movwf	Read_Cmd@Index& (0+255),b
+  3056   00109A  6BD1               	clrf	(Read_Cmd@Index+1)& (0+255),b
+  3057   00109C  BFD0               	btfsc	Read_Cmd@Index& (0+255),7,b
+  3058   00109E  07D1               	decf	(Read_Cmd@Index+1)& (0+255),f,b
   3059   0010A0                     
   3060                           ; BSR set to: 0
   3061                           ;Kinco.c: 8:     if (Index == -1) return;
-  3062   0010A0  29D3               	incf	Read_Cmd@Index& (0+255),w,b
+  3062   0010A0  29D0               	incf	Read_Cmd@Index& (0+255),w,b
   3063   0010A2  E106               	bnz	u2711
-  3064   0010A4  29D4               	incf	(Read_Cmd@Index+1)& (0+255),w,b
+  3064   0010A4  29D1               	incf	(Read_Cmd@Index+1)& (0+255),w,b
   3065   0010A6  A4D8               	btfss	status,2,c
   3066   0010A8  EF58  F008         	goto	u2711
   3067   0010AC  EF5A  F008         	goto	u2710
@@ -3105,630 +3105,630 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3076   0010B8  6A56               	clrf	_M_ID^0,c
   3077                           
   3078                           ;Kinco.c: 12:     M_Funcion = 0;
-  3079   0010BA  6B8A               	clrf	_M_Funcion& (0+255),b
+  3079   0010BA  6B87               	clrf	_M_Funcion& (0+255),b
   3080   0010BC                     
   3081                           ; BSR set to: 0
   3082                           ;Kinco.c: 13:     M_Direccion = 0;
   3083   0010BC  0E00               	movlw	0
-  3084   0010BE  6F88               	movwf	(_M_Direccion+1)& (0+255),b
+  3084   0010BE  6F85               	movwf	(_M_Direccion+1)& (0+255),b
   3085   0010C0  0E00               	movlw	0
-  3086   0010C2  6F87               	movwf	_M_Direccion& (0+255),b
+  3086   0010C2  6F84               	movwf	_M_Direccion& (0+255),b
   3087                           
   3088                           ;Kinco.c: 14:     M_Cantidad = 0;
   3089   0010C4  0E00               	movlw	0
-  3090   0010C6  6F86               	movwf	(_M_Cantidad+1)& (0+255),b
+  3090   0010C6  6F83               	movwf	(_M_Cantidad+1)& (0+255),b
   3091   0010C8  0E00               	movlw	0
-  3092   0010CA  6F85               	movwf	_M_Cantidad& (0+255),b
+  3092   0010CA  6F82               	movwf	_M_Cantidad& (0+255),b
   3093   0010CC                     
   3094                           ; BSR set to: 0
   3095                           ;Kinco.c: 15:     M_LR = 0;
-  3096   0010CC  6B89               	clrf	_M_LR& (0+255),b
+  3096   0010CC  6B86               	clrf	_M_LR& (0+255),b
   3097                           
   3098                           ;Kinco.c: 17:     unsigned int alto, bajo, lrc = 0;
   3099   0010CE  0E00               	movlw	0
-  3100   0010D0  6FCE               	movwf	(Read_Cmd@lrc+1)& (0+255),b
+  3100   0010D0  6FCB               	movwf	(Read_Cmd@lrc+1)& (0+255),b
   3101   0010D2  0E00               	movlw	0
-  3102   0010D4  6FCD               	movwf	Read_Cmd@lrc& (0+255),b
+  3102   0010D4  6FCA               	movwf	Read_Cmd@lrc& (0+255),b
   3103   0010D6                     
   3104                           ; BSR set to: 0
   3105                           ;Kinco.c: 20:     alto = HexToNum(Data[Index + 1]);
-  3106   0010D6  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3107   0010D8  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3108   0010DA  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3109   0010DC  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3110   0010DE  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3111   0010E0  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3106   0010D6  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3107   0010D8  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3108   0010DA  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3109   0010DC  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3110   0010DE  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3111   0010E0  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3112   0010E2  0E01               	movlw	1
-  3113   0010E4  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3113   0010E4  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3114   0010E6  6ED9               	movwf	fsr2l,c
   3115   0010E8  0E00               	movlw	0
-  3116   0010EA  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3116   0010EA  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3117   0010EC  6EDA               	movwf	fsr2h,c
   3118   0010EE  50DF               	movf	indf2,w,c
   3119   0010F0  ECAE  F014         	call	_HexToNum
   3120   0010F4  0100               	movlb	0	; () banked
-  3121   0010F6  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3122   0010F8  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3123   0010FA  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3124   0010FC  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3121   0010F6  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3122   0010F8  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3123   0010FA  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3124   0010FC  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3125   0010FE                     
   3126                           ; BSR set to: 0
   3127                           ;Kinco.c: 21:     bajo = HexToNum(Data[Index + 2]);
-  3128   0010FE  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3129   001100  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3130   001102  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3131   001104  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3132   001106  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3133   001108  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3128   0010FE  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3129   001100  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3130   001102  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3131   001104  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3132   001106  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3133   001108  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3134   00110A  0E02               	movlw	2
-  3135   00110C  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3135   00110C  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3136   00110E  6ED9               	movwf	fsr2l,c
   3137   001110  0E00               	movlw	0
-  3138   001112  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3138   001112  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3139   001114  6EDA               	movwf	fsr2h,c
   3140   001116  50DF               	movf	indf2,w,c
   3141   001118  ECAE  F014         	call	_HexToNum
   3142   00111C  0100               	movlb	0	; () banked
-  3143   00111E  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3144   001120  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3145   001122  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3146   001124  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3143   00111E  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3144   001120  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3145   001122  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3146   001124  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3147   001126                     
   3148                           ; BSR set to: 0
   3149                           ;Kinco.c: 22:     M_ID = (char) ((alto << 4) | bajo);
-  3150   001126  39CF               	swapf	Read_Cmd@alto& (0+255),w,b
+  3150   001126  39CC               	swapf	Read_Cmd@alto& (0+255),w,b
   3151   001128  0BF0               	andlw	240
-  3152   00112A  11D1               	iorwf	Read_Cmd@bajo& (0+255),w,b
+  3152   00112A  11CE               	iorwf	Read_Cmd@bajo& (0+255),w,b
   3153   00112C  6E56               	movwf	_M_ID^0,c
   3154   00112E                     
   3155                           ; BSR set to: 0
   3156                           ;Kinco.c: 23:     lrc += (alto << 4) | bajo;
-  3157   00112E  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3158   001132  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3159   001136  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3160   001138  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3157   00112E  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3158   001132  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3159   001136  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3160   001138  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3161   00113A  0EF0               	movlw	240
-  3162   00113C  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3163   00113E  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3162   00113C  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3163   00113E  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3164   001140  0B0F               	andlw	15
-  3165   001142  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3165   001142  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3166   001144  0EF0               	movlw	240
-  3167   001146  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3168   001148  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3169   00114A  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3170   00114C  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3171   00114E  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3172   001150  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3173   001152  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3174   001154  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3175   001156  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3167   001146  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3168   001148  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3169   00114A  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3170   00114C  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3171   00114E  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3172   001150  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3173   001152  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3174   001154  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3175   001156  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3176   001158                     
   3177                           ; BSR set to: 0
   3178                           ;Kinco.c: 24:     lrc &= 0xFF;
   3179   001158  0EFF               	movlw	255
-  3180   00115A  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3180   00115A  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3181   00115C  0E00               	movlw	0
-  3182   00115E  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3182   00115E  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3183   001160                     
   3184                           ; BSR set to: 0
   3185                           ;Kinco.c: 27:     alto = HexToNum(Data[Index + 3]);
-  3186   001160  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3187   001162  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3188   001164  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3189   001166  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3190   001168  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3191   00116A  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3186   001160  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3187   001162  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3188   001164  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3189   001166  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3190   001168  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3191   00116A  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3192   00116C  0E03               	movlw	3
-  3193   00116E  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3193   00116E  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3194   001170  6ED9               	movwf	fsr2l,c
   3195   001172  0E00               	movlw	0
-  3196   001174  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3196   001174  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3197   001176  6EDA               	movwf	fsr2h,c
   3198   001178  50DF               	movf	indf2,w,c
   3199   00117A  ECAE  F014         	call	_HexToNum
   3200   00117E  0100               	movlb	0	; () banked
-  3201   001180  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3202   001182  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3203   001184  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3204   001186  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3201   001180  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3202   001182  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3203   001184  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3204   001186  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3205   001188                     
   3206                           ; BSR set to: 0
   3207                           ;Kinco.c: 28:     bajo = HexToNum(Data[Index + 4]);
-  3208   001188  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3209   00118A  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3210   00118C  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3211   00118E  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3212   001190  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3213   001192  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3208   001188  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3209   00118A  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3210   00118C  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3211   00118E  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3212   001190  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3213   001192  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3214   001194  0E04               	movlw	4
-  3215   001196  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3215   001196  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3216   001198  6ED9               	movwf	fsr2l,c
   3217   00119A  0E00               	movlw	0
-  3218   00119C  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3218   00119C  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3219   00119E  6EDA               	movwf	fsr2h,c
   3220   0011A0  50DF               	movf	indf2,w,c
   3221   0011A2  ECAE  F014         	call	_HexToNum
   3222   0011A6  0100               	movlb	0	; () banked
-  3223   0011A8  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3224   0011AA  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3225   0011AC  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3226   0011AE  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3223   0011A8  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3224   0011AA  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3225   0011AC  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3226   0011AE  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3227   0011B0                     
   3228                           ; BSR set to: 0
   3229                           ;Kinco.c: 29:     M_Funcion = (char) ((alto << 4) | bajo);
-  3230   0011B0  39CF               	swapf	Read_Cmd@alto& (0+255),w,b
+  3230   0011B0  39CC               	swapf	Read_Cmd@alto& (0+255),w,b
   3231   0011B2  0BF0               	andlw	240
-  3232   0011B4  11D1               	iorwf	Read_Cmd@bajo& (0+255),w,b
-  3233   0011B6  6F8A               	movwf	_M_Funcion& (0+255),b
+  3232   0011B4  11CE               	iorwf	Read_Cmd@bajo& (0+255),w,b
+  3233   0011B6  6F87               	movwf	_M_Funcion& (0+255),b
   3234   0011B8                     
   3235                           ; BSR set to: 0
   3236                           ;Kinco.c: 30:     lrc += (alto << 4) | bajo;
-  3237   0011B8  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3238   0011BC  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3239   0011C0  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3240   0011C2  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3237   0011B8  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3238   0011BC  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3239   0011C0  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3240   0011C2  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3241   0011C4  0EF0               	movlw	240
-  3242   0011C6  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3243   0011C8  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3242   0011C6  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3243   0011C8  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3244   0011CA  0B0F               	andlw	15
-  3245   0011CC  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3245   0011CC  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3246   0011CE  0EF0               	movlw	240
-  3247   0011D0  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3248   0011D2  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3249   0011D4  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3250   0011D6  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3251   0011D8  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3252   0011DA  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3253   0011DC  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3254   0011DE  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3255   0011E0  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3247   0011D0  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3248   0011D2  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3249   0011D4  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3250   0011D6  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3251   0011D8  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3252   0011DA  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3253   0011DC  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3254   0011DE  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3255   0011E0  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3256   0011E2                     
   3257                           ; BSR set to: 0
   3258                           ;Kinco.c: 31:     lrc &= 0xFF;
   3259   0011E2  0EFF               	movlw	255
-  3260   0011E4  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3260   0011E4  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3261   0011E6  0E00               	movlw	0
-  3262   0011E8  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3262   0011E8  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3263   0011EA                     
   3264                           ; BSR set to: 0
   3265                           ;Kinco.c: 34:     alto = HexToNum(Data[Index + 5]);
-  3266   0011EA  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3267   0011EC  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3268   0011EE  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3269   0011F0  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3270   0011F2  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3271   0011F4  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3266   0011EA  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3267   0011EC  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3268   0011EE  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3269   0011F0  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3270   0011F2  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3271   0011F4  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3272   0011F6  0E05               	movlw	5
-  3273   0011F8  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3273   0011F8  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3274   0011FA  6ED9               	movwf	fsr2l,c
   3275   0011FC  0E00               	movlw	0
-  3276   0011FE  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3276   0011FE  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3277   001200  6EDA               	movwf	fsr2h,c
   3278   001202  50DF               	movf	indf2,w,c
   3279   001204  ECAE  F014         	call	_HexToNum
   3280   001208  0100               	movlb	0	; () banked
-  3281   00120A  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3282   00120C  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3283   00120E  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3284   001210  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3281   00120A  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3282   00120C  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3283   00120E  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3284   001210  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3285   001212                     
   3286                           ; BSR set to: 0
   3287                           ;Kinco.c: 35:     bajo = HexToNum(Data[Index + 6]);
-  3288   001212  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3289   001214  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3290   001216  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3291   001218  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3292   00121A  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3293   00121C  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3288   001212  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3289   001214  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3290   001216  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3291   001218  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3292   00121A  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3293   00121C  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3294   00121E  0E06               	movlw	6
-  3295   001220  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3295   001220  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3296   001222  6ED9               	movwf	fsr2l,c
   3297   001224  0E00               	movlw	0
-  3298   001226  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3298   001226  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3299   001228  6EDA               	movwf	fsr2h,c
   3300   00122A  50DF               	movf	indf2,w,c
   3301   00122C  ECAE  F014         	call	_HexToNum
   3302   001230  0100               	movlb	0	; () banked
-  3303   001232  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3304   001234  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3305   001236  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3306   001238  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3303   001232  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3304   001234  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3305   001236  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3306   001238  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3307   00123A                     
   3308                           ; BSR set to: 0
   3309                           ;Kinco.c: 36:     lrc += (alto << 4) | bajo;
-  3310   00123A  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3311   00123E  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3312   001242  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3313   001244  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3310   00123A  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3311   00123E  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3312   001242  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3313   001244  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3314   001246  0EF0               	movlw	240
-  3315   001248  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3316   00124A  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3315   001248  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3316   00124A  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3317   00124C  0B0F               	andlw	15
-  3318   00124E  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3318   00124E  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3319   001250  0EF0               	movlw	240
-  3320   001252  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3321   001254  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3322   001256  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3323   001258  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3324   00125A  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3325   00125C  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3326   00125E  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3327   001260  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3328   001262  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3320   001252  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3321   001254  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3322   001256  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3323   001258  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3324   00125A  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3325   00125C  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3326   00125E  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3327   001260  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3328   001262  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3329   001264                     
   3330                           ; BSR set to: 0
   3331                           ;Kinco.c: 37:     lrc &= 0xFF;
   3332   001264  0EFF               	movlw	255
-  3333   001266  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3333   001266  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3334   001268  0E00               	movlw	0
-  3335   00126A  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3335   00126A  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3336   00126C                     
   3337                           ; BSR set to: 0
   3338                           ;Kinco.c: 38:     M_Direccion = ((alto << 4) | bajo) << 8;
-  3339   00126C  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3340   001270  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3341   001274  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3342   001276  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3339   00126C  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3340   001270  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3341   001274  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3342   001276  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3343   001278  0EF0               	movlw	240
-  3344   00127A  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3345   00127C  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3344   00127A  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3345   00127C  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3346   00127E  0B0F               	andlw	15
-  3347   001280  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3347   001280  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3348   001282  0EF0               	movlw	240
-  3349   001284  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3350   001286  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3351   001288  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3352   00128A  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3353   00128C  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3354   00128E  C0CA  F0CB         	movff	??_Read_Cmd,??_Read_Cmd+1
-  3355   001292  6BCA               	clrf	??_Read_Cmd& (0+255),b
-  3356   001294  C0CA  F087         	movff	??_Read_Cmd,_M_Direccion
-  3357   001298  C0CB  F088         	movff	??_Read_Cmd+1,_M_Direccion+1
+  3349   001284  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3350   001286  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3351   001288  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3352   00128A  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3353   00128C  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3354   00128E  C0C7  F0C8         	movff	??_Read_Cmd,??_Read_Cmd+1
+  3355   001292  6BC7               	clrf	??_Read_Cmd& (0+255),b
+  3356   001294  C0C7  F084         	movff	??_Read_Cmd,_M_Direccion
+  3357   001298  C0C8  F085         	movff	??_Read_Cmd+1,_M_Direccion+1
   3358   00129C                     
   3359                           ; BSR set to: 0
   3360                           ;Kinco.c: 40:     alto = HexToNum(Data[Index + 7]);
-  3361   00129C  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3362   00129E  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3363   0012A0  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3364   0012A2  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3365   0012A4  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3366   0012A6  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3361   00129C  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3362   00129E  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3363   0012A0  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3364   0012A2  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3365   0012A4  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3366   0012A6  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3367   0012A8  0E07               	movlw	7
-  3368   0012AA  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3368   0012AA  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3369   0012AC  6ED9               	movwf	fsr2l,c
   3370   0012AE  0E00               	movlw	0
-  3371   0012B0  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3371   0012B0  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3372   0012B2  6EDA               	movwf	fsr2h,c
   3373   0012B4  50DF               	movf	indf2,w,c
   3374   0012B6  ECAE  F014         	call	_HexToNum
   3375   0012BA  0100               	movlb	0	; () banked
-  3376   0012BC  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3377   0012BE  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3378   0012C0  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3379   0012C2  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3376   0012BC  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3377   0012BE  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3378   0012C0  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3379   0012C2  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3380   0012C4                     
   3381                           ; BSR set to: 0
   3382                           ;Kinco.c: 41:     bajo = HexToNum(Data[Index + 8]);
-  3383   0012C4  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3384   0012C6  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3385   0012C8  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3386   0012CA  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3387   0012CC  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3388   0012CE  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3383   0012C4  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3384   0012C6  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3385   0012C8  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3386   0012CA  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3387   0012CC  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3388   0012CE  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3389   0012D0  0E08               	movlw	8
-  3390   0012D2  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3390   0012D2  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3391   0012D4  6ED9               	movwf	fsr2l,c
   3392   0012D6  0E00               	movlw	0
-  3393   0012D8  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3393   0012D8  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3394   0012DA  6EDA               	movwf	fsr2h,c
   3395   0012DC  50DF               	movf	indf2,w,c
   3396   0012DE  ECAE  F014         	call	_HexToNum
   3397   0012E2  0100               	movlb	0	; () banked
-  3398   0012E4  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3399   0012E6  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3400   0012E8  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3401   0012EA  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3398   0012E4  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3399   0012E6  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3400   0012E8  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3401   0012EA  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3402   0012EC                     
   3403                           ; BSR set to: 0
   3404                           ;Kinco.c: 42:     lrc += (alto << 4) | bajo;
-  3405   0012EC  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3406   0012F0  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3407   0012F4  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3408   0012F6  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3405   0012EC  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3406   0012F0  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3407   0012F4  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3408   0012F6  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3409   0012F8  0EF0               	movlw	240
-  3410   0012FA  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3411   0012FC  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3410   0012FA  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3411   0012FC  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3412   0012FE  0B0F               	andlw	15
-  3413   001300  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3413   001300  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3414   001302  0EF0               	movlw	240
-  3415   001304  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3416   001306  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3417   001308  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3418   00130A  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3419   00130C  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3420   00130E  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3421   001310  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3422   001312  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3423   001314  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3415   001304  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3416   001306  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3417   001308  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3418   00130A  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3419   00130C  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3420   00130E  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3421   001310  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3422   001312  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3423   001314  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3424   001316                     
   3425                           ; BSR set to: 0
   3426                           ;Kinco.c: 43:     lrc &= 0xFF;
   3427   001316  0EFF               	movlw	255
-  3428   001318  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3428   001318  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3429   00131A  0E00               	movlw	0
-  3430   00131C  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3430   00131C  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3431   00131E                     
   3432                           ; BSR set to: 0
   3433                           ;Kinco.c: 44:     M_Direccion |= (alto << 4) | bajo;
-  3434   00131E  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3435   001322  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3436   001326  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3437   001328  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3434   00131E  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3435   001322  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3436   001326  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3437   001328  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3438   00132A  0EF0               	movlw	240
-  3439   00132C  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3440   00132E  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3439   00132C  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3440   00132E  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3441   001330  0B0F               	andlw	15
-  3442   001332  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3442   001332  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3443   001334  0EF0               	movlw	240
-  3444   001336  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3445   001338  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3446   00133A  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3447   00133C  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3448   00133E  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3449   001340  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3450   001342  1387               	iorwf	_M_Direccion& (0+255),f,b
-  3451   001344  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3452   001346  1388               	iorwf	(_M_Direccion+1)& (0+255),f,b
+  3444   001336  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3445   001338  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3446   00133A  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3447   00133C  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3448   00133E  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3449   001340  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3450   001342  1384               	iorwf	_M_Direccion& (0+255),f,b
+  3451   001344  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3452   001346  1385               	iorwf	(_M_Direccion+1)& (0+255),f,b
   3453   001348                     
   3454                           ; BSR set to: 0
   3455                           ;Kinco.c: 47:     alto = HexToNum(Data[Index + 9]);
-  3456   001348  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3457   00134A  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3458   00134C  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3459   00134E  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3460   001350  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3461   001352  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3456   001348  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3457   00134A  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3458   00134C  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3459   00134E  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3460   001350  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3461   001352  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3462   001354  0E09               	movlw	9
-  3463   001356  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3463   001356  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3464   001358  6ED9               	movwf	fsr2l,c
   3465   00135A  0E00               	movlw	0
-  3466   00135C  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3466   00135C  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3467   00135E  6EDA               	movwf	fsr2h,c
   3468   001360  50DF               	movf	indf2,w,c
   3469   001362  ECAE  F014         	call	_HexToNum
   3470   001366  0100               	movlb	0	; () banked
-  3471   001368  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3472   00136A  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3473   00136C  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3474   00136E  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3471   001368  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3472   00136A  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3473   00136C  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3474   00136E  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3475   001370                     
   3476                           ; BSR set to: 0
   3477                           ;Kinco.c: 48:     bajo = HexToNum(Data[Index + 10]);
-  3478   001370  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3479   001372  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3480   001374  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3481   001376  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3482   001378  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3483   00137A  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3478   001370  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3479   001372  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3480   001374  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3481   001376  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3482   001378  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3483   00137A  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3484   00137C  0E0A               	movlw	10
-  3485   00137E  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3485   00137E  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3486   001380  6ED9               	movwf	fsr2l,c
   3487   001382  0E00               	movlw	0
-  3488   001384  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3488   001384  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3489   001386  6EDA               	movwf	fsr2h,c
   3490   001388  50DF               	movf	indf2,w,c
   3491   00138A  ECAE  F014         	call	_HexToNum
   3492   00138E  0100               	movlb	0	; () banked
-  3493   001390  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3494   001392  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3495   001394  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3496   001396  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3493   001390  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3494   001392  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3495   001394  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3496   001396  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3497   001398                     
   3498                           ; BSR set to: 0
   3499                           ;Kinco.c: 49:     lrc += (alto << 4) | bajo;
-  3500   001398  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3501   00139C  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3502   0013A0  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3503   0013A2  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3500   001398  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3501   00139C  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3502   0013A0  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3503   0013A2  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3504   0013A4  0EF0               	movlw	240
-  3505   0013A6  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3506   0013A8  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3505   0013A6  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3506   0013A8  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3507   0013AA  0B0F               	andlw	15
-  3508   0013AC  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3508   0013AC  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3509   0013AE  0EF0               	movlw	240
-  3510   0013B0  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3511   0013B2  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3512   0013B4  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3513   0013B6  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3514   0013B8  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3515   0013BA  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3516   0013BC  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3517   0013BE  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3518   0013C0  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3510   0013B0  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3511   0013B2  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3512   0013B4  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3513   0013B6  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3514   0013B8  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3515   0013BA  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3516   0013BC  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3517   0013BE  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3518   0013C0  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3519   0013C2                     
   3520                           ; BSR set to: 0
   3521                           ;Kinco.c: 50:     lrc &= 0xFF;
   3522   0013C2  0EFF               	movlw	255
-  3523   0013C4  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3523   0013C4  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3524   0013C6  0E00               	movlw	0
-  3525   0013C8  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3525   0013C8  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3526   0013CA                     
   3527                           ; BSR set to: 0
   3528                           ;Kinco.c: 51:     M_Cantidad = ((alto << 4) | bajo) << 8;
-  3529   0013CA  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3530   0013CE  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3531   0013D2  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3532   0013D4  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3529   0013CA  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3530   0013CE  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3531   0013D2  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3532   0013D4  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3533   0013D6  0EF0               	movlw	240
-  3534   0013D8  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3535   0013DA  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3534   0013D8  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3535   0013DA  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3536   0013DC  0B0F               	andlw	15
-  3537   0013DE  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3537   0013DE  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3538   0013E0  0EF0               	movlw	240
-  3539   0013E2  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3540   0013E4  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3541   0013E6  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3542   0013E8  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3543   0013EA  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3544   0013EC  C0CA  F0CB         	movff	??_Read_Cmd,??_Read_Cmd+1
-  3545   0013F0  6BCA               	clrf	??_Read_Cmd& (0+255),b
-  3546   0013F2  C0CA  F085         	movff	??_Read_Cmd,_M_Cantidad
-  3547   0013F6  C0CB  F086         	movff	??_Read_Cmd+1,_M_Cantidad+1
+  3539   0013E2  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3540   0013E4  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3541   0013E6  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3542   0013E8  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3543   0013EA  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3544   0013EC  C0C7  F0C8         	movff	??_Read_Cmd,??_Read_Cmd+1
+  3545   0013F0  6BC7               	clrf	??_Read_Cmd& (0+255),b
+  3546   0013F2  C0C7  F082         	movff	??_Read_Cmd,_M_Cantidad
+  3547   0013F6  C0C8  F083         	movff	??_Read_Cmd+1,_M_Cantidad+1
   3548   0013FA                     
   3549                           ; BSR set to: 0
   3550                           ;Kinco.c: 53:     alto = HexToNum(Data[Index + 11]);
-  3551   0013FA  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3552   0013FC  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3553   0013FE  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3554   001400  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3555   001402  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3556   001404  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3551   0013FA  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3552   0013FC  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3553   0013FE  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3554   001400  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3555   001402  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3556   001404  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3557   001406  0E0B               	movlw	11
-  3558   001408  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3558   001408  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3559   00140A  6ED9               	movwf	fsr2l,c
   3560   00140C  0E00               	movlw	0
-  3561   00140E  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3561   00140E  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3562   001410  6EDA               	movwf	fsr2h,c
   3563   001412  50DF               	movf	indf2,w,c
   3564   001414  ECAE  F014         	call	_HexToNum
   3565   001418  0100               	movlb	0	; () banked
-  3566   00141A  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3567   00141C  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3568   00141E  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3569   001420  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3566   00141A  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3567   00141C  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3568   00141E  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3569   001420  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3570   001422                     
   3571                           ; BSR set to: 0
   3572                           ;Kinco.c: 54:     bajo = HexToNum(Data[Index + 12]);
-  3573   001422  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3574   001424  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3575   001426  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3576   001428  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3577   00142A  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3578   00142C  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3573   001422  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3574   001424  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3575   001426  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3576   001428  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3577   00142A  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3578   00142C  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3579   00142E  0E0C               	movlw	12
-  3580   001430  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3580   001430  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3581   001432  6ED9               	movwf	fsr2l,c
   3582   001434  0E00               	movlw	0
-  3583   001436  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3583   001436  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3584   001438  6EDA               	movwf	fsr2h,c
   3585   00143A  50DF               	movf	indf2,w,c
   3586   00143C  ECAE  F014         	call	_HexToNum
   3587   001440  0100               	movlb	0	; () banked
-  3588   001442  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3589   001444  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3590   001446  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3591   001448  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3588   001442  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3589   001444  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3590   001446  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3591   001448  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3592   00144A                     
   3593                           ; BSR set to: 0
   3594                           ;Kinco.c: 55:     lrc += (alto << 4) | bajo;
-  3595   00144A  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3596   00144E  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3597   001452  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3598   001454  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3595   00144A  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3596   00144E  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3597   001452  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3598   001454  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3599   001456  0EF0               	movlw	240
-  3600   001458  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3601   00145A  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3600   001458  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3601   00145A  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3602   00145C  0B0F               	andlw	15
-  3603   00145E  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3603   00145E  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3604   001460  0EF0               	movlw	240
-  3605   001462  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3606   001464  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3607   001466  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3608   001468  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3609   00146A  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3610   00146C  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3611   00146E  27CD               	addwf	Read_Cmd@lrc& (0+255),f,b
-  3612   001470  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3613   001472  23CE               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
+  3605   001462  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3606   001464  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3607   001466  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3608   001468  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3609   00146A  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3610   00146C  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3611   00146E  27CA               	addwf	Read_Cmd@lrc& (0+255),f,b
+  3612   001470  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3613   001472  23CB               	addwfc	(Read_Cmd@lrc+1)& (0+255),f,b
   3614   001474                     
   3615                           ; BSR set to: 0
   3616                           ;Kinco.c: 56:     lrc &= 0xFF;
   3617   001474  0EFF               	movlw	255
-  3618   001476  17CD               	andwf	Read_Cmd@lrc& (0+255),f,b
+  3618   001476  17CA               	andwf	Read_Cmd@lrc& (0+255),f,b
   3619   001478  0E00               	movlw	0
-  3620   00147A  17CE               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
+  3620   00147A  17CB               	andwf	(Read_Cmd@lrc+1)& (0+255),f,b
   3621   00147C                     
   3622                           ; BSR set to: 0
   3623                           ;Kinco.c: 57:     M_Cantidad |= (alto << 4) | bajo;
-  3624   00147C  C0CF  F0CA         	movff	Read_Cmd@alto,??_Read_Cmd
-  3625   001480  C0D0  F0CB         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
-  3626   001484  3BCA               	swapf	??_Read_Cmd& (0+255),f,b
-  3627   001486  3BCB               	swapf	(??_Read_Cmd+1)& (0+255),f,b
+  3624   00147C  C0CC  F0C7         	movff	Read_Cmd@alto,??_Read_Cmd
+  3625   001480  C0CD  F0C8         	movff	Read_Cmd@alto+1,??_Read_Cmd+1
+  3626   001484  3BC7               	swapf	??_Read_Cmd& (0+255),f,b
+  3627   001486  3BC8               	swapf	(??_Read_Cmd+1)& (0+255),f,b
   3628   001488  0EF0               	movlw	240
-  3629   00148A  17CB               	andwf	(??_Read_Cmd+1)& (0+255),f,b
-  3630   00148C  51CA               	movf	??_Read_Cmd& (0+255),w,b
+  3629   00148A  17C8               	andwf	(??_Read_Cmd+1)& (0+255),f,b
+  3630   00148C  51C7               	movf	??_Read_Cmd& (0+255),w,b
   3631   00148E  0B0F               	andlw	15
-  3632   001490  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3632   001490  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
   3633   001492  0EF0               	movlw	240
-  3634   001494  17CA               	andwf	??_Read_Cmd& (0+255),f,b
-  3635   001496  51D1               	movf	Read_Cmd@bajo& (0+255),w,b
-  3636   001498  13CA               	iorwf	??_Read_Cmd& (0+255),f,b
-  3637   00149A  51D2               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
-  3638   00149C  13CB               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
-  3639   00149E  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3640   0014A0  1385               	iorwf	_M_Cantidad& (0+255),f,b
-  3641   0014A2  51CB               	movf	(??_Read_Cmd+1)& (0+255),w,b
-  3642   0014A4  1386               	iorwf	(_M_Cantidad+1)& (0+255),f,b
+  3634   001494  17C7               	andwf	??_Read_Cmd& (0+255),f,b
+  3635   001496  51CE               	movf	Read_Cmd@bajo& (0+255),w,b
+  3636   001498  13C7               	iorwf	??_Read_Cmd& (0+255),f,b
+  3637   00149A  51CF               	movf	(Read_Cmd@bajo+1)& (0+255),w,b
+  3638   00149C  13C8               	iorwf	(??_Read_Cmd+1)& (0+255),f,b
+  3639   00149E  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3640   0014A0  1382               	iorwf	_M_Cantidad& (0+255),f,b
+  3641   0014A2  51C8               	movf	(??_Read_Cmd+1)& (0+255),w,b
+  3642   0014A4  1383               	iorwf	(_M_Cantidad+1)& (0+255),f,b
   3643   0014A6                     
   3644                           ; BSR set to: 0
   3645                           ;Kinco.c: 60:     alto = HexToNum(Data[Index + 13]);
-  3646   0014A6  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3647   0014A8  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3648   0014AA  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3649   0014AC  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3650   0014AE  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3651   0014B0  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3646   0014A6  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3647   0014A8  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3648   0014AA  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3649   0014AC  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3650   0014AE  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3651   0014B0  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3652   0014B2  0E0D               	movlw	13
-  3653   0014B4  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3653   0014B4  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3654   0014B6  6ED9               	movwf	fsr2l,c
   3655   0014B8  0E00               	movlw	0
-  3656   0014BA  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3656   0014BA  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3657   0014BC  6EDA               	movwf	fsr2h,c
   3658   0014BE  50DF               	movf	indf2,w,c
   3659   0014C0  ECAE  F014         	call	_HexToNum
   3660   0014C4  0100               	movlb	0	; () banked
-  3661   0014C6  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3662   0014C8  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3663   0014CA  6FCF               	movwf	Read_Cmd@alto& (0+255),b
-  3664   0014CC  6BD0               	clrf	(Read_Cmd@alto+1)& (0+255),b
+  3661   0014C6  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3662   0014C8  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3663   0014CA  6FCC               	movwf	Read_Cmd@alto& (0+255),b
+  3664   0014CC  6BCD               	clrf	(Read_Cmd@alto+1)& (0+255),b
   3665   0014CE                     
   3666                           ; BSR set to: 0
   3667                           ;Kinco.c: 61:     bajo = HexToNum(Data[Index + 14]);
-  3668   0014CE  51D3               	movf	Read_Cmd@Index& (0+255),w,b
-  3669   0014D0  25C8               	addwf	Read_Cmd@Data& (0+255),w,b
-  3670   0014D2  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3671   0014D4  51D4               	movf	(Read_Cmd@Index+1)& (0+255),w,b
-  3672   0014D6  21C9               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
-  3673   0014D8  6FCB               	movwf	(??_Read_Cmd+1)& (0+255),b
+  3668   0014CE  51D0               	movf	Read_Cmd@Index& (0+255),w,b
+  3669   0014D0  25C5               	addwf	Read_Cmd@Data& (0+255),w,b
+  3670   0014D2  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3671   0014D4  51D1               	movf	(Read_Cmd@Index+1)& (0+255),w,b
+  3672   0014D6  21C6               	addwfc	(Read_Cmd@Data+1)& (0+255),w,b
+  3673   0014D8  6FC8               	movwf	(??_Read_Cmd+1)& (0+255),b
   3674   0014DA  0E0E               	movlw	14
-  3675   0014DC  25CA               	addwf	??_Read_Cmd& (0+255),w,b
+  3675   0014DC  25C7               	addwf	??_Read_Cmd& (0+255),w,b
   3676   0014DE  6ED9               	movwf	fsr2l,c
   3677   0014E0  0E00               	movlw	0
-  3678   0014E2  21CB               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
+  3678   0014E2  21C8               	addwfc	(??_Read_Cmd+1)& (0+255),w,b
   3679   0014E4  6EDA               	movwf	fsr2h,c
   3680   0014E6  50DF               	movf	indf2,w,c
   3681   0014E8  ECAE  F014         	call	_HexToNum
   3682   0014EC  0100               	movlb	0	; () banked
-  3683   0014EE  6FCC               	movwf	(??_Read_Cmd+2)& (0+255),b
-  3684   0014F0  51CC               	movf	(??_Read_Cmd+2)& (0+255),w,b
-  3685   0014F2  6FD1               	movwf	Read_Cmd@bajo& (0+255),b
-  3686   0014F4  6BD2               	clrf	(Read_Cmd@bajo+1)& (0+255),b
+  3683   0014EE  6FC9               	movwf	(??_Read_Cmd+2)& (0+255),b
+  3684   0014F0  51C9               	movf	(??_Read_Cmd+2)& (0+255),w,b
+  3685   0014F2  6FCE               	movwf	Read_Cmd@bajo& (0+255),b
+  3686   0014F4  6BCF               	clrf	(Read_Cmd@bajo+1)& (0+255),b
   3687   0014F6                     
   3688                           ; BSR set to: 0
   3689                           ;Kinco.c: 62:     M_LR = (char) ((alto << 4) | bajo);
-  3690   0014F6  39CF               	swapf	Read_Cmd@alto& (0+255),w,b
+  3690   0014F6  39CC               	swapf	Read_Cmd@alto& (0+255),w,b
   3691   0014F8  0BF0               	andlw	240
-  3692   0014FA  11D1               	iorwf	Read_Cmd@bajo& (0+255),w,b
-  3693   0014FC  6F89               	movwf	_M_LR& (0+255),b
+  3692   0014FA  11CE               	iorwf	Read_Cmd@bajo& (0+255),w,b
+  3693   0014FC  6F86               	movwf	_M_LR& (0+255),b
   3694   0014FE                     
   3695                           ; BSR set to: 0
   3696                           ;Kinco.c: 65:     lrc = (unsigned char) (~lrc + 1);
-  3697   0014FE  51CD               	movf	Read_Cmd@lrc& (0+255),w,b
+  3697   0014FE  51CA               	movf	Read_Cmd@lrc& (0+255),w,b
   3698   001500  0800               	sublw	0
-  3699   001502  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3700   001504  51CA               	movf	??_Read_Cmd& (0+255),w,b
-  3701   001506  6FCD               	movwf	Read_Cmd@lrc& (0+255),b
-  3702   001508  6BCE               	clrf	(Read_Cmd@lrc+1)& (0+255),b
+  3699   001502  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3700   001504  51C7               	movf	??_Read_Cmd& (0+255),w,b
+  3701   001506  6FCA               	movwf	Read_Cmd@lrc& (0+255),b
+  3702   001508  6BCB               	clrf	(Read_Cmd@lrc+1)& (0+255),b
   3703   00150A                     
   3704                           ; BSR set to: 0
   3705                           ;Kinco.c: 67:     if (M_ID == 1) {
@@ -3742,14 +3742,14 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3713   00151A                     
   3714                           ; BSR set to: 0
   3715                           ;Kinco.c: 68:         if (M_LR == lrc) {
-  3716   00151A  5189               	movf	_M_LR& (0+255),w,b
-  3717   00151C  6FCA               	movwf	??_Read_Cmd& (0+255),b
-  3718   00151E  6BCB               	clrf	(??_Read_Cmd+1)& (0+255),b
-  3719   001520  51CD               	movf	Read_Cmd@lrc& (0+255),w,b
-  3720   001522  19CA               	xorwf	??_Read_Cmd& (0+255),w,b
+  3716   00151A  5186               	movf	_M_LR& (0+255),w,b
+  3717   00151C  6FC7               	movwf	??_Read_Cmd& (0+255),b
+  3718   00151E  6BC8               	clrf	(??_Read_Cmd+1)& (0+255),b
+  3719   001520  51CA               	movf	Read_Cmd@lrc& (0+255),w,b
+  3720   001522  19C7               	xorwf	??_Read_Cmd& (0+255),w,b
   3721   001524  E107               	bnz	u2731
-  3722   001526  51CE               	movf	(Read_Cmd@lrc+1)& (0+255),w,b
-  3723   001528  19CB               	xorwf	(??_Read_Cmd+1)& (0+255),w,b
+  3722   001526  51CB               	movf	(Read_Cmd@lrc+1)& (0+255),w,b
+  3723   001528  19C8               	xorwf	(??_Read_Cmd+1)& (0+255),w,b
   3724   00152A  A4D8               	btfss	status,2,c
   3725   00152C  EF9A  F00A         	goto	u2731
   3726   001530  EF9C  F00A         	goto	u2730
@@ -3762,13 +3762,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3733                           ; BSR set to: 0
   3734                           ;Kinco.c: 71:                     Read_X0(M_Direccion + 1, M_Cantidad);
   3735   00153C  0E01               	movlw	1
-  3736   00153E  2587               	addwf	_M_Direccion& (0+255),w,b
+  3736   00153E  2584               	addwf	_M_Direccion& (0+255),w,b
   3737   001540  6E48               	movwf	Read_X0@Direccion^0,c
   3738   001542  0E00               	movlw	0
-  3739   001544  2188               	addwfc	(_M_Direccion+1)& (0+255),w,b
+  3739   001544  2185               	addwfc	(_M_Direccion+1)& (0+255),w,b
   3740   001546  6E49               	movwf	(Read_X0@Direccion+1)^0,c
-  3741   001548  C085  F04A         	movff	_M_Cantidad,Read_X0@Cantidad
-  3742   00154C  C086  F04B         	movff	_M_Cantidad+1,Read_X0@Cantidad+1
+  3741   001548  C082  F04A         	movff	_M_Cantidad,Read_X0@Cantidad
+  3742   00154C  C083  F04B         	movff	_M_Cantidad+1,Read_X0@Cantidad+1
   3743   001550  ECF6  F010         	call	_Read_X0	;wreg free
   3744                           
   3745                           ;Kinco.c: 72:                     break;
@@ -3778,13 +3778,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3749                           ; BSR set to: 0
   3750                           ;Kinco.c: 74:                     Read_X4(M_Direccion + 1, M_Cantidad);
   3751   001558  0E01               	movlw	1
-  3752   00155A  2587               	addwf	_M_Direccion& (0+255),w,b
+  3752   00155A  2584               	addwf	_M_Direccion& (0+255),w,b
   3753   00155C  6E48               	movwf	Read_X4@Direccion^0,c
   3754   00155E  0E00               	movlw	0
-  3755   001560  2188               	addwfc	(_M_Direccion+1)& (0+255),w,b
+  3755   001560  2185               	addwfc	(_M_Direccion+1)& (0+255),w,b
   3756   001562  6E49               	movwf	(Read_X4@Direccion+1)^0,c
-  3757   001564  C085  F04A         	movff	_M_Cantidad,Read_X4@Cantidad
-  3758   001568  C086  F04B         	movff	_M_Cantidad+1,Read_X4@Cantidad+1
+  3757   001564  C082  F04A         	movff	_M_Cantidad,Read_X4@Cantidad
+  3758   001568  C083  F04B         	movff	_M_Cantidad+1,Read_X4@Cantidad+1
   3759   00156C  ECD1  F00F         	call	_Read_X4	;wreg free
   3760                           
   3761                           ;Kinco.c: 75:                     break;
@@ -3794,13 +3794,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3765                           ; BSR set to: 0
   3766                           ;Kinco.c: 77:                     Write_X0(M_Direccion + 1, M_Cantidad);
   3767   001574  0E01               	movlw	1
-  3768   001576  2587               	addwf	_M_Direccion& (0+255),w,b
+  3768   001576  2584               	addwf	_M_Direccion& (0+255),w,b
   3769   001578  6E08               	movwf	Write_X0@Direccion^0,c
   3770   00157A  0E00               	movlw	0
-  3771   00157C  2188               	addwfc	(_M_Direccion+1)& (0+255),w,b
+  3771   00157C  2185               	addwfc	(_M_Direccion+1)& (0+255),w,b
   3772   00157E  6E09               	movwf	(Write_X0@Direccion+1)^0,c
-  3773   001580  C085  F00A         	movff	_M_Cantidad,Write_X0@Valor
-  3774   001584  C086  F00B         	movff	_M_Cantidad+1,Write_X0@Valor+1
+  3773   001580  C082  F00A         	movff	_M_Cantidad,Write_X0@Valor
+  3774   001584  C083  F00B         	movff	_M_Cantidad+1,Write_X0@Valor+1
   3775   001588  ECDA  F013         	call	_Write_X0	;wreg free
   3776                           
   3777                           ;Kinco.c: 78:                     break;
@@ -3809,13 +3809,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3780                           
   3781                           ; BSR set to: 0
   3782   001590  0E01               	movlw	1
-  3783   001592  2587               	addwf	_M_Direccion& (0+255),w,b
+  3783   001592  2584               	addwf	_M_Direccion& (0+255),w,b
   3784   001594  6E08               	movwf	Write_X4@Direccion^0,c
   3785   001596  0E00               	movlw	0
-  3786   001598  2188               	addwfc	(_M_Direccion+1)& (0+255),w,b
+  3786   001598  2185               	addwfc	(_M_Direccion+1)& (0+255),w,b
   3787   00159A  6E09               	movwf	(Write_X4@Direccion+1)^0,c
-  3788   00159C  C085  F00A         	movff	_M_Cantidad,Write_X4@Valor
-  3789   0015A0  C086  F00B         	movff	_M_Cantidad+1,Write_X4@Valor+1
+  3788   00159C  C082  F00A         	movff	_M_Cantidad,Write_X4@Valor
+  3789   0015A0  C083  F00B         	movff	_M_Cantidad+1,Write_X4@Valor+1
   3790   0015A4  ECED  F014         	call	_Write_X4	;wreg free
   3791                           
   3792                           ;Kinco.c: 80:                     break;
@@ -3823,7 +3823,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3794   0015AC                     l3610:
   3795                           
   3796                           ; BSR set to: 0
-  3797   0015AC  518A               	movf	_M_Funcion& (0+255),w,b
+  3797   0015AC  5187               	movf	_M_Funcion& (0+255),w,b
   3798                           
   3799                           ; Switch size 1, requested type "simple"
   3800                           ; Number of cases is 4, Range of values is 1 to 6
@@ -3891,7 +3891,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3857   0029DA                     _Write_X4:
   3858                           	callstack 25
   3859   0029DA                     
-  3860                           ;Kinco.c: 152:     if (Direccion < 9) {
+  3860                           ;Kinco.c: 152:     if (Direccion < 8 + 1) {
   3861   0029DA  5009               	movf	(Write_X4@Direccion+1)^0,w,c
   3862   0029DC  E107               	bnz	u2251
   3863   0029DE  0E09               	movlw	9
@@ -3907,7 +3907,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3873   0029F0  5008               	movf	Write_X4@Direccion^0,w,c
   3874   0029F2  0D02               	mullw	2
   3875   0029F4  50F3               	movf	243,w,c
-  3876   0029F6  0F6F               	addlw	low (_Gasificado+15)
+  3876   0029F6  0F6C               	addlw	low (_Gasificado+12)
   3877   0029F8  6ED9               	movwf	fsr2l,c
   3878   0029FA  6ADA               	clrf	fsr2h,c
   3879   0029FC  C00A  FFDE         	movff	Write_X4@Valor,postinc2
@@ -3996,10 +3996,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   3957   0027B4                     _Write_X0:
   3958                           	callstack 25
   3959   0027B4                     
-  3960                           ;Kinco.c: 136:     if (Direccion < 15) {
+  3960                           ;Kinco.c: 136:     if (Direccion < 11 + 1) {
   3961   0027B4  5009               	movf	(Write_X0@Direccion+1)^0,w,c
   3962   0027B6  E107               	bnz	u2211
-  3963   0027B8  0E0F               	movlw	15
+  3963   0027B8  0E0C               	movlw	12
   3964   0027BA  5C08               	subwf	Write_X0@Direccion^0,w,c
   3965   0027BC  B0D8               	btfsc	status,0,c
   3966   0027BE  EFE3  F013         	goto	u2211
@@ -4166,7 +4166,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4122   001FC4  D000               	nop2	
   4123   001FC6                     
   4124                           ;Kinco.c: 115:     sprintf(txt, ":%02X03%02X", (unsigned char) M_ID, nb);
-  4125   001FC6  0EB4               	movlw	low _txt
+  4125   001FC6  0EB1               	movlw	low _txt
   4126   001FC8  6E32               	movwf	sprintf@s^0,c
   4127   001FCA  0E58               	movlw	low STR_9
   4128   001FCC  6E33               	movwf	sprintf@fmt^0,c
@@ -4177,7 +4177,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4133   001FDA  ECA1  F016         	call	_sprintf	;wreg free
   4134   001FDE                     
   4135                           ;Kinco.c: 116:     UART2_WriteString(txt);
-  4136   001FDE  0EB4               	movlw	low _txt
+  4136   001FDE  0EB1               	movlw	low _txt
   4137   001FE0  6E08               	movwf	UART2_WriteString@cad^0,c
   4138   001FE2  ECD5  F016         	call	_UART2_WriteString	;wreg free
   4139   001FE6                     
@@ -4216,7 +4216,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4172   002018  2654               	addwf	Read_X4@lrc^0,f,c
   4173   00201A                     
   4174                           ;Kinco.c: 125:         sprintf(txt, "%04X", val);
-  4175   00201A  0EB4               	movlw	low _txt
+  4175   00201A  0EB1               	movlw	low _txt
   4176   00201C  6E32               	movwf	sprintf@s^0,c
   4177   00201E  0E80               	movlw	low STR_10
   4178   002020  6E33               	movwf	sprintf@fmt^0,c
@@ -4225,7 +4225,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4181   00202A  ECA1  F016         	call	_sprintf	;wreg free
   4182   00202E                     
   4183                           ;Kinco.c: 126:         UART2_WriteString(txt);
-  4184   00202E  0EB4               	movlw	low _txt
+  4184   00202E  0EB1               	movlw	low _txt
   4185   002030  6E08               	movwf	UART2_WriteString@cad^0,c
   4186   002032  ECD5  F016         	call	_UART2_WriteString	;wreg free
   4187   002036                     
@@ -4248,7 +4248,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4204   002050  6C54               	negf	Read_X4@lrc^0,c
   4205   002052                     
   4206                           ;Kinco.c: 130:     sprintf(txt, "%02X\r\n", lrc);
-  4207   002052  0EB4               	movlw	low _txt
+  4207   002052  0EB1               	movlw	low _txt
   4208   002054  6E32               	movwf	sprintf@s^0,c
   4209   002056  0E51               	movlw	low (STR_8+15)
   4210   002058  6E33               	movwf	sprintf@fmt^0,c
@@ -4257,7 +4257,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4213   002060  ECA1  F016         	call	_sprintf	;wreg free
   4214   002064                     
   4215                           ;Kinco.c: 131:     UART2_WriteString(txt);
-  4216   002064  0EB4               	movlw	low _txt
+  4216   002064  0EB1               	movlw	low _txt
   4217   002066  6E08               	movwf	UART2_WriteString@cad^0,c
   4218   002068  ECD5  F016         	call	_UART2_WriteString	;wreg free
   4219   00206C  0012               	return		;funcret
@@ -4305,7 +4305,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4256   002CD2                     _Leer_1Byte:
   4257                           	callstack 25
   4258   002CD2                     
-  4259                           ;Kinco.c: 170:     if (Direccion < 9) {
+  4259                           ;Kinco.c: 170:     if (Direccion < 8 + 1) {
   4260   002CD2  5006               	movf	(Leer_1Byte@Direccion+1)^0,w,c
   4261   002CD4  E107               	bnz	u2011
   4262   002CD6  0E09               	movlw	9
@@ -4321,7 +4321,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4272   002CE8  5005               	movf	Leer_1Byte@Direccion^0,w,c
   4273   002CEA  0D02               	mullw	2
   4274   002CEC  50F3               	movf	243,w,c
-  4275   002CEE  0F6F               	addlw	low (_Gasificado+15)
+  4275   002CEE  0F6C               	addlw	low (_Gasificado+12)
   4276   002CF0  6ED9               	movwf	fsr2l,c
   4277   002CF2  6ADA               	clrf	fsr2h,c
   4278   002CF4  CFDE F005          	movff	postinc2,?_Leer_1Byte
@@ -4479,7 +4479,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4425   002276                     
   4426                           ;Kinco.c: 102:     sprintf(txt, ":%02X01%02X%02X%02X\r\n", (unsigned char) M_ID, nb, dat
       +                          a, lrc);
-  4427   002276  0EB4               	movlw	low _txt
+  4427   002276  0EB1               	movlw	low _txt
   4428   002278  6E32               	movwf	sprintf@s^0,c
   4429   00227A  0E42               	movlw	low STR_8
   4430   00227C  6E33               	movwf	sprintf@fmt^0,c
@@ -4494,7 +4494,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4439   002296  ECA1  F016         	call	_sprintf	;wreg free
   4440   00229A                     
   4441                           ;Kinco.c: 103:     UART2_WriteString(txt);
-  4442   00229A  0EB4               	movlw	low _txt
+  4442   00229A  0EB1               	movlw	low _txt
   4443   00229C  6E08               	movwf	UART2_WriteString@cad^0,c
   4444   00229E  ECD5  F016         	call	_UART2_WriteString	;wreg free
   4445   0022A2  0012               	return		;funcret
@@ -4756,10 +4756,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   4686   002DD4                     _Leer_1Bit:
   4687                           	callstack 25
   4688   002DD4                     
-  4689                           ;Kinco.c: 163:     if (Direccion < 15) {
+  4689                           ;Kinco.c: 163:     if (Direccion < 11 + 1) {
   4690   002DD4  5006               	movf	(Leer_1Bit@Direccion+1)^0,w,c
   4691   002DD6  E107               	bnz	u2001
-  4692   002DD8  0E0F               	movlw	15
+  4692   002DD8  0E0C               	movlw	12
   4693   002DDA  5C05               	subwf	Leer_1Bit@Direccion^0,w,c
   4694   002DDC  B0D8               	btfsc	status,0,c
   4695   002DDE  EFF3  F016         	goto	u2001
@@ -5087,7 +5087,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5007   0016CC  EC91  F015         	call	_UART1_WriteString	;wreg free
   5008   0016D0                     
   5009                           ;Comandos.c: 20:         sprintf(txt, "%d\"}\n\r",Dat);
-  5010   0016D0  0EB4               	movlw	low _txt
+  5010   0016D0  0EB1               	movlw	low _txt
   5011   0016D2  6E32               	movwf	sprintf@s^0,c
   5012   0016D4  0E79               	movlw	low STR_3
   5013   0016D6  6E33               	movwf	sprintf@fmt^0,c
@@ -5096,7 +5096,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5016   0016E0  ECA1  F016         	call	_sprintf	;wreg free
   5017   0016E4                     
   5018                           ;Comandos.c: 21:         UART1_WriteString(txt);
-  5019   0016E4  0EB4               	movlw	low _txt
+  5019   0016E4  0EB1               	movlw	low _txt
   5020   0016E6  6E08               	movwf	UART1_WriteString@cad^0,c
   5021   0016E8  6A09               	clrf	(UART1_WriteString@cad+1)^0,c
   5022   0016EA  EC91  F015         	call	_UART1_WriteString	;wreg free
@@ -5284,7 +5284,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5204   001840                     
   5205                           ;Comandos.c: 35:         Z_Led = 0;
   5206   001840  0100               	movlb	0	; () banked
-  5207   001842  6B8D               	clrf	_Z_Led& (0+255),b
+  5207   001842  6B8A               	clrf	_Z_Led& (0+255),b
   5208   001844                     l3114:
   5209                           
   5210                           ;Comandos.c: 37:     Index = IndexOf_Str(Data, "MOD_STATUS");
@@ -5330,7 +5330,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5250   001888  EC91  F015         	call	_UART1_WriteString	;wreg free
   5251   00188C                     
   5252                           ;Comandos.c: 42:         sprintf(txt, "%d\"}\n\r",Valor_Salida);
-  5253   00188C  0EB4               	movlw	low _txt
+  5253   00188C  0EB1               	movlw	low _txt
   5254   00188E  6E32               	movwf	sprintf@s^0,c
   5255   001890  0E79               	movlw	low STR_3
   5256   001892  6E33               	movwf	sprintf@fmt^0,c
@@ -5339,7 +5339,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5259   00189A  ECA1  F016         	call	_sprintf	;wreg free
   5260   00189E                     
   5261                           ;Comandos.c: 43:         UART1_WriteString(txt);
-  5262   00189E  0EB4               	movlw	low _txt
+  5262   00189E  0EB1               	movlw	low _txt
   5263   0018A0  6E08               	movwf	UART1_WriteString@cad^0,c
   5264   0018A2  6A09               	clrf	(UART1_WriteString@cad+1)^0,c
   5265   0018A4  EC91  F015         	call	_UART1_WriteString	;wreg free
@@ -5375,7 +5375,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5295   0018D2                     
   5296                           ;Comandos.c: 48:         Z_Led = 0;
   5297   0018D2  0100               	movlb	0	; () banked
-  5298   0018D4  6B8D               	clrf	_Z_Led& (0+255),b
+  5298   0018D4  6B8A               	clrf	_Z_Led& (0+255),b
   5299   0018D6                     l509:
   5300   0018D6  0012               	return		;funcret
   5301   0018D8                     __end_of_Get_Comando:
@@ -5650,16 +5650,16 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
       +                          gs = width = 0;
   5541   001902  0E00               	movlw	0
   5542   001904  0100               	movlb	0	; () banked
-  5543   001906  6F82               	movwf	(_width+1)& (0+255),b
+  5543   001906  6F7F               	movwf	(_width+1)& (0+255),b
   5544   001908  0E00               	movlw	0
-  5545   00190A  6F81               	movwf	_width& (0+255),b
-  5546   00190C  C081  F055         	movff	_width,_flags
+  5545   00190A  6F7E               	movwf	_width& (0+255),b
+  5546   00190C  C07E  F055         	movff	_width,_flags
   5547   001910                     
   5548                           ; BSR set to: 0
   5549                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1205:         pre
       +                          c = -1;
-  5550   001910  6983               	setf	_prec& (0+255),b
-  5551   001912  6984               	setf	(_prec+1)& (0+255),b
+  5550   001910  6980               	setf	_prec& (0+255),b
+  5551   001912  6981               	setf	(_prec+1)& (0+255),b
   5552   001914                     
   5553                           ; BSR set to: 0
   5554                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1209:         don
@@ -5738,13 +5738,13 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5618   00195E  C026  F005         	movff	vfpfcnvrt@fmt,read_prec_or_width@fmt
   5619   001962  C027  F006         	movff	vfpfcnvrt@ap,read_prec_or_width@ap
   5620   001966  ECFE  F011         	call	_read_prec_or_width	;wreg free
-  5621   00196A  C005  F081         	movff	?_read_prec_or_width,_width
-  5622   00196E  C006  F082         	movff	?_read_prec_or_width+1,_width+1
+  5621   00196A  C005  F07E         	movff	?_read_prec_or_width,_width
+  5622   00196E  C006  F07F         	movff	?_read_prec_or_width+1,_width+1
   5623   001972                     
   5624                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1257:   if (width
       +                           < 0) {
   5625   001972  0100               	movlb	0	; () banked
-  5626   001974  BF82               	btfsc	(_width+1)& (0+255),7,b
+  5626   001974  BF7F               	btfsc	(_width+1)& (0+255),7,b
   5627   001976  EFC1  F00C         	goto	u1800
   5628   00197A  EFBF  F00C         	goto	u1801
   5629   00197E                     u1801:
@@ -5758,10 +5758,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5636                           
   5637                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1259:    width = 
       +                          -width;
-  5638   001984  6D81               	negf	_width& (0+255),b
-  5639   001986  1F82               	comf	(_width+1)& (0+255),f,b
+  5638   001984  6D7E               	negf	_width& (0+255),b
+  5639   001986  1F7F               	comf	(_width+1)& (0+255),f,b
   5640   001988  B0D8               	btfsc	status,0,c
-  5641   00198A  2B82               	incf	(_width+1)& (0+255),f,b
+  5641   00198A  2B7F               	incf	(_width+1)& (0+255),f,b
   5642   00198C                     l2734:
   5643                           
   5644                           ; BSR set to: 0
@@ -6026,8 +6026,8 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5880   001EB0                     
   5881                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1082:     w = wid
       +                          th;
-  5882   001EB0  C081  F020         	movff	_width,xtoa@w
-  5883   001EB4  C082  F021         	movff	_width+1,xtoa@w+1
+  5882   001EB0  C07E  F020         	movff	_width,xtoa@w
+  5883   001EB4  C07F  F021         	movff	_width+1,xtoa@w+1
   5884                           
   5885                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1095:     i = siz
       +                          eof(dbuf) - 1;
@@ -6039,7 +6039,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5891                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1096:     dbuf[i]
       +                           = '\0';
   5892   001EC0  0100               	movlb	0	; () banked
-  5893   001EC2  6BB3               	clrf	(_dbuf+31)& (0+255),b
+  5893   001EC2  6BB0               	clrf	(_dbuf+31)& (0+255),b
   5894                           
   5895                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1097:     while (
       +                          !(i < 2) && (d != 0
@@ -6086,7 +6086,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   5931                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 1121:   dbuf[i] =
       +                           c;
   5932   001EF0  5023               	movf	xtoa@i^0,w,c
-  5933   001EF2  0F94               	addlw	low _dbuf
+  5933   001EF2  0F91               	addlw	low _dbuf
   5934   001EF4  6ED9               	movwf	fsr2l,c
   5935   001EF6  6ADA               	clrf	fsr2h,c
   5936   001EF8  C022  FFDF         	movff	xtoa@c,indf2
@@ -6168,7 +6168,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
       +                          (void) pad(fp, &dbuf[i], w);
   6009   001F8A  C019  F012         	movff	xtoa@fp,pad@fp
   6010   001F8E  5023               	movf	xtoa@i^0,w,c
-  6011   001F90  0F94               	addlw	low _dbuf
+  6011   001F90  0F91               	addlw	low _dbuf
   6012   001F92  6E13               	movwf	pad@buf^0,c
   6013   001F94  C020  F014         	movff	xtoa@w,pad@p
   6014   001F98  C021  F015         	movff	xtoa@w+1,pad@p+1
@@ -6410,8 +6410,8 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6225   001C66                     
   6226                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 535:     w = widt
       +                          h;
-  6227   001C66  C081  F01F         	movff	_width,dtoa@w
-  6228   001C6A  C082  F020         	movff	_width+1,dtoa@w+1
+  6227   001C66  C07E  F01F         	movff	_width,dtoa@w
+  6228   001C6A  C07F  F020         	movff	_width+1,dtoa@w+1
   6229   001C6E                     
   6230                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 536:     if (s
   6231   001C6E  5021               	movf	dtoa@s^0,w,c
@@ -6461,7 +6461,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6272                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 553:     dbuf[i] 
       +                          = '\0';
   6273   001CB4  0100               	movlb	0	; () banked
-  6274   001CB6  6BB3               	clrf	(_dbuf+31)& (0+255),b
+  6274   001CB6  6BB0               	clrf	(_dbuf+31)& (0+255),b
   6275                           
   6276                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 554:     while (!
       +                          (i < 1) && (d != 0
@@ -6477,7 +6477,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6285                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 565:         dbuf
       +                          [i] = (char)((int)'0' + abs(d % 10));
   6286   001CC2  5022               	movf	dtoa@i^0,w,c
-  6287   001CC4  0F94               	addlw	low _dbuf
+  6287   001CC4  0F91               	addlw	low _dbuf
   6288   001CC6  6ED9               	movwf	fsr2l,c
   6289   001CC8  6ADA               	clrf	fsr2h,c
   6290   001CCA  C01A  F005         	movff	dtoa@d,___awmod@dividend
@@ -6580,7 +6580,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6384                           ;C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c: 578:         dbuf
       +                          [i] = s;
   6385   001D8E  5022               	movf	dtoa@i^0,w,c
-  6386   001D90  0F94               	addlw	low _dbuf
+  6386   001D90  0F91               	addlw	low _dbuf
   6387   001D92  6ED9               	movwf	fsr2l,c
   6388   001D94  6ADA               	clrf	fsr2h,c
   6389   001D96  C021  FFDF         	movff	dtoa@s,indf2
@@ -6590,7 +6590,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
       +                          void) pad(fp, &dbuf[i], w);
   6393   001D9A  C019  F012         	movff	dtoa@fp,pad@fp
   6394   001D9E  5022               	movf	dtoa@i^0,w,c
-  6395   001DA0  0F94               	addlw	low _dbuf
+  6395   001DA0  0F91               	addlw	low _dbuf
   6396   001DA2  6E13               	movwf	pad@buf^0,c
   6397   001DA4  C01F  F014         	movff	dtoa@w,pad@p
   6398   001DA8  C020  F015         	movff	dtoa@w+1,pad@p+1
@@ -7602,7 +7602,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   7343   002E38                     
   7344                           ;Leds.c: 11:     S_Led = 0;
   7345   002E38  0100               	movlb	0	; () banked
-  7346   002E3A  6B8B               	clrf	_S_Led& (0+255),b
+  7346   002E3A  6B88               	clrf	_S_Led& (0+255),b
   7347                           
   7348                           ;Leds.c: 12:     T_Led = 0;
   7349   002E3C  6A59               	clrf	_T_Led^0,c
@@ -7610,7 +7610,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   7351                           ; BSR set to: 0
   7352                           ;Leds.c: 13:     W_Led = 20;
   7353   002E3E  0E14               	movlw	20
-  7354   002E40  6F8C               	movwf	_W_Led& (0+255),b
+  7354   002E40  6F89               	movwf	_W_Led& (0+255),b
   7355                           
   7356                           ;Leds.c: 14:     M_Led = 1;
   7357   002E42  0E01               	movlw	1
@@ -8603,7 +8603,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8299                           ;Leds.c: 18:     if(Z_Led >= 20){
   8300   001AA2  0E13               	movlw	19
   8301   001AA4  0100               	movlb	0	; () banked
-  8302   001AA6  658D               	cpfsgt	_Z_Led& (0+255),b
+  8302   001AA6  658A               	cpfsgt	_Z_Led& (0+255),b
   8303   001AA8  EF58  F00D         	goto	u2601
   8304   001AAC  EF5A  F00D         	goto	u2600
   8305   001AB0                     u2601:
@@ -8629,7 +8629,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8325   001ACA                     
   8326                           ;Leds.c: 21:         Z_Led = 0;
   8327   001ACA  0100               	movlb	0	; () banked
-  8328   001ACC  6B8D               	clrf	_Z_Led& (0+255),b
+  8328   001ACC  6B8A               	clrf	_Z_Led& (0+255),b
   8329   001ACE                     l3458:
   8330                           
   8331                           ; BSR set to: 0
@@ -8644,7 +8644,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8340   001ADE                     
   8341                           ; BSR set to: 0
   8342                           ;Leds.c: 24:         if(T_Led >= W_Led){
-  8343   001ADE  518C               	movf	_W_Led& (0+255),w,b
+  8343   001ADE  5189               	movf	_W_Led& (0+255),w,b
   8344   001AE0  5C59               	subwf	_T_Led^0,w,c
   8345   001AE2  A0D8               	btfss	status,0,c
   8346   001AE4  EF76  F00D         	goto	u2631
@@ -8655,7 +8655,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8351   001AF0                     
   8352                           ; BSR set to: 0
   8353                           ;Leds.c: 25:             if(S_Led == 0){
-  8354   001AF0  518B               	movf	_S_Led& (0+255),w,b
+  8354   001AF0  5188               	movf	_S_Led& (0+255),w,b
   8355   001AF2  A4D8               	btfss	status,2,c
   8356   001AF4  EF7E  F00D         	goto	u2641
   8357   001AF8  EF80  F00D         	goto	u2640
@@ -8730,7 +8730,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8426                           ; BSR set to: 0
   8427                           ;Leds.c: 31:                 S_Led = 1;
   8428   001B70  0E01               	movlw	1
-  8429   001B72  6F8B               	movwf	_S_Led& (0+255),b
+  8429   001B72  6F88               	movwf	_S_Led& (0+255),b
   8430                           
   8431                           ;Leds.c: 32:             }else{
   8432   001B74  EFFC  F00D         	goto	l3476
@@ -8811,7 +8811,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8507   001BF6                     
   8508                           ; BSR set to: 0
   8509                           ;Leds.c: 38:                 S_Led = 0;
-  8510   001BF6  6B8B               	clrf	_S_Led& (0+255),b
+  8510   001BF6  6B88               	clrf	_S_Led& (0+255),b
   8511   001BF8                     l3476:
   8512                           
   8513                           ; BSR set to: 0
@@ -8831,7 +8831,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8527   001C0A                     
   8528                           ; BSR set to: 0
   8529                           ;Leds.c: 44:         if(T_Led >= W_Led){
-  8530   001C0A  518C               	movf	_W_Led& (0+255),w,b
+  8530   001C0A  5189               	movf	_W_Led& (0+255),w,b
   8531   001C0C  5C59               	subwf	_T_Led^0,w,c
   8532   001C0E  A0D8               	btfss	status,0,c
   8533   001C10  EF0C  F00E         	goto	u2691
@@ -8842,7 +8842,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8538   001C1C                     
   8539                           ; BSR set to: 0
   8540                           ;Leds.c: 45:             if(S_Led == 0){
-  8541   001C1C  518B               	movf	_S_Led& (0+255),w,b
+  8541   001C1C  5188               	movf	_S_Led& (0+255),w,b
   8542   001C1E  A4D8               	btfss	status,2,c
   8543   001C20  EF14  F00E         	goto	u2701
   8544   001C24  EF16  F00E         	goto	u2700
@@ -8869,7 +8869,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8565                           ; BSR set to: 0
   8566                           ;Leds.c: 51:                 S_Led = 1;
   8567   001C36  0E01               	movlw	1
-  8568   001C38  6F8B               	movwf	_S_Led& (0+255),b
+  8568   001C38  6F88               	movwf	_S_Led& (0+255),b
   8569                           
   8570                           ;Leds.c: 52:             }else{
   8571   001C3A  EF25  F00E         	goto	l103
@@ -8892,7 +8892,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8588   001C46  988B               	bcf	139,4,c	;volatile
   8589                           
   8590                           ;Leds.c: 58:                 S_Led = 0;
-  8591   001C48  6B8B               	clrf	_S_Led& (0+255),b
+  8591   001C48  6B88               	clrf	_S_Led& (0+255),b
   8592   001C4A                     l103:
   8593                           
   8594                           ; BSR set to: 0
@@ -8948,7 +8948,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8639   002E48                     
   8640                           ;Leds.c: 4:     S_Led = 0;
   8641   002E48  0100               	movlb	0	; () banked
-  8642   002E4A  6B8B               	clrf	_S_Led& (0+255),b
+  8642   002E4A  6B88               	clrf	_S_Led& (0+255),b
   8643                           
   8644                           ;Leds.c: 5:     T_Led = 0;
   8645   002E4C  6A59               	clrf	_T_Led^0,c
@@ -8956,7 +8956,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   8647                           ; BSR set to: 0
   8648                           ;Leds.c: 6:     W_Led = 1;
   8649   002E4E  0E01               	movlw	1
-  8650   002E50  6F8C               	movwf	_W_Led& (0+255),b
+  8650   002E50  6F89               	movwf	_W_Led& (0+255),b
   8651   002E52                     
   8652                           ; BSR set to: 0
   8653                           ;Leds.c: 7:     M_Led = 0;
@@ -9361,7 +9361,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9032                           ;Uarts.c: 9:         if (Length_U1 < 100) {
   9033   0028E8  0E64               	movlw	100
   9034   0028EA  0100               	movlb	0	; () banked
-  9035   0028EC  6193               	cpfslt	_Length_U1& (0+255),b
+  9035   0028EC  6190               	cpfslt	_Length_U1& (0+255),b
   9036   0028EE  EF7B  F014         	goto	i2u246_41
   9037   0028F2  EF7D  F014         	goto	i2u246_40
   9038   0028F6                     i2u246_41:
@@ -9371,7 +9371,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9042                           ; BSR set to: 0
   9043                           ;Uarts.c: 10:             Buffer_U1[Length_U1] = c;
   9044   0028FA  0E00               	movlw	low _Buffer_U1
-  9045   0028FC  2593               	addwf	_Length_U1& (0+255),w,b
+  9045   0028FC  2590               	addwf	_Length_U1& (0+255),w,b
   9046   0028FE  6ED9               	movwf	fsr2l,c
   9047   002900  6ADA               	clrf	fsr2h,c
   9048   002902  0E01               	movlw	high _Buffer_U1
@@ -9380,7 +9380,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9051   00290A                     
   9052                           ; BSR set to: 0
   9053                           ;Uarts.c: 11:             Length_U1++;
-  9054   00290A  2B93               	incf	_Length_U1& (0+255),f,b
+  9054   00290A  2B90               	incf	_Length_U1& (0+255),f,b
   9055   00290C                     i2l3268:
   9056                           
   9057                           ; BSR set to: 0
@@ -9416,7 +9416,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9087                           ;Uarts.c: 20:         if (Length_U2 < 200) {
   9088   00292A  0EC8               	movlw	200
   9089   00292C  0100               	movlb	0	; () banked
-  9090   00292E  6191               	cpfslt	_Length_U2& (0+255),b
+  9090   00292E  618E               	cpfslt	_Length_U2& (0+255),b
   9091   002930  EF9C  F014         	goto	i2u248_41
   9092   002934  EF9E  F014         	goto	i2u248_40
   9093   002938                     i2u248_41:
@@ -9426,7 +9426,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9097                           ; BSR set to: 0
   9098                           ;Uarts.c: 21:             Buffer_U2[Length_U2] = c;
   9099   00293C  0E00               	movlw	low _Buffer_U2
-  9100   00293E  2591               	addwf	_Length_U2& (0+255),w,b
+  9100   00293E  258E               	addwf	_Length_U2& (0+255),w,b
   9101   002940  6ED9               	movwf	fsr2l,c
   9102   002942  6ADA               	clrf	fsr2h,c
   9103   002944  0E02               	movlw	high _Buffer_U2
@@ -9435,7 +9435,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9106   00294C                     
   9107                           ; BSR set to: 0
   9108                           ;Uarts.c: 22:             Length_U2++;
-  9109   00294C  2B91               	incf	_Length_U2& (0+255),f,b
+  9109   00294C  2B8E               	incf	_Length_U2& (0+255),f,b
   9110   00294E                     i2l3286:
   9111                           
   9112                           ; BSR set to: 0
@@ -9511,7 +9511,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9177                           ;Timers.c: 7:         Flag_U1 = 1;
   9178   002A5A  0E01               	movlw	1
   9179   002A5C  0100               	movlb	0	; () banked
-  9180   002A5E  6F92               	movwf	_Flag_U1& (0+255),b
+  9180   002A5E  6F8F               	movwf	_Flag_U1& (0+255),b
   9181   002A60                     
   9182                           ; BSR set to: 0
   9183                           ;Timers.c: 8:         T0CONbits.TMR0ON = 0;
@@ -9533,7 +9533,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9199                           ;Timers.c: 12:         Flag_U2 = 1;
   9200   002A72  0E01               	movlw	1
   9201   002A74  0100               	movlb	0	; () banked
-  9202   002A76  6F90               	movwf	_Flag_U2& (0+255),b
+  9202   002A76  6F8D               	movwf	_Flag_U2& (0+255),b
   9203   002A78                     
   9204                           ; BSR set to: 0
   9205                           ;Timers.c: 13:         T1CONbits.TMR1ON = 0;
@@ -9554,12 +9554,12 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9220   002A8A                     
   9221                           ;Timers.c: 17:         Flag_100ms++;
   9222   002A8A  0100               	movlb	0	; () banked
-  9223   002A8C  2B8E               	incf	_Flag_100ms& (0+255),f,b
+  9223   002A8C  2B8B               	incf	_Flag_100ms& (0+255),f,b
   9224   002A8E                     
   9225                           ; BSR set to: 0
   9226                           ;Timers.c: 18:         if(Flag_100ms >= 10){
   9227   002A8E  0E09               	movlw	9
-  9228   002A90  658E               	cpfsgt	_Flag_100ms& (0+255),b
+  9228   002A90  658B               	cpfsgt	_Flag_100ms& (0+255),b
   9229   002A92  EF4D  F015         	goto	i2u252_41
   9230   002A96  EF4F  F015         	goto	i2u252_40
   9231   002A9A                     i2u252_41:
@@ -9572,17 +9572,17 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9238   002AA0                     
   9239                           ; BSR set to: 0
   9240                           ;Timers.c: 20:             Flag_100ms = 0;
-  9241   002AA0  6B8E               	clrf	_Flag_100ms& (0+255),b
+  9241   002AA0  6B8B               	clrf	_Flag_100ms& (0+255),b
   9242   002AA2                     i2l245:
   9243                           
   9244                           ; BSR set to: 0
   9245                           ;Timers.c: 22:         Flag_1000ms++;
-  9246   002AA2  2B8F               	incf	_Flag_1000ms& (0+255),f,b
+  9246   002AA2  2B8C               	incf	_Flag_1000ms& (0+255),f,b
   9247   002AA4                     
   9248                           ; BSR set to: 0
   9249                           ;Timers.c: 23:         if (Flag_1000ms >= 100) {
   9250   002AA4  0E63               	movlw	99
-  9251   002AA6  658F               	cpfsgt	_Flag_1000ms& (0+255),b
+  9251   002AA6  658C               	cpfsgt	_Flag_1000ms& (0+255),b
   9252   002AA8  EF58  F015         	goto	i2u253_41
   9253   002AAC  EF5A  F015         	goto	i2u253_40
   9254   002AB0                     i2u253_41:
@@ -9591,11 +9591,11 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   9257   002AB4                     
   9258                           ; BSR set to: 0
   9259                           ;Timers.c: 24:             Z_Led++;
-  9260   002AB4  2B8D               	incf	_Z_Led& (0+255),f,b
+  9260   002AB4  2B8A               	incf	_Z_Led& (0+255),f,b
   9261   002AB6                     
   9262                           ; BSR set to: 0
   9263                           ;Timers.c: 25:             Flag_1000ms = 0;
-  9264   002AB6  6B8F               	clrf	_Flag_1000ms& (0+255),b
+  9264   002AB6  6B8C               	clrf	_Flag_1000ms& (0+255),b
   9265   002AB8                     i2l3326:
   9266                           
   9267                           ; BSR set to: 0
@@ -9806,14 +9806,14 @@ Data Sizes:
     Strings     132
     Constant    0
     Data        0
-    BSS         411
+    BSS         408
     Persistent  0
     Stack       0
 
 Auto Spaces:
     Space          Size  Autos    Used
     COMRAM           94     84      89
-    BANK0           160     17     121
+    BANK0           160     17     118
     BANK1           256      0     101
     BANK2           256      0     201
     BANK3           256      0       0
@@ -10372,7 +10372,7 @@ BANK2              256      0     201     78.5%
 BITBANK1           256      0       0      0.0%
 BANK1              256      0     101     39.5%
 BITBANK0           160      0       0      0.0%
-BANK0              160     17     121     75.6%
+BANK0              160     17     118     73.8%
 BITCOMRAM           94      0       0      0.0%
 COMRAM              94     84      89     94.7%
 BITBIGSFRlllh       80      0       0      0.0%
@@ -10382,11 +10382,11 @@ BANK15              56      0       0      0.0%
 BITBIGSFRllh        31      0       0      0.0%
 BITBIGSFRlh         13      0       0      0.0%
 STACK                0      0       0      0.0%
-DATA                 0      0     512      0.0%
+DATA                 0      0     509      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Sun Sep 27 08:01:36 2026
+Symbol Table                                                                                   Sun Sep 27 13:52:58 2026
 
                         l91 2E46                          l88 2E54                ___awdiv@sign 000A  
       UART1_WriteString@cad 0008                         l102 1C3E                         l103 1C4A  
@@ -10404,10 +10404,10 @@ Symbol Table                                                                    
                        l385 25F2                         l609 29D8                         l378 27B2  
                        l386 25F0                         l562 10B8                         l395 265A  
                        l563 15D2                         l396 2658                         l389 2616  
-                       l583 206C                         l591 284A                  _M_Cantidad 0085  
+                       l583 206C                         l591 284A                  _M_Cantidad 0082  
                        l648 2542                         l577 22A2                         l845 212E  
                        l597 2A4A                         l858 2350                         _PR2 0FBB  
-                       _abs 2D76                         _pad 284C                         _txt 00B4  
+                       _abs 2D76                         _pad 284C                         _txt 00B1  
               ___awmod@sign 000A                         wreg 0FE8                  _TXSTA1bits 0FAC  
                 _TXSTA2bits 0F72         __end_of_Get_Comando 18D8               ??_IndexOf_Str 000B  
                       ?_abs 000B                        l1312 287C                        l1320 1CAC  
@@ -10657,15 +10657,15 @@ Symbol Table                                                                    
                       u2771 21E2                        u1980 2D22                        u1981 2D1E  
                       u1990 2D3E                        u1991 2D3A                        u2787 1FBC  
                       u2797 16B8                        i2l61 001A                        _TMR2 0FBC  
-                Read_X0@bit 004E                        _M_ID 0056                        _M_LR 0089  
+                Read_X0@bit 004E                        _M_ID 0056                        _M_LR 0086  
                 Read_X0@lrc 0053                        _WPUB 0F61                  Read_X4@lrc 0054  
-                Read_X4@val 0052                        abs@a 000B                  _Flag_100ms 008E  
-                      _dbuf 0094                        _main 2B84                        _dtoa 1C4E  
-                      _prec 0083                        pad@i 0017                        pad@p 0014  
+                Read_X4@val 0052                        abs@a 000B                  _Flag_100ms 008B  
+                      _dbuf 0091                        _main 2B84                        _dtoa 1C4E  
+                      _prec 0080                        pad@i 0017                        pad@p 0014  
                       fsr1h 0FE2                        fsr2h 0FDA                        indf1 0FE7  
                       indf2 0FDF                        fsr1l 0FE1                        fsr2l 0FD9  
                       btemp 005A                        _xtoa 1EAC                        prodh 0FF4  
-                      prodl 0FF3                        start 0026                 _M_Direccion 0087  
+                      prodl 0FF3                        start 0026                 _M_Direccion 0084  
               ___param_bank 0000             __end_of_Read_X0 22A4             __end_of_Read_X4 206E  
              _Pic_Gpio_Init 2ABC                 ?_UART1_Init 0012                 ?_UART2_Init 0012  
                      ??_abs 000D                       ??_pad 0016                _BAUDCON1bits 0FB8  
@@ -10679,12 +10679,12 @@ Symbol Table                                                                    
                      _TMR0L 0FD6                       _TMR1L 0FCE                 Read_X0@data 0050  
                      _TRISA 0F92                       _TRISB 0F93                       _TRISC 0F94  
                      _TRISD 0F95                       _TRISE 0F96                       _M_Led 0058  
-                     _S_Led 008B                       _T_Led 0059                       _W_Led 008C  
-              IndexOf_Str@i 0010                IndexOf_Str@j 0011                       _Z_Led 008D  
-               _Flag_1000ms 008F                  _Leer_1Byte 2CD2              _Pic_Clock_Init 2BDA  
+                     _S_Led 0088                       _T_Led 0059                       _W_Led 0089  
+              IndexOf_Str@i 0010                IndexOf_Str@j 0011                       _Z_Led 008A  
+               _Flag_1000ms 008C                  _Leer_1Byte 2CD2              _Pic_Clock_Init 2BDA  
       UART2_WriteString@cad 0008                       _flags 0055         read_prec_or_width@c 0009  
        read_prec_or_width@n 000A                       _fputc 2352                       _fputs 2C96  
-               Read_Cmd@lrc 00CD                       pad@fp 0012                       _width 0081  
+               Read_Cmd@lrc 00CA                       pad@fp 0012                       _width 007E  
                      _putch 2E56                       dtoa@d 001A                       dtoa@i 0022  
                      dtoa@p 001E                       dtoa@s 0021                       dtoa@w 001F  
                      tablat 0FF5                       ttemp5 005B                       ttemp6 005E  
@@ -10722,9 +10722,9 @@ Symbol Table                                                                    
              ??_Timer0_Init 0005               ??_Timer1_Init 0005               ??_Timer2_Init 0005  
              IndexOf_Str@lp 0012                vfprintf@cfmt 0031           __end_of_UART_Read 21EC  
                  ??___awdiv 0009                   ??___awmod 0009                   ??___lldiv 000D  
-              Read_Cmd@Data 00C8        read_prec_or_width@ap 0006                      clear_0 2C60  
-                    clear_1 2C6C                      clear_2 2C78                Read_Cmd@bajo 00D1  
-          ___awdiv@quotient 000B             ___awmod@divisor 0007                Read_Cmd@alto 00CF  
+              Read_Cmd@Data 00C5        read_prec_or_width@ap 0006                      clear_0 2C60  
+                    clear_1 2C6C                      clear_2 2C78                Read_Cmd@bajo 00CE  
+          ___awdiv@quotient 000B             ___awmod@divisor 0007                Read_Cmd@alto 00CC  
                     isa$std 0001             ___awmod@counter 0009                      pad@buf 0013  
                     dtoa@fp 0019        Texto_Length@contador 0007                      fputc@c 0005  
                     fputs@c 000F                      fputs@i 0010                      fputs@s 000D  
@@ -10740,12 +10740,12 @@ Symbol Table                                                                    
              UART1_Init@brg 001A                     ??_fputc 0008                     ??_fputs 000F  
                  ?_HexToNum 0001                     ??_putch 0005                  __pbssBANK0 0060  
                 __pbssBANK1 0100                  __pbssBANK2 0200               UART2_Init@brg 001A  
-                 ?_Read_Cmd 00C8         __end_of_Proceso_Led 1C4E                ??_UART1_Init 0016  
+                 ?_Read_Cmd 00C5         __end_of_Proceso_Led 1C4E                ??_UART1_Init 0016  
               ??_UART2_Init 0016                     _CCP5CON 0F54                   ?_Write_X0 0008  
                  ?_Write_X4 0008                     _OSCCON2 0FD2             UART1_Write@dato 0005  
                    _OSCTUNE 0F9B                     _SPBRGH1 0FB0                     _SPBRGH2 0F76  
                 ??_HexToNum 0005          __end_of_UART1_Init 27B4          __end_of_UART2_Init 271A  
-                   _Flag_U1 0092                     _Flag_U2 0090                  ??_Read_Cmd 00CA  
+                   _Flag_U1 008F                     _Flag_U2 008D                  ??_Read_Cmd 00C7  
                    _Read_X0 21EC                     _Read_X4 1FA2              IndexOf_Str@buf 0008  
             IndexOf_Str@len 000F                     __Hparam 0000                 _Timer0_Init 2E12  
                _Timer1_Init 2DFC                 _Timer2_Init 2E26                     __Lparam 0000  
@@ -10758,7 +10758,7 @@ Symbol Table                                                                    
                    __ptext6 2CD2                     __ptext7 21EC                     __ptext8 2DAA  
                    __ptext9 2544        __end_of_Interrupcion 0026                   _T0CONbits 0FD5  
             _UART_Interrupt 28D6             Read_X0@Cantidad 004A                   _T1CONbits 0FCD  
-             Read_Cmd@Index 00D3       read_prec_or_width@fmt 0005            ___awmod@dividend 0005  
+             Read_Cmd@Index 00D0       read_prec_or_width@fmt 0005            ___awmod@dividend 0005  
                _Proceso_Led 1AA2                     _sprintf 2D42        end_of_initialization 2C88  
                    fputc@fp 0007               __Lmediumconst 0000                     fputs@fp 000E  
              ?_Texto_Length 0005          _read_prec_or_width 23FC             Read_X4@Cantidad 004A  
@@ -10770,19 +10770,19 @@ Symbol Table                                                                    
        Leer_1Byte@Direccion 0005                   HexToNum@c 0005           ??_Timer_Interrupt 0001  
               ??_Leer_1Byte 0007                   _TRISBbits 0F93                   _TRISCbits 0F94  
                  _TRISDbits 0F95        ??_read_prec_or_width 0007                ?_IndexOf_Str 0008  
-            ??_Texto_Length 0007                   _M_Funcion 008A                   Read_X0@nb 004F  
+            ??_Texto_Length 0007                   _M_Funcion 0087                   Read_X0@nb 004F  
                  Read_X4@hi 004D                   Read_X4@nb 0051                   Read_X4@lo 004E  
       UART_Interrupt@c_1499 0002          __end_of_Leer_1Byte 2D0A                 vfpfcnvrt@ap 0027  
                vfpfcnvrt@cp 002D                 vfpfcnvrt@fp 0025                   _Buffer_U1 0100  
                  _Buffer_U2 0200             ?_UART_Interrupt 0001                  ?_UART_Read 0001  
                  _Leer_1Bit 2DD4           Write_X4@Direccion 0008           _Set_Led_Conectado 2E38  
-       start_initialization 2C5A          ?_Set_Led_Conectado 0001                   _Length_U1 0093  
-                 _Length_U2 0091                 __end_of_abs 2DAA                 __end_of_pad 28D6  
+       start_initialization 2C5A          ?_Set_Led_Conectado 0001                   _Length_U1 0090  
+                 _Length_U2 008E                 __end_of_abs 2DAA                 __end_of_pad 28D6  
        ??_Set_Led_Conectado 0005           _UART1_WriteString 2B22               Write_X0@Valor 000A  
         ?_UART1_WriteString 0008               Write_X4@Valor 000A                 vfprintf@fmt 002F  
      __end_of_Pic_Gpio_Init 2B22              UART1_Init@Baud 0012   __end_of_Set_Led_Conectado 2E48  
        ??_UART1_WriteString 000A                  ?_Leer_1Bit 0005              UART2_Init@Baud 0012  
-               __pbssCOMRAM 0055               __pcstackBANK0 00C8        Pic_Clock_Init@guarda 0005  
+               __pbssCOMRAM 0055               __pcstackBANK0 00C5        Pic_Clock_Init@guarda 0005  
  __end_of_UART1_WriteString 2B84                _Interrupcion 0008                    ?_Read_X0 0048  
                   ?_Read_X4 0048           _UART2_WriteString 2DAA                   Write_X0@i 000C  
               ?_Timer0_Init 0001                   Write_X4@i 000C                ?_Timer1_Init 0001  
@@ -10790,10 +10790,10 @@ Symbol Table                                                                    
                  __pintcode 0008                UART1_Write@g 0006                    ?___awdiv 0005  
                   ?___awmod 0005                    ?___lldiv 0005                UART2_Write@g 0006  
                ??_UART_Read 0055               ??_UART1_Write 0005               ??_UART2_Write 0005  
-       ??_UART2_WriteString 0009             UART_Read@i_1502 00D7        __end_of_Texto_Length 2D42  
+       ??_UART2_WriteString 0009             UART_Read@i_1502 00D4        __end_of_Texto_Length 2D42  
                __smallconst 1000                    _BAUDCON1 0FB8                    _BAUDCON2 0F70  
               ?_Proceso_Led 0001                _Set_Led_Wait 2E48                    ?_sprintf 0032  
-                UART_Read@i 00D5   __end_of_UART2_WriteString 2DD4                    _LATBbits 0F8A  
+                UART_Read@i 00D2   __end_of_UART2_WriteString 2DD4                    _LATBbits 0F8A  
                   _LATCbits 0F8B                    _LATDbits 0F8C                    _PIE1bits 0F9D  
                   _PIE3bits 0FA3                    i2u250_40 2A72                    i2u250_41 2A6E  
                   i2u251_40 2A8A                    i2u251_41 2A86                    i2u252_40 2A9E  

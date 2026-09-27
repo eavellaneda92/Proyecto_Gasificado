@@ -117,15 +117,15 @@
 [v _Texto_Length Texto_Length `(uc  1 e 1 0 ]
 "83 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X/Config.h
 [v _txt txt `[20]uc  1 e 20 0 ]
-"71 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X/Kinco.h
+"56 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X/Kinco.h
 [v _M_ID M_ID `uc  1 e 1 0 ]
-"72
+"57
 [v _M_Funcion M_Funcion `uc  1 e 1 0 ]
-"73
+"58
 [v _M_Direccion M_Direccion `ui  1 e 2 0 ]
-"74
+"59
 [v _M_Cantidad M_Cantidad `ui  1 e 2 0 ]
-"75
+"60
 [v _M_LR M_LR `uc  1 e 1 0 ]
 "21 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X/Leds.h
 [v _Z_Led Z_Led `uc  1 e 1 0 ]
@@ -735,9 +735,9 @@
 [v _flags flags `uc  1 s 1 flags ]
 "185
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
-[s S1714 . 33 `[15]uc 1 Control 15 0 `[9]ui 1 Variables 18 15 ]
+[s S1714 . 30 `[12]uc 1 Control 12 0 `[9]ui 1 Variables 18 12 ]
 "4 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\Kinco.c
-[v _Gasificado Gasificado `S1714  1 e 33 0 ]
+[v _Gasificado Gasificado `S1714  1 e 30 0 ]
 "19 C:\Users\Eus\Documents\Proyecto_Gasificado\Gasificado.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {

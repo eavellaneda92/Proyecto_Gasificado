@@ -33,6 +33,31 @@ void Tmr1_Init(void) {
     T1CONbits.TMR1ON = 1; // Permanente
 }
 
+void Set_Rele(unsigned char Rele, unsigned char Valor){
+    switch (Rele) {
+            case 0: RELAY1 = Valor;
+                break;
+            case 1: RELAY2 = Valor;
+                break;
+            case 2: RELAY3 = Valor;
+                break;
+            case 3: RELAY4 = Valor;
+                break;
+            case 4: RELAY5 = Valor;
+                break;
+            case 5: RELAY6 = Valor;
+                break;
+            case 6: RELAY7 = Valor;
+                break;
+            case 7: RELAY8 = Valor;
+                break;
+            case 8: RELAY9 = Valor;
+                break;
+            case 9: RELAY10 = Valor;
+                break;
+        }
+}
+
 void Power_Rele(unsigned char Rele, unsigned int Tiempo) {
     Tiempo = Tiempo / 10;
     if (Rele >= 1 && Rele <= 10) {

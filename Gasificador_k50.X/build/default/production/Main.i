@@ -8363,8 +8363,9 @@ char *tempnam(const char *, const char *);
     unsigned int Tiempo_Rele[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
     void Power_Rele(unsigned char Rele, unsigned int Tiempo);
+    void Set_Rele(unsigned char Rele, unsigned char Valor);
     void Proceso_Rele(void);
-# 68 "./Timers.h"
+# 69 "./Timers.h"
     uint8_t Cambio_Estado = 0;
     uint8_t Status_In[10]={0,0,0,0,0,0,0,0,0,0};
     uint8_t Old_In[10]={0,0,0,0,0,0,0,0,0,0};

@@ -32,16 +32,16 @@ extern "C" {
     uint8_t Arranque_Flag = 0;
     void Proceso_Arranque(void);
 
-#define Evaporador RELAY1
-#define Ventilador RELAY2
-#define Heater1 RELAY3
-#define Heater2 RELAY4
-#define Damper_Open RELAY5
-#define Damper_Close RELAY6
-#define Valve_Gas_Close RELAY7
-#define Valve_Gas_Open RELAY8
-#define Valve_Liq_Close RELAY9
-#define Valve_Liq_Open RELAY10
+#define Evaporador 0
+#define Ventilador 1
+#define Heater1 2
+#define Heater2 3
+#define Damper_Open 4
+#define Damper_Close 5
+#define Valve_Gas_Close 6
+#define Valve_Gas_Open 7
+#define Valve_Liq_Close 8
+#define Valve_Liq_Open 10
 
 
     void Armado_Cerrado(void);
