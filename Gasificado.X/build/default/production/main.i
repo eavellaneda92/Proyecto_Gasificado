@@ -9977,16 +9977,18 @@ void main(void) {
     while (1) {
         UART_Read();
         Proceso_Led();
-        if(Tiempo_Control >= 4){
-            if(Paso_Control == 0){
+        if (Tiempo_Control >= 4) {
+            if (Paso_Control == 0) {
                 Consulta_Relay();
             }
-            if(Paso_Control == 1){
+            if (Paso_Control == 1) {
                 Consulta_Sensor();
             }
-            if(Paso_Control == 2){
+            if (Paso_Control == 2) {
                 Consulta_Server();
             }
+            Paso_Control++;
+            if (Paso_Control >= 3) Paso_Control = 0;
             Tiempo_Control = 0;
         }
         __asm(" clrwdt");

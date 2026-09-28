@@ -127,7 +127,9 @@
 [v _Texto_Length Texto_Length `(uc  1 e 1 0 ]
 "83 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X/Config.h
 [v _txt txt `[20]uc  1 e 20 0 ]
-"24 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X/Control.h
+"23 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X/Control.h
+[v _Paso_Control Paso_Control `uc  1 e 1 0 ]
+"24
 [v _Tiempo_Control Tiempo_Control `uc  1 e 1 0 ]
 "28
 [v _PPM PPM `s  1 e 2 0 ]
@@ -757,7 +759,7 @@
 "20 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"49
+"51
 } 0
 "31 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Uarts.c
 [v _UART_Read UART_Read `(v  1 e 1 0 ]

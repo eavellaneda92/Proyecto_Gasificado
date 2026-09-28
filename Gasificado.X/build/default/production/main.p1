@@ -1079,11 +1079,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 34:         Proceso_Led();
 [e ( _Proceso_Led ..  ]
 "35
-[; ;main.c: 35:         if(Tiempo_Control >= 4){
+[; ;main.c: 35:         if (Tiempo_Control >= 4) {
 [e $ ! >= -> _Tiempo_Control `i -> 4 `i 861  ]
 {
 "36
-[; ;main.c: 36:             if(Paso_Control == 0){
+[; ;main.c: 36:             if (Paso_Control == 0) {
 [e $ ! == -> _Paso_Control `i -> 0 `i 862  ]
 {
 "37
@@ -1094,7 +1094,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 862 ]
 "39
-[; ;main.c: 39:             if(Paso_Control == 1){
+[; ;main.c: 39:             if (Paso_Control == 1) {
 [e $ ! == -> _Paso_Control `i -> 1 `i 863  ]
 {
 "40
@@ -1105,7 +1105,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 863 ]
 "42
-[; ;main.c: 42:             if(Paso_Control == 2){
+[; ;main.c: 42:             if (Paso_Control == 2) {
 [e $ ! == -> _Paso_Control `i -> 2 `i 864  ]
 {
 "43
@@ -1116,22 +1116,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 864 ]
 "45
-[; ;main.c: 45:             Tiempo_Control = 0;
-[e = _Tiempo_Control -> -> 0 `i `uc ]
+[; ;main.c: 45:             Paso_Control++;
+[e ++ _Paso_Control -> -> 1 `i `uc ]
 "46
-[; ;main.c: 46:         }
+[; ;main.c: 46:             if (Paso_Control >= 3) Paso_Control = 0;
+[e $ ! >= -> _Paso_Control `i -> 3 `i 865  ]
+[e = _Paso_Control -> -> 0 `i `uc ]
+[e :U 865 ]
+"47
+[; ;main.c: 47:             Tiempo_Control = 0;
+[e = _Tiempo_Control -> -> 0 `i `uc ]
+"48
+[; ;main.c: 48:         }
 }
 [e :U 861 ]
-"47
-[; ;main.c: 47:         __asm(" clrwdt");
+"49
+[; ;main.c: 49:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
-"48
-[; ;main.c: 48:     }
+"50
+[; ;main.c: 50:     }
 }
 [e :U 858 ]
 [e $U 859  ]
 [e :U 860 ]
-"49
-[; ;main.c: 49: }
+"51
+[; ;main.c: 51: }
 [e :UE 857 ]
 }
