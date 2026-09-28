@@ -45,12 +45,6 @@ void main(void) {
 
     Refresh_In();
     
-    MOD485 = 1;
-    __delay_ms(10);
-    UART_Print("HOLA EDWIN");
-    __delay_ms(10);
-    MOD485 = 0;
-    
     while (1) {
         /*CONSULTA POR BUFFER*/
         if (FlagBuffer) {

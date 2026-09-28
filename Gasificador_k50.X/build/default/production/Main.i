@@ -8688,12 +8688,6 @@ void main(void) {
 
     Refresh_In();
 
-    LATBbits.LATB6 = 1;
-    _delay((unsigned long)((10)*(16000000UL/4000.0)));
-    UART_Print("HOLA EDWIN");
-    _delay((unsigned long)((10)*(16000000UL/4000.0)));
-    LATBbits.LATB6 = 0;
-
     while (1) {
 
         if (FlagBuffer) {

@@ -139,29 +139,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./Timers.h
 [; ;./Timers.h: 72:     void Refresh_In(void);
 [v _Refresh_In `(v ~T0 @X0 0 ef ]
-"3895 C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h
-[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 3895:     struct {
-[s S167 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S167 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"3905
-[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 3905:     struct {
-[s S168 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S168 . LB0 LB1 LB2 LB3 LB4 LB5 LB6 LB7 ]
-"3894
-[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 3894: typedef union {
-[u S166 `S167 1 `S168 1 ]
-[n S166 . . . ]
-"3916
-[; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\proc/pic18f45k50.h: 3916: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
-[v _LATBbits `VS166 ~T0 @X0 0 e@3978 ]
-[v F205 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
-[v __delay `JF205 ~T0 @X0 0 e ]
-[p i __delay ]
-"30 ./Uart.h
-[; ;./Uart.h: 30:     void UART_Print(const char *cad);
-[v _UART_Print `(v ~T0 @X0 0 ef1`*Cuc ]
-"32
+"32 ./Uart.h
 [; ;./Uart.h: 32:     void Get_Comando(char *Data);
 [v _Get_Comando `(v ~T0 @X0 0 ef1`*uc ]
 "25 ./ADC.h
@@ -1280,33 +1258,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 46:     Refresh_In();
 [e ( _Refresh_In ..  ]
 "48
-[; ;Main.c: 48:     LATBbits.LATB6 = 1;
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
-"49
-[; ;Main.c: 49:     _delay((unsigned long)((10)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
-"50
-[; ;Main.c: 50:     UART_Print("HOLA EDWIN");
-[e ( _UART_Print (1 :s 1C ]
-"51
-[; ;Main.c: 51:     _delay((unsigned long)((10)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
-"52
-[; ;Main.c: 52:     LATBbits.LATB6 = 0;
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
-"54
-[; ;Main.c: 54:     while (1) {
+[; ;Main.c: 48:     while (1) {
 [e :U 669 ]
 {
-"56
-[; ;Main.c: 56:         if (FlagBuffer) {
+"50
+[; ;Main.c: 50:         if (FlagBuffer) {
 [e $ ! != -> _FlagBuffer `i -> 0 `i 671  ]
 {
-"57
-[; ;Main.c: 57:             Get_Comando((char *) Buffer);
+"51
+[; ;Main.c: 51:             Get_Comando((char *) Buffer);
 [e ( _Get_Comando (1 -> &U _Buffer `*uc ]
-"59
-[; ;Main.c: 59:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
+"53
+[; ;Main.c: 53:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -1318,53 +1281,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < -> _i `ui -> 200 `ui 672  ]
 [e :U 673 ]
 }
-"60
-[; ;Main.c: 60:             BufferIndex = 0;
+"54
+[; ;Main.c: 54:             BufferIndex = 0;
 [e = _BufferIndex -> -> 0 `i `uc ]
-"61
-[; ;Main.c: 61:             FlagBuffer = 0;
+"55
+[; ;Main.c: 55:             FlagBuffer = 0;
 [e = _FlagBuffer -> -> 0 `i `a ]
-"62
-[; ;Main.c: 62:         }
+"56
+[; ;Main.c: 56:         }
 }
 [e :U 671 ]
-"65
-[; ;Main.c: 65:         if (Flag10ms) {
+"59
+[; ;Main.c: 59:         if (Flag10ms) {
 [e $ ! != -> _Flag10ms `i -> 0 `i 675  ]
 {
-"66
-[; ;Main.c: 66:             Refresh_In();
+"60
+[; ;Main.c: 60:             Refresh_In();
 [e ( _Refresh_In ..  ]
-"67
-[; ;Main.c: 67:             Proceso_ADC();
+"61
+[; ;Main.c: 61:             Proceso_ADC();
 [e ( _Proceso_ADC ..  ]
-"68
-[; ;Main.c: 68:             Proceso_Rele();
+"62
+[; ;Main.c: 62:             Proceso_Rele();
 [e ( _Proceso_Rele ..  ]
-"69
-[; ;Main.c: 69:             Proceso_Arranque();
+"63
+[; ;Main.c: 63:             Proceso_Arranque();
 [e ( _Proceso_Arranque ..  ]
-"70
-[; ;Main.c: 70:             Proceso_Heater();
+"64
+[; ;Main.c: 64:             Proceso_Heater();
 [e ( _Proceso_Heater ..  ]
-"71
-[; ;Main.c: 71:             Flag10ms = 0;
+"65
+[; ;Main.c: 65:             Flag10ms = 0;
 [e = _Flag10ms -> -> 0 `i `uc ]
-"72
-[; ;Main.c: 72:         }
+"66
+[; ;Main.c: 66:         }
 }
 [e :U 675 ]
-"73
-[; ;Main.c: 73:         __asm(" clrwdt");
+"67
+[; ;Main.c: 67:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
-"74
-[; ;Main.c: 74:     }
+"68
+[; ;Main.c: 68:     }
 }
 [e :U 668 ]
 [e $U 669  ]
 [e :U 670 ]
-"75
-[; ;Main.c: 75: }
+"69
+[; ;Main.c: 69: }
 [e :UE 667 ]
 }
-[a 1C 72 79 76 65 32 69 68 87 73 78 0 ]
