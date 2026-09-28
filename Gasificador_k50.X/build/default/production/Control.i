@@ -8726,12 +8726,12 @@ void Proceso_Heater(void) {
 }
 
 void Inyecta_Liquido(void) {
-    Power_Rele(8, Tiempo_Iny_Liquido);
-    for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
+    Power_Rele(9, 1200);
+    for (int i = 0; i < 1200; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
-    Power_Rele(9, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
+    Power_Rele(8, 2000 * 1.5);
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 
@@ -8747,12 +8747,12 @@ void Inyecta_Gas(void) {
 }
 
 void Damper_Abrir(void) {
-    Power_Rele(4, 30000);
+    Power_Rele(4, 40000);
     Respuestas_RS485("DAMPER_OPEN_OK");
 }
 
 void Damper_Cerrar(void) {
-    Power_Rele(5, 30000);
+    Power_Rele(5, 40000);
     Respuestas_RS485("DAMPER_CLOSE_OK");
 }
 
