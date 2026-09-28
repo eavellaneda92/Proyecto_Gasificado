@@ -111,9 +111,9 @@
 [v _Set_Rele Set_Rele `(v  1 e 1 0 ]
 "61
 [v _Power_Rele Power_Rele `(v  1 e 1 0 ]
-"93
+"92
 [v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
-"126
+"125
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
 "6 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _UART_Init UART_Init `(v  1 e 1 0 ]
@@ -867,19 +867,19 @@
 [v Eeprom_Leer@dir dir `uc  1 p 1 3 ]
 "153
 } 0
-"126 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+"125 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
 {
-"138
+"137
 [v Refresh_In@i i `i  1 a 2 5 ]
-"144
+"143
 } 0
-"93
+"92
 [v _Proceso_Rele Proceso_Rele `(v  1 e 1 0 ]
 {
-"94
+"93
 [v Proceso_Rele@i i `i  1 a 2 7 ]
-"124
+"123
 } 0
 "41 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Proceso_Arranque Proceso_Arranque `(v  1 e 1 0 ]
@@ -1271,7 +1271,7 @@
 [v Power_Rele@Rele Rele `uc  1 p 1 wreg ]
 [v Power_Rele@Tiempo Tiempo `ui  1 p 2 52 ]
 [v Power_Rele@Rele Rele `uc  1 p 1 54 ]
-"91
+"90
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]

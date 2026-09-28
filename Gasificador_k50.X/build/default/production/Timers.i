@@ -8601,7 +8601,6 @@ void Set_Rele(unsigned char Rele, unsigned char Valor){
 void Power_Rele(unsigned char Rele, unsigned int Tiempo) {
     Tiempo = Tiempo / 10;
     if (Rele >= 1 && Rele <= 10) {
-        Rele--;
         Tiempo_Rele[Rele] = 0;
         Wait_Rele[Rele] = Tiempo;
         Enable_Rele[Rele] = 1;
