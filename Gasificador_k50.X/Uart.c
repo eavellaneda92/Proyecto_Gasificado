@@ -6,7 +6,7 @@
 void UART_Init(void) {
     ANSELCbits.ANSC6 = 0; // RC6/TX digital
     ANSELCbits.ANSC7 = 0; // RC7/RX digital
-    TRISCbits.TRISC6 = 1; // El EUSART controla el pin
+    TRISCbits.TRISC6 = 0; // El EUSART controla el pin
     TRISCbits.TRISC7 = 1;
 
     BAUDCON1bits.BRG16 = 1;
