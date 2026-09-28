@@ -9898,6 +9898,8 @@ char *tempnam(const char *, const char *);
     uint8_t Paso_Control = 0;
     uint8_t Tiempo_Control = 0;
 
+    uint16_t SP_PPM = 0;
+    uint16_t SP_Agua = 0;
     int16_t PPM = 0;
 # 2 "Control.c" 2
 # 1 "./Uarts.h" 1
@@ -9981,7 +9983,6 @@ void Consulta_Server(void) {
     UART1_WriteString("PPM:");
     sprintf(txt,"%d",PPM);
     UART1_WriteString(txt);
-
     _delay((unsigned long)((5)*(16000000/4000.0)));
     LATDbits.LATD5 = 0;
 }

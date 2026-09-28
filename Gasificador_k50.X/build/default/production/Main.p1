@@ -139,6 +139,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "72 ./Timers.h
 [; ;./Timers.h: 72:     void Refresh_In(void);
 [v _Refresh_In `(v ~T0 @X0 0 ef ]
+"88 ./Control.h
+[; ;./Control.h: 88:     void Set_Channel_Heater(uint8_t Dato);
+[v _Set_Channel_Heater `(v ~T0 @X0 0 ef1`uc ]
 "32 ./Uart.h
 [; ;./Uart.h: 32:     void Get_Comando(char *Data);
 [v _Get_Comando `(v ~T0 @X0 0 ef1`*uc ]
@@ -1257,19 +1260,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "46
 [; ;Main.c: 46:     Refresh_In();
 [e ( _Refresh_In ..  ]
+"47
+[; ;Main.c: 47:     Arranque_Flag = 1;
+[e = _Arranque_Flag -> -> 1 `i `uc ]
 "48
-[; ;Main.c: 48:     while (1) {
+[; ;Main.c: 48:     Set_Channel_Heater(0);
+[e ( _Set_Channel_Heater (1 -> -> 0 `i `uc ]
+"49
+[; ;Main.c: 49:     Tiempo_Damper = 30000;
+[e = _Tiempo_Damper -> -> 30000 `i `us ]
+"50
+[; ;Main.c: 50:     Tiempo_Iny_Gas = 2000;
+[e = _Tiempo_Iny_Gas -> -> 2000 `i `us ]
+"51
+[; ;Main.c: 51:     Tiempo_Iny_Liquido = 1200;
+[e = _Tiempo_Iny_Liquido -> -> 1200 `i `us ]
+"52
+[; ;Main.c: 52:     while (1) {
 [e :U 669 ]
 {
-"50
-[; ;Main.c: 50:         if (FlagBuffer) {
+"54
+[; ;Main.c: 54:         if (FlagBuffer) {
 [e $ ! != -> _FlagBuffer `i -> 0 `i 671  ]
 {
-"51
-[; ;Main.c: 51:             Get_Comando((char *) Buffer);
+"55
+[; ;Main.c: 55:             Get_Comando((char *) Buffer);
 [e ( _Get_Comando (1 -> &U _Buffer `*uc ]
-"53
-[; ;Main.c: 53:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
+"57
+[; ;Main.c: 57:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -1281,52 +1299,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < -> _i `ui -> 200 `ui 672  ]
 [e :U 673 ]
 }
-"54
-[; ;Main.c: 54:             BufferIndex = 0;
+"58
+[; ;Main.c: 58:             BufferIndex = 0;
 [e = _BufferIndex -> -> 0 `i `uc ]
-"55
-[; ;Main.c: 55:             FlagBuffer = 0;
+"59
+[; ;Main.c: 59:             FlagBuffer = 0;
 [e = _FlagBuffer -> -> 0 `i `a ]
-"56
-[; ;Main.c: 56:         }
+"60
+[; ;Main.c: 60:         }
 }
 [e :U 671 ]
-"59
-[; ;Main.c: 59:         if (Flag10ms) {
+"63
+[; ;Main.c: 63:         if (Flag10ms) {
 [e $ ! != -> _Flag10ms `i -> 0 `i 675  ]
 {
-"60
-[; ;Main.c: 60:             Refresh_In();
-[e ( _Refresh_In ..  ]
-"61
-[; ;Main.c: 61:             Proceso_ADC();
-[e ( _Proceso_ADC ..  ]
-"62
-[; ;Main.c: 62:             Proceso_Rele();
-[e ( _Proceso_Rele ..  ]
-"63
-[; ;Main.c: 63:             Proceso_Arranque();
-[e ( _Proceso_Arranque ..  ]
 "64
-[; ;Main.c: 64:             Proceso_Heater();
-[e ( _Proceso_Heater ..  ]
+[; ;Main.c: 64:             Refresh_In();
+[e ( _Refresh_In ..  ]
 "65
-[; ;Main.c: 65:             Flag10ms = 0;
-[e = _Flag10ms -> -> 0 `i `uc ]
+[; ;Main.c: 65:             Proceso_ADC();
+[e ( _Proceso_ADC ..  ]
 "66
-[; ;Main.c: 66:         }
+[; ;Main.c: 66:             Proceso_Rele();
+[e ( _Proceso_Rele ..  ]
+"67
+[; ;Main.c: 67:             Proceso_Arranque();
+[e ( _Proceso_Arranque ..  ]
+"68
+[; ;Main.c: 68:             Proceso_Heater();
+[e ( _Proceso_Heater ..  ]
+"69
+[; ;Main.c: 69:             Flag10ms = 0;
+[e = _Flag10ms -> -> 0 `i `uc ]
+"70
+[; ;Main.c: 70:         }
 }
 [e :U 675 ]
-"67
-[; ;Main.c: 67:         __asm(" clrwdt");
+"71
+[; ;Main.c: 71:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
-"68
-[; ;Main.c: 68:     }
+"72
+[; ;Main.c: 72:     }
 }
 [e :U 668 ]
 [e $U 669  ]
 [e :U 670 ]
-"69
-[; ;Main.c: 69: }
+"73
+[; ;Main.c: 73: }
 [e :UE 667 ]
 }

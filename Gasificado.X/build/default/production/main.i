@@ -9952,6 +9952,8 @@ void Set_Led_Conectado(void);
     uint8_t Paso_Control = 0;
     uint8_t Tiempo_Control = 0;
 
+    uint16_t SP_PPM = 0;
+    uint16_t SP_Agua = 0;
     int16_t PPM = 0;
 # 14 "main.c" 2
 

@@ -8688,19 +8688,7 @@ void Proceso_Arranque(void) {
     if (Arranque_Flag == 0) {
         Arranque_Count++;
         if (Arranque_Count >= 200) {
-
-            if (Eeprom_Leer(1) == 0x10) {
-                Set_Channel_Heater(0);
-                Set_Tiempo_Damper(30000);
-                Set_Tiempo_Iny_Gas(2000);
-                Set_Tiempo_Iny_Liquido(1200);
-            } else {
-                Channel_Heater = Get_Channel_Heater();
-                Tiempo_Damper = Get_Tiempo_Damper();
-                Tiempo_Iny_Liquido = Get_Tiempo_Iny_Liquido();
-                Tiempo_Iny_Gas = Get_Tiempo_Iny_Gas();
-                Eeprom_Escribir(1, 0x10);
-            }
+# 58 "Control.c"
             Armado_Cerrado();
             Arranque_Flag = 1;
         }

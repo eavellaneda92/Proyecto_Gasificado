@@ -887,7 +887,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "26
-[; ;./Control.h: 26:     int16_t PPM = 0;
+[; ;./Control.h: 26:     uint16_t SP_PPM = 0;
+[v _SP_PPM `us ~T0 @X0 1 e ]
+[i _SP_PPM
+-> -> 0 `i `us
+]
+"27
+[; ;./Control.h: 27:     uint16_t SP_Agua = 0;
+[v _SP_Agua `us ~T0 @X0 1 e ]
+[i _SP_Agua
+-> -> 0 `i `us
+]
+"28
+[; ;./Control.h: 28:     int16_t PPM = 0;
 [v _PPM `s ~T0 @X0 1 e ]
 [i _PPM
 -> -> 0 `i `s
@@ -1074,14 +1086,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36
 [; ;Control.c: 36:     UART1_WriteString(txt);
 [e ( _UART1_WriteString (1 -> &U _txt `*Cuc ]
-"38
-[; ;Control.c: 38:     _delay((unsigned long)((5)*(16000000/4000.0)));
+"37
+[; ;Control.c: 37:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"39
-[; ;Control.c: 39:     LATDbits.LATD5 = 0;
+"38
+[; ;Control.c: 38:     LATDbits.LATD5 = 0;
 [e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-"40
-[; ;Control.c: 40: }
+"39
+[; ;Control.c: 39: }
 [e :UE 863 ]
 }
 [p f _sprintf 8388736 ]

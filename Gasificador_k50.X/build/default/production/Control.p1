@@ -21,37 +21,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29 ./Uart.h
 [; ;./Uart.h: 29:     void UART_Write(uint8_t dato);
 [v _UART_Write `(v ~T0 @X0 0 ef1`uc ]
-"80 ./Control.h
-[; ;./Control.h: 80:     uint8_t Eeprom_Leer(uint8_t dir);
-[v _Eeprom_Leer `(uc ~T0 @X0 0 ef1`uc ]
-"88
-[; ;./Control.h: 88:     void Set_Channel_Heater(uint8_t Dato);
-[v _Set_Channel_Heater `(v ~T0 @X0 0 ef1`uc ]
-"89
-[; ;./Control.h: 89:     void Set_Tiempo_Damper(uint16_t Dato);
-[v _Set_Tiempo_Damper `(v ~T0 @X0 0 ef1`us ]
-"91
-[; ;./Control.h: 91:     void Set_Tiempo_Iny_Gas(uint16_t Dato);
-[v _Set_Tiempo_Iny_Gas `(v ~T0 @X0 0 ef1`us ]
-"90
-[; ;./Control.h: 90:     void Set_Tiempo_Iny_Liquido(uint16_t Dato);
-[v _Set_Tiempo_Iny_Liquido `(v ~T0 @X0 0 ef1`us ]
-"83
-[; ;./Control.h: 83:     uint8_t Get_Channel_Heater(void);
-[v _Get_Channel_Heater `(uc ~T0 @X0 0 ef ]
-"84
-[; ;./Control.h: 84:     uint16_t Get_Tiempo_Damper(void);
-[v _Get_Tiempo_Damper `(us ~T0 @X0 0 ef ]
-"85
-[; ;./Control.h: 85:     uint16_t Get_Tiempo_Iny_Liquido(void);
-[v _Get_Tiempo_Iny_Liquido `(us ~T0 @X0 0 ef ]
-"86
-[; ;./Control.h: 86:     uint16_t Get_Tiempo_Iny_Gas(void);
-[v _Get_Tiempo_Iny_Gas `(us ~T0 @X0 0 ef ]
-"81
-[; ;./Control.h: 81:     void Eeprom_Escribir(uint8_t dir, uint8_t dato);
-[v _Eeprom_Escribir `(v ~T0 @X0 0 ef2`uc`uc ]
-"47
+"47 ./Control.h
 [; ;./Control.h: 47:     void Armado_Cerrado(void);
 [v _Armado_Cerrado `(v ~T0 @X0 0 ef ]
 "54 ./Timers.h
@@ -1289,47 +1259,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 44:         if (Arranque_Count >= 200) {
 [e $ ! >= -> _Arranque_Count `i -> 200 `i 677  ]
 {
-"46
-[; ;Control.c: 46:             if (Eeprom_Leer(1) == 0x10) {
-[e $ ! == -> ( _Eeprom_Leer (1 -> -> 1 `i `uc `i -> 16 `i 678  ]
-{
-"47
-[; ;Control.c: 47:                 Set_Channel_Heater(0);
-[e ( _Set_Channel_Heater (1 -> -> 0 `i `uc ]
-"48
-[; ;Control.c: 48:                 Set_Tiempo_Damper(30000);
-[e ( _Set_Tiempo_Damper (1 -> -> 30000 `i `us ]
-"49
-[; ;Control.c: 49:                 Set_Tiempo_Iny_Gas(2000);
-[e ( _Set_Tiempo_Iny_Gas (1 -> -> 2000 `i `us ]
-"50
-[; ;Control.c: 50:                 Set_Tiempo_Iny_Liquido(1200);
-[e ( _Set_Tiempo_Iny_Liquido (1 -> -> 1200 `i `us ]
-"51
-[; ;Control.c: 51:             } else {
-}
-[e $U 679  ]
-[e :U 678 ]
-{
-"52
-[; ;Control.c: 52:                 Channel_Heater = Get_Channel_Heater();
-[e = _Channel_Heater ( _Get_Channel_Heater ..  ]
-"53
-[; ;Control.c: 53:                 Tiempo_Damper = Get_Tiempo_Damper();
-[e = _Tiempo_Damper ( _Get_Tiempo_Damper ..  ]
-"54
-[; ;Control.c: 54:                 Tiempo_Iny_Liquido = Get_Tiempo_Iny_Liquido();
-[e = _Tiempo_Iny_Liquido ( _Get_Tiempo_Iny_Liquido ..  ]
-"55
-[; ;Control.c: 55:                 Tiempo_Iny_Gas = Get_Tiempo_Iny_Gas();
-[e = _Tiempo_Iny_Gas ( _Get_Tiempo_Iny_Gas ..  ]
-"56
-[; ;Control.c: 56:                 Eeprom_Escribir(1, 0x10);
-[e ( _Eeprom_Escribir (2 , -> -> 1 `i `uc -> -> 16 `i `uc ]
-"57
-[; ;Control.c: 57:             }
-}
-[e :U 679 ]
 "58
 [; ;Control.c: 58:             Armado_Cerrado();
 [e ( _Armado_Cerrado ..  ]
@@ -1365,7 +1294,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Power_Rele (2 , -> -> 8 `i `uc -> -> * -> -> _Tiempo_Iny_Liquido `ui `d .1.5 `us `ui ]
 "68
 [; ;Control.c: 68: }
-[e :UE 680 ]
+[e :UE 678 ]
 }
 "70
 [; ;Control.c: 70: void Armado_Stop(void){
@@ -1387,7 +1316,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _En_Sistem -> -> 0 `i `uc ]
 "75
 [; ;Control.c: 75: }
-[e :UE 681 ]
+[e :UE 679 ]
 }
 "77
 [; ;Control.c: 77: void Proceso_Heater(void) {
@@ -1397,18 +1326,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "78
 [; ;Control.c: 78:     if (Arranque_Flag == 1) {
-[e $ ! == -> _Arranque_Flag `i -> 1 `i 683  ]
+[e $ ! == -> _Arranque_Flag `i -> 1 `i 681  ]
 {
 "79
 [; ;Control.c: 79:         Tiempo_Heater++;
 [e ++ _Tiempo_Heater -> -> 1 `i `uc ]
 "80
 [; ;Control.c: 80:         if (Tiempo_Heater >= 200) {
-[e $ ! >= -> _Tiempo_Heater `i -> 200 `i 684  ]
+[e $ ! >= -> _Tiempo_Heater `i -> 200 `i 682  ]
 {
 "81
 [; ;Control.c: 81:             if (Temp1 > SP_Temp + 10){
-[e $ ! > -> _Temp1 `i + -> _SP_Temp `i -> 10 `i 685  ]
+[e $ ! > -> _Temp1 `i + -> _SP_Temp `i -> 10 `i 683  ]
 {
 "82
 [; ;Control.c: 82:                 Set_Rele(2,1);
@@ -1419,39 +1348,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "84
 [; ;Control.c: 84:             }
 }
-[e :U 685 ]
+[e :U 683 ]
 "85
 [; ;Control.c: 85:             if (Temp1 < SP_Temp - 10) {
-[e $ ! < -> _Temp1 `i - -> _SP_Temp `i -> 10 `i 686  ]
+[e $ ! < -> _Temp1 `i - -> _SP_Temp `i -> 10 `i 684  ]
 {
 "86
 [; ;Control.c: 86:                 if (Channel_Heater == 0) Set_Rele(2,0);
-[e $ ! == -> _Channel_Heater `i -> 0 `i 687  ]
+[e $ ! == -> _Channel_Heater `i -> 0 `i 685  ]
 [e ( _Set_Rele (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
-[e $U 688  ]
+[e $U 686  ]
 "87
 [; ;Control.c: 87:                 else Set_Rele(3,0);
-[e :U 687 ]
+[e :U 685 ]
 [e ( _Set_Rele (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
-[e :U 688 ]
+[e :U 686 ]
 "88
 [; ;Control.c: 88:             }
 }
-[e :U 686 ]
+[e :U 684 ]
 "89
 [; ;Control.c: 89:             Tiempo_Heater = 0;
 [e = _Tiempo_Heater -> -> 0 `i `uc ]
 "90
 [; ;Control.c: 90:         }
 }
-[e :U 684 ]
+[e :U 682 ]
 "91
 [; ;Control.c: 91:     }
 }
-[e :U 683 ]
+[e :U 681 ]
 "92
 [; ;Control.c: 92: }
-[e :UE 682 ]
+[e :UE 680 ]
 }
 "94
 [; ;Control.c: 94: void Inyecta_Liquido(void) {
@@ -1467,8 +1396,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 693  ]
-[e :U 690 ]
+[e $U 691  ]
+[e :U 688 ]
 {
 "97
 [; ;Control.c: 97:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
@@ -1480,9 +1409,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 99:     }
 }
 [e ++ _i -> 1 `i ]
-[e :U 693 ]
-[e $ < -> _i `ui -> _Tiempo_Iny_Liquido `ui 690  ]
 [e :U 691 ]
+[e $ < -> _i `ui -> _Tiempo_Iny_Liquido `ui 688  ]
+[e :U 689 ]
 }
 "100
 [; ;Control.c: 100:     Power_Rele(8, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
@@ -1492,7 +1421,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 1C ]
 "102
 [; ;Control.c: 102: }
-[e :UE 689 ]
+[e :UE 687 ]
 }
 "104
 [; ;Control.c: 104: void Inyecta_Gas(void) {
@@ -1508,8 +1437,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 698  ]
-[e :U 695 ]
+[e $U 696  ]
+[e :U 693 ]
 {
 "107
 [; ;Control.c: 107:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
@@ -1521,9 +1450,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 109:     }
 }
 [e ++ _i -> 1 `i ]
-[e :U 698 ]
-[e $ < -> _i `ui -> _Tiempo_Iny_Gas `ui 695  ]
 [e :U 696 ]
+[e $ < -> _i `ui -> _Tiempo_Iny_Gas `ui 693  ]
+[e :U 694 ]
 }
 "110
 [; ;Control.c: 110:     Power_Rele(7, (uint16_t)(Tiempo_Iny_Gas * 1.5));
@@ -1533,7 +1462,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 2C ]
 "112
 [; ;Control.c: 112: }
-[e :UE 694 ]
+[e :UE 692 ]
 }
 "114
 [; ;Control.c: 114: void Damper_Abrir(void) {
@@ -1549,7 +1478,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 3C ]
 "117
 [; ;Control.c: 117: }
-[e :UE 699 ]
+[e :UE 697 ]
 }
 "119
 [; ;Control.c: 119: void Damper_Cerrar(void) {
@@ -1565,7 +1494,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 4C ]
 "122
 [; ;Control.c: 122: }
-[e :UE 700 ]
+[e :UE 698 ]
 }
 "124
 [; ;Control.c: 124: void Evaporador_On(void) {
@@ -1581,7 +1510,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 5C ]
 "127
 [; ;Control.c: 127: }
-[e :UE 701 ]
+[e :UE 699 ]
 }
 "129
 [; ;Control.c: 129: void Evaporador_Off(void) {
@@ -1597,7 +1526,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 6C ]
 "132
 [; ;Control.c: 132: }
-[e :UE 702 ]
+[e :UE 700 ]
 }
 "134
 [; ;Control.c: 134: void Ventilador_On(void) {
@@ -1613,7 +1542,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 7C ]
 "137
 [; ;Control.c: 137: }
-[e :UE 703 ]
+[e :UE 701 ]
 }
 "139
 [; ;Control.c: 139: void Ventilador_Off(void) {
@@ -1629,7 +1558,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _Respuestas_RS485 (1 :s 8C ]
 "142
 [; ;Control.c: 142: }
-[e :UE 704 ]
+[e :UE 702 ]
 }
 "144
 [; ;Control.c: 144: uint8_t Eeprom_Leer(uint8_t dir) {
@@ -1640,11 +1569,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "145
 [; ;Control.c: 145:     while (EECON1bits.WR);
-[e $U 706  ]
-[e :U 707 ]
+[e $U 704  ]
+[e :U 705 ]
+[e :U 704 ]
+[e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 705  ]
 [e :U 706 ]
-[e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 707  ]
-[e :U 708 ]
 "147
 [; ;Control.c: 147:     EEADR = dir;
 [e = _EEADR _dir ]
@@ -1660,10 +1589,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "151
 [; ;Control.c: 151:     return EEDATA;
 [e ) _EEDATA ]
-[e $UE 705  ]
+[e $UE 703  ]
 "152
 [; ;Control.c: 152: }
-[e :UE 705 ]
+[e :UE 703 ]
 }
 "154
 [; ;Control.c: 154: void Eeprom_Escribir(uint8_t dir, uint8_t dato) {
@@ -1675,9 +1604,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "155
 [; ;Control.c: 155:     if (Eeprom_Leer(dir) == dato) return;
-[e $ ! == -> ( _Eeprom_Leer (1 _dir `i -> _dato `i 710  ]
-[e $UE 709  ]
-[e :U 710 ]
+[e $ ! == -> ( _Eeprom_Leer (1 _dir `i -> _dato `i 708  ]
+[e $UE 707  ]
+[e :U 708 ]
 "156
 [; ;Control.c: 156:     EEADR = dir;
 [e = _EEADR _dir ]
@@ -1714,23 +1643,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
 "167
 [; ;Control.c: 167:     if (gie)
-[e $ ! != -> _gie `i -> 0 `i 711  ]
+[e $ ! != -> _gie `i -> 0 `i 709  ]
 "168
 [; ;Control.c: 168:         INTCONbits.GIE = 1;
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[e :U 711 ]
+[e :U 709 ]
 "169
 [; ;Control.c: 169:     while (EECON1bits.WR)
-[e $U 712  ]
-[e :U 713 ]
+[e $U 710  ]
+[e :U 711 ]
 "170
 [; ;Control.c: 170:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
-[e :U 712 ]
+[e :U 710 ]
 "169
 [; ;Control.c: 169:     while (EECON1bits.WR)
-[e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 713  ]
-[e :U 714 ]
+[e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 711  ]
+[e :U 712 ]
 "171
 [; ;Control.c: 171:     EECON1bits.WREN = 0;
 [e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
@@ -1739,7 +1668,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _PIR2bits 0 4 -> -> 0 `i `uc ]
 "173
 [; ;Control.c: 173: }
-[e :UE 709 ]
+[e :UE 707 ]
 }
 "175
 [; ;Control.c: 175: void Respuestas_RS485(char *Mensaje) {
@@ -1771,7 +1700,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "183
 [; ;Control.c: 183: }
-[e :UE 715 ]
+[e :UE 713 ]
 }
 "185
 [; ;Control.c: 185: uint8_t Get_Channel_Heater(void) {
@@ -1786,10 +1715,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "187
 [; ;Control.c: 187:     return Dato;
 [e ) _Dato ]
-[e $UE 716  ]
+[e $UE 714  ]
 "188
 [; ;Control.c: 188: }
-[e :UE 716 ]
+[e :UE 714 ]
 }
 "190
 [; ;Control.c: 190: uint16_t Get_Tiempo_Damper(void) {
@@ -1807,10 +1736,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "193
 [; ;Control.c: 193:     return Dato;
 [e ) _Dato ]
-[e $UE 717  ]
+[e $UE 715  ]
 "194
 [; ;Control.c: 194: }
-[e :UE 717 ]
+[e :UE 715 ]
 }
 "196
 [; ;Control.c: 196: uint16_t Get_Tiempo_Iny_Liquido(void) {
@@ -1828,10 +1757,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "199
 [; ;Control.c: 199:     return Dato;
 [e ) _Dato ]
-[e $UE 718  ]
+[e $UE 716  ]
 "200
 [; ;Control.c: 200: }
-[e :UE 718 ]
+[e :UE 716 ]
 }
 "202
 [; ;Control.c: 202: uint16_t Get_Tiempo_Iny_Gas(void) {
@@ -1849,10 +1778,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "205
 [; ;Control.c: 205:     return Dato;
 [e ) _Dato ]
-[e $UE 719  ]
+[e $UE 717  ]
 "206
 [; ;Control.c: 206: }
-[e :UE 719 ]
+[e :UE 717 ]
 }
 "208
 [; ;Control.c: 208: void Set_Channel_Heater(uint8_t Dato) {
@@ -1869,7 +1798,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _Channel_Heater _Dato ]
 "211
 [; ;Control.c: 211: }
-[e :UE 720 ]
+[e :UE 718 ]
 }
 "213
 [; ;Control.c: 213: void Set_Tiempo_Damper(uint16_t Dato) {
@@ -1889,7 +1818,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _Tiempo_Damper _Dato ]
 "217
 [; ;Control.c: 217: }
-[e :UE 721 ]
+[e :UE 719 ]
 }
 "219
 [; ;Control.c: 219: void Set_Tiempo_Iny_Liquido(uint16_t Dato) {
@@ -1909,7 +1838,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _Tiempo_Iny_Liquido _Dato ]
 "223
 [; ;Control.c: 223: }
-[e :UE 722 ]
+[e :UE 720 ]
 }
 "225
 [; ;Control.c: 225: void Set_Tiempo_Iny_Gas(uint16_t Dato) {
@@ -1929,7 +1858,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _Tiempo_Iny_Gas _Dato ]
 "229
 [; ;Control.c: 229: }
-[e :UE 723 ]
+[e :UE 721 ]
 }
 [a 10C 34 125 0 ]
 [a 2C 73 78 89 69 67 67 73 79 78 95 71 65 83 95 79 75 0 ]

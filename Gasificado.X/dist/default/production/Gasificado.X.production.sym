@@ -3,7 +3,7 @@ ___lldiv@counter 11 0 COMRAM 1
 ___awdiv@counter 9 0 COMRAM 1
 sprintf@f 3D 0 COMRAM 1
 Read_X4@nb 51 0 COMRAM 1
-Read_Cmd@Data C9 0 BANK0 1
+Read_Cmd@Data CD 0 BANK0 1
 ___fldiv@rem 11 0 COMRAM 1
 _PR2 FBB 0 ABS 0
 __S0 347A 0 ABS 0
@@ -19,7 +19,7 @@ __Lintentry 0 0 ABS 0
 _pad 2D8E 0 CODE 0
 __end_of___awdiv 25E0 0 CODE 0
 _abs 3398 0 CODE 0
-_txt B5 0 BANK0 1
+_txt B9 0 BANK0 1
 _TMR2 FBC 0 ABS 0
 Leer_1Byte@Direccion 5 0 COMRAM 1
 _LATA F89 0 ABS 0
@@ -32,14 +32,14 @@ _M_ID 56 0 COMRAM 1
 _WPUB F61 0 ABS 0
 Read_X4@hi 4D 0 COMRAM 1
 IndexOf_Str@buf 8 0 COMRAM 1
-_M_LR 88 0 BANK0 1
+_M_LR 8C 0 BANK0 1
 abs@a B 0 COMRAM 1
 pad@i 17 0 COMRAM 1
 pad@p 14 0 COMRAM 1
 _prec 80 0 BANK0 1
 _dtoa 1FF8 0 CODE 0
 _xtoa 235C 0 CODE 0
-_dbuf 95 0 BANK0 1
+_dbuf 99 0 BANK0 1
 ?_abs B 0 COMRAM 1
 IndexOf_Str@patron A 0 COMRAM 1
 _main 307E 0 CODE 0
@@ -73,8 +73,7 @@ ttemp6 5E 0 COMRAM 1
 ttemp7 62 0 COMRAM 1
 wtemp8 5B 0 COMRAM 1
 __end_of_Timer0_Init 3448 0 CODE 0
-Read_Cmd@bajo D2 0 BANK0 1
-_dtoa$2361 1C 0 COMRAM 1
+Read_Cmd@bajo D6 0 BANK0 1
 __Hconfig 30000E 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
 Leer_1Bit@Direccion 5 0 COMRAM 1
@@ -89,10 +88,10 @@ dtoa@i 22 0 COMRAM 1
 xtoa@i 23 0 COMRAM 1
 __end_of_read_prec_or_width 29F4 0 CODE 0
 _M_Led 58 0 COMRAM 1
-_S_Led 8C 0 BANK0 1
-_T_Led 8E 0 BANK0 1
-_W_Led 8D 0 BANK0 1
-_Z_Led 8F 0 BANK0 1
+_S_Led 90 0 BANK0 1
+_T_Led 92 0 BANK0 1
+_W_Led 91 0 BANK0 1
+_Z_Led 93 0 BANK0 1
 ___inthi_stack_hi 0 0 STACK 2
 _Consulta_Sensor 2CFC 0 CODE 0
 dtoa@p 1E 0 COMRAM 1
@@ -186,6 +185,7 @@ __Hmediumconst 0 0 MEDIUMCONST 0
 __Lmediumconst 0 0 MEDIUMCONST 0
 __Hfarbss 0 0 FARRAM 0
 __Lfarbss 0 0 FARRAM 0
+_dtoa$2369 1C 0 COMRAM 1
 __Hintcode 26 0 CODE 0
 __Lintcode 8 0 CODE 0
 __Hfardata 0 0 FARRAM 0
@@ -196,12 +196,13 @@ _OSCCON FD3 0 ABS 0
 __Habs1 0 0 ABS 0
 __Labs1 0 0 ABS 0
 ?_read_prec_or_width 5 0 COMRAM 1
+_SP_PPM 8A 0 BANK0 1
 isa$xinst 0 0 ABS 0
 __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __end_of_IndexOf_Str 235C 0 CODE 0
 ___heap_hi 0 0 ABS 0
-_Flag_100ms 90 0 BANK0 1
+_Flag_100ms 94 0 BANK0 1
 _Set_Led_Conectado 345A 0 CODE 0
 __end_of___fltol 2262 0 CODE 0
 __Hsivt_hi 0 0 CODE 0
@@ -230,7 +231,7 @@ __HcstackBANK0 0 0 ABS 0
 __LcstackBANK0 0 0 ABS 0
 _Timer1_Init 341E 0 CODE 0
 _Timer2_Init 3448 0 CODE 0
-__pcstackBANK0 C9 0 BANK0 1
+__pcstackBANK0 CD 0 BANK0 1
 ___awmod@sign A 0 COMRAM 1
 __Htemp 5B 0 COMRAM 1
 __Ltemp 5A 0 COMRAM 1
@@ -263,7 +264,7 @@ _SPBRGH1 FB0 0 ABS 0
 _SPBRGH2 F76 0 ABS 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
-_M_Funcion 89 0 BANK0 1
+_M_Funcion 8D 0 BANK0 1
 _OSCCON2 FD2 0 ABS 0
 _read_prec_or_width 2950 0 CODE 0
 vfprintf@fmt 2F 0 COMRAM 1
@@ -280,11 +281,12 @@ _TRISDbits F95 0 ABS 0
 vfpfcnvrt@convarg 29 0 COMRAM 1
 _T0CONbits FD5 0 ABS 0
 _T1CONbits FCD 0 ABS 0
-_Flag_U1 94 0 BANK0 1
+_Flag_U1 98 0 BANK0 1
 _Read_X0 269C 0 CODE 0
-_Flag_U2 92 0 BANK0 1
+_Flag_U2 96 0 BANK0 1
+UART_Read@i_1524 DC 0 BANK0 1
 _Read_X4 2452 0 CODE 0
-_Flag_1000ms 91 0 BANK0 1
+_Flag_1000ms 95 0 BANK0 1
 _Proceso_Led 1CB8 0 CODE 0
 UART1_Init@Baud 12 0 COMRAM 1
 UART2_Init@Baud 12 0 COMRAM 1
@@ -371,7 +373,7 @@ Get_Comando@rEthy 3B 0 COMRAM 1
 __end_of_Consulta_Sensor 2D8E 0 CODE 0
 __end_of_UART1_Init 2C64 0 CODE 0
 __end_of__initialization 32AA 0 CODE 0
-_Tiempo_Control 8A 0 BANK0 1
+_Tiempo_Control 8E 0 BANK0 1
 ___rparam_used 1 0 ABS 0
 Read_X0@bit 4E 0 COMRAM 1
 Read_X0@Cantidad 4A 0 COMRAM 1
@@ -389,10 +391,11 @@ Write_X0@Valor A 0 COMRAM 1
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
 __end_of_UART2_WriteString 33F6 0 CODE 0
-_Length_U2 93 0 BANK0 1
+_Length_U2 97 0 BANK0 1
 __end_of_Write_X0 2CFC 0 CODE 0
 __end_of_Write_X4 300C 0 CODE 0
 _Buffer_U2 200 0 BANK2 1
+_SP_Agua 88 0 BANK0 1
 Write_X4@Valor A 0 COMRAM 1
 _Set_Led_Wait 346A 0 CODE 0
 __Hidata 0 0 CODE 0
@@ -406,9 +409,9 @@ __Lidloc 0 0 ABS 0
 fputs@fp E 0 COMRAM 1
 __Hstack 0 0 STACK 2
 __Lstack 0 0 STACK 2
+UART_Interrupt@c_1521 2 0 COMRAM 1
 __end_of_UART_Interrupt 2E9C 0 CODE 0
 __end_of___lldiv 2950 0 CODE 0
-UART_Interrupt@c_1517 2 0 COMRAM 1
 ___awmod 2754 0 CODE 0
 __Hparam 0 0 COMRAM 1
 __Lparam 0 0 COMRAM 1
@@ -451,12 +454,11 @@ _UART1_Init 2BCA 0 CODE 0
 ___fltol@exp1 E 0 COMRAM 1
 _UART2_Init 2B30 0 CODE 0
 Write_X0@Direccion 8 0 COMRAM 1
-UART_Read@i_1520 D8 0 BANK0 1
 __end_of_sprintf 3398 0 CODE 0
 Write_X4@Direccion 8 0 COMRAM 1
 _Timer_Interrupt 300C 0 CODE 0
 Texto_Length@contador 7 0 COMRAM 1
-Read_Cmd@Index D4 0 BANK0 1
+Read_Cmd@Index D8 0 BANK0 1
 __end_of_UART2_Init 2BCA 0 CODE 0
 __end_of_pad 2E18 0 CODE 0
 __HbssBANK0 0 0 ABS 0
@@ -590,7 +592,7 @@ __Ltext37 0 0 ABS 0
 __Ltext18 0 0 ABS 0
 __ptext27 30EE 0 CODE 0
 __ptext46 2A92 0 CODE 0
-Read_Cmd@lrc CE 0 BANK0 1
+Read_Cmd@lrc D2 0 BANK0 1
 _ANSELCbits F3A 0 ABS 0
 __Htext28 0 0 ABS 0
 __Ltext28 0 0 ABS 0
@@ -622,7 +624,7 @@ _OSCCONbits FD3 0 ABS 0
 __ptext49 300C 0 CODE 0
 _INTCONbits FF2 0 ABS 0
 _Write_X0 2C64 0 CODE 0
-Read_Cmd@alto D0 0 BANK0 1
+Read_Cmd@alto D4 0 BANK0 1
 ___lldiv@divisor 9 0 COMRAM 1
 _Interrupcion 8 0 CODE 0
 ___awdiv@divisor 7 0 COMRAM 1
@@ -658,7 +660,7 @@ _BAUDCON1bits FB8 0 ABS 0
 vfpfcnvrt@cp 2D 0 COMRAM 1
 Write_X4@i C 0 COMRAM 1
 _BAUDCON2bits F70 0 ABS 0
-_Paso_Control 8B 0 BANK0 1
+_Paso_Control 8F 0 BANK0 1
 ___inthi_stack_lo 0 0 STACK 2
 __end_of_Get_Comando 1FF8 0 CODE 0
 ?_Leer_1Byte 5 0 COMRAM 1
@@ -688,7 +690,7 @@ read_prec_or_width@c 9 0 COMRAM 1
 __end_of_Proceso_Led 1E64 0 CODE 0
 ___fldiv@b 5 0 COMRAM 1
 read_prec_or_width@n A 0 COMRAM 1
-UART_Read@i D6 0 BANK0 1
+UART_Read@i DA 0 BANK0 1
 ___lldiv@dividend 5 0 COMRAM 1
 ___awdiv@dividend 5 0 COMRAM 1
 %segments
@@ -696,46 +698,46 @@ reset_vec 0 3 CODE 0 0
 intcode 8 29 CODE 8 0
 smallconst 1000 105B SMALLCONST 1000 0
 cstackCOMRAM 1 5A COMRAM 1 1
-bssBANK0 60 D9 BANK0 60 1
+bssBANK0 60 DD BANK0 60 1
 bssBANK2 200 2C8 BANK2 200 1
 bssBANK1 100 164 BANK1 100 1
 text2 105C 3479 CODE 105C 0
 %locals
 dist/default/production\Gasificado.X.production.o
-C:\Users\LENOVO\AppData\Local\Temp\xcAs870.\driver_tmp_1.s
+C:\Users\LENOVO\AppData\Local\Temp\xcBs5pg.1\driver_tmp_1.s
 4559 327C 0 CODE 0
 4561 327C 0 CODE 0
 4564 327C 0 CODE 0
-4662 327C 0 CODE 0
-4663 3280 0 CODE 0
-4664 3282 0 CODE 0
-4665 3282 0 CODE 0
-4666 3284 0 CODE 0
-4667 3286 0 CODE 0
-4670 3288 0 CODE 0
-4671 328C 0 CODE 0
-4672 328E 0 CODE 0
-4673 328E 0 CODE 0
-4674 3290 0 CODE 0
-4675 3292 0 CODE 0
-4678 3294 0 CODE 0
-4679 3298 0 CODE 0
-4680 329A 0 CODE 0
-4681 329A 0 CODE 0
-4682 329C 0 CODE 0
-4683 329E 0 CODE 0
-4686 32A0 0 CODE 0
-4687 32A2 0 CODE 0
-4688 32A4 0 CODE 0
-4689 32A6 0 CODE 0
-4690 32A8 0 CODE 0
-4696 32AA 0 CODE 0
-4698 32AA 0 CODE 0
-4699 32AC 0 CODE 0
-4701 32AE 0 CODE 0
-4702 32B0 0 CODE 0
-4703 32B2 0 CODE 0
-4704 32B4 0 CODE 0
+4670 327C 0 CODE 0
+4671 3280 0 CODE 0
+4672 3282 0 CODE 0
+4673 3282 0 CODE 0
+4674 3284 0 CODE 0
+4675 3286 0 CODE 0
+4678 3288 0 CODE 0
+4679 328C 0 CODE 0
+4680 328E 0 CODE 0
+4681 328E 0 CODE 0
+4682 3290 0 CODE 0
+4683 3292 0 CODE 0
+4686 3294 0 CODE 0
+4687 3298 0 CODE 0
+4688 329A 0 CODE 0
+4689 329A 0 CODE 0
+4690 329C 0 CODE 0
+4691 329E 0 CODE 0
+4694 32A0 0 CODE 0
+4695 32A2 0 CODE 0
+4696 32A4 0 CODE 0
+4697 32A6 0 CODE 0
+4698 32A8 0 CODE 0
+4704 32AA 0 CODE 0
+4706 32AA 0 CODE 0
+4707 32AC 0 CODE 0
+4709 32AE 0 CODE 0
+4710 32B0 0 CODE 0
+4711 32B2 0 CODE 0
+4712 32B4 0 CODE 0
 main.c
 20 307E 0 CODE 0
 21 307E 0 CODE 0
@@ -1338,9 +1340,9 @@ Control.c
 34 2EDA 0 CODE 0
 35 2EEA 0 CODE 0
 36 2EFE 0 CODE 0
-38 2F08 0 CODE 0
-39 2F18 0 CODE 0
-40 2F1A 0 CODE 0
+37 2F08 0 CODE 0
+38 2F18 0 CODE 0
+39 2F1A 0 CODE 0
 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 9 3364 0 CODE 0
 15 3364 0 CODE 0
@@ -1582,8 +1584,8 @@ Uarts.c
 131 2B0A 0 CODE 0
 129 2B0A 0 CODE 0
 132 2B2E 0 CODE 0
-C:\Users\LENOVO\AppData\Local\Temp\xcAs870.\driver_tmp_1.s
-15195 8 0 CODE 0
+C:\Users\LENOVO\AppData\Local\Temp\xcBs5pg.1\driver_tmp_1.s
+15203 8 0 CODE 0
 main.c
 15 8 0 CODE 0
 16 12 0 CODE 0

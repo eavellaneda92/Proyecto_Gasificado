@@ -34,7 +34,6 @@ void Consulta_Server(void) {
     UART1_WriteString("PPM:");
     sprintf(txt,"%d",PPM);
     UART1_WriteString(txt);
-    
     __delay_ms(5);
     MOD485 = 0;
 }

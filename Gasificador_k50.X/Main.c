@@ -44,7 +44,11 @@ void main(void) {
     INTCONbits.GIE = 1;
 
     Refresh_In();
-    
+    Arranque_Flag = 1;
+    Set_Channel_Heater(0);
+    Tiempo_Damper = 30000;
+    Tiempo_Iny_Gas = 2000;
+    Tiempo_Iny_Liquido = 1200;
     while (1) {
         /*CONSULTA POR BUFFER*/
         if (FlagBuffer) {
