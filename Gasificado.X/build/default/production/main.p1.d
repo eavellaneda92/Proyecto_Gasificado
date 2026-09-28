@@ -3,4 +3,5 @@ main.c  \
 Config.h  \
 Uarts.h  \
 Timers.h  \
-Leds.h 
+Leds.h  \
+Control.h 

@@ -31,6 +31,7 @@
       <itemPath>Uarts.c</itemPath>
       <itemPath>Comandos.c</itemPath>
       <itemPath>Kinco.c</itemPath>
+      <itemPath>Control.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

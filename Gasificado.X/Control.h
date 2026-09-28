@@ -18,6 +18,12 @@ extern "C" {
     void Consulta_Sensor(void);
     void Consulta_Relay(void);
     void Consulta_Server(void);
+    
+    /*VARIABLES*/
+    uint8_t Paso_Control = 0;
+    uint8_t Tiempo_Control = 0;
+    
+    int16_t PPM = 0;
 
 
 #ifdef	__cplusplus

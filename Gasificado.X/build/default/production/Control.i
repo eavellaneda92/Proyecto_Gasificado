@@ -1,4 +1,4 @@
-# 1 "Kinco.c"
+# 1 "Control.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 285 "<built-in>" 3
@@ -6,33 +6,9 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "Kinco.c" 2
-# 1 "./Kinco.h" 1
-# 49 "./Kinco.h"
-    typedef struct {
-        unsigned char Control[11 + 1];
-        unsigned int Variables[8 + 1];
-    } Container;
-
-    extern Container Gasificado;
-
-    char M_ID = 0;
-    char M_Funcion = 0;
-    unsigned int M_Direccion = 0;
-    unsigned int M_Cantidad = 0;
-    unsigned char M_LR = 0;
-
-    void Read_Cmd(unsigned char *Data);
-    unsigned char HexToNum(char c);
-    void Read_X0(unsigned int Direccion, unsigned int Cantidad);
-    void Read_X4(unsigned int Direccion, unsigned int Cantidad);
-    void Write_X0(unsigned int Direccion, unsigned int Valor);
-    void Write_X4(unsigned int Direccion, unsigned int Valor);
-    unsigned char Leer_1Bit(unsigned int Direccion);
-    unsigned int Leer_1Byte(unsigned int Direccion);
-# 2 "Kinco.c" 2
-# 1 "./Uarts.h" 1
-# 15 "./Uarts.h"
+# 1 "Control.c" 2
+# 1 "./Control.h" 1
+# 15 "./Control.h"
 # 1 "./Config.h" 1
 # 16 "./Config.h"
 #pragma config FOSC = INTIO67
@@ -9911,11 +9887,21 @@ char *tempnam(const char *, const char *);
     char txt[20];
     void Pic_Clock_Init(void);
     void Pic_Gpio_Init(void);
-# 16 "./Uarts.h" 2
+# 16 "./Control.h" 2
 
 
+    void Consulta_Sensor(void);
+    void Consulta_Relay(void);
+    void Consulta_Server(void);
 
 
+    uint8_t Paso_Control = 0;
+    uint8_t Tiempo_Control = 0;
+
+    int16_t PPM = 0;
+# 2 "Control.c" 2
+# 1 "./Uarts.h" 1
+# 20 "./Uarts.h"
     unsigned char Buffer_U1[100 + 1];
     unsigned char Length_U1 = 0;
     unsigned char Flag_U1 = 0;
@@ -9937,183 +9923,40 @@ char *tempnam(const char *, const char *);
 
     int8_t IndexOf_Str(const uint8_t *buf, char *patron);
     uint8_t Texto_Length(unsigned char *texto);
-# 3 "Kinco.c" 2
+# 3 "Control.c" 2
+const unsigned char Get_PPM[5] = {0x01, 0x20, 0x00, 0x39, 0xc0};
 
-Container Gasificado;
-
-void Read_Cmd(unsigned char *Data) {
-    int Index = IndexOf_Str((unsigned char*) Data, ":");
-    if (Index == -1) return;
-
-
-    M_ID = 0;
-    M_Funcion = 0;
-    M_Direccion = 0;
-    M_Cantidad = 0;
-    M_LR = 0;
-
-    unsigned int alto, bajo, lrc = 0;
-
-
-    alto = HexToNum(Data[Index + 1]);
-    bajo = HexToNum(Data[Index + 2]);
-    M_ID = (char) ((alto << 4) | bajo);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-
-
-    alto = HexToNum(Data[Index + 3]);
-    bajo = HexToNum(Data[Index + 4]);
-    M_Funcion = (char) ((alto << 4) | bajo);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-
-
-    alto = HexToNum(Data[Index + 5]);
-    bajo = HexToNum(Data[Index + 6]);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-    M_Direccion = ((alto << 4) | bajo) << 8;
-
-    alto = HexToNum(Data[Index + 7]);
-    bajo = HexToNum(Data[Index + 8]);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-    M_Direccion |= (alto << 4) | bajo;
-
-
-    alto = HexToNum(Data[Index + 9]);
-    bajo = HexToNum(Data[Index + 10]);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-    M_Cantidad = ((alto << 4) | bajo) << 8;
-
-    alto = HexToNum(Data[Index + 11]);
-    bajo = HexToNum(Data[Index + 12]);
-    lrc += (alto << 4) | bajo;
-    lrc &= 0xFF;
-    M_Cantidad |= (alto << 4) | bajo;
-
-
-    alto = HexToNum(Data[Index + 13]);
-    bajo = HexToNum(Data[Index + 14]);
-    M_LR = (char) ((alto << 4) | bajo);
-
-
-    lrc = (unsigned char) (~lrc + 1);
-
-    if (M_ID == 1) {
-        if (M_LR == lrc) {
-            switch (M_Funcion) {
-                case 1:
-                    Read_X0(M_Direccion + 1, M_Cantidad);
-                    break;
-                case 3:
-                    Read_X4(M_Direccion + 1, M_Cantidad);
-                    break;
-                case 5:
-                    Write_X0(M_Direccion + 1, M_Cantidad);
-                    break;
-                case 6: Write_X4(M_Direccion + 1, M_Cantidad);
-                    break;
-            }
-        }
+void Consulta_Sensor(void) {
+    LATDbits.LATD5 = 1;
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    for (int i = 0; i < 5; i++) {
+        UART1_Write(Get_PPM[i]);
+        if (i == 4) LATDbits.LATD5 = 0;
+        _delay((unsigned long)((30)*(16000000/4000000.0)));
+        __asm(" clrwdt");
     }
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    LATDbits.LATD5 = 0;
 }
 
-void Read_X0(unsigned int Direccion, unsigned int Cantidad) {
-    unsigned char data = 0;
-
-    for (unsigned int i = 0; i < Cantidad; i++) {
-        unsigned char bit = Leer_1Bit(Direccion + i);
-        data |= (unsigned char) (bit << i);
-    }
-
-    unsigned char nb = (unsigned char) ((Cantidad + 7) / 8);
-    unsigned char lrc = 0;
-    lrc += (unsigned char) M_ID;
-    lrc += 0x01;
-    lrc += nb;
-    lrc += data;
-    lrc = (unsigned char) (~lrc + 1);
-
-    sprintf(txt, ":%02X01%02X%02X%02X\r\n", (unsigned char) M_ID, nb, data, lrc);
-    UART2_WriteString(txt);
+void Consulta_Relay(void) {
+    LATDbits.LATD5 = 1;
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    UART1_WriteString("AGROLATINA_G01_CB01_STATUS_");
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    LATDbits.LATD5 = 0;
 }
 
-void Read_X4(unsigned int Direccion, unsigned int Cantidad) {
-    unsigned char nb = (unsigned char) (Cantidad * 2);
-    unsigned char lrc = 0;
-
-    lrc += (unsigned char) M_ID;
-    lrc += 0x03;
-    lrc += nb;
+void Consulta_Server(void) {
+    LATDbits.LATD5 = 1;
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    _delay((unsigned long)((5)*(16000000/4000.0)));
+    UART1_WriteString("PPM:");
+    sprintf(txt,"%d",PPM);
+    UART1_WriteString(txt);
 
     _delay((unsigned long)((5)*(16000000/4000.0)));
-    sprintf(txt, ":%02X03%02X", (unsigned char) M_ID, nb);
-    UART2_WriteString(txt);
-
-
-    for (unsigned int i = 0; i < Cantidad; i++) {
-        unsigned int val = Leer_1Byte(Direccion + i);
-        unsigned char hi = (unsigned char) ((val >> 8) & 0xFF);
-        unsigned char lo = (unsigned char) (val & 0xFF);
-        lrc += hi;
-        lrc += lo;
-        sprintf(txt, "%04X", val);
-        UART2_WriteString(txt);
-    }
-
-    lrc = (unsigned char) (~lrc + 1);
-    sprintf(txt, "%02X\r\n", lrc);
-    UART2_WriteString(txt);
-}
-
-void Write_X0(unsigned int Direccion, unsigned int Valor) {
-
-    if (Direccion < 11 + 1) {
-        if (Valor == 0xFF00) {
-            Gasificado.Control[Direccion] = 1;
-        }
-        if (Valor == 0x0000) {
-            Gasificado.Control[Direccion] = 0;
-        }
-    }
-
-
-    for (int i = 0; i < 15; i++) UART2_Write(Buffer_U2[i]);
-    UART2_Write(0x0D);
-    UART2_Write(0x0A);
-}
-
-void Write_X4(unsigned int Direccion, unsigned int Valor) {
-    if (Direccion < 8 + 1) {
-        Gasificado.Variables[Direccion] = Valor;
-    }
-
-
-    for (int i = 0; i < 15; i++) UART2_Write(Buffer_U2[i]);
-    UART2_Write(0x0D);
-    UART2_Write(0x0A);
-}
-
-unsigned char Leer_1Bit(unsigned int Direccion) {
-    if (Direccion < 11 + 1) {
-        return Gasificado.Control[Direccion];
-    }
-    return 0;
-}
-
-unsigned int Leer_1Byte(unsigned int Direccion) {
-    if (Direccion < 8 + 1) {
-        return Gasificado.Variables[Direccion];
-    }
-    return 0;
-}
-
-unsigned char HexToNum(char c) {
-    if (c >= '0' && c <= '9') return (unsigned char) (c - '0');
-    if (c >= 'A' && c <= 'F') return (unsigned char) (c - 'A' + 10);
-    if (c >= 'a' && c <= 'f') return (unsigned char) (c - 'a' + 10);
-    return 0;
+    LATDbits.LATD5 = 0;
 }

@@ -1,6 +1,7 @@
 #include "Timers.h"
 #include "Uarts.h"
 #include "Leds.h"
+#include "Control.h"
 
 void Timer_Interrupt(void) {
     if (INTCONbits.TMR0IF) {
@@ -22,6 +23,7 @@ void Timer_Interrupt(void) {
         Flag_1000ms++;
         if (Flag_1000ms >= 100) {
             Z_Led++;
+            Tiempo_Control++;
             Flag_1000ms = 0;
         }
         PIR1bits.TMR2IF = 0;
