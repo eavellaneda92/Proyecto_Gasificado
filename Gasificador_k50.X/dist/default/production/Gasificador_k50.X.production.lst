@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Mon Sep 28 13:38:18 2026
+                                                                                               Mon Sep 28 13:40:57 2026
 
 Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
      1                           	processor	18F45K50
@@ -6266,7 +6266,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6249   001E28  0E09               	movlw	9
   6250   001E2A  EC07  F00C         	call	_Power_Rele
   6251   001E2E                     
-  6252                           ;Control.c: 96:     for (int i = 0; i < 1400; i++) {
+  6252                           ;Control.c: 96:     for (int i = 0; i < 1000; i++) {
   6253   001E2E  0E00               	movlw	0
   6254   001E30  6E3A               	movwf	(Inyecta_Liquido@i+1)^0,c
   6255   001E32  0E00               	movlw	0
@@ -6290,9 +6290,9 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6273   001E4A  2A3A               	incf	(Inyecta_Liquido@i+1)^0,f,c
   6274   001E4C  BE3A               	btfsc	(Inyecta_Liquido@i+1)^0,7,c
   6275   001E4E  EF32  F00F         	goto	u4751
-  6276   001E52  0E78               	movlw	120
+  6276   001E52  0EE8               	movlw	232
   6277   001E54  5C39               	subwf	Inyecta_Liquido@i^0,w,c
-  6278   001E56  0E05               	movlw	5
+  6278   001E56  0E03               	movlw	3
   6279   001E58  583A               	subwfb	(Inyecta_Liquido@i+1)^0,w,c
   6280   001E5A  A0D8               	btfss	status,0,c
   6281   001E5C  EF32  F00F         	goto	u4751
@@ -6304,7 +6304,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6287                           ;Control.c: 100:     LATDbits.LATD4 = 1;
   6288   001E68  888C               	bsf	140,4,c	;volatile
   6289   001E6A                     
-  6290                           ;Control.c: 101:     for (int i = 0; i < 2000; i++) {
+  6290                           ;Control.c: 101:     for (int i = 0; i < 1000; i++) {
   6291   001E6A  0E00               	movlw	0
   6292   001E6C  6E3C               	movwf	(Inyecta_Liquido@i_2003+1)^0,c
   6293   001E6E  0E00               	movlw	0
@@ -6328,9 +6328,9 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6311   001E86  2A3C               	incf	(Inyecta_Liquido@i_2003+1)^0,f,c
   6312   001E88  BE3C               	btfsc	(Inyecta_Liquido@i_2003+1)^0,7,c
   6313   001E8A  EF50  F00F         	goto	u4761
-  6314   001E8E  0ED0               	movlw	208
+  6314   001E8E  0EE8               	movlw	232
   6315   001E90  5C3B               	subwf	Inyecta_Liquido@i_2003^0,w,c
-  6316   001E92  0E07               	movlw	7
+  6316   001E92  0E03               	movlw	3
   6317   001E94  583C               	subwfb	(Inyecta_Liquido@i_2003+1)^0,w,c
   6318   001E96  A0D8               	btfss	status,0,c
   6319   001E98  EF50  F00F         	goto	u4761
@@ -10936,7 +10936,7 @@ DATA                 0      0     478      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Mon Sep 28 13:38:18 2026
+Symbol Table                                                                                   Mon Sep 28 13:40:57 2026
 
      Get_Comando@Tiempo_1439 00ED                 ___awdiv@sign 0009                          l202 24DE  
                         l220 196C                          l212 190A                          l221 197A  

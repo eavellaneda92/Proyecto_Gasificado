@@ -93,12 +93,12 @@ void Proceso_Heater(void) {
 
 void Inyecta_Liquido(void) {
     Power_Rele(Valve_Liq_Open, 1000);
-    for (int i = 0; i < 1400; i++) {
+    for (int i = 0; i < 1000; i++) {
         __delay_ms(1);
         CLRWDT();
     }
     RELAY10 = RELE_OFF;
-    for (int i = 0; i < 2000; i++) {
+    for (int i = 0; i < 1000; i++) {
         __delay_ms(1);
         CLRWDT();
     }

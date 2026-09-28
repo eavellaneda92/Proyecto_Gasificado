@@ -8727,12 +8727,12 @@ void Proceso_Heater(void) {
 
 void Inyecta_Liquido(void) {
     Power_Rele(9, 1000);
-    for (int i = 0; i < 1400; i++) {
+    for (int i = 0; i < 1000; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
     LATDbits.LATD4 = 1;
-    for (int i = 0; i < 2000; i++) {
+    for (int i = 0; i < 1000; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
