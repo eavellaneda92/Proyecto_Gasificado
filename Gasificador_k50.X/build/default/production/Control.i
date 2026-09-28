@@ -8732,7 +8732,7 @@ void Inyecta_Liquido(void) {
         __asm(" clrwdt");
     }
     LATDbits.LATD4 = 1;
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 500; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }

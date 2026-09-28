@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Mon Sep 28 13:40:57 2026
+                                                                                               Mon Sep 28 13:44:04 2026
 
 Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
      1                           	processor	18F45K50
@@ -6304,7 +6304,7 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6287                           ;Control.c: 100:     LATDbits.LATD4 = 1;
   6288   001E68  888C               	bsf	140,4,c	;volatile
   6289   001E6A                     
-  6290                           ;Control.c: 101:     for (int i = 0; i < 1000; i++) {
+  6290                           ;Control.c: 101:     for (int i = 0; i < 500; i++) {
   6291   001E6A  0E00               	movlw	0
   6292   001E6C  6E3C               	movwf	(Inyecta_Liquido@i_2003+1)^0,c
   6293   001E6E  0E00               	movlw	0
@@ -6328,9 +6328,9 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6311   001E86  2A3C               	incf	(Inyecta_Liquido@i_2003+1)^0,f,c
   6312   001E88  BE3C               	btfsc	(Inyecta_Liquido@i_2003+1)^0,7,c
   6313   001E8A  EF50  F00F         	goto	u4761
-  6314   001E8E  0EE8               	movlw	232
+  6314   001E8E  0EF4               	movlw	244
   6315   001E90  5C3B               	subwf	Inyecta_Liquido@i_2003^0,w,c
-  6316   001E92  0E03               	movlw	3
+  6316   001E92  0E01               	movlw	1
   6317   001E94  583C               	subwfb	(Inyecta_Liquido@i_2003+1)^0,w,c
   6318   001E96  A0D8               	btfss	status,0,c
   6319   001E98  EF50  F00F         	goto	u4761
@@ -10936,7 +10936,7 @@ DATA                 0      0     478      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Mon Sep 28 13:40:57 2026
+Symbol Table                                                                                   Mon Sep 28 13:44:04 2026
 
      Get_Comando@Tiempo_1439 00ED                 ___awdiv@sign 0009                          l202 24DE  
                         l220 196C                          l212 190A                          l221 197A  
