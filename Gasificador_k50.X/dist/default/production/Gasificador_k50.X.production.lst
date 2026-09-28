@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Mon Sep 28 12:55:29 2026
+                                                                                               Mon Sep 28 13:30:30 2026
 
 Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
      1                           	processor	18F45K50
@@ -6252,15 +6252,15 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6235   002046                     _Inyecta_Liquido:
   6236                           	callstack 24
   6237   002046                     
-  6238                           ;Control.c: 95:     Power_Rele(9, 1200);
-  6239   002046  0E04               	movlw	4
+  6238                           ;Control.c: 95:     Power_Rele(9, 1000);
+  6239   002046  0E03               	movlw	3
   6240   002048  6E36               	movwf	(Power_Rele@Tiempo+1)^0,c
-  6241   00204A  0EB0               	movlw	176
+  6241   00204A  0EE8               	movlw	232
   6242   00204C  6E35               	movwf	Power_Rele@Tiempo^0,c
   6243   00204E  0E09               	movlw	9
   6244   002050  EC07  F00C         	call	_Power_Rele
   6245   002054                     
-  6246                           ;Control.c: 96:     for (int i = 0; i < 1200; i++) {
+  6246                           ;Control.c: 96:     for (int i = 0; i < 1400; i++) {
   6247   002054  0E00               	movlw	0
   6248   002056  6E3A               	movwf	(Inyecta_Liquido@i+1)^0,c
   6249   002058  0E00               	movlw	0
@@ -6284,9 +6284,9 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6267   002070  2A3A               	incf	(Inyecta_Liquido@i+1)^0,f,c
   6268   002072  BE3A               	btfsc	(Inyecta_Liquido@i+1)^0,7,c
   6269   002074  EF45  F010         	goto	u4731
-  6270   002078  0EB0               	movlw	176
+  6270   002078  0E78               	movlw	120
   6271   00207A  5C39               	subwf	Inyecta_Liquido@i^0,w,c
-  6272   00207C  0E04               	movlw	4
+  6272   00207C  0E05               	movlw	5
   6273   00207E  583A               	subwfb	(Inyecta_Liquido@i+1)^0,w,c
   6274   002080  A0D8               	btfss	status,0,c
   6275   002082  EF45  F010         	goto	u4731
@@ -6295,10 +6295,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6278   00208A  EF2E  F010         	goto	l4703
   6279   00208E                     u4730:
   6280   00208E                     
-  6281                           ;Control.c: 100:     Power_Rele(8, 2000 * 1.5);
-  6282   00208E  0E0B               	movlw	11
+  6281                           ;Control.c: 100:     Power_Rele(8, 2000);
+  6282   00208E  0E07               	movlw	7
   6283   002090  6E36               	movwf	(Power_Rele@Tiempo+1)^0,c
-  6284   002092  0EB8               	movlw	184
+  6284   002092  0ED0               	movlw	208
   6285   002094  6E35               	movwf	Power_Rele@Tiempo^0,c
   6286   002096  0E08               	movlw	8
   6287   002098  EC07  F00C         	call	_Power_Rele
@@ -6350,10 +6350,10 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
   6333   001E94                     _Inyecta_Gas:
   6334                           	callstack 24
   6335   001E94                     
-  6336                           ;Control.c: 105:     Power_Rele(7, 2000);
-  6337   001E94  0E07               	movlw	7
+  6336                           ;Control.c: 105:     Power_Rele(7, 1000);
+  6337   001E94  0E03               	movlw	3
   6338   001E96  6E36               	movwf	(Power_Rele@Tiempo+1)^0,c
-  6339   001E98  0ED0               	movlw	208
+  6339   001E98  0EE8               	movlw	232
   6340   001E9A  6E35               	movwf	Power_Rele@Tiempo^0,c
   6341   001E9C  0E07               	movlw	7
   6342   001E9E  EC07  F00C         	call	_Power_Rele
@@ -10892,7 +10892,7 @@ DATA                 0      0     478      0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Mon Sep 28 12:55:29 2026
+Symbol Table                                                                                   Mon Sep 28 13:30:30 2026
 
      Get_Comando@Tiempo_1439 00ED                 ___awdiv@sign 0009                          l202 24A2  
                         l220 196C                          l212 190A                          l221 197A  

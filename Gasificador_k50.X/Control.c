@@ -92,17 +92,17 @@ void Proceso_Heater(void) {
 }
 
 void Inyecta_Liquido(void) {
-    Power_Rele(Valve_Liq_Open, 1200);
-    for (int i = 0; i < 1200; i++) {
+    Power_Rele(Valve_Liq_Open, 1000);
+    for (int i = 0; i < 1400; i++) {
         __delay_ms(1);
         CLRWDT();
     }
-    Power_Rele(Valve_Liq_Close, 2000 * 1.5);
+    Power_Rele(Valve_Liq_Close, 2000);
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 
 void Inyecta_Gas(void) {
-    Power_Rele(Valve_Gas_Open, 2000);
+    Power_Rele(Valve_Gas_Open, 1000);
     Power_Rele(Valve_Gas_Close, 2000);
     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
         __delay_ms(1);

@@ -1389,14 +1389,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _Inyecta_Liquido ]
 [f ]
 "95
-[; ;Control.c: 95:     Power_Rele(9, 1200);
-[e ( _Power_Rele (2 , -> -> 9 `i `uc -> -> 1200 `i `ui ]
+[; ;Control.c: 95:     Power_Rele(9, 1000);
+[e ( _Power_Rele (2 , -> -> 9 `i `uc -> -> 1000 `i `ui ]
 "96
-[; ;Control.c: 96:     for (int i = 0; i < 1200; i++) {
+[; ;Control.c: 96:     for (int i = 0; i < 1400; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 1200 `i 688  ]
+[e $ < _i -> 1400 `i 688  ]
 [e $U 689  ]
 [e :U 688 ]
 {
@@ -1410,12 +1410,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 99:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 1200 `i 688  ]
+[e $ < _i -> 1400 `i 688  ]
 [e :U 689 ]
 }
 "100
-[; ;Control.c: 100:     Power_Rele(8, 2000 * 1.5);
-[e ( _Power_Rele (2 , -> -> 8 `i `uc -> * -> -> 2000 `i `d .1.5 `ui ]
+[; ;Control.c: 100:     Power_Rele(8, 2000);
+[e ( _Power_Rele (2 , -> -> 8 `i `uc -> -> 2000 `i `ui ]
 "101
 [; ;Control.c: 101:     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 [e ( _Respuestas_RS485 (1 :s 1C ]
@@ -1430,8 +1430,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _Inyecta_Gas ]
 [f ]
 "105
-[; ;Control.c: 105:     Power_Rele(7, 2000);
-[e ( _Power_Rele (2 , -> -> 7 `i `uc -> -> 2000 `i `ui ]
+[; ;Control.c: 105:     Power_Rele(7, 1000);
+[e ( _Power_Rele (2 , -> -> 7 `i `uc -> -> 1000 `i `ui ]
 "106
 [; ;Control.c: 106:     Power_Rele(6, 2000);
 [e ( _Power_Rele (2 , -> -> 6 `i `uc -> -> 2000 `i `ui ]
