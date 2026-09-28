@@ -49,6 +49,7 @@ void main(void) {
     Tiempo_Damper = 30000;
     Tiempo_Iny_Gas = 2000;
     Tiempo_Iny_Liquido = 1200;
+    SP_Temp = 50;
     while (1) {
         /*CONSULTA POR BUFFER*/
         if (FlagBuffer) {
@@ -65,7 +66,7 @@ void main(void) {
             Proceso_ADC();
             Proceso_Rele();
             Proceso_Arranque();
-            Proceso_Heater();
+            //Proceso_Heater();
             Flag10ms = 0;
         }
         CLRWDT();

@@ -154,9 +154,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "33 ./Control.h
 [; ;./Control.h: 33:     void Proceso_Arranque(void);
 [v _Proceso_Arranque `(v ~T0 @X0 0 ef ]
-"68
-[; ;./Control.h: 68:     void Proceso_Heater(void);
-[v _Proceso_Heater `(v ~T0 @X0 0 ef ]
 "16 ./Config.h
 [p x PLLSEL  =  PLL3X        ]
 "17
@@ -1276,18 +1273,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Main.c: 51:     Tiempo_Iny_Liquido = 1200;
 [e = _Tiempo_Iny_Liquido -> -> 1200 `i `us ]
 "52
-[; ;Main.c: 52:     while (1) {
+[; ;Main.c: 52:     SP_Temp = 50;
+[e = _SP_Temp -> -> 50 `i `s ]
+"53
+[; ;Main.c: 53:     while (1) {
 [e :U 669 ]
 {
-"54
-[; ;Main.c: 54:         if (FlagBuffer) {
+"55
+[; ;Main.c: 55:         if (FlagBuffer) {
 [e $ ! != -> _FlagBuffer `i -> 0 `i 671  ]
 {
-"55
-[; ;Main.c: 55:             Get_Comando((char *) Buffer);
+"56
+[; ;Main.c: 56:             Get_Comando((char *) Buffer);
 [e ( _Get_Comando (1 -> &U _Buffer `*uc ]
-"57
-[; ;Main.c: 57:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
+"58
+[; ;Main.c: 58:             for (uint8_t i = 0; i < 200u; i++) Buffer[i] = '\0';
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
@@ -1299,52 +1299,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ < -> _i `ui -> 200 `ui 672  ]
 [e :U 673 ]
 }
-"58
-[; ;Main.c: 58:             BufferIndex = 0;
-[e = _BufferIndex -> -> 0 `i `uc ]
 "59
-[; ;Main.c: 59:             FlagBuffer = 0;
-[e = _FlagBuffer -> -> 0 `i `a ]
+[; ;Main.c: 59:             BufferIndex = 0;
+[e = _BufferIndex -> -> 0 `i `uc ]
 "60
-[; ;Main.c: 60:         }
+[; ;Main.c: 60:             FlagBuffer = 0;
+[e = _FlagBuffer -> -> 0 `i `a ]
+"61
+[; ;Main.c: 61:         }
 }
 [e :U 671 ]
-"63
-[; ;Main.c: 63:         if (Flag10ms) {
+"64
+[; ;Main.c: 64:         if (Flag10ms) {
 [e $ ! != -> _Flag10ms `i -> 0 `i 675  ]
 {
-"64
-[; ;Main.c: 64:             Refresh_In();
-[e ( _Refresh_In ..  ]
 "65
-[; ;Main.c: 65:             Proceso_ADC();
-[e ( _Proceso_ADC ..  ]
+[; ;Main.c: 65:             Refresh_In();
+[e ( _Refresh_In ..  ]
 "66
-[; ;Main.c: 66:             Proceso_Rele();
-[e ( _Proceso_Rele ..  ]
+[; ;Main.c: 66:             Proceso_ADC();
+[e ( _Proceso_ADC ..  ]
 "67
-[; ;Main.c: 67:             Proceso_Arranque();
-[e ( _Proceso_Arranque ..  ]
+[; ;Main.c: 67:             Proceso_Rele();
+[e ( _Proceso_Rele ..  ]
 "68
-[; ;Main.c: 68:             Proceso_Heater();
-[e ( _Proceso_Heater ..  ]
-"69
-[; ;Main.c: 69:             Flag10ms = 0;
-[e = _Flag10ms -> -> 0 `i `uc ]
+[; ;Main.c: 68:             Proceso_Arranque();
+[e ( _Proceso_Arranque ..  ]
 "70
-[; ;Main.c: 70:         }
+[; ;Main.c: 70:             Flag10ms = 0;
+[e = _Flag10ms -> -> 0 `i `uc ]
+"71
+[; ;Main.c: 71:         }
 }
 [e :U 675 ]
-"71
-[; ;Main.c: 71:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
 "72
-[; ;Main.c: 72:     }
+[; ;Main.c: 72:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"73
+[; ;Main.c: 73:     }
 }
 [e :U 668 ]
 [e $U 669  ]
 [e :U 670 ]
-"73
-[; ;Main.c: 73: }
+"74
+[; ;Main.c: 74: }
 [e :UE 667 ]
 }
