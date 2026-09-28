@@ -92,12 +92,12 @@ void Proceso_Heater(void) {
 }
 
 void Inyecta_Liquido(void) {
-    Power_Rele(Valve_Liq_Open, Tiempo_Iny_Liquido);
+    Power_Rele(Valve_Liq_Close, Tiempo_Iny_Liquido);
     for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
         __delay_ms(1);
         CLRWDT();
     }
-    Power_Rele(Valve_Liq_Close, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
+    Power_Rele(Valve_Liq_Open, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 

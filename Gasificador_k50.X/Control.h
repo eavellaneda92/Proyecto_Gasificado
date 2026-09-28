@@ -41,7 +41,7 @@ extern "C" {
 #define Valve_Gas_Close 6
 #define Valve_Gas_Open 7
 #define Valve_Liq_Close 8
-#define Valve_Liq_Open 10
+#define Valve_Liq_Open 9
 
 
     void Armado_Cerrado(void);

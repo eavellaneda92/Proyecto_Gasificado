@@ -8726,12 +8726,12 @@ void Proceso_Heater(void) {
 }
 
 void Inyecta_Liquido(void) {
-    Power_Rele(10, Tiempo_Iny_Liquido);
+    Power_Rele(8, Tiempo_Iny_Liquido);
     for (int i = 0; i < Tiempo_Iny_Liquido; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
-    Power_Rele(8, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
+    Power_Rele(9, (uint16_t)(Tiempo_Iny_Liquido * 1.5));
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }
 
