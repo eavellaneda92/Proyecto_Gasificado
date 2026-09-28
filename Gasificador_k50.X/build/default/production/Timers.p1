@@ -1262,8 +1262,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Timers.c: 62:     Tiempo = Tiempo / 10;
 [e = _Tiempo / _Tiempo -> -> 10 `i `ui ]
 "63
-[; ;Timers.c: 63:     if (Rele >= 1 && Rele <= 10) {
-[e $ ! && >= -> _Rele `i -> 1 `i <= -> _Rele `i -> 10 `i 683  ]
+[; ;Timers.c: 63:     if (Rele >= 0 && Rele < 10) {
+[e $ ! && >= -> _Rele `i -> 0 `i < -> _Rele `i -> 10 `i 683  ]
 {
 "64
 [; ;Timers.c: 64:         Tiempo_Rele[Rele] = 0;
