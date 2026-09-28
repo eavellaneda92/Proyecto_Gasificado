@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o
+ C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o
  -Odist/default/production\Gasificador_k50.X.production.hex
  -logfile=dist/default/production\Gasificador_k50.X.production.hxl
  -addressing=1
@@ -9,19 +9,19 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o)
-  8h - 24C7h		(C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o)
-  7DB4h - 7FFEh		(C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o)
-  300000h - 30000Dh		(C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o)
+  0h - 3h		(C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o)
+  8h - 2503h		(C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o)
+  7DB4h - 7FFEh		(C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o)
+  300000h - 30000Dh		(C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
-  24C8h - 7DB3h
+  2504h - 7DB3h
   7FFFh - 2FFFFFh
 
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------
@@ -613,7 +613,11 @@
 00002490 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000024A0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 000024B0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
-000024C0 | H1 H1 H1 H1 H1 H1 H1 H1 -- -- -- -- -- -- -- --
+000024C0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000024D0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000024E0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+000024F0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
+00002500 | H1 H1 H1 H1 -- -- -- -- -- -- -- -- -- -- -- --
 ----------------------------------------------------------
 00007DB0 | -- -- -- -- H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1
 00007DC0 | H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1 H1

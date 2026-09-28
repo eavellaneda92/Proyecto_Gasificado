@@ -73,27 +73,27 @@
 [v _Armado_Stop Armado_Stop `(v  1 e 1 0 ]
 "94
 [v _Inyecta_Liquido Inyecta_Liquido `(v  1 e 1 0 ]
-"104
+"109
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
-"115
-[v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
 "120
-[v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
+[v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
 "125
-[v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
+[v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
 "130
-[v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
+[v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
 "135
-[v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
+[v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
 "140
-[v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
+[v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
 "145
+[v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
+"150
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
-"155
+"160
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
-"176
+"181
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
-"209
+"214
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
 "15 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
@@ -479,7 +479,7 @@
 ]
 [u S43 . 1 `S24 1 . 1 0 `S33 1 . 1 0 `S40 1 . 1 0 ]
 [v _PIR1bits PIR1bits `VES43  1 e 1 @3998 ]
-[s S1881 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[s S1903 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 TMR3IF 1 0 :1:1 
 `uc 1 HLVDIF 1 0 :1:2 
 `uc 1 BCLIF 1 0 :1:3 
@@ -489,19 +489,19 @@
 `uc 1 OSCFIF 1 0 :1:7 
 ]
 "6613
-[s S1890 . 1 `uc 1 . 1 0 :2:0 
+[s S1912 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LVDIF 1 0 :1:2 
 `uc 1 BCL1IF 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 CM2IF 1 0 :1:5 
 `uc 1 CM1IF 1 0 :1:6 
 ]
-[s S1897 . 1 `uc 1 . 1 0 :6:0 
+[s S1919 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 CMIF 1 0 :1:6 
 ]
-[u S1900 . 1 `S1881 1 . 1 0 `S1890 1 . 1 0 `S1897 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES1900  1 e 1 @4001 ]
-[s S1823 . 1 `uc 1 RD 1 0 :1:0 
+[u S1922 . 1 `S1903 1 . 1 0 `S1912 1 . 1 0 `S1919 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1922  1 e 1 @4001 ]
+[s S1845 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -511,11 +511,11 @@
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "6970
-[s S1832 . 1 `uc 1 . 1 0 :6:0 
+[s S1854 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S1835 . 1 `S1823 1 . 1 0 `S1832 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES1835  1 e 1 @4006 ]
+[u S1857 . 1 `S1845 1 . 1 0 `S1854 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1857  1 e 1 @4006 ]
 "7015
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "7035
@@ -839,33 +839,33 @@
 {
 "15
 } 0
-"209 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"214 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
 {
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 7 ]
-"212
+"217
 } 0
-"155
+"160
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
 {
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
-"163
+"168
 [v Eeprom_Escribir@gie gie `uc  1 a 1 5 ]
-"155
+"160
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Escribir@dato dato `uc  1 p 1 4 ]
 [v Eeprom_Escribir@dir dir `uc  1 p 1 6 ]
-"174
+"179
 } 0
-"145
+"150
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
 {
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 3 ]
-"153
+"158
 } 0
 "125 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
@@ -989,15 +989,15 @@
 [v Get_Comando@Data Data `*.39uc  1 p 2 80 ]
 "184
 } 0
-"135 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"140 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
 {
-"138
+"143
 } 0
-"140
+"145
 [v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
 {
-"143
+"148
 } 0
 "46 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
@@ -1029,16 +1029,18 @@
 "94 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Inyecta_Liquido Inyecta_Liquido `(v  1 e 1 0 ]
 {
+"101
+[v Inyecta_Liquido@i_2003 i `i  1 a 2 58 ]
 "96
 [v Inyecta_Liquido@i i `i  1 a 2 56 ]
-"102
+"107
 } 0
-"104
+"109
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
 {
-"107
+"112
 [v Inyecta_Gas@i i `i  1 a 2 56 ]
-"113
+"118
 } 0
 "186 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
@@ -1070,10 +1072,10 @@
 "9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S2478 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[u S2501 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
 "13
-[s S2481 _IO_FILE 11 `S2478 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S2481  1 a 11 56 ]
+[s S2504 _IO_FILE 11 `S2501 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S2504  1 a 11 56 ]
 "12
 [v sprintf@ap ap `[1]*.30v  1 a 1 55 ]
 "9
@@ -1086,9 +1088,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 30 ]
-[s S2513 _IO_FILE 0 ]
+[s S2536 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S2513  1 p 1 26 ]
+[v vfprintf@fp fp `*.30S2536  1 p 1 26 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 27 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 29 ]
 "1840
@@ -1096,17 +1098,17 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S2526 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[u S2549 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S2526  1 a 4 21 ]
+[v vfpfcnvrt@convarg convarg `S2549  1 a 4 21 ]
 "1179
 [v vfpfcnvrt@cp cp `*.32uc  1 a 2 19 ]
 [v vfpfcnvrt@c c `uc  1 a 1 25 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 18 ]
-[s S2513 _IO_FILE 0 ]
+[s S2536 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.30S2513  1 p 1 13 ]
+[v vfpfcnvrt@fp fp `*.30S2536  1 p 1 13 ]
 [v vfpfcnvrt@fmt fmt `*.30*.32uc  1 p 1 14 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 15 ]
 "1814
@@ -1115,9 +1117,9 @@
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[u S2478 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
-[s S2481 _IO_FILE 11 `S2478 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.30S2481  1 p 1 5 ]
+[u S2501 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S2504 _IO_FILE 11 `S2501 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S2504  1 p 1 5 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
@@ -1155,31 +1157,31 @@
 [v ___awdiv@divisor divisor `i  1 p 2 5 ]
 "41
 } 0
-"125 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"130 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
-{
-"128
-} 0
-"130
-[v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
 {
 "133
 } 0
-"120
+"135
+[v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
+{
+"138
+} 0
+"125
 [v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
+{
+"128
+} 0
+"120
+[v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
 {
 "123
 } 0
-"115
-[v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
-{
-"118
-} 0
-"176
+"181
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
 {
 [v Respuestas_RS485@Mensaje Mensaje `*.32uc  1 p 2 6 ]
-"184
+"189
 } 0
 "31 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _UART_Print UART_Print `(v  1 e 1 0 ]
@@ -1242,17 +1244,17 @@
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2343 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2366 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2348 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2351 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2343 1 fAsBytes 4 0 `S2348 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2351  1 a 4 36 ]
+[s S2371 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2374 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2366 1 fAsBytes 4 0 `S2371 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2374  1 a 4 36 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 31 ]
-[s S2419 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2442 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2422 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2419 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2422  1 a 2 40 ]
+[u S2445 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2442 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2445  1 a 2 40 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 35 ]
 "11

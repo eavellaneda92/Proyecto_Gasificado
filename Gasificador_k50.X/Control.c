@@ -97,6 +97,11 @@ void Inyecta_Liquido(void) {
         __delay_ms(1);
         CLRWDT();
     }
+    RELAY10 = RELE_OFF;
+    for (int i = 0; i < 50; i++) {
+        __delay_ms(1);
+        CLRWDT();
+    }
     Power_Rele(Valve_Liq_Close, 2000);
     Respuestas_RS485("INYECCION_LIQUIDO_OK");
 }

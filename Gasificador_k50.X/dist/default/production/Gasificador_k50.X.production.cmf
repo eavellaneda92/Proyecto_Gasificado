@@ -11,63 +11,59 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-init CODE 0 96 96 4 1 2
-reset_vec CODE 0 0 0 4 1 2
-config CONFIG 4 300000 300000 E 1 1
 $dist/default/production\Gasificador_k50.X.production.o
-cinit CODE 0 229A 229A 32 1 2
+cinit CODE 0 22D6 22D6 32 1 2
 text0 CODE 0 1AB0 1AB0 BA 1 2
-text1 CODE 0 2350 2350 24 1 2
-text2 CODE 0 2404 2404 18 1 2
-text3 CODE 0 247C 247C 16 1 2
-text4 CODE 0 2492 2492 12 1 2
-text5 CODE 0 24A4 24A4 12 1 2
-text6 CODE 0 1F06 1F06 6C 1 2
-text7 CODE 0 2374 2374 1E 1 2
+text1 CODE 0 238C 238C 24 1 2
+text2 CODE 0 2440 2440 18 1 2
+text3 CODE 0 24B8 24B8 16 1 2
+text4 CODE 0 24CE 24CE 12 1 2
+text5 CODE 0 24E0 24E0 12 1 2
+text6 CODE 0 1FA6 1FA6 6C 1 2
+text7 CODE 0 23B0 23B0 1E 1 2
 text8 CODE 0 1B6A 1B6A B8 1 2
 text9 CODE 0 13BC 13BC 138 1 2
-text10 CODE 0 22FA 22FA 2C 1 2
+text10 CODE 0 2336 2336 2C 1 2
 text11 CODE 0 1D7A 1D7A A6 1 2
-text12 CODE 0 1F72 1F72 6A 1 2
+text12 CODE 0 2012 2012 6A 1 2
 text13 CODE 0 A5E A5E 2A0 1 2
-text14 CODE 0 1FDC 1FDC 6A 1 2
+text14 CODE 0 207C 207C 6A 1 2
 text15 CODE 0 14F4 14F4 10A 1 2
-text16 CODE 0 2158 2158 4A 1 2
+text16 CODE 0 2194 2194 4A 1 2
 text17 CODE 0 9A 9A 59E 1 2
-text18 CODE 0 241C 241C 18 1 2
-text19 CODE 0 2434 2434 18 1 2
+text18 CODE 0 2458 2458 18 1 2
+text19 CODE 0 2470 2470 18 1 2
 text20 CODE 0 126A 126A 152 1 2
-text21 CODE 0 2108 2108 50 1 2
-text22 CODE 0 2046 2046 64 1 2
-text23 CODE 0 1E94 1E94 72 1 2
+text21 CODE 0 2144 2144 50 1 2
+text22 CODE 0 1E20 1E20 A0 1 2
+text23 CODE 0 1F34 1F34 72 1 2
 text24 CODE 0 EE0 EE0 1D6 1 2
-text25 CODE 0 222E 222E 38 1 2
-text26 CODE 0 21EC 21EC 42 1 2
+text25 CODE 0 226A 226A 38 1 2
+text26 CODE 0 2228 2228 42 1 2
 text27 CODE 0 CFE CFE 1E2 1 2
 text28 CODE 0 1CD0 1CD0 AA 1 2
-text29 CODE 0 24C6 24C6 2 1 2
-text30 CODE 0 2266 2266 34 1 2
+text29 CODE 0 2502 2502 2 1 2
+text30 CODE 0 22A2 22A2 34 1 2
 text31 CODE 0 1C22 1C22 AE 1 2
 text32 CODE 0 19EE 19EE C2 1 2
-text33 CODE 0 244C 244C 18 1 2
-text34 CODE 0 2464 2464 18 1 2
-text35 CODE 0 23B0 23B0 1C 1 2
-text36 CODE 0 23CC 23CC 1C 1 2
-text37 CODE 0 21A2 21A2 4A 1 2
-text38 CODE 0 20AA 20AA 5E 1 2
-text39 CODE 0 23E8 23E8 1C 1 2
-text40 CODE 0 2392 2392 1E 1 2
+text33 CODE 0 2488 2488 18 1 2
+text34 CODE 0 24A0 24A0 18 1 2
+text35 CODE 0 23EC 23EC 1C 1 2
+text36 CODE 0 2408 2408 1C 1 2
+text37 CODE 0 21DE 21DE 4A 1 2
+text38 CODE 0 20E6 20E6 5E 1 2
+text39 CODE 0 2424 2424 1C 1 2
+text40 CODE 0 23CE 23CE 1E 1 2
 text41 CODE 0 1904 1904 EA 1 2
 text42 CODE 0 15FE 15FE 10A 1 2
 text43 CODE 0 10B6 10B6 1B4 1 2
 text44 CODE 0 1708 1708 106 1 2
 text45 CODE 0 638 638 426 1 2
 text46 CODE 0 180E 180E F6 1 2
-text47 CODE 0 1E20 1E20 74 1 2
-text48 CODE 0 2326 2326 2A 1 2
-text49 CODE 0 22CC 22CC 2E 1 2
-text51 CODE 0 24B6 24B6 10 1 2
+text47 CODE 0 1EC0 1EC0 74 1 2
+text48 CODE 0 2362 2362 2A 1 2
+text49 CODE 0 2308 2308 2E 1 2
+text51 CODE 0 24F2 24F2 10 1 2
 cstackCOMRAM COMRAM 1 1 1 52 1 1
 cstackBANK0 BANK0 1 E3 E3 18 1 1
 temp COMRAM 1 5C 5C 1 1 1
@@ -76,6 +72,10 @@ bssBANK1 BANK1 1 100 100 E8 1 1
 intcode CODE 0 8 8 8E 1 2
 bssCOMRAM COMRAM 1 53 53 9 1 1
 mediumconst MEDIUMCONST 0 7DB4 7DB4 24C 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+init CODE 0 96 96 4 1 2
+reset_vec CODE 0 0 0 4 1 2
 config CONFIG 4 300000 300000 E 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -95,18 +95,18 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7 1
-CONST 24C8-7DB3 1
+CONST 2504-7DB3 1
 IDLOC 200000-200007 1
-SMALLCONST 24C8-7DB3 1
+SMALLCONST 2504-7DB3 1
 CODE 4-7 1
-CODE 24C8-7DB3 1
+CODE 2504-7DB3 1
 BIGRAM 5D-5F 1
 BIGRAM FB-FF 1
 BIGRAM 1E8-7FF 1
 BIGSFR F53-FFF 1
 COMRAM 5D-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 24C8-7DB3 1
+MEDIUMCONST 2504-7DB3 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -121,7 +121,7 @@ MEDIUMCONST 24C8-7DB3 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Gasificador_k50.X.production.o
-8 intcode CODE >14118:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
+8 intcode CODE >14175:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
 8 intcode CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 12 intcode CODE >16:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 20 intcode CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
@@ -137,66 +137,66 @@ $dist/default/production\Gasificador_k50.X.production.o
 84 intcode CODE >30:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 86 intcode CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 8A intcode CODE >33:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
-24B6 text51 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24B6 text51 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24B8 text51 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24BC text51 CODE >20:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24C0 text51 CODE >21:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24C2 text51 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24C4 text51 CODE >23:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-22CC text49 CODE >3:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22CC text49 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22CE text49 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22D0 text49 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22D2 text49 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22D4 text49 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22D6 text49 CODE >11:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22D8 text49 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22DC text49 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22DE text49 CODE >16:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22E0 text49 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22E2 text49 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22E4 text49 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22E6 text49 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22E8 text49 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22EC text49 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22EE text49 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22F0 text49 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22F8 text49 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-2326 text48 CODE >4:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2326 text48 CODE >5:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-232A text48 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-232C text48 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-232E text48 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2330 text48 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2332 text48 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2336 text48 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-233A text48 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-233E text48 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2340 text48 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2342 text48 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2344 text48 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2346 text48 CODE >21:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-2348 text48 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-234A text48 CODE >24:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-234E text48 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
-1E20 text47 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E20 text47 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E28 text47 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E3A text47 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E3E text47 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E42 text47 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E48 text47 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E4A text47 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E58 text47 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E5E text47 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E74 text47 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E7C text47 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E7E text47 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E84 text47 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E8A text47 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E8A text47 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
-1E92 text47 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+24F2 text51 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24F2 text51 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24F4 text51 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24F8 text51 CODE >20:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24FC text51 CODE >21:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24FE text51 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2500 text51 CODE >23:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2308 text49 CODE >3:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2308 text49 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+230A text49 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+230C text49 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+230E text49 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2310 text49 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2312 text49 CODE >11:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2314 text49 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2318 text49 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+231A text49 CODE >16:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+231C text49 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+231E text49 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2320 text49 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2322 text49 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2324 text49 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2328 text49 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+232A text49 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+232C text49 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2334 text49 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2362 text48 CODE >4:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2362 text48 CODE >5:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2366 text48 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2368 text48 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+236A text48 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+236C text48 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+236E text48 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2372 text48 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2376 text48 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+237A text48 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+237C text48 CODE >17:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+237E text48 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2380 text48 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2382 text48 CODE >21:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2384 text48 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+2386 text48 CODE >24:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+238A text48 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Config.c
+1EC0 text47 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EC0 text47 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EC8 text47 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EDA text47 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EDE text47 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EE2 text47 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EE8 text47 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EEA text47 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EF8 text47 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EFE text47 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F14 text47 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F1C text47 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F1E text47 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F24 text47 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F2A text47 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F2A text47 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1F32 text47 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
 180E text46 CODE >61:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 1810 text46 CODE >62:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 182C text46 CODE >63:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
@@ -409,44 +409,44 @@ A5C text45 CODE >205:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common
 19DA text41 CODE >58:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 19E2 text41 CODE >58:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 19EC text41 CODE >59:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2392 text40 CODE >70:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2392 text40 CODE >71:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2396 text40 CODE >72:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23A0 text40 CODE >73:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23AA text40 CODE >74:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23AE text40 CODE >75:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23E8 text39 CODE >26:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-23EA text39 CODE >27:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-23FE text39 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2402 text39 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-20AA text38 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-20AA text38 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2106 text38 CODE >33:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-21A2 text37 CODE >176:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21A2 text37 CODE >177:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21A4 text37 CODE >178:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21B4 text37 CODE >179:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21C0 text37 CODE >180:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21CC text37 CODE >181:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21D8 text37 CODE >182:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21E8 text37 CODE >183:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-21EA text37 CODE >184:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23CC text36 CODE >115:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23CC text36 CODE >116:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23DA text36 CODE >117:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23E6 text36 CODE >118:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23B0 text35 CODE >120:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23B0 text35 CODE >121:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23BE text35 CODE >122:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-23CA text35 CODE >123:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2464 text34 CODE >130:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2464 text34 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-246E text34 CODE >132:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-247A text34 CODE >133:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-244C text33 CODE >125:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-244C text33 CODE >126:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2456 text33 CODE >127:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2462 text33 CODE >128:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23CE text40 CODE >70:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23CE text40 CODE >71:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23D2 text40 CODE >72:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23DC text40 CODE >73:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23E6 text40 CODE >74:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23EA text40 CODE >75:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2424 text39 CODE >26:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2426 text39 CODE >27:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+243A text39 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+243E text39 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+20E6 text38 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+20E6 text38 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2142 text38 CODE >33:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+21DE text37 CODE >181:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+21DE text37 CODE >182:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+21E0 text37 CODE >183:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+21F0 text37 CODE >184:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+21FC text37 CODE >185:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2208 text37 CODE >186:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2214 text37 CODE >187:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2224 text37 CODE >188:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2226 text37 CODE >189:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2408 text36 CODE >120:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2408 text36 CODE >121:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2416 text36 CODE >122:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2422 text36 CODE >123:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23EC text35 CODE >125:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23EC text35 CODE >126:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23FA text35 CODE >127:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2406 text35 CODE >128:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24A0 text34 CODE >135:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24A0 text34 CODE >136:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24AA text34 CODE >137:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24B6 text34 CODE >138:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2488 text33 CODE >130:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2488 text33 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2492 text33 CODE >132:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+249E text33 CODE >133:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 19EE text32 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
 19EE text32 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
 19F0 text32 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
@@ -493,11 +493,11 @@ A5C text45 CODE >205:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common
 1CBE text31 CODE >32:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
 1CC6 text31 CODE >33:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
 1CCE text31 CODE >34:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
-2266 text30 CODE >1:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
-2266 text30 CODE >3:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
-2298 text30 CODE >4:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
-24C6 text29 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
-24C6 text29 CODE >9:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
+22A2 text30 CODE >1:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+22A2 text30 CODE >3:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+22D4 text30 CODE >4:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\abs.c
+2502 text29 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
+2502 text29 CODE >9:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
 1CD0 text28 CODE >8:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 1CD0 text28 CODE >12:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 1CF0 text28 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
@@ -527,21 +527,21 @@ E96 text27 CODE >1423:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\commo
 EAC text27 CODE >1806:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
 EBC text27 CODE >1811:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
 EDE text27 CODE >1814:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-21EC text26 CODE >1817:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-21EC text26 CODE >1822:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-21F4 text26 CODE >1826:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-21F8 text26 CODE >1830:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-2208 text26 CODE >1826:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-2224 text26 CODE >1835:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-222C text26 CODE >1840:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
-222E text25 CODE >9:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-222E text25 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-2232 text25 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-2236 text25 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-223E text25 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-2246 text25 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-225A text25 CODE >20:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
-2264 text25 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+2228 text26 CODE >1817:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2228 text26 CODE >1822:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2230 text26 CODE >1826:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2234 text26 CODE >1830:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2244 text26 CODE >1826:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2260 text26 CODE >1835:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+2268 text26 CODE >1840:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\doprnt.c
+226A text25 CODE >9:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+226A text25 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+226E text25 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+2272 text25 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+227A text25 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+2282 text25 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+2296 text25 CODE >20:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
+22A0 text25 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 EE0 text24 CODE >186:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 EE0 text24 CODE >187:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 EE8 text24 CODE >188:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
@@ -574,34 +574,39 @@ FFC text24 CODE >207:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 10A2 text24 CODE >215:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 10B2 text24 CODE >216:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 10B4 text24 CODE >217:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-1E94 text23 CODE >104:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1E94 text23 CODE >105:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1EA2 text23 CODE >106:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1EB0 text23 CODE >107:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1EBC text23 CODE >108:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1ECC text23 CODE >109:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1ECE text23 CODE >110:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1EEA text23 CODE >111:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1EF8 text23 CODE >112:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F04 text23 CODE >113:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2046 text22 CODE >94:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2046 text22 CODE >95:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2054 text22 CODE >96:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-205C text22 CODE >97:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-206C text22 CODE >98:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-206E text22 CODE >99:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-208E text22 CODE >100:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-209C text22 CODE >101:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-20A8 text22 CODE >102:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2108 text21 CODE >36:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2108 text21 CODE >37:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2110 text21 CODE >38:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2114 text21 CODE >39:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2116 text21 CODE >40:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-211A text21 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-211E text21 CODE >38:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-214E text21 CODE >43:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2156 text21 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+1F34 text23 CODE >109:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F34 text23 CODE >110:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F42 text23 CODE >111:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F50 text23 CODE >112:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F5C text23 CODE >113:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F6C text23 CODE >114:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F6E text23 CODE >115:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F8A text23 CODE >116:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1F98 text23 CODE >117:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FA4 text23 CODE >118:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E20 text22 CODE >94:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E20 text22 CODE >95:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E2E text22 CODE >96:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E36 text22 CODE >97:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E46 text22 CODE >98:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E48 text22 CODE >99:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E68 text22 CODE >100:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E6A text22 CODE >101:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E72 text22 CODE >102:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E82 text22 CODE >103:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1E84 text22 CODE >104:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1EA4 text22 CODE >105:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1EB2 text22 CODE >106:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1EBE text22 CODE >107:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2144 text21 CODE >36:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2144 text21 CODE >37:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+214C text21 CODE >38:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2150 text21 CODE >39:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2152 text21 CODE >40:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2156 text21 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+215A text21 CODE >38:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+218A text21 CODE >43:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2192 text21 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 126A text20 CODE >46:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 126A text20 CODE >47:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 127E text20 CODE >48:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
@@ -617,14 +622,14 @@ FFC text24 CODE >207:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 13B6 text20 CODE >59:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 13B6 text20 CODE >60:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 13BA text20 CODE >61:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2434 text19 CODE >140:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2434 text19 CODE >141:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-243E text19 CODE >142:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-244A text19 CODE >143:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-241C text18 CODE >135:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-241C text18 CODE >136:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2426 text18 CODE >137:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2432 text18 CODE >138:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2470 text19 CODE >145:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2470 text19 CODE >146:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+247A text19 CODE >147:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2486 text19 CODE >148:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2458 text18 CODE >140:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2458 text18 CODE >141:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2462 text18 CODE >142:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+246E text18 CODE >143:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 9A text17 CODE >63:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 9A text17 CODE >64:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 BC text17 CODE >65:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
@@ -726,14 +731,14 @@ FA text17 CODE >69:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasi
 622 text17 CODE >179:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 632 text17 CODE >180:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 636 text17 CODE >184:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2158 text16 CODE >39:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-215A text16 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-216A text16 CODE >42:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-2172 text16 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-2184 text16 CODE >45:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-2186 text16 CODE >46:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-2194 text16 CODE >48:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-21A0 text16 CODE >49:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2194 text16 CODE >39:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2196 text16 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21A6 text16 CODE >42:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21AE text16 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21C0 text16 CODE >45:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21C2 text16 CODE >46:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21D0 text16 CODE >48:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+21DC text16 CODE >49:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 14F4 text15 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
 14F4 text15 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
 14F6 text15 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
@@ -759,15 +764,15 @@ FA text17 CODE >69:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasi
 15DC text15 CODE >39:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
 15EC text15 CODE >40:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
 15FC text15 CODE >41:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\aldiv.c
-1FDC text14 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-1FDC text14 CODE >119:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-1FEC text14 CODE >121:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-1FFA text14 CODE >122:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-200A text14 CODE >123:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-2014 text14 CODE >124:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-201E text14 CODE >125:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-2034 text14 CODE >128:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
-2044 text14 CODE >129:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+207C text14 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+207C text14 CODE >119:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+208C text14 CODE >121:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+209A text14 CODE >122:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+20AA text14 CODE >123:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+20B4 text14 CODE >124:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+20BE text14 CODE >125:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+20D4 text14 CODE >128:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+20E4 text14 CODE >129:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
 A5E text13 CODE >114:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 A5E text13 CODE >116:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 A80 text13 CODE >117:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
@@ -782,16 +787,16 @@ B94 text13 CODE >127:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 BF6 text13 CODE >128:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 C60 text13 CODE >130:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 CFC text13 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1F72 text12 CODE >137:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1F74 text12 CODE >139:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1F7C text12 CODE >141:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1F7E text12 CODE >143:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1F8C text12 CODE >144:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1FA0 text12 CODE >145:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1FAC text12 CODE >146:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1FB4 text12 CODE >147:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1FC6 text12 CODE >148:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-1FDA text12 CODE >149:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2012 text12 CODE >137:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2014 text12 CODE >139:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+201C text12 CODE >141:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+201E text12 CODE >143:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+202C text12 CODE >144:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2040 text12 CODE >145:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+204C text12 CODE >146:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2054 text12 CODE >147:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+2066 text12 CODE >148:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
+207A text12 CODE >149:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 1D7A text11 CODE >51:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 1D7A text11 CODE >52:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 1D7C text11 CODE >53:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
@@ -807,13 +812,13 @@ CFC text13 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 1E0A text11 CODE >71:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 1E1C text11 CODE >72:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
 1E1E text11 CODE >74:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\ADC.c
-22FA text10 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-22FA text10 CODE >42:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-230A text10 CODE >43:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-230C text10 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-231C text10 CODE >58:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2320 text10 CODE >59:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2324 text10 CODE >62:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2336 text10 CODE >41:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2336 text10 CODE >42:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2346 text10 CODE >43:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2348 text10 CODE >44:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2358 text10 CODE >58:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+235C text10 CODE >59:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2360 text10 CODE >62:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 13BC text9 CODE >92:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 13BC text9 CODE >93:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 13C4 text9 CODE >94:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
@@ -871,76 +876,76 @@ CFC text13 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 1BFA text8 CODE >140:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 1C00 text8 CODE >142:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 1C20 text8 CODE >143:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2374 text7 CODE >145:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2376 text7 CODE >146:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2384 text7 CODE >148:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2388 text7 CODE >149:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-238A text7 CODE >150:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-238C text7 CODE >151:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-238E text7 CODE >152:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2390 text7 CODE >153:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F06 text6 CODE >155:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F08 text6 CODE >156:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F22 text6 CODE >157:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F26 text6 CODE >158:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F2A text6 CODE >159:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F2C text6 CODE >160:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F2E text6 CODE >161:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F30 text6 CODE >162:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F32 text6 CODE >163:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F3A text6 CODE >164:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F3C text6 CODE >165:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F40 text6 CODE >166:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F44 text6 CODE >167:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F46 text6 CODE >168:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F56 text6 CODE >169:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F5C text6 CODE >170:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F5C text6 CODE >171:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F5E text6 CODE >170:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F6C text6 CODE >172:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F6E text6 CODE >173:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-1F70 text6 CODE >174:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-24A4 text5 CODE >209:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-24A6 text5 CODE >210:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-24B0 text5 CODE >211:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-24B4 text5 CODE >212:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
-2492 text4 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2492 text4 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2496 text4 CODE >11:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-249A text4 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-249E text4 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24A0 text4 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-24A2 text4 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-247C text3 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-247C text3 CODE >26:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-247E text3 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2482 text3 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2486 text3 CODE >30:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-248A text3 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-248C text3 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-248E text3 CODE >33:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2490 text3 CODE >34:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2404 text2 CODE >3:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2404 text2 CODE >4:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2408 text2 CODE >5:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-240C text2 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-241A text2 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
-2350 text1 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2350 text1 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2354 text1 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2356 text1 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2358 text1 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-235A text1 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-235C text1 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-235E text1 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2360 text1 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2364 text1 CODE >16:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2368 text1 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-236A text1 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-236C text1 CODE >20:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-236E text1 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2370 text1 CODE >23:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
-2372 text1 CODE >24:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23B0 text7 CODE >150:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23B2 text7 CODE >151:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23C0 text7 CODE >153:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23C4 text7 CODE >154:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23C6 text7 CODE >155:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23C8 text7 CODE >156:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23CA text7 CODE >157:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+23CC text7 CODE >158:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FA6 text6 CODE >160:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FA8 text6 CODE >161:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FC2 text6 CODE >162:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FC6 text6 CODE >163:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FCA text6 CODE >164:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FCC text6 CODE >165:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FCE text6 CODE >166:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FD0 text6 CODE >167:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FD2 text6 CODE >168:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FDA text6 CODE >169:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FDC text6 CODE >170:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FE0 text6 CODE >171:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FE4 text6 CODE >172:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FE6 text6 CODE >173:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FF6 text6 CODE >174:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FFC text6 CODE >175:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FFC text6 CODE >176:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+1FFE text6 CODE >175:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+200C text6 CODE >177:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+200E text6 CODE >178:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+2010 text6 CODE >179:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24E0 text5 CODE >214:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24E2 text5 CODE >215:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24EC text5 CODE >216:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24F0 text5 CODE >217:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+24CE text4 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24CE text4 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24D2 text4 CODE >11:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24D6 text4 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24DA text4 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24DC text4 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24DE text4 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24B8 text3 CODE >25:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24B8 text3 CODE >26:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24BA text3 CODE >28:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24BE text3 CODE >29:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24C2 text3 CODE >30:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24C6 text3 CODE >31:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24C8 text3 CODE >32:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24CA text3 CODE >33:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+24CC text3 CODE >34:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2440 text2 CODE >3:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2440 text2 CODE >4:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2444 text2 CODE >5:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2448 text2 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+2456 text2 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
+238C text1 CODE >6:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+238C text1 CODE >7:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2390 text1 CODE >8:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2392 text1 CODE >9:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2394 text1 CODE >10:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2396 text1 CODE >12:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+2398 text1 CODE >13:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+239A text1 CODE >14:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+239C text1 CODE >15:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23A0 text1 CODE >16:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23A4 text1 CODE >18:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23A6 text1 CODE >19:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23A8 text1 CODE >20:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23AA text1 CODE >22:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23AC text1 CODE >23:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
+23AE text1 CODE >24:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 1AB0 text0 CODE >35:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 1AB0 text0 CODE >36:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 1AB4 text0 CODE >37:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
@@ -970,34 +975,34 @@ CFC text13 CODE >131:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Ga
 1B5E text0 CODE >70:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 1B60 text0 CODE >71:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 1B60 text0 CODE >72:C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
-229A cinit CODE >3470:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-229A cinit CODE >3472:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-229A cinit CODE >3475:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-229A cinit CODE >3627:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-229E cinit CODE >3628:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22A0 cinit CODE >3629:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22A0 cinit CODE >3630:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22A2 cinit CODE >3631:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22A4 cinit CODE >3632:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22A6 cinit CODE >3635:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22AA cinit CODE >3636:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22AC cinit CODE >3637:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22AC cinit CODE >3638:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22AE cinit CODE >3639:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22B0 cinit CODE >3640:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22B2 cinit CODE >3643:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22B6 cinit CODE >3644:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22B8 cinit CODE >3645:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22B8 cinit CODE >3646:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22BA cinit CODE >3647:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22BC cinit CODE >3648:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22BE cinit CODE >3654:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22BE cinit CODE >3656:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22C0 cinit CODE >3657:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22C2 cinit CODE >3659:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22C4 cinit CODE >3660:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22C6 cinit CODE >3661:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
-22C8 cinit CODE >3662:C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_1.s
+22D6 cinit CODE >3470:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22D6 cinit CODE >3472:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22D6 cinit CODE >3475:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22D6 cinit CODE >3627:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22DA cinit CODE >3628:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22DC cinit CODE >3629:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22DC cinit CODE >3630:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22DE cinit CODE >3631:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22E0 cinit CODE >3632:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22E2 cinit CODE >3635:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22E6 cinit CODE >3636:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22E8 cinit CODE >3637:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22E8 cinit CODE >3638:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22EA cinit CODE >3639:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22EC cinit CODE >3640:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22EE cinit CODE >3643:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22F2 cinit CODE >3644:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22F4 cinit CODE >3645:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22F4 cinit CODE >3646:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22F6 cinit CODE >3647:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22F8 cinit CODE >3648:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22FA cinit CODE >3654:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22FA cinit CODE >3656:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22FC cinit CODE >3657:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+22FE cinit CODE >3659:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+2300 cinit CODE >3660:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+2302 cinit CODE >3661:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
+2304 cinit CODE >3662:C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1016,13 +1021,13 @@ __Hspace_0 8000 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Hspace_1 1E8 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-__end_of_Evaporador_Off 247C 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Eeprom_Leer 2392 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Evaporador_Off 24B8 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Eeprom_Leer 23CE 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
 Texto_IndexOf@i 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Texto_IndexOf@j 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Refresh_In 1B6A 0 CODE 0 text8 dist/default/production\Gasificador_k50.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Gasificador_k50.X.production.o
-__end_of_Eeprom_Escribir 1F72 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Eeprom_Escribir 2012 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
 __mediumconst 7DB4 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
 UART_Print@cad 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Ntc_ConvertirX16@adc 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1038,16 +1043,16 @@ __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Gasificador_k5
 _LATB F8A 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _LATD F8C 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _LATE F8D 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+___sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 _dbuf 100 0 BANK1 1 bssBANK1 dist/default/production\Gasificador_k50.X.production.o
 _main 1AB0 0 CODE 0 text0 dist/default/production\Gasificador_k50.X.production.o
 _prec A8 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 abs@a A 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 btemp 5C 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-___stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-__end_of_Inyecta_Liquido 20AA 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
-start 96 0 CODE 0 init C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+___stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+___stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+__end_of_Inyecta_Liquido 1EC0 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
+start 96 0 CODE 0 init C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 ___flmul@aexp 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___flmul@bexp 24 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___flmul@prod 25 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1060,31 +1065,31 @@ __Hpowerup 0 0 CODE 0 powerup dist/default/production\Gasificador_k50.X.producti
 _Tiempo_Damper AE 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 __end_of_vfpfcnvrt EE0 0 CODE 0 text27 dist/default/production\Gasificador_k50.X.production.o
 ___awmod@sign 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_Evaporador_On 244C 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
+_Evaporador_On 2488 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
 _T0CONbits FD5 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 Texto_Length@contador 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ttemp5 5D 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
 ttemp6 60 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
 ttemp7 64 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
-__end_of_Texto_Length 2158 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Texto_Length 2194 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
 _Cambio_Estado CE 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-intlevel0 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-intlevel1 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-intlevel2 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-intlevel3 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+__accesstop 60 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+intlevel0 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+intlevel1 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+intlevel2 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+intlevel3 0 0 CODE 0 text C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 __end_of_Get_Comando 638 0 CODE 0 text17 dist/default/production\Gasificador_k50.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Power_Rele@Tiempo 35 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Set_Rele@Valor 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___aldiv@divisor 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _OSCCONbits FD3 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-_Eeprom_Escribir 1F06 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
+_Eeprom_Escribir 1FA6 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Gasificador_k50.X.production.o
 _Tiempo_Heater 53 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
 wtemp8 5D 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
-_UART_Print 20AA 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
-_UART_Write 23E8 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
+_UART_Print 20E6 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
+_UART_Write 2424 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Gasificador_k50.X.production.o
 __end_of_Refresh_In 1C22 0 CODE 0 text8 dist/default/production\Gasificador_k50.X.production.o
 _Flag10ms 5B 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1095,7 +1100,7 @@ __Hclrtext 0 0 ABS 0 clrtext dist/default/production\Gasificador_k50.X.productio
 _vfpfcnvrt CFE 0 CODE 0 text27 dist/default/production\Gasificador_k50.X.production.o
 ?_Ntc_ConvertirX16 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __end_of_Texto_IndexOf 13BC 0 CODE 0 text20 dist/default/production\Gasificador_k50.X.production.o
-_Inyecta_Liquido 2046 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
+_Inyecta_Liquido 1E20 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Fin E5 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 Imprime_Estado@R1 45 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Imprime_Estado@R2 46 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1120,18 +1125,18 @@ _ANSELD F5E 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _ANSELE F5F 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _Tiempo_Rele 60 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 ___awdiv@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-_Respuestas_RS485 21A2 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+_Respuestas_RS485 21DE 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
 _EECON1bits FA6 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-_Ntc_LeerTemperatura 1F72 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Tmr0_Init 24A4 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
+_Ntc_LeerTemperatura 2012 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Tmr0_Init 24E0 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
 _Buffer 120 0 BANK1 1 bssBANK1 dist/default/production\Gasificador_k50.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Gasificador_k50.X.production.o
-__end_of_Set_Channel_Heater 24B6 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Set_Channel_Heater 24F2 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
 _Tiempo_Iny_Gas AA 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-__end_of___lmul 2046 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Tmr1_Init 2492 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
+__end_of___lmul 20E6 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Tmr1_Init 24CE 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
 _Set_Rele 1904 0 CODE 0 text41 dist/default/production\Gasificador_k50.X.production.o
 _Flag_Sensor CA 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _EECON2 FA7 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
@@ -1139,8 +1144,8 @@ _EEDATA FA8 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Gasificador_k50.X.production.o
 _TXSTA1bits FAC 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Hmediumconst 8000 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
-_ADC_Init 22CC 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
-_ADC_Leer 2158 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
+_ADC_Init 2308 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
+_ADC_Leer 2194 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
 __Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\Gasificador_k50.X.production.o
 ___awdiv@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Paso_ADC 58 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1150,28 +1155,28 @@ __end_of___awmod 1CD0 0 CODE 0 text31 dist/default/production\Gasificador_k50.X.
 __end_of_Set_Rele 19EE 0 CODE 0 text41 dist/default/production\Gasificador_k50.X.production.o
 __end_of___flmul A5E 0 CODE 0 text45 dist/default/production\Gasificador_k50.X.production.o
 __end_of___fltol 180E 0 CODE 0 text44 dist/default/production\Gasificador_k50.X.production.o
-__end_of___lwdiv 1E94 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
+__end_of___lwdiv 1F34 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Coma_1441 F3 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 _Current1 C2 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _Current2 C0 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _FlagOverflow CD 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-_Tmr0_Init 2492 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
-__end_of_ADC_Init 22FA 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
-__end_of_ADC_Leer 21A2 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
-_Tmr1_Init 247C 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
-__end_of_UART_Print 2108 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
-__end_of_UART_Write 2404 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
+_Tmr0_Init 24CE 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
+__end_of_ADC_Init 2336 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
+__end_of_ADC_Leer 21DE 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
+_Tmr1_Init 24B8 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
+__end_of_UART_Print 2144 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
+__end_of_UART_Write 2440 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
 ___lwdiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Arranque_Count 56 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___flmul@a 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___flmul@b 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@c F5 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@i EB 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
-_Set_Channel_Heater 24A4 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
-_Ventilador_Off 2434 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
+_Set_Channel_Heater 24E0 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
+_Ventilador_Off 2470 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
 _Proceso_ADC 1D7A 0 CODE 0 text11 dist/default/production\Gasificador_k50.X.production.o
 __Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Gasificador_k50.X.production.o
-start_initialization 229A 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
+start_initialization 22D6 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
 _ntcTemp 7E07 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
 Imprime_Estado@R10 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1198,13 +1203,13 @@ _Count_Control CC 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.p
 _TXREG1 FAD 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _Arranque_Flag 55 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Imprime_Estado EE0 0 CODE 0 text24 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Respuestas_RS485 21EC 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+__end_of_Respuestas_RS485 2228 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 fputc@fp 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-__end_of_Evaporador_On 2464 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
-_Armado_Stop 2392 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
-_Inyecta_Gas 1E94 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
-_Proceso_Arranque 22FA 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Evaporador_On 24A0 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
+_Armado_Stop 23CE 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
+_Inyecta_Gas 1F34 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
+_Proceso_Arranque 2336 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@done 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\Gasificador_k50.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\Gasificador_k50.X.production.o
@@ -1216,7 +1221,7 @@ __Hbank6 0 0 ABS 0 bank6 dist/default/production\Gasificador_k50.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\Gasificador_k50.X.production.o
 __Hcinit 0 0 ABS 0 cinit dist/default/production\Gasificador_k50.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\Gasificador_k50.X.production.o
-__end_of_Ntc_LeerTemperatura 1FDC 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Ntc_LeerTemperatura 207C 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\Gasificador_k50.X.production.o
 __Hidloc 0 0 ABS 0 idloc dist/default/production\Gasificador_k50.X.production.o
 _PPM_Muestra BA 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
@@ -1242,11 +1247,11 @@ __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Gasificador_k50.X.producti
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Gasificador_k50.X.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Gasificador_k50.X.production.o
 __smallconst 7DB4 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
-__end_of_Ventilador_Off 244C 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Ventilador_Off 2488 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
 ___xxtofl@arg E 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___xxtofl@exp D 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___xxtofl@val 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-__end_of_sprintf 2266 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
+__end_of_sprintf 22A2 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Gasificador_k50.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\Gasificador_k50.X.production.o
 _Power_Rele 180E 0 CODE 0 text46 dist/default/production\Gasificador_k50.X.production.o
@@ -1284,6 +1289,7 @@ _PORTCbits F82 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _PORTDbits F83 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _PORTEbits F84 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _INTCONbits FF2 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
+Inyecta_Liquido@i_2003 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Texto_IndexOf@error 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\Gasificador_k50.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\Gasificador_k50.X.production.o
@@ -1303,9 +1309,9 @@ __Ltemp 5C 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.
 __Ltext 0 0 ABS 0 text dist/default/production\Gasificador_k50.X.production.o
 Texto_IndexOf@texto 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Texto_IndexOf@valor A 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_Damper_Abrir 23CC 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
+_Damper_Abrir 2408 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
 _Wait_Rele 74 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-___lmul 1FDC 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
+___lmul 207C 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Tiempo E9 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 int$flags 5C 0 COMRAM 1 temp dist/default/production\Gasificador_k50.X.production.o
@@ -1318,24 +1324,24 @@ __S0 8000 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __S1 1E8 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-_abs 2266 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
+_abs 22A2 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
 _txt CF 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-__end_of_GPIO_Init 2350 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
+__end_of_GPIO_Init 238C 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
 Ntc_LeerTemperatura@canal 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __end_of_Imprime_Estado 10B6 0 CODE 0 text24 dist/default/production\Gasificador_k50.X.production.o
 ?_ADC_Leer 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_Ntc_ConvertirX16$2837 24 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
+_Ntc_ConvertirX16$2860 24 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Gasificador_k50.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Gasificador_k50.X.production.o
 sprintf@fmt 22 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___xxtofl 10B6 0 CODE 0 text43 dist/default/production\Gasificador_k50.X.production.o
 __end_of_ISR 96 0 CODE 0 intcode dist/default/production\Gasificador_k50.X.production.o
-__end_of_abs 229A 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
-_GPIO_Init 2326 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
+__end_of_abs 22D6 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
+_GPIO_Init 2362 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
 _Wait_Sensor C8 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\Gasificador_k50.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production\Gasificador_k50.X.production.o
-__end_of_Tmr_Oscilador_Init 241C 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Tmr_Oscilador_Init 2458 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\Gasificador_k50.X.production.o
 __end_of___xxtofl 126A 0 CODE 0 text43 dist/default/production\Gasificador_k50.X.production.o
 __end_of_Power_Rele 1904 0 CODE 0 text46 dist/default/production\Gasificador_k50.X.production.o
@@ -1346,7 +1352,7 @@ Ntc_ConvertirX16@dT 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificad
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\Gasificador_k50.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 __LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Proceso_Arranque 2326 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Proceso_Arranque 2362 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
 __Htext10 0 0 ABS 0 text10 dist/default/production\Gasificador_k50.X.production.o
 __Htext11 0 0 ABS 0 text11 dist/default/production\Gasificador_k50.X.production.o
 __Htext12 0 0 ABS 0 text12 dist/default/production\Gasificador_k50.X.production.o
@@ -1389,53 +1395,53 @@ __Htext48 0 0 ABS 0 text48 dist/default/production\Gasificador_k50.X.production.
 __Htext49 0 0 ABS 0 text49 dist/default/production\Gasificador_k50.X.production.o
 __Htext51 0 0 ABS 0 text51 dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@fmt F 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_Damper_Cerrar 23B0 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
+_Damper_Cerrar 23EC 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Rele_1440 F4 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 ___awmod@counter 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _PIE1bits F9D 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 Inyecta_Liquido@i 39 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@c_1443 F6 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
-__ptext10 22FA 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
+__ptext10 2336 0 CODE 0 text10 dist/default/production\Gasificador_k50.X.production.o
 __ptext11 1D7A 0 CODE 0 text11 dist/default/production\Gasificador_k50.X.production.o
-__ptext12 1F72 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
+__ptext12 2012 0 CODE 0 text12 dist/default/production\Gasificador_k50.X.production.o
 __ptext13 A5E 0 CODE 0 text13 dist/default/production\Gasificador_k50.X.production.o
-__ptext14 1FDC 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
+__ptext14 207C 0 CODE 0 text14 dist/default/production\Gasificador_k50.X.production.o
 __ptext15 14F4 0 CODE 0 text15 dist/default/production\Gasificador_k50.X.production.o
-__ptext16 2158 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
+__ptext16 2194 0 CODE 0 text16 dist/default/production\Gasificador_k50.X.production.o
 __ptext17 9A 0 CODE 0 text17 dist/default/production\Gasificador_k50.X.production.o
-__ptext18 241C 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
-__ptext19 2434 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
+__ptext18 2458 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
+__ptext19 2470 0 CODE 0 text19 dist/default/production\Gasificador_k50.X.production.o
 __ptext20 126A 0 CODE 0 text20 dist/default/production\Gasificador_k50.X.production.o
-__ptext21 2108 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
-__ptext22 2046 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
-__ptext23 1E94 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
+__ptext21 2144 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
+__ptext22 1E20 0 CODE 0 text22 dist/default/production\Gasificador_k50.X.production.o
+__ptext23 1F34 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
 __ptext24 EE0 0 CODE 0 text24 dist/default/production\Gasificador_k50.X.production.o
-__ptext25 222E 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
-__ptext26 21EC 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
+__ptext25 226A 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
+__ptext26 2228 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
 __ptext27 CFE 0 CODE 0 text27 dist/default/production\Gasificador_k50.X.production.o
 __ptext28 1CD0 0 CODE 0 text28 dist/default/production\Gasificador_k50.X.production.o
-__ptext29 24C6 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
-__ptext30 2266 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
+__ptext29 2502 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
+__ptext30 22A2 0 CODE 0 text30 dist/default/production\Gasificador_k50.X.production.o
 __ptext31 1C22 0 CODE 0 text31 dist/default/production\Gasificador_k50.X.production.o
 __ptext32 19EE 0 CODE 0 text32 dist/default/production\Gasificador_k50.X.production.o
-__ptext33 244C 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
-__ptext34 2464 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
-__ptext35 23B0 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
-__ptext36 23CC 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
-__ptext37 21A2 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
-__ptext38 20AA 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
-__ptext39 23E8 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
-__ptext40 2392 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
+__ptext33 2488 0 CODE 0 text33 dist/default/production\Gasificador_k50.X.production.o
+__ptext34 24A0 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
+__ptext35 23EC 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
+__ptext36 2408 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
+__ptext37 21DE 0 CODE 0 text37 dist/default/production\Gasificador_k50.X.production.o
+__ptext38 20E6 0 CODE 0 text38 dist/default/production\Gasificador_k50.X.production.o
+__ptext39 2424 0 CODE 0 text39 dist/default/production\Gasificador_k50.X.production.o
+__ptext40 23CE 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
 __ptext41 1904 0 CODE 0 text41 dist/default/production\Gasificador_k50.X.production.o
 __ptext42 15FE 0 CODE 0 text42 dist/default/production\Gasificador_k50.X.production.o
 __ptext43 10B6 0 CODE 0 text43 dist/default/production\Gasificador_k50.X.production.o
 __ptext44 1708 0 CODE 0 text44 dist/default/production\Gasificador_k50.X.production.o
 __ptext45 638 0 CODE 0 text45 dist/default/production\Gasificador_k50.X.production.o
 __ptext46 180E 0 CODE 0 text46 dist/default/production\Gasificador_k50.X.production.o
-__ptext47 1E20 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
-__ptext48 2326 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
-__ptext49 22CC 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
-__ptext51 24B6 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
+__ptext47 1EC0 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
+__ptext48 2362 0 CODE 0 text48 dist/default/production\Gasificador_k50.X.production.o
+__ptext49 2308 0 CODE 0 text49 dist/default/production\Gasificador_k50.X.production.o
+__ptext51 24F2 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
 _Muestras_Sensor C9 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _ntcAdc 7DB5 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
 ___aldiv 14F4 0 CODE 0 text15 dist/default/production\Gasificador_k50.X.production.o
@@ -1444,14 +1450,14 @@ ___awmod 1C22 0 CODE 0 text31 dist/default/production\Gasificador_k50.X.producti
 ___flmul 638 0 CODE 0 text45 dist/default/production\Gasificador_k50.X.production.o
 ___fltol 1708 0 CODE 0 text44 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Index F8 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
-___lwdiv 1E20 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
-_Eeprom_Leer 2374 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
+___lwdiv 1EC0 0 CODE 0 text47 dist/default/production\Gasificador_k50.X.production.o
+_Eeprom_Leer 23B0 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Gasificador_k50.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\Gasificador_k50.X.production.o
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Gasificador_k50.X.production.o
 ___lmul@multiplier 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ?_Texto_IndexOf 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-__end_of_Damper_Abrir 23E8 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Damper_Abrir 2424 0 CODE 0 text36 dist/default/production\Gasificador_k50.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\Gasificador_k50.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\Gasificador_k50.X.production.o
 Set_Channel_Heater@Dato 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1459,19 +1465,19 @@ _LATBbits F8A 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _LATDbits F8C 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Gasificador_k50.X.production.o
 __Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Gasificador_k50.X.production.o
-_Tmr_Oscilador_Init 2404 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
+_Tmr_Oscilador_Init 2440 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
 _RCSTA1bits FAB 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Gasificador_k50.X.production.o
 _V_Minutos C6 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-___inthi_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-___inthi_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 ___lwdiv@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Gasificador_k50.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+isa$std 1 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 Get_Comando@i_1442 EF 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 _Ntc_ConvertirX16 A5E 0 CODE 0 text13 dist/default/production\Gasificador_k50.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-stacklo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+stackhi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+stacklo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 Respuestas_RS485@Mensaje 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\Gasificador_k50.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\Gasificador_k50.X.production.o
@@ -1482,7 +1488,7 @@ __Lspace_1 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __pbssCOMRAM 53 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_Ventilador_On 241C 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
+_Ventilador_On 2458 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
 __end_of_Proceso_ADC 1E20 0 CODE 0 text11 dist/default/production\Gasificador_k50.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 _PIR1bits F9E 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
@@ -1491,7 +1497,7 @@ _BufferIndex 5A 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.p
 vfpfcnvrt@convarg 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___fltol@exp1 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-end_of_initialization 22BE 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
+end_of_initialization 22FA 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
 ADC_Leer@canal 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Gasificador_k50.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\Gasificador_k50.X.production.o
@@ -1514,20 +1520,20 @@ __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Gasificador_k50.X.product
 __HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Gasificador_k50.X.production.o
 ___awmod@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\Gasificador_k50.X.production.o
-__end_of_UART_Init 2374 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
+__end_of_UART_Init 23B0 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\Gasificador_k50.X.production.o
-__pcinit 229A 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
+__pcinit 22D6 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@ap 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@cp 14 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@fp E 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __ptext0 1AB0 0 CODE 0 text0 dist/default/production\Gasificador_k50.X.production.o
-__ptext1 2350 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
-__ptext2 2404 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
-__ptext3 247C 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
-__ptext4 2492 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
-__ptext5 24A4 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
-__ptext6 1F06 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
-__ptext7 2374 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
+__ptext1 238C 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
+__ptext2 2440 0 CODE 0 text2 dist/default/production\Gasificador_k50.X.production.o
+__ptext3 24B8 0 CODE 0 text3 dist/default/production\Gasificador_k50.X.production.o
+__ptext4 24CE 0 CODE 0 text4 dist/default/production\Gasificador_k50.X.production.o
+__ptext5 24E0 0 CODE 0 text5 dist/default/production\Gasificador_k50.X.production.o
+__ptext6 1FA6 0 CODE 0 text6 dist/default/production\Gasificador_k50.X.production.o
+__ptext7 23B0 0 CODE 0 text7 dist/default/production\Gasificador_k50.X.production.o
 __ptext8 1B6A 0 CODE 0 text8 dist/default/production\Gasificador_k50.X.production.o
 __ptext9 13BC 0 CODE 0 text9 dist/default/production\Gasificador_k50.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Gasificador_k50.X.production.o
@@ -1577,12 +1583,12 @@ __Ltext48 0 0 ABS 0 text48 dist/default/production\Gasificador_k50.X.production.
 __Ltext49 0 0 ABS 0 text49 dist/default/production\Gasificador_k50.X.production.o
 __Ltext51 0 0 ABS 0 text51 dist/default/production\Gasificador_k50.X.production.o
 _Status_In 92 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 ___aldiv@dividend 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
-_sprintf 222E 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Armado_Stop 23B0 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
-_vfprintf 21EC 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Inyecta_Gas 1F06 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
+_sprintf 226A 0 CODE 0 text25 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Armado_Stop 23EC 0 CODE 0 text40 dist/default/production\Gasificador_k50.X.production.o
+_vfprintf 2228 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Inyecta_Gas 1FA6 0 CODE 0 text23 dist/default/production\Gasificador_k50.X.production.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Gasificador_k50.X.production.o
 ?___xxtofl 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 UART_Write@dato 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1593,16 +1599,16 @@ __H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Gasificador_k50.X
 ___fltol@sign1 33 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Armado_Cerrado 15FE 0 CODE 0 text42 dist/default/production\Gasificador_k50.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Gasificador_k50.X.production.o
-_UART_Init 2350 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
-__end_of_vfprintf 222E 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-___heap_lo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+_UART_Init 238C 0 CODE 0 text1 dist/default/production\Gasificador_k50.X.production.o
+__end_of_vfprintf 226A 0 CODE 0 text26 dist/default/production\Gasificador_k50.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+___heap_lo 0 0 ABS 0 - C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 ___fltol@f1 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-___intlo_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
-___intlo_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcGsnb0.6\driver_tmp_14.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\LENOVO\AppData\Local\Temp\xcDsc9k.3\driver_tmp_14.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Gasificador_k50.X.production.o
-__end_of__initialization 22BE 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
+__end_of__initialization 22FA 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
 ___awmod@divisor 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\Gasificador_k50.X.production.o
 _Count_ADC 57 0 COMRAM 1 bssCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1611,8 +1617,8 @@ __Lclrtext 0 0 ABS 0 clrtext dist/default/production\Gasificador_k50.X.productio
 Eeprom_Escribir@dir 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Eeprom_Escribir@gie 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _SPBRGH1 FB0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
-_Tmr0_Reset 24B6 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
-__end_of_Damper_Cerrar 23CC 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
+_Tmr0_Reset 24F2 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Damper_Cerrar 2408 0 CODE 0 text35 dist/default/production\Gasificador_k50.X.production.o
 Ntc_LeerTemperatura@k 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 Ntc_LeerTemperatura@v 32 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 ___lmul@product C 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1624,7 +1630,7 @@ __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k5
 Refresh_In@i 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __pmediumconst 7DB4 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
 _Paso_Control CB 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-_Evaporador_Off 2464 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
+_Evaporador_Off 24A0 0 CODE 0 text34 dist/default/production\Gasificador_k50.X.production.o
 ___aldiv@counter C 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 _Texto_IndexOf 126A 0 CODE 0 text20 dist/default/production\Gasificador_k50.X.production.o
 vfpfcnvrt@c 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1648,7 +1654,7 @@ _TRISD F95 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _TRISE F96 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _Temp1 BE 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _Temp2 BC 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
-__end_of_putch 24C8 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
+__end_of_putch 2504 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\Gasificador_k50.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\Gasificador_k50.X.production.o
@@ -1659,7 +1665,7 @@ __Lram 0 0 ABS 0 ram dist/default/production\Gasificador_k50.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\Gasificador_k50.X.production.o
 _flags C4 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _fputc 1CD0 0 CODE 0 text28 dist/default/production\Gasificador_k50.X.production.o
-_putch 24C6 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
+_putch 2502 0 CODE 0 text29 dist/default/production\Gasificador_k50.X.production.o
 __end_of_Armado_Cerrado 1708 0 CODE 0 text42 dist/default/production\Gasificador_k50.X.production.o
 _width A6 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 _V_Segundos C5 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
@@ -1667,7 +1673,7 @@ _SP_Minutos B0 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.prod
 __Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Gasificador_k50.X.production.o
 __Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Gasificador_k50.X.production.o
 __end_of_ntcTemp 7E59 0 MEDIUMCONST 0 mediumconst dist/default/production\Gasificador_k50.X.production.o
-__initialization 229A 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
+__initialization 22D6 0 CODE 0 cinit dist/default/production\Gasificador_k50.X.production.o
 _BAUDCON1bits FB8 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Coma F2 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k50.X.production.o
 Get_Comando@Data 51 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
@@ -1675,14 +1681,14 @@ Get_Comando@Rele F1 0 BANK0 1 cstackBANK0 dist/default/production\Gasificador_k5
 ___xxtofl@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 __pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\Gasificador_k50.X.production.o
-_Texto_Length 2108 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
+_Texto_Length 2144 0 CODE 0 text21 dist/default/production\Gasificador_k50.X.production.o
 _PPM_Old B8 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\Gasificador_k50.X.production.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Gasificador_k50.X.production.o
 _En_Sistem C7 0 BANK0 1 bssBANK0 dist/default/production\Gasificador_k50.X.production.o
 Texto_Length@texto 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\Gasificador_k50.X.production.o
-__end_of_Ventilador_On 2434 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Ventilador_On 2470 0 CODE 0 text18 dist/default/production\Gasificador_k50.X.production.o
 _ANSELAbits F5B 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _ANSELCbits F5D 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
 _ANSELEbits F5F 0 ABS 0 - dist/default/production\Gasificador_k50.X.production.o
@@ -1690,7 +1696,7 @@ Texto_IndexOf@length_texto 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Ga
 Texto_IndexOf@length_valor 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Gasificador_k50.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Gasificador_k50.X.production.o
 __Hintcode 96 0 CODE 0 intcode dist/default/production\Gasificador_k50.X.production.o
-__end_of_Tmr0_Reset 24C6 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
+__end_of_Tmr0_Reset 2502 0 CODE 0 text51 dist/default/production\Gasificador_k50.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1719,7 +1725,7 @@ cstackCOMRAM 1 1 1 5C 1
 reset_vec 0 0 0 4 1
 bssBANK0 1 60 60 9B 1
 bssBANK1 1 100 100 E8 1
-intcode 0 8 8 24C0 1
+intcode 0 8 8 24FC 1
 mediumconst 0 7DB4 7DB4 24C 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
