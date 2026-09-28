@@ -9924,6 +9924,30 @@ char *tempnam(const char *, const char *);
     int8_t IndexOf_Str(const uint8_t *buf, char *patron);
     uint8_t Texto_Length(unsigned char *texto);
 # 3 "Control.c" 2
+# 1 "./Kinco.h" 1
+# 49 "./Kinco.h"
+    typedef struct {
+        unsigned char Control[11 + 1];
+        unsigned int Variables[8 + 1];
+    } Container;
+
+    extern Container Gasificado;
+
+    char M_ID = 0;
+    char M_Funcion = 0;
+    unsigned int M_Direccion = 0;
+    unsigned int M_Cantidad = 0;
+    unsigned char M_LR = 0;
+
+    void Read_Cmd(unsigned char *Data);
+    unsigned char HexToNum(char c);
+    void Read_X0(unsigned int Direccion, unsigned int Cantidad);
+    void Read_X4(unsigned int Direccion, unsigned int Cantidad);
+    void Write_X0(unsigned int Direccion, unsigned int Valor);
+    void Write_X4(unsigned int Direccion, unsigned int Valor);
+    unsigned char Leer_1Bit(unsigned int Direccion);
+    unsigned int Leer_1Byte(unsigned int Direccion);
+# 4 "Control.c" 2
 const unsigned char Get_PPM[5] = {0x01, 0x20, 0x00, 0x39, 0xc0};
 
 void Consulta_Sensor(void) {
@@ -9953,6 +9977,7 @@ void Consulta_Server(void) {
     LATDbits.LATD5 = 1;
     _delay((unsigned long)((5)*(16000000/4000.0)));
     _delay((unsigned long)((5)*(16000000/4000.0)));
+    Gasificado.Variables[2] = PPM * 10;
     UART1_WriteString("PPM:");
     sprintf(txt,"%d",PPM);
     UART1_WriteString(txt);

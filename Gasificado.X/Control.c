@@ -1,5 +1,6 @@
 #include "Control.h"
 #include "Uarts.h"
+#include "Kinco.h"
 const unsigned char Get_PPM[5] = {0x01, 0x20, 0x00, 0x39, 0xc0};
 
 void Consulta_Sensor(void) {
@@ -29,6 +30,7 @@ void Consulta_Server(void) {
     MOD485 = 1;
     __delay_ms(5);
     __delay_ms(5);
+    Gasificado.Variables[V_ETILENO] = PPM * 10;
     UART1_WriteString("PPM:");
     sprintf(txt,"%d",PPM);
     UART1_WriteString(txt);

@@ -65,11 +65,11 @@
 [v _Pic_Clock_Init Pic_Clock_Init `(v  1 e 1 0 ]
 "16
 [v _Pic_Gpio_Init Pic_Gpio_Init `(v  1 e 1 0 ]
-"5 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
+"6 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
 [v _Consulta_Sensor Consulta_Sensor `(v  1 e 1 0 ]
-"19
+"20
 [v _Consulta_Relay Consulta_Relay `(v  1 e 1 0 ]
-"28
+"29
 [v _Consulta_Server Consulta_Server `(v  1 e 1 0 ]
 "6 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Kinco.c
 [v _Read_Cmd Read_Cmd `(v  1 e 1 0 ]
@@ -749,7 +749,7 @@
 [v _flags flags `uc  1 s 1 flags ]
 "185
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
-"3 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
+"4 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
 [v _Get_PPM Get_PPM `C[5]uc  1 e 5 0 ]
 [s S1675 . 30 `[12]uc 1 Control 12 0 `[9]ui 1 Variables 18 12 ]
 "4 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Kinco.c
@@ -1037,18 +1037,18 @@
 [v Pic_Clock_Init@guarda guarda `us  1 a 2 4 ]
 "14
 } 0
-"28 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
+"29 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
 [v _Consulta_Server Consulta_Server `(v  1 e 1 0 ]
 {
-"38
+"40
 } 0
 "9 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[u S2273 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[u S2282 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
 "13
-[s S2276 _IO_FILE 11 `S2273 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v sprintf@f f `S2276  1 a 11 60 ]
+[s S2285 _IO_FILE 11 `S2282 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S2285  1 a 11 60 ]
 "12
 [v sprintf@ap ap `[1]*.30v  1 a 1 59 ]
 "9
@@ -1061,9 +1061,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.31uc  1 a 1 48 ]
-[s S2308 _IO_FILE 0 ]
+[s S2317 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.30S2308  1 p 1 45 ]
+[v vfprintf@fp fp `*.30S2317  1 p 1 45 ]
 [v vfprintf@fmt fmt `*.31Cuc  1 p 1 46 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 47 ]
 "1840
@@ -1071,16 +1071,16 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S2332 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[u S2341 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S2332  1 a 4 40 ]
+[v vfpfcnvrt@convarg convarg `S2341  1 a 4 40 ]
 "1179
 [v vfpfcnvrt@cp cp `*.31uc  1 a 1 44 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 39 ]
-[s S2308 _IO_FILE 0 ]
+[s S2317 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.30S2308  1 p 1 36 ]
+[v vfpfcnvrt@fp fp `*.30S2317  1 p 1 36 ]
 [v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 37 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 38 ]
 "1814
@@ -1095,9 +1095,9 @@
 [v xtoa@c c `uc  1 a 1 33 ]
 "1067
 [v xtoa@p p `a  1 a 1 30 ]
-[s S2308 _IO_FILE 0 ]
+[s S2317 _IO_FILE 0 ]
 "1055
-[v xtoa@fp fp `*.30S2308  1 p 1 24 ]
+[v xtoa@fp fp `*.30S2317  1 p 1 24 ]
 [v xtoa@d d `ui  1 p 2 25 ]
 "1153
 } 0
@@ -1123,9 +1123,9 @@
 [v dtoa@s s `uc  1 a 1 32 ]
 "520
 [v dtoa@p p `a  1 a 1 29 ]
-[s S2308 _IO_FILE 0 ]
+[s S2317 _IO_FILE 0 ]
 "513
-[v dtoa@fp fp `*.30S2308  1 p 1 24 ]
+[v dtoa@fp fp `*.30S2317  1 p 1 24 ]
 [v dtoa@d d `i  1 p 2 25 ]
 "583
 } 0
@@ -1134,9 +1134,9 @@
 {
 "195
 [v pad@i i `i  1 a 2 22 ]
-[s S2308 _IO_FILE 0 ]
+[s S2317 _IO_FILE 0 ]
 "193
-[v pad@fp fp `*.30S2308  1 p 1 17 ]
+[v pad@fp fp `*.30S2317  1 p 1 17 ]
 [v pad@buf buf `*.30uc  1 p 1 18 ]
 [v pad@p p `i  1 p 2 19 ]
 "226
@@ -1150,18 +1150,18 @@
 [v fputs@c c `uc  1 a 1 14 ]
 "8
 [v fputs@s s `*.30Cuc  1 p 1 12 ]
-[u S2273 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
-[s S2276 _IO_FILE 11 `S2273 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.30S2276  1 p 1 13 ]
+[u S2282 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S2285 _IO_FILE 11 `S2282 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.30S2285  1 p 1 13 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 4 ]
-[u S2273 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
-[s S2276 _IO_FILE 11 `S2273 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.30S2276  1 p 1 6 ]
+[u S2282 . 2 `*.30uc 1 buffer 1 0 `*.39Cuc 1 source 2 0 ]
+[s S2285 _IO_FILE 11 `S2282 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.30S2285  1 p 1 6 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\putch.c
@@ -1199,17 +1199,17 @@
 [v ___awdiv@divisor divisor `i  1 p 2 6 ]
 "41
 } 0
-"5 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
+"6 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Control.c
 [v _Consulta_Sensor Consulta_Sensor `(v  1 e 1 0 ]
 {
-"9
+"10
 [v Consulta_Sensor@i i `i  1 a 2 8 ]
-"17
+"18
 } 0
-"19
+"20
 [v _Consulta_Relay Consulta_Relay `(v  1 e 1 0 ]
 {
-"26
+"27
 } 0
 "150 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificado.X\Uarts.c
 [v _UART1_WriteString UART1_WriteString `(v  1 e 1 0 ]

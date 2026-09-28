@@ -24,6 +24,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "36
 [; ;./Uarts.h: 36:     void UART1_WriteString(const char *cad);
 [v _UART1_WriteString `(v ~T0 @X0 0 ef1`*Cuc ]
+"49 ./Kinco.h
+[; ;./Kinco.h: 49:     typedef struct {
+[s S856 `uc -> 12 `i `ui -> 9 `i ]
+[n S856 . Control Variables ]
+"54
+[; ;./Kinco.h: 54:     extern Container Gasificado;
+[v _Gasificado `S856 ~T0 @X0 0 e ]
 "121 C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h
 [; ;C:\Program Files\Microchip\xc8\v3.00\pic\include\c99/stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
@@ -915,8 +922,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Flag_U2
 -> -> 0 `i `uc
 ]
-"3 Control.c
-[; ;Control.c: 3: const unsigned char Get_PPM[5] = {0x01, 0x20, 0x00, 0x39, 0xc0};
+"56 ./Kinco.h
+[; ;./Kinco.h: 56:     char M_ID = 0;
+[v _M_ID `uc ~T0 @X0 1 e ]
+[i _M_ID
+-> -> 0 `i `uc
+]
+"57
+[; ;./Kinco.h: 57:     char M_Funcion = 0;
+[v _M_Funcion `uc ~T0 @X0 1 e ]
+[i _M_Funcion
+-> -> 0 `i `uc
+]
+"58
+[; ;./Kinco.h: 58:     unsigned int M_Direccion = 0;
+[v _M_Direccion `ui ~T0 @X0 1 e ]
+[i _M_Direccion
+-> -> 0 `i `ui
+]
+"59
+[; ;./Kinco.h: 59:     unsigned int M_Cantidad = 0;
+[v _M_Cantidad `ui ~T0 @X0 1 e ]
+[i _M_Cantidad
+-> -> 0 `i `ui
+]
+"60
+[; ;./Kinco.h: 60:     unsigned char M_LR = 0;
+[v _M_LR `uc ~T0 @X0 1 e ]
+[i _M_LR
+-> -> 0 `i `uc
+]
+"4 Control.c
+[; ;Control.c: 4: const unsigned char Get_PPM[5] = {0x01, 0x20, 0x00, 0x39, 0xc0};
 [v _Get_PPM `Cuc ~T0 @X0 -> 5 `i e ]
 [i _Get_PPM
 :U ..
@@ -927,122 +964,125 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 192 `i `uc
 ..
 ]
-"5
-[; ;Control.c: 5: void Consulta_Sensor(void) {
+"6
+[; ;Control.c: 6: void Consulta_Sensor(void) {
 [v _Consulta_Sensor `(v ~T0 @X0 1 ef ]
 {
 [e :U _Consulta_Sensor ]
 [f ]
-"6
-[; ;Control.c: 6:     LATDbits.LATD5 = 1;
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "7
-[; ;Control.c: 7:     _delay((unsigned long)((5)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;Control.c: 7:     LATDbits.LATD5 = 1;
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "8
 [; ;Control.c: 8:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "9
-[; ;Control.c: 9:     for (int i = 0; i < 5; i++) {
+[; ;Control.c: 9:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"10
+[; ;Control.c: 10:     for (int i = 0; i < 5; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 5 `i 857  ]
-[e $U 858  ]
-[e :U 857 ]
+[e $ < _i -> 5 `i 858  ]
+[e $U 859  ]
+[e :U 858 ]
 {
-"10
-[; ;Control.c: 10:         UART1_Write(Get_PPM[i]);
-[e ( _UART1_Write (1 *U + &U _Get_PPM * -> -> _i `ui `ux -> -> # *U &U _Get_PPM `ui `ux ]
 "11
-[; ;Control.c: 11:         if (i == 4) LATDbits.LATD5 = 0;
-[e $ ! == _i -> 4 `i 860  ]
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
-[e :U 860 ]
+[; ;Control.c: 11:         UART1_Write(Get_PPM[i]);
+[e ( _UART1_Write (1 *U + &U _Get_PPM * -> -> _i `ui `ux -> -> # *U &U _Get_PPM `ui `ux ]
 "12
-[; ;Control.c: 12:         _delay((unsigned long)((30)*(16000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+[; ;Control.c: 12:         if (i == 4) LATDbits.LATD5 = 0;
+[e $ ! == _i -> 4 `i 861  ]
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+[e :U 861 ]
 "13
-[; ;Control.c: 13:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
+[; ;Control.c: 13:         _delay((unsigned long)((30)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
 "14
-[; ;Control.c: 14:     }
+[; ;Control.c: 14:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"15
+[; ;Control.c: 15:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 5 `i 857  ]
-[e :U 858 ]
+[e $ < _i -> 5 `i 858  ]
+[e :U 859 ]
 }
-"15
-[; ;Control.c: 15:     _delay((unsigned long)((5)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "16
-[; ;Control.c: 16:     LATDbits.LATD5 = 0;
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+[; ;Control.c: 16:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "17
-[; ;Control.c: 17: }
-[e :UE 856 ]
+[; ;Control.c: 17:     LATDbits.LATD5 = 0;
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+"18
+[; ;Control.c: 18: }
+[e :UE 857 ]
 }
-"19
-[; ;Control.c: 19: void Consulta_Relay(void) {
+"20
+[; ;Control.c: 20: void Consulta_Relay(void) {
 [v _Consulta_Relay `(v ~T0 @X0 1 ef ]
 {
 [e :U _Consulta_Relay ]
 [f ]
-"20
-[; ;Control.c: 20:     LATDbits.LATD5 = 1;
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "21
-[; ;Control.c: 21:     _delay((unsigned long)((5)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;Control.c: 21:     LATDbits.LATD5 = 1;
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "22
 [; ;Control.c: 22:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "23
-[; ;Control.c: 23:     UART1_WriteString("AGROLATINA_G01_CB01_STATUS_");
-[e ( _UART1_WriteString (1 :s 1C ]
-"24
-[; ;Control.c: 24:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[; ;Control.c: 23:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"24
+[; ;Control.c: 24:     UART1_WriteString("AGROLATINA_G01_CB01_STATUS_");
+[e ( _UART1_WriteString (1 :s 1C ]
 "25
-[; ;Control.c: 25:     LATDbits.LATD5 = 0;
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+[; ;Control.c: 25:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "26
-[; ;Control.c: 26: }
-[e :UE 861 ]
+[; ;Control.c: 26:     LATDbits.LATD5 = 0;
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+"27
+[; ;Control.c: 27: }
+[e :UE 862 ]
 }
-"28
-[; ;Control.c: 28: void Consulta_Server(void) {
+"29
+[; ;Control.c: 29: void Consulta_Server(void) {
 [v _Consulta_Server `(v ~T0 @X0 1 ef ]
 {
 [e :U _Consulta_Server ]
 [f ]
-"29
-[; ;Control.c: 29:     LATDbits.LATD5 = 1;
-[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "30
-[; ;Control.c: 30:     _delay((unsigned long)((5)*(16000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;Control.c: 30:     LATDbits.LATD5 = 1;
+[e = . . _LATDbits 0 5 -> -> 1 `i `uc ]
 "31
 [; ;Control.c: 31:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "32
-[; ;Control.c: 32:     UART1_WriteString("PPM:");
-[e ( _UART1_WriteString (1 :s 2C ]
-"33
-[; ;Control.c: 33:     sprintf(txt,"%d",PPM);
-[e ( _sprintf (1 , (. , &U _txt :s 3C -> _PPM `i ]
-"34
-[; ;Control.c: 34:     UART1_WriteString(txt);
-[e ( _UART1_WriteString (1 -> &U _txt `*Cuc ]
-"36
-[; ;Control.c: 36:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[; ;Control.c: 32:     _delay((unsigned long)((5)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"37
-[; ;Control.c: 37:     LATDbits.LATD5 = 0;
-[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+"33
+[; ;Control.c: 33:     Gasificado.Variables[2] = PPM * 10;
+[e = *U + &U . _Gasificado 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _Gasificado 1 `ui `ux -> * -> _PPM `i -> 10 `i `ui ]
+"34
+[; ;Control.c: 34:     UART1_WriteString("PPM:");
+[e ( _UART1_WriteString (1 :s 2C ]
+"35
+[; ;Control.c: 35:     sprintf(txt,"%d",PPM);
+[e ( _sprintf (1 , (. , &U _txt :s 3C -> _PPM `i ]
+"36
+[; ;Control.c: 36:     UART1_WriteString(txt);
+[e ( _UART1_WriteString (1 -> &U _txt `*Cuc ]
 "38
-[; ;Control.c: 38: }
-[e :UE 862 ]
+[; ;Control.c: 38:     _delay((unsigned long)((5)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"39
+[; ;Control.c: 39:     LATDbits.LATD5 = 0;
+[e = . . _LATDbits 0 5 -> -> 0 `i `uc ]
+"40
+[; ;Control.c: 40: }
+[e :UE 863 ]
 }
 [p f _sprintf 8388736 ]
 [a 3C 37 100 0 ]
