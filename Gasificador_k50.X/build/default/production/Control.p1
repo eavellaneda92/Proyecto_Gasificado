@@ -1430,434 +1430,437 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _Inyecta_Gas ]
 [f ]
 "105
-[; ;Control.c: 105:     Power_Rele(7, Tiempo_Iny_Gas);
-[e ( _Power_Rele (2 , -> -> 7 `i `uc -> _Tiempo_Iny_Gas `ui ]
+[; ;Control.c: 105:     Power_Rele(7, 2000);
+[e ( _Power_Rele (2 , -> -> 7 `i `uc -> -> 2000 `i `ui ]
 "106
-[; ;Control.c: 106:     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
+[; ;Control.c: 106:     Power_Rele(6, 2000);
+[e ( _Power_Rele (2 , -> -> 6 `i `uc -> -> 2000 `i `ui ]
+"107
+[; ;Control.c: 107:     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $U 696  ]
 [e :U 693 ]
 {
-"107
-[; ;Control.c: 107:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
 "108
-[; ;Control.c: 108:         __asm(" clrwdt");
-[; <"  clrwdt ;# ">
+[; ;Control.c: 108:         _delay((unsigned long)((1)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
 "109
-[; ;Control.c: 109:     }
+[; ;Control.c: 109:         __asm(" clrwdt");
+[; <"  clrwdt ;# ">
+"110
+[; ;Control.c: 110:     }
 }
 [e ++ _i -> 1 `i ]
 [e :U 696 ]
 [e $ < -> _i `ui -> _Tiempo_Iny_Gas `ui 693  ]
 [e :U 694 ]
 }
-"110
-[; ;Control.c: 110:     Power_Rele(7, (uint16_t)(Tiempo_Iny_Gas * 1.5));
-[e ( _Power_Rele (2 , -> -> 7 `i `uc -> -> * -> -> _Tiempo_Iny_Gas `ui `d .1.5 `us `ui ]
 "111
-[; ;Control.c: 111:     Respuestas_RS485("INYECCION_GAS_OK");
-[e ( _Respuestas_RS485 (1 :s 2C ]
+[; ;Control.c: 111:     Power_Rele(7, 3000);
+[e ( _Power_Rele (2 , -> -> 7 `i `uc -> -> 3000 `i `ui ]
 "112
-[; ;Control.c: 112: }
+[; ;Control.c: 112:     Respuestas_RS485("INYECCION_GAS_OK");
+[e ( _Respuestas_RS485 (1 :s 2C ]
+"113
+[; ;Control.c: 113: }
 [e :UE 692 ]
 }
-"114
-[; ;Control.c: 114: void Damper_Abrir(void) {
+"115
+[; ;Control.c: 115: void Damper_Abrir(void) {
 [v _Damper_Abrir `(v ~T0 @X0 1 ef ]
 {
 [e :U _Damper_Abrir ]
 [f ]
-"115
-[; ;Control.c: 115:     Power_Rele(4, Tiempo_Damper);
-[e ( _Power_Rele (2 , -> -> 4 `i `uc -> _Tiempo_Damper `ui ]
 "116
-[; ;Control.c: 116:     Respuestas_RS485("DAMPER_OPEN_OK");
-[e ( _Respuestas_RS485 (1 :s 3C ]
+[; ;Control.c: 116:     Power_Rele(4, 30000);
+[e ( _Power_Rele (2 , -> -> 4 `i `uc -> -> 30000 `i `ui ]
 "117
-[; ;Control.c: 117: }
+[; ;Control.c: 117:     Respuestas_RS485("DAMPER_OPEN_OK");
+[e ( _Respuestas_RS485 (1 :s 3C ]
+"118
+[; ;Control.c: 118: }
 [e :UE 697 ]
 }
-"119
-[; ;Control.c: 119: void Damper_Cerrar(void) {
+"120
+[; ;Control.c: 120: void Damper_Cerrar(void) {
 [v _Damper_Cerrar `(v ~T0 @X0 1 ef ]
 {
 [e :U _Damper_Cerrar ]
 [f ]
-"120
-[; ;Control.c: 120:     Power_Rele(5, (uint16_t)(Tiempo_Damper * 1.5));
-[e ( _Power_Rele (2 , -> -> 5 `i `uc -> -> * -> -> _Tiempo_Damper `ui `d .1.5 `us `ui ]
 "121
-[; ;Control.c: 121:     Respuestas_RS485("DAMPER_CLOSE_OK");
-[e ( _Respuestas_RS485 (1 :s 4C ]
+[; ;Control.c: 121:     Power_Rele(5, 30000);
+[e ( _Power_Rele (2 , -> -> 5 `i `uc -> -> 30000 `i `ui ]
 "122
-[; ;Control.c: 122: }
+[; ;Control.c: 122:     Respuestas_RS485("DAMPER_CLOSE_OK");
+[e ( _Respuestas_RS485 (1 :s 4C ]
+"123
+[; ;Control.c: 123: }
 [e :UE 698 ]
 }
-"124
-[; ;Control.c: 124: void Evaporador_On(void) {
+"125
+[; ;Control.c: 125: void Evaporador_On(void) {
 [v _Evaporador_On `(v ~T0 @X0 1 ef ]
 {
 [e :U _Evaporador_On ]
 [f ]
-"125
-[; ;Control.c: 125:     Set_Rele(0,0);
-[e ( _Set_Rele (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "126
-[; ;Control.c: 126:     Respuestas_RS485("EVAPORADOR_ON_OK");
-[e ( _Respuestas_RS485 (1 :s 5C ]
+[; ;Control.c: 126:     Set_Rele(0,0);
+[e ( _Set_Rele (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "127
-[; ;Control.c: 127: }
+[; ;Control.c: 127:     Respuestas_RS485("EVAPORADOR_ON_OK");
+[e ( _Respuestas_RS485 (1 :s 5C ]
+"128
+[; ;Control.c: 128: }
 [e :UE 699 ]
 }
-"129
-[; ;Control.c: 129: void Evaporador_Off(void) {
+"130
+[; ;Control.c: 130: void Evaporador_Off(void) {
 [v _Evaporador_Off `(v ~T0 @X0 1 ef ]
 {
 [e :U _Evaporador_Off ]
 [f ]
-"130
-[; ;Control.c: 130:     Set_Rele(0,1);
-[e ( _Set_Rele (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "131
-[; ;Control.c: 131:     Respuestas_RS485("EVAPORADOR_OFF_OK");
-[e ( _Respuestas_RS485 (1 :s 6C ]
+[; ;Control.c: 131:     Set_Rele(0,1);
+[e ( _Set_Rele (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
 "132
-[; ;Control.c: 132: }
+[; ;Control.c: 132:     Respuestas_RS485("EVAPORADOR_OFF_OK");
+[e ( _Respuestas_RS485 (1 :s 6C ]
+"133
+[; ;Control.c: 133: }
 [e :UE 700 ]
 }
-"134
-[; ;Control.c: 134: void Ventilador_On(void) {
+"135
+[; ;Control.c: 135: void Ventilador_On(void) {
 [v _Ventilador_On `(v ~T0 @X0 1 ef ]
 {
 [e :U _Ventilador_On ]
 [f ]
-"135
-[; ;Control.c: 135:     Set_Rele(1,0);
-[e ( _Set_Rele (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "136
-[; ;Control.c: 136:     Respuestas_RS485("VENTILADOR_ON_OK");
-[e ( _Respuestas_RS485 (1 :s 7C ]
+[; ;Control.c: 136:     Set_Rele(1,0);
+[e ( _Set_Rele (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 "137
-[; ;Control.c: 137: }
+[; ;Control.c: 137:     Respuestas_RS485("VENTILADOR_ON_OK");
+[e ( _Respuestas_RS485 (1 :s 7C ]
+"138
+[; ;Control.c: 138: }
 [e :UE 701 ]
 }
-"139
-[; ;Control.c: 139: void Ventilador_Off(void) {
+"140
+[; ;Control.c: 140: void Ventilador_Off(void) {
 [v _Ventilador_Off `(v ~T0 @X0 1 ef ]
 {
 [e :U _Ventilador_Off ]
 [f ]
-"140
-[; ;Control.c: 140:     Set_Rele(1,1);
-[e ( _Set_Rele (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "141
-[; ;Control.c: 141:     Respuestas_RS485("VENTILADOR_OFF_OK");
-[e ( _Respuestas_RS485 (1 :s 8C ]
+[; ;Control.c: 141:     Set_Rele(1,1);
+[e ( _Set_Rele (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "142
-[; ;Control.c: 142: }
+[; ;Control.c: 142:     Respuestas_RS485("VENTILADOR_OFF_OK");
+[e ( _Respuestas_RS485 (1 :s 8C ]
+"143
+[; ;Control.c: 143: }
 [e :UE 702 ]
 }
-"144
-[; ;Control.c: 144: uint8_t Eeprom_Leer(uint8_t dir) {
+"145
+[; ;Control.c: 145: uint8_t Eeprom_Leer(uint8_t dir) {
 [v _Eeprom_Leer `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _Eeprom_Leer ]
 [v _dir `uc ~T0 @X0 1 r1 ]
 [f ]
-"145
-[; ;Control.c: 145:     while (EECON1bits.WR);
+"146
+[; ;Control.c: 146:     while (EECON1bits.WR);
 [e $U 704  ]
 [e :U 705 ]
 [e :U 704 ]
 [e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 705  ]
 [e :U 706 ]
-"147
-[; ;Control.c: 147:     EEADR = dir;
-[e = _EEADR _dir ]
 "148
-[; ;Control.c: 148:     EECON1bits.EEPGD = 0;
-[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+[; ;Control.c: 148:     EEADR = dir;
+[e = _EEADR _dir ]
 "149
-[; ;Control.c: 149:     EECON1bits.CFGS = 0;
-[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+[; ;Control.c: 149:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
 "150
-[; ;Control.c: 150:     EECON1bits.RD = 1;
-[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+[; ;Control.c: 150:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
 "151
-[; ;Control.c: 151:     return EEDATA;
+[; ;Control.c: 151:     EECON1bits.RD = 1;
+[e = . . _EECON1bits 0 0 -> -> 1 `i `uc ]
+"152
+[; ;Control.c: 152:     return EEDATA;
 [e ) _EEDATA ]
 [e $UE 703  ]
-"152
-[; ;Control.c: 152: }
+"153
+[; ;Control.c: 153: }
 [e :UE 703 ]
 }
-"154
-[; ;Control.c: 154: void Eeprom_Escribir(uint8_t dir, uint8_t dato) {
+"155
+[; ;Control.c: 155: void Eeprom_Escribir(uint8_t dir, uint8_t dato) {
 [v _Eeprom_Escribir `(v ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _Eeprom_Escribir ]
 [v _dir `uc ~T0 @X0 1 r1 ]
 [v _dato `uc ~T0 @X0 1 r2 ]
 [f ]
-"155
-[; ;Control.c: 155:     if (Eeprom_Leer(dir) == dato) return;
+"156
+[; ;Control.c: 156:     if (Eeprom_Leer(dir) == dato) return;
 [e $ ! == -> ( _Eeprom_Leer (1 _dir `i -> _dato `i 708  ]
 [e $UE 707  ]
 [e :U 708 ]
-"156
-[; ;Control.c: 156:     EEADR = dir;
-[e = _EEADR _dir ]
 "157
-[; ;Control.c: 157:     EEDATA = dato;
-[e = _EEDATA _dato ]
+[; ;Control.c: 157:     EEADR = dir;
+[e = _EEADR _dir ]
 "158
-[; ;Control.c: 158:     EECON1bits.EEPGD = 0;
-[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
+[; ;Control.c: 158:     EEDATA = dato;
+[e = _EEDATA _dato ]
 "159
-[; ;Control.c: 159:     EECON1bits.CFGS = 0;
-[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
+[; ;Control.c: 159:     EECON1bits.EEPGD = 0;
+[e = . . _EECON1bits 0 7 -> -> 0 `i `uc ]
 "160
-[; ;Control.c: 160:     EECON1bits.WRERR = 0;
-[e = . . _EECON1bits 0 3 -> -> 0 `i `uc ]
+[; ;Control.c: 160:     EECON1bits.CFGS = 0;
+[e = . . _EECON1bits 0 6 -> -> 0 `i `uc ]
 "161
-[; ;Control.c: 161:     EECON1bits.WREN = 1;
-[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+[; ;Control.c: 161:     EECON1bits.WRERR = 0;
+[e = . . _EECON1bits 0 3 -> -> 0 `i `uc ]
 "162
-[; ;Control.c: 162:     uint8_t gie = INTCONbits.GIE;
+[; ;Control.c: 162:     EECON1bits.WREN = 1;
+[e = . . _EECON1bits 0 2 -> -> 1 `i `uc ]
+"163
+[; ;Control.c: 163:     uint8_t gie = INTCONbits.GIE;
 [v _gie `uc ~T0 @X0 1 a ]
 [e = _gie . . _INTCONbits 1 7 ]
-"163
-[; ;Control.c: 163:     INTCONbits.GIE = 0;
-[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
 "164
-[; ;Control.c: 164:     EECON2 = 0x55;
-[e = _EECON2 -> -> 85 `i `uc ]
+[; ;Control.c: 164:     INTCONbits.GIE = 0;
+[e = . . _INTCONbits 1 7 -> -> 0 `i `uc ]
 "165
-[; ;Control.c: 165:     EECON2 = 0xAA;
-[e = _EECON2 -> -> 170 `i `uc ]
+[; ;Control.c: 165:     EECON2 = 0x55;
+[e = _EECON2 -> -> 85 `i `uc ]
 "166
-[; ;Control.c: 166:     EECON1bits.WR = 1;
-[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
+[; ;Control.c: 166:     EECON2 = 0xAA;
+[e = _EECON2 -> -> 170 `i `uc ]
 "167
-[; ;Control.c: 167:     if (gie)
-[e $ ! != -> _gie `i -> 0 `i 709  ]
+[; ;Control.c: 167:     EECON1bits.WR = 1;
+[e = . . _EECON1bits 0 1 -> -> 1 `i `uc ]
 "168
-[; ;Control.c: 168:         INTCONbits.GIE = 1;
+[; ;Control.c: 168:     if (gie)
+[e $ ! != -> _gie `i -> 0 `i 709  ]
+"169
+[; ;Control.c: 169:         INTCONbits.GIE = 1;
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 [e :U 709 ]
-"169
-[; ;Control.c: 169:     while (EECON1bits.WR)
+"170
+[; ;Control.c: 170:     while (EECON1bits.WR)
 [e $U 710  ]
 [e :U 711 ]
-"170
-[; ;Control.c: 170:         __asm(" clrwdt");
+"171
+[; ;Control.c: 171:         __asm(" clrwdt");
 [; <"  clrwdt ;# ">
 [e :U 710 ]
-"169
-[; ;Control.c: 169:     while (EECON1bits.WR)
+"170
+[; ;Control.c: 170:     while (EECON1bits.WR)
 [e $ != -> . . _EECON1bits 0 1 `i -> 0 `i 711  ]
 [e :U 712 ]
-"171
-[; ;Control.c: 171:     EECON1bits.WREN = 0;
-[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
 "172
-[; ;Control.c: 172:     PIR2bits.EEIF = 0;
-[e = . . _PIR2bits 0 4 -> -> 0 `i `uc ]
+[; ;Control.c: 172:     EECON1bits.WREN = 0;
+[e = . . _EECON1bits 0 2 -> -> 0 `i `uc ]
 "173
-[; ;Control.c: 173: }
+[; ;Control.c: 173:     PIR2bits.EEIF = 0;
+[e = . . _PIR2bits 0 4 -> -> 0 `i `uc ]
+"174
+[; ;Control.c: 174: }
 [e :UE 707 ]
 }
-"175
-[; ;Control.c: 175: void Respuestas_RS485(char *Mensaje) {
+"176
+[; ;Control.c: 176: void Respuestas_RS485(char *Mensaje) {
 [v _Respuestas_RS485 `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _Respuestas_RS485 ]
 [v _Mensaje `*uc ~T0 @X0 1 r1 ]
 [f ]
-"176
-[; ;Control.c: 176:     LATBbits.LATB6 = 1;
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "177
-[; ;Control.c: 177:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+[; ;Control.c: 177:     LATBbits.LATB6 = 1;
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "178
-[; ;Control.c: 178:     UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"Respuesta:");
-[e ( _UART_Print (1 :s 9C ]
-"179
-[; ;Control.c: 179:     UART_Print(Mensaje);
-[e ( _UART_Print (1 -> _Mensaje `*Cuc ]
-"180
-[; ;Control.c: 180:     UART_Print("\"}");
-[e ( _UART_Print (1 :s 10C ]
-"181
-[; ;Control.c: 181:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[; ;Control.c: 178:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
+"179
+[; ;Control.c: 179:     UART_Print("{\"i\":\"AGROLATINA_G01\",\"rs\":\"Respuesta:");
+[e ( _UART_Print (1 :s 9C ]
+"180
+[; ;Control.c: 180:     UART_Print(Mensaje);
+[e ( _UART_Print (1 -> _Mensaje `*Cuc ]
+"181
+[; ;Control.c: 181:     UART_Print("\"}");
+[e ( _UART_Print (1 :s 10C ]
 "182
-[; ;Control.c: 182:     LATBbits.LATB6 = 0;
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+[; ;Control.c: 182:     _delay((unsigned long)((5)*(16000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `ul `d .4000.0 `ul ]
 "183
-[; ;Control.c: 183: }
+[; ;Control.c: 183:     LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"184
+[; ;Control.c: 184: }
 [e :UE 713 ]
 }
-"185
-[; ;Control.c: 185: uint8_t Get_Channel_Heater(void) {
+"186
+[; ;Control.c: 186: uint8_t Get_Channel_Heater(void) {
 [v _Get_Channel_Heater `(uc ~T0 @X0 1 ef ]
 {
 [e :U _Get_Channel_Heater ]
 [f ]
-"186
-[; ;Control.c: 186:     uint8_t Dato = Eeprom_Leer(0x10);
+"187
+[; ;Control.c: 187:     uint8_t Dato = Eeprom_Leer(0x10);
 [v _Dato `uc ~T0 @X0 1 a ]
 [e = _Dato ( _Eeprom_Leer (1 -> -> 16 `i `uc ]
-"187
-[; ;Control.c: 187:     return Dato;
+"188
+[; ;Control.c: 188:     return Dato;
 [e ) _Dato ]
 [e $UE 714  ]
-"188
-[; ;Control.c: 188: }
+"189
+[; ;Control.c: 189: }
 [e :UE 714 ]
 }
-"190
-[; ;Control.c: 190: uint16_t Get_Tiempo_Damper(void) {
+"191
+[; ;Control.c: 191: uint16_t Get_Tiempo_Damper(void) {
 [v _Get_Tiempo_Damper `(us ~T0 @X0 1 ef ]
 {
 [e :U _Get_Tiempo_Damper ]
 [f ]
-"191
-[; ;Control.c: 191:     uint16_t Dato = Eeprom_Leer(0x11);
+"192
+[; ;Control.c: 192:     uint16_t Dato = Eeprom_Leer(0x11);
 [v _Dato `us ~T0 @X0 1 a ]
 [e = _Dato -> ( _Eeprom_Leer (1 -> -> 17 `i `uc `us ]
-"192
-[; ;Control.c: 192:     Dato = (Dato << 8) | Eeprom_Leer(0x12);
-[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 18 `i `uc `ui `us ]
 "193
-[; ;Control.c: 193:     return Dato;
+[; ;Control.c: 193:     Dato = (Dato << 8) | Eeprom_Leer(0x12);
+[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 18 `i `uc `ui `us ]
+"194
+[; ;Control.c: 194:     return Dato;
 [e ) _Dato ]
 [e $UE 715  ]
-"194
-[; ;Control.c: 194: }
+"195
+[; ;Control.c: 195: }
 [e :UE 715 ]
 }
-"196
-[; ;Control.c: 196: uint16_t Get_Tiempo_Iny_Liquido(void) {
+"197
+[; ;Control.c: 197: uint16_t Get_Tiempo_Iny_Liquido(void) {
 [v _Get_Tiempo_Iny_Liquido `(us ~T0 @X0 1 ef ]
 {
 [e :U _Get_Tiempo_Iny_Liquido ]
 [f ]
-"197
-[; ;Control.c: 197:     uint16_t Dato = Eeprom_Leer(0x13);
+"198
+[; ;Control.c: 198:     uint16_t Dato = Eeprom_Leer(0x13);
 [v _Dato `us ~T0 @X0 1 a ]
 [e = _Dato -> ( _Eeprom_Leer (1 -> -> 19 `i `uc `us ]
-"198
-[; ;Control.c: 198:     Dato = (Dato << 8) | Eeprom_Leer(0x14);
-[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 20 `i `uc `ui `us ]
 "199
-[; ;Control.c: 199:     return Dato;
+[; ;Control.c: 199:     Dato = (Dato << 8) | Eeprom_Leer(0x14);
+[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 20 `i `uc `ui `us ]
+"200
+[; ;Control.c: 200:     return Dato;
 [e ) _Dato ]
 [e $UE 716  ]
-"200
-[; ;Control.c: 200: }
+"201
+[; ;Control.c: 201: }
 [e :UE 716 ]
 }
-"202
-[; ;Control.c: 202: uint16_t Get_Tiempo_Iny_Gas(void) {
+"203
+[; ;Control.c: 203: uint16_t Get_Tiempo_Iny_Gas(void) {
 [v _Get_Tiempo_Iny_Gas `(us ~T0 @X0 1 ef ]
 {
 [e :U _Get_Tiempo_Iny_Gas ]
 [f ]
-"203
-[; ;Control.c: 203:     uint16_t Dato = Eeprom_Leer(0x15);
+"204
+[; ;Control.c: 204:     uint16_t Dato = Eeprom_Leer(0x15);
 [v _Dato `us ~T0 @X0 1 a ]
 [e = _Dato -> ( _Eeprom_Leer (1 -> -> 21 `i `uc `us ]
-"204
-[; ;Control.c: 204:     Dato = (Dato << 8) | Eeprom_Leer(0x16);
-[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 22 `i `uc `ui `us ]
 "205
-[; ;Control.c: 205:     return Dato;
+[; ;Control.c: 205:     Dato = (Dato << 8) | Eeprom_Leer(0x16);
+[e = _Dato -> | << -> _Dato `ui -> 8 `i -> ( _Eeprom_Leer (1 -> -> 22 `i `uc `ui `us ]
+"206
+[; ;Control.c: 206:     return Dato;
 [e ) _Dato ]
 [e $UE 717  ]
-"206
-[; ;Control.c: 206: }
+"207
+[; ;Control.c: 207: }
 [e :UE 717 ]
 }
-"208
-[; ;Control.c: 208: void Set_Channel_Heater(uint8_t Dato) {
+"209
+[; ;Control.c: 209: void Set_Channel_Heater(uint8_t Dato) {
 [v _Set_Channel_Heater `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _Set_Channel_Heater ]
 [v _Dato `uc ~T0 @X0 1 r1 ]
 [f ]
-"209
-[; ;Control.c: 209:     Eeprom_Escribir(0x10,Dato);
-[e ( _Eeprom_Escribir (2 , -> -> 16 `i `uc _Dato ]
 "210
-[; ;Control.c: 210:     Channel_Heater = Dato;
-[e = _Channel_Heater _Dato ]
+[; ;Control.c: 210:     Eeprom_Escribir(0x10,Dato);
+[e ( _Eeprom_Escribir (2 , -> -> 16 `i `uc _Dato ]
 "211
-[; ;Control.c: 211: }
+[; ;Control.c: 211:     Channel_Heater = Dato;
+[e = _Channel_Heater _Dato ]
+"212
+[; ;Control.c: 212: }
 [e :UE 718 ]
 }
-"213
-[; ;Control.c: 213: void Set_Tiempo_Damper(uint16_t Dato) {
+"214
+[; ;Control.c: 214: void Set_Tiempo_Damper(uint16_t Dato) {
 [v _Set_Tiempo_Damper `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Set_Tiempo_Damper ]
 [v _Dato `us ~T0 @X0 1 r1 ]
 [f ]
-"214
-[; ;Control.c: 214:     Eeprom_Escribir(0x11,(uint8_t)(Dato >> 8));
-[e ( _Eeprom_Escribir (2 , -> -> 17 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "215
-[; ;Control.c: 215:     Eeprom_Escribir(0x12,(uint8_t)(Dato & 0xFF));
-[e ( _Eeprom_Escribir (2 , -> -> 18 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
+[; ;Control.c: 215:     Eeprom_Escribir(0x11,(uint8_t)(Dato >> 8));
+[e ( _Eeprom_Escribir (2 , -> -> 17 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "216
-[; ;Control.c: 216:     Tiempo_Damper = Dato;
-[e = _Tiempo_Damper _Dato ]
+[; ;Control.c: 216:     Eeprom_Escribir(0x12,(uint8_t)(Dato & 0xFF));
+[e ( _Eeprom_Escribir (2 , -> -> 18 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
 "217
-[; ;Control.c: 217: }
+[; ;Control.c: 217:     Tiempo_Damper = Dato;
+[e = _Tiempo_Damper _Dato ]
+"218
+[; ;Control.c: 218: }
 [e :UE 719 ]
 }
-"219
-[; ;Control.c: 219: void Set_Tiempo_Iny_Liquido(uint16_t Dato) {
+"220
+[; ;Control.c: 220: void Set_Tiempo_Iny_Liquido(uint16_t Dato) {
 [v _Set_Tiempo_Iny_Liquido `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Set_Tiempo_Iny_Liquido ]
 [v _Dato `us ~T0 @X0 1 r1 ]
 [f ]
-"220
-[; ;Control.c: 220:     Eeprom_Escribir(0x13,(uint8_t)(Dato >> 8));
-[e ( _Eeprom_Escribir (2 , -> -> 19 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "221
-[; ;Control.c: 221:     Eeprom_Escribir(0x14,(uint8_t)(Dato & 0xFF));
-[e ( _Eeprom_Escribir (2 , -> -> 20 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
+[; ;Control.c: 221:     Eeprom_Escribir(0x13,(uint8_t)(Dato >> 8));
+[e ( _Eeprom_Escribir (2 , -> -> 19 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "222
-[; ;Control.c: 222:     Tiempo_Iny_Liquido = Dato;
-[e = _Tiempo_Iny_Liquido _Dato ]
+[; ;Control.c: 222:     Eeprom_Escribir(0x14,(uint8_t)(Dato & 0xFF));
+[e ( _Eeprom_Escribir (2 , -> -> 20 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
 "223
-[; ;Control.c: 223: }
+[; ;Control.c: 223:     Tiempo_Iny_Liquido = Dato;
+[e = _Tiempo_Iny_Liquido _Dato ]
+"224
+[; ;Control.c: 224: }
 [e :UE 720 ]
 }
-"225
-[; ;Control.c: 225: void Set_Tiempo_Iny_Gas(uint16_t Dato) {
+"226
+[; ;Control.c: 226: void Set_Tiempo_Iny_Gas(uint16_t Dato) {
 [v _Set_Tiempo_Iny_Gas `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _Set_Tiempo_Iny_Gas ]
 [v _Dato `us ~T0 @X0 1 r1 ]
 [f ]
-"226
-[; ;Control.c: 226:     Eeprom_Escribir(0x15,(uint8_t)(Dato >> 8));
-[e ( _Eeprom_Escribir (2 , -> -> 21 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "227
-[; ;Control.c: 227:     Eeprom_Escribir(0x16,(uint8_t)(Dato & 0xFF));
-[e ( _Eeprom_Escribir (2 , -> -> 22 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
+[; ;Control.c: 227:     Eeprom_Escribir(0x15,(uint8_t)(Dato >> 8));
+[e ( _Eeprom_Escribir (2 , -> -> 21 `i `uc -> >> -> _Dato `ui -> 8 `i `uc ]
 "228
-[; ;Control.c: 228:     Tiempo_Iny_Gas = Dato;
-[e = _Tiempo_Iny_Gas _Dato ]
+[; ;Control.c: 228:     Eeprom_Escribir(0x16,(uint8_t)(Dato & 0xFF));
+[e ( _Eeprom_Escribir (2 , -> -> 22 `i `uc -> & -> _Dato `ui -> -> 255 `i `ui `uc ]
 "229
-[; ;Control.c: 229: }
+[; ;Control.c: 229:     Tiempo_Iny_Gas = Dato;
+[e = _Tiempo_Iny_Gas _Dato ]
+"230
+[; ;Control.c: 230: }
 [e :UE 721 ]
 }
 [a 10C 34 125 0 ]

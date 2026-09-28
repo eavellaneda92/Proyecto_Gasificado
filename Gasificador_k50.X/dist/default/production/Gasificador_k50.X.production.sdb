@@ -75,25 +75,25 @@
 [v _Inyecta_Liquido Inyecta_Liquido `(v  1 e 1 0 ]
 "104
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
-"114
+"115
 [v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
-"119
+"120
 [v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
-"124
+"125
 [v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
-"129
+"130
 [v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
-"134
+"135
 [v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
-"139
+"140
 [v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
-"144
+"145
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
-"154
+"155
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
-"175
+"176
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
-"208
+"209
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
 "15 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Main.c
 [v _ISR ISR `IIH(v  1 e 1 0 ]
@@ -839,33 +839,33 @@
 {
 "15
 } 0
-"208 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"209 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Set_Channel_Heater Set_Channel_Heater `(v  1 e 1 0 ]
 {
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 wreg ]
 [v Set_Channel_Heater@Dato Dato `uc  1 p 1 7 ]
-"211
+"212
 } 0
-"154
+"155
 [v _Eeprom_Escribir Eeprom_Escribir `(v  1 e 1 0 ]
 {
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
-"162
+"163
 [v Eeprom_Escribir@gie gie `uc  1 a 1 5 ]
-"154
+"155
 [v Eeprom_Escribir@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Escribir@dato dato `uc  1 p 1 4 ]
 [v Eeprom_Escribir@dir dir `uc  1 p 1 6 ]
-"173
+"174
 } 0
-"144
+"145
 [v _Eeprom_Leer Eeprom_Leer `(uc  1 e 1 0 ]
 {
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 wreg ]
 [v Eeprom_Leer@dir dir `uc  1 p 1 3 ]
-"152
+"153
 } 0
 "126 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Timers.c
 [v _Refresh_In Refresh_In `(v  1 e 1 0 ]
@@ -989,15 +989,15 @@
 [v Get_Comando@Data Data `*.39uc  1 p 2 80 ]
 "184
 } 0
-"134 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"135 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Ventilador_On Ventilador_On `(v  1 e 1 0 ]
 {
-"137
+"138
 } 0
-"139
+"140
 [v _Ventilador_Off Ventilador_Off `(v  1 e 1 0 ]
 {
-"142
+"143
 } 0
 "46 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Texto_IndexOf Texto_IndexOf `(i  1 e 2 0 ]
@@ -1036,9 +1036,9 @@
 "104
 [v _Inyecta_Gas Inyecta_Gas `(v  1 e 1 0 ]
 {
-"106
+"107
 [v Inyecta_Gas@i i `i  1 a 2 56 ]
-"112
+"113
 } 0
 "186 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _Imprime_Estado Imprime_Estado `(v  1 e 1 0 ]
@@ -1155,31 +1155,31 @@
 [v ___awdiv@divisor divisor `i  1 p 2 5 ]
 "41
 } 0
-"124 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
+"125 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Control.c
 [v _Evaporador_On Evaporador_On `(v  1 e 1 0 ]
 {
-"127
+"128
 } 0
-"129
+"130
 [v _Evaporador_Off Evaporador_Off `(v  1 e 1 0 ]
 {
-"132
+"133
 } 0
-"119
+"120
 [v _Damper_Cerrar Damper_Cerrar `(v  1 e 1 0 ]
 {
-"122
+"123
 } 0
-"114
+"115
 [v _Damper_Abrir Damper_Abrir `(v  1 e 1 0 ]
 {
-"117
+"118
 } 0
-"175
+"176
 [v _Respuestas_RS485 Respuestas_RS485 `(v  1 e 1 0 ]
 {
 [v Respuestas_RS485@Mensaje Mensaje `*.32uc  1 p 2 6 ]
-"183
+"184
 } 0
 "31 C:\Users\LENOVO\Documents\Gasificado\Proyecto_Gasificado\Gasificador_k50.X\Uart.c
 [v _UART_Print UART_Print `(v  1 e 1 0 ]

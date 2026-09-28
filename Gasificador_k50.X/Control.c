@@ -102,22 +102,23 @@ void Inyecta_Liquido(void) {
 }
 
 void Inyecta_Gas(void) {
-    Power_Rele(Valve_Gas_Open, Tiempo_Iny_Gas);
+    Power_Rele(Valve_Gas_Open, 2000);
+    Power_Rele(Valve_Gas_Close, 2000);
     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
         __delay_ms(1);
         CLRWDT();
     }
-    Power_Rele(Valve_Gas_Open, (uint16_t)(Tiempo_Iny_Gas * 1.5));
+    Power_Rele(Valve_Gas_Open, 3000);
     Respuestas_RS485("INYECCION_GAS_OK");
 }
 
 void Damper_Abrir(void) {
-    Power_Rele(Damper_Open, Tiempo_Damper);
+    Power_Rele(Damper_Open, 30000);
     Respuestas_RS485("DAMPER_OPEN_OK");
 }
 
 void Damper_Cerrar(void) {
-    Power_Rele(Damper_Close, (uint16_t)(Tiempo_Damper * 1.5));
+    Power_Rele(Damper_Close, 30000);
     Respuestas_RS485("DAMPER_CLOSE_OK");
 }
 

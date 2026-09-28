@@ -8736,22 +8736,23 @@ void Inyecta_Liquido(void) {
 }
 
 void Inyecta_Gas(void) {
-    Power_Rele(7, Tiempo_Iny_Gas);
+    Power_Rele(7, 2000);
+    Power_Rele(6, 2000);
     for (int i = 0; i < Tiempo_Iny_Gas; i++) {
         _delay((unsigned long)((1)*(16000000UL/4000.0)));
         __asm(" clrwdt");
     }
-    Power_Rele(7, (uint16_t)(Tiempo_Iny_Gas * 1.5));
+    Power_Rele(7, 3000);
     Respuestas_RS485("INYECCION_GAS_OK");
 }
 
 void Damper_Abrir(void) {
-    Power_Rele(4, Tiempo_Damper);
+    Power_Rele(4, 30000);
     Respuestas_RS485("DAMPER_OPEN_OK");
 }
 
 void Damper_Cerrar(void) {
-    Power_Rele(5, (uint16_t)(Tiempo_Damper * 1.5));
+    Power_Rele(5, 30000);
     Respuestas_RS485("DAMPER_CLOSE_OK");
 }
 
