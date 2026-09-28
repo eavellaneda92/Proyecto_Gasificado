@@ -98,7 +98,7 @@ void Inyecta_Liquido(void) {
         CLRWDT();
     }
     RELAY10 = RELE_OFF;
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 2000; i++) {
         __delay_ms(1);
         CLRWDT();
     }

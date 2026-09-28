@@ -1432,11 +1432,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 100:     LATDbits.LATD4 = 1;
 [e = . . _LATDbits 0 4 -> -> 1 `i `uc ]
 "101
-[; ;Control.c: 101:     for (int i = 0; i < 50; i++) {
+[; ;Control.c: 101:     for (int i = 0; i < 2000; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 50 `i 691  ]
+[e $ < _i -> 2000 `i 691  ]
 [e $U 692  ]
 [e :U 691 ]
 {
@@ -1450,7 +1450,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Control.c: 104:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 50 `i 691  ]
+[e $ < _i -> 2000 `i 691  ]
 [e :U 692 ]
 }
 "105
